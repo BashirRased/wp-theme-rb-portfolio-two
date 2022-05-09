@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Jhon Smith
+Theme URI: https://github.com/BashirRased/jhon-smith
+Author: Bashir Rased
+Author URI: http://bashir-rased.com/ 
+Description: 
+Requires at least: 5.9
+Tested up to: 5.9
+Requires PHP: 5.6
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: jhon-smith
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks
+
+Jhon Smith WordPress Theme, (C) 2022 WordPress.org
+Jhon Smith is distributed under the terms of the GNU GPL.
+*/
+
+body {
+	color: #222222;	
+}
+.jhon-smith-theme-colors {
+	background-color: #ffffff;
+}
+.jhon-smith-about-me {
+	background-color: #ccc;
+}
+.jhon-smith-services {
+	background-color: #ccc;
+}
+.jhon-smith-portfolio-menu ul li {
+	border: 1px solid #222222;
+}
+.jhon-smith-section-title h2:before {
+	background-color: #222222;
+}
+.jhon-smith-my-resume {
+	background-color: #ccc;
+}
+.jhon-smith-contact-info-box {
+	background-color: #ccc;
+}
+.jhon-smith-footer-area {
+	background-color: #ccc;
+}

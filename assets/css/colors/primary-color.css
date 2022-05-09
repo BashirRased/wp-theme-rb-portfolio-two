@@ -1,0 +1,316 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Jhon Smith
+Theme URI: https://github.com/BashirRased/jhon-smith
+Author: Bashir Rased
+Author URI: http://bashir-rased.com/ 
+Description: 
+Requires at least: 5.9
+Tested up to: 5.9
+Requires PHP: 5.6
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: jhon-smith
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks
+
+Jhon Smith WordPress Theme, (C) 2022 WordPress.org
+Jhon Smith is distributed under the terms of the GNU GPL.
+*/
+
+/*=============================
+Table of CSS Content Start Here
+===============================
+	01. Default Tag
+	02. Common Classes
+	03. Theme Color Options
+	04. Section Title
+	05. Header Area
+		5.1. Header Top
+			5.1.1. Header Logo
+			5.1.2. Header Mobile Menu
+			5.1.3. Header Desktop Menu
+		5.2. Header Content
+		5.3. Header Scrolldown Button
+	06. About Me Section
+	07. My Skills Section
+	08. Hire Me Section
+	09. Services Section
+	10. CountTo Section
+	11. Portfolio Section
+	12. Resume Section
+	13. Testimonial Section
+	14. Contact Me Section
+	15. Footer Area
+	16. Scroll To Top Button
+	17. Main Page Design
+=============================
+Table of CSS Content End Here
+===========================*/
+
+/*============================
+01. Default Tag CSS Start Here
+============================*/
+
+/*==========================
+01. Default Tag CSS End Here
+==========================*/
+
+/*===============================
+02. Common Classes CSS Start Here
+===============================*/
+.jhon-smith-theme-color {
+	color: #0d65ed;
+}
+.jhon-smith-btn:before {
+	background-color: #0d65ed;
+}
+/*=============================
+02. Common Classes CSS End Here
+=============================*/
+.jhon-smith-content-title h3:after {
+	background-color: #0d65ed;
+}
+/*====================================
+03. Theme Color Options CSS Start Here
+====================================*/
+
+/*==================================
+03. Theme Color Options CSS End Here
+==================================*/
+
+/*==============================
+04. Section Title CSS Start Here
+==============================*/
+.jhon-smith-section-title h2:after {
+	background-color: #0d65ed;	
+}
+/*============================
+04. Section Title CSS End Here
+============================*/
+
+/*============================
+05. Header Area CSS Start Here
+============================*/
+
+/*===== 5.1. Header Top CSS Start Here =====*/
+
+/* 5.1.1. Header Logo CSS Start Here */
+.jhon-smith-header-logo h1 a {
+	color: #0d65ed;
+}
+/* 5.1.1. Header Logo CSS End Here */
+
+/* 5.1.2. Header Mobile Menu CSS Start Here */
+.jhon-smith-mobile-menu-icon {
+	background-color: #0d65ed;
+}
+/* 5.1.2. Header Mobile Menu CSS End Here */
+
+/* 5.1.3. Header Desktop Menu CSS Start Here */
+.jhon-smith-header-active-menu {
+	color: #0d65ed !important;
+}
+@media all and (max-width: 991px) {
+	.jhon-smith-desktop-menu li {
+		background-color: #0d65ed;
+	}
+}
+/* 5.1.3. Header Desktop Menu CSS End Here */
+
+/*===== 5.1. Header Top CSS End Here =====*/
+
+/*===== 5.2. Header Content CSS Start Here =====*/
+.jhon-smith-type-effect {
+	border-right: 6px solid #0d65ed;
+}
+/*===== 5.2. Header Content CSS End Here =====*/
+
+/*==========================
+05. Header Area CSS End Here
+==========================*/
+
+/*=================================
+06. About Me Section CSS Start Here
+=================================*/
+.btn-download-cv,
+.btn-contact-me {
+	border: 1px solid #0d65ed;
+}
+.btn-download-cv a,
+.btn-contact-me a {
+	color: #0d65ed;
+}
+.jhon-smith-user-icon {
+	background-color: #0d65ed;
+}
+/*===============================
+06. About Me Section CSS End Here
+===============================*/
+
+/*==================================
+07. My Skills Section CSS Start Here
+==================================*/
+.jhon-smith-skill-animation {
+	background-color: #0d65ed;
+}
+.jhon-smith-skill-percentage {
+	background-color: #0d65ed;
+}
+.jhon-smith-skill-percentage:before {
+	border-color: #0d65ed transparent transparent transparent;
+}
+/*================================
+07. My Skills Section CSS End Here
+================================*/
+
+/*================================
+08. Hire Me Section CSS Start Here
+================================*/
+
+/*==============================
+08. Hire Me Section CSS End Here
+==============================*/
+
+/*=================================
+09. Services Section CSS Start Here
+=================================*/
+.jhon-smith-single-service:after {
+	background-color: #0d65ed;
+}
+.jhon-smith-services-icon {
+	color: #0d65ed;
+}
+/*===============================
+09. Services Section CSS End Here
+===============================*/
+
+/*================================
+10. CountTo Section CSS Start Here
+================================*/
+.jhon-smith-separator-countup {
+	background-color: #0d65ed;
+}
+/*==============================
+10. CountTo Section CSS End Here
+==============================*/
+
+/*==================================
+11. Portfolio Section CSS Start Here
+==================================*/
+.jhon-smith-portfolio-menu ul li:hover,
+.jhon-smith-active-portfolio {
+	background-color: #0d65ed;
+	border: 1px solid #0d65ed !important;
+}
+.jhon-smith-portfolio-icon {
+	background-color: #0d65ed;
+}
+/*================================
+11. Portfolio Section CSS End Here
+================================*/
+
+/*===============================
+12. Resume Section CSS Start Here
+===============================*/
+.jhon-smith-resume-single-item-subtitle {
+	background-color: #0d65ed;
+}
+/*=============================
+12. Resume Section CSS End Here
+=============================*/
+
+/*====================================
+13. Testimonial Section CSS Start Here
+====================================*/
+.jhon-smith-client-img {
+	border: 5px solid #0d65ed;
+}
+.jhon-smith-client-name {
+	color: #0d65ed;
+}
+.owl-dots .owl-dot.active {
+	background-color: #0d65ed !important;
+}
+/*==================================
+13. Testimonial Section CSS End Here
+==================================*/
+
+/*===================================
+14. Contact Me Section CSS Start Here
+===================================*/
+.jhon-smith-contact-info-box:before,
+.jhon-smith-contact-info-box:after {
+	border: 2px solid #0d65ed;
+}
+.jhon-smith-contact-info-icon {
+	color: #0d65ed;
+	border: 1px solid #0d65ed;
+}
+.jhon-smith-contact-info-icon:hover {
+	background-color: #0d65ed;
+}
+.jhon-smith-contact-field input:focus,
+.jhon-smith-contact-field textarea:focus {
+	border-bottom: 1px solid #0d65ed;
+}
+.jhon-smith-massage-send {
+	color: #0d65ed;
+	border: 1px solid #0d65ed;
+}
+.jhon-smith-massage-send:hover {
+	background-color: #0d65ed;
+}
+/*=================================
+14. Contact Me Section CSS End Here
+=================================*/
+
+/*============================
+15. Footer Area CSS Start Here
+============================*/
+.jhon-smith-copyright-text a {
+	color: #0d65ed;
+}
+.jhon-smith-footer-social-icons a {
+	color: #0d65ed;
+	border: 1px solid #0d65ed;
+}
+.jhon-smith-footer-social-icons a:hover {
+	background-color: #0d65ed;
+	border: 1px solid #0d65ed;
+}
+.jhon-smith-footer-social-icons a:before {
+	content: "";
+	position: absolute;
+	left: calc(50% - 7px);
+	border: 7px solid transparent;
+	transform: translateY(-8px);
+	border-top-color: #0d65ed;
+}
+.jhon-smith-footer-social-icons a:after {
+	background-color: #0d65ed;
+}
+/*==========================
+15. Footer Area CSS End Here
+==========================*/
+
+/*=====================================
+16. Scroll To Top Button CSS Start Here
+=====================================*/
+.jhon-smith-scroll-to-top {
+	background-color: #0d65ed;
+}
+/*===================================
+16. Scroll To Top Button CSS End Here
+===================================*/
+
+/*=================================
+17. Main Page Design CSS Start Here
+=================================*/
+.jhon-smith-feature-icon i {
+	background-color: #0d65ed;
+}
+/*===============================
+17. Main Page Design CSS End Here
+===============================*/

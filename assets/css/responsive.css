@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Jhon Smith
+Theme URI: https://github.com/BashirRased/jhon-smith
+Author: Bashir Rased
+Author URI: http://bashir-rased.com/ 
+Description: 
+Requires at least: 5.9
+Tested up to: 5.9
+Requires PHP: 5.6
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: jhon-smith
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks
+
+Jhon Smith WordPress Theme, (C) 2022 WordPress.org
+Jhon Smith is distributed under the terms of the GNU GPL.
+*/
+
+@media all and (max-width: 991px) {
+	
+	.jhon-smith-header-desktop-menu {
+		width: 100%;
+		background-color: #0d65ed;
+	}
+
+	.jhon-smith-dropdown-menu,
+	.jhon-smith-multi-dropdown-menu {
+		display: none;
+		box-shadow: none;
+		position: relative;
+		top: 100%;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.jhon-smith-dropdown-menu-open {
+		display: block;
+	}
+
+	.jhon-smith-header-desktop-menu i {
+		display: none;
+	}
+
+	.jhon-smith-dropdown-menu li:hover > ul,
+	.jhon-smith-dropdown-menu li:focus-within > ul {
+		top: 100%;
+	}
+
+	.jhon-smith-dropdown-menu li {
+		border-bottom: none;
+	}
+
+	.menu-item-has-children button {
+		display: block;
+		border: none;
+		background-color: #fff;
+		color: #0d65ed;
+		position: absolute;
+		font-size: 30px;
+		top: 5px;
+		right: 5px;
+		height: 72px;
+		width: 72px;
+	}
+
+	.jhon-smith-header-desktop-menu ul li a {
+		padding: 30px 15px;
+		color: #fff;
+		border-bottom: 1px solid #fff;
+	}	
+
+	.jhon-smith-header-desktop-menu ul li a:hover,
+	.jhon-smith-header-desktop-menu ul li a:focus,
+	.jhon-smith-header-fixed .jhon-smith-header-desktop-menu ul li a,
+	.jhon-smith-header-fixed .jhon-smith-header-desktop-menu ul li a:hover,
+	.jhon-smith-header-fixed .jhon-smith-header-desktop-menu ul li a:focus {
+		color: #fff;
+	}
+
+	.jhon-smith-content-title {
+		margin-top: 50px;
+	}
+	
+	.jhon-smith-header-site-branding-area {
+		float: left;
+	}
+
+	.jhon-smith-header-mobile-menu-area {
+		display: block;
+		float: right;
+	}
+
+	.jhon-smith-header-desktop-menu {
+		display: none;
+	}
+
+	.jhon-smith-header-desktop-menu li {
+		float: none;
+		display: block;		
+		width: 100%;
+		text-align: center;
+	}
+
+	.jhon-smith-header-desktop-menu a {
+		color: #fff;
+	}
+
+	/**/
+	
+	/**/
+
+	.jhon-smith-about-me-left {
+		margin-bottom: 30px;
+	}	
+	.jhon-smith-footer-area .float-left,
+	.jhon-smith-footer-area .float-right {
+		float: none !important;
+	}
+	.jhon-smith-copyright-text {
+		text-align: center;
+		margin-bottom: 40px;
+	}
+	.jhon-smith-footer-social-icons {
+		text-align: center;
+	}
+}
