@@ -13,7 +13,7 @@
                     <h2>
                         <?php
                         $jhon_smith_about_me_title_black = get_post_meta(get_the_ID(), 'jhon_smith_about_me_title_black', true);
-                        if($jhon_smith_about_me_title_black){
+                        if(isset($jhon_smith_about_me_title_black) && !empty($jhon_smith_about_me_title_black)){
                             printf(
                                 /* translators: %s: About Me Section Title Black */
                                 __('%s','jhon-smith'),
@@ -28,7 +28,7 @@
                         <span class="jhon-smith-theme-color">
                         <?php
                         $jhon_smith_about_me_title_theme_color = get_post_meta(get_the_ID(), 'jhon_smith_about_me_title_theme_color', true);
-                        if($jhon_smith_about_me_title_theme_color){
+                        if( isset ($jhon_smith_about_me_title_theme_color) && !empty ($jhon_smith_about_me_title_theme_color) ){
                             printf(
                                 /* translators: %s: About Me Section Title Theme Color */
                                 __('%s','jhon-smith'),
@@ -61,7 +61,7 @@
                 <div class="jhon-smith-about-me-left">
                     <img src="<?php
                        $jhon_smith_about_me_content_img = get_post_meta(get_the_ID(), 'jhon_smith_about_me_content_img', true);
-                        if($jhon_smith_about_me_content_img){
+                        if( isset ($jhon_smith_about_me_content_img) && !empty ($jhon_smith_about_me_content_img) ){
                             echo esc_url ($jhon_smith_about_me_content_img);
                         }
                         else {
@@ -82,7 +82,7 @@
                         <h3>
                         <?php
                         $jhon_smith_about_me_content_title = get_post_meta(get_the_ID(), 'jhon_smith_about_me_content_title', true);
-                        if($jhon_smith_about_me_content_title){
+                        if( isset ($jhon_smith_about_me_content_title) && !empty ($jhon_smith_about_me_content_title) ){
                             printf(
                                 /* translators: %s: About Me Content Title */
                                 __('%s','jhon-smith'),
@@ -98,7 +98,7 @@
                         <h6>
                         <?php
                         $jhon_smith_about_me_content_sub_title = get_post_meta(get_the_ID(), 'jhon_smith_about_me_content_sub_title', true);
-                        if($jhon_smith_about_me_content_sub_title){
+                        if( isset ($jhon_smith_about_me_content_sub_title) && !empty ($jhon_smith_about_me_content_sub_title) ){
                             printf(
                                 /* translators: %s: About Me Content Sub Title */
                                 __('%s','jhon-smith'),
@@ -118,7 +118,7 @@
                     <div class="jhon-smith-about-me-description">
                         <?php
                         $jhon_smith_about_me_content_description = get_post_meta(get_the_ID(), 'jhon_smith_about_me_content_description', true);
-                        if($jhon_smith_about_me_content_description){
+                        if( isset ($jhon_smith_about_me_content_description) && !empty ($jhon_smith_about_me_content_description) ){
                             printf(
                                 /* translators: %s: About Me Content Description */
                                 __('%s','jhon-smith'),
@@ -152,7 +152,7 @@
 
                             <?php
                             $jhon_smith_about_me_content_details = get_post_meta(get_the_ID(), 'jhon_smith_about_me_content_details', true);
-                            if($jhon_smith_about_me_content_details): 
+                            if( isset ($jhon_smith_about_me_content_details) && !empty ($jhon_smith_about_me_content_details) ): 
                                 
                             foreach($jhon_smith_about_me_content_details as $jhon_smith_about_me_content_details_single):
                             ?>
@@ -161,7 +161,7 @@
 
                                 <i class="<?php
                                 $jhon_smith_about_me_content_details_single_icon = $jhon_smith_about_me_content_details_single['jhon_smith_about_me_content_details_icon'];
-                                if($jhon_smith_about_me_content_details_single_icon){
+                                if( isset ($jhon_smith_about_me_content_details_single_icon) && !empty ($jhon_smith_about_me_content_details_single_icon) ){
                                     echo esc_attr($jhon_smith_about_me_content_details_single_icon);
                                 }
                                 else {
@@ -176,7 +176,7 @@
 
                                 <?php
                                 $jhon_smith_about_me_content_details_single_title = $jhon_smith_about_me_content_details_single['jhon_smith_about_me_content_details_strong_text'];
-                                if($jhon_smith_about_me_content_details_single_title){
+                                if( isset ($jhon_smith_about_me_content_details_single_title) && !empty ($jhon_smith_about_me_content_details_single_title) ){
                                     printf(
                                         /* translators: %s: About Me Content Details Title */
                                         __('%s','jhon-smith'),
@@ -194,7 +194,7 @@
                                 <span class="jhon-smith-user-details">
                                 <?php
                                 $jhon_smith_about_me_content_details_single_text = $jhon_smith_about_me_content_details_single['jhon_smith_about_me_content_details_normal_text'];
-                                if($jhon_smith_about_me_content_details_single_text){
+                                if( isset ($jhon_smith_about_me_content_details_single_text) && !empty ($jhon_smith_about_me_content_details_single_text) ){
                                     printf(
                                         /* translators: %s: About Me Content Details Text */
                                         __('%s','jhon-smith'),
@@ -257,7 +257,7 @@
                         
                         <?php
                         $jhon_smith_about_me_content_buttons = get_post_meta(get_the_ID(), 'jhon_smith_about_me_content_buttons', true);
-                        if($jhon_smith_about_me_content_buttons): 
+                        if( isset ($jhon_smith_about_me_content_buttons) && !empty ($jhon_smith_about_me_content_buttons) ): 
                             
                         foreach($jhon_smith_about_me_content_buttons as $jhon_smith_about_me_content_buttons_single):
                         ?>
@@ -265,7 +265,7 @@
                         <div class="jhon-smith-btn btn-download-cv">
                             <a href="<?php
                                 $jhon_smith_about_me_content_buttons_single_url = $jhon_smith_about_me_content_buttons_single['jhon_smith_about_me_content_button_url'];
-                                if($jhon_smith_about_me_content_buttons_single_url){
+                                if( isset ($jhon_smith_about_me_content_buttons_single_url) && !empty ($jhon_smith_about_me_content_buttons_single_url) ){
                                     echo esc_url($jhon_smith_about_me_content_buttons_single_url);
                                 }
                                 else {
@@ -274,7 +274,7 @@
                                 ?>">
                                 <?php
                                 $jhon_smith_about_me_content_buttons_single_text = $jhon_smith_about_me_content_buttons_single['jhon_smith_about_me_content_button_text'];
-                                if($jhon_smith_about_me_content_buttons_single_text){
+                                if( isset ($jhon_smith_about_me_content_buttons_single_text) && !empty ($jhon_smith_about_me_content_buttons_single_text) ){
                                     printf(
                                         /* translators: %s: About Me Button Text */
                                         __('%s','jhon-smith'),

@@ -14,7 +14,7 @@
                         <span class="jhon-smith-theme-color">
                         <?php
                         $jhon_smith_my_skills_title_theme_color = get_post_meta(get_the_ID(), 'jhon_smith_my_skills_title_theme_color', true);
-                        if($jhon_smith_my_skills_title_theme_color){
+                        if( isset ($jhon_smith_my_skills_title_theme_color) && !empty ($jhon_smith_my_skills_title_theme_color) ){
                             printf(
                                 /* translators: %s: My Skills Section Title Theme Color */
                                 __('%s','jhon-smith'),
@@ -29,7 +29,7 @@
 
                         <?php
                         $jhon_smith_my_skills_title_black = get_post_meta(get_the_ID(), 'jhon_smith_my_skills_title_black', true);
-                        if($jhon_smith_my_skills_title_black){
+                        if( isset ($jhon_smith_my_skills_title_black)  && !empty ($jhon_smith_my_skills_title_black) ){
                             printf(
                                 /* translators: %s: My Skills Section Title Black */
                                 __('%s','jhon-smith'),
@@ -62,7 +62,7 @@
                     <h3>
                         <?php
                         $jhon_smith_my_design_skills_title = get_post_meta(get_the_ID(), 'jhon_smith_my_design_skills_title', true);
-                        if($jhon_smith_my_design_skills_title){
+                        if( isset ($jhon_smith_my_design_skills_title) && !empty ($jhon_smith_my_design_skills_title) ){
                             printf(
                                 /* translators: %s: My Design Section Title */
                                 __('%s','jhon-smith'),
@@ -78,7 +78,7 @@
 
                 <?php
                 $jhon_smith_my_design_skill_items = get_post_meta(get_the_ID(), 'jhon_smith_my_design_skill_items', true);
-                if($jhon_smith_my_design_skill_items): 
+                if( isset ($jhon_smith_my_design_skill_items) && !empty ($jhon_smith_my_design_skill_items) ): 
                     
                 foreach($jhon_smith_my_design_skill_items as $jhon_smith_my_design_skill_items_single):
                 ?>
@@ -89,7 +89,7 @@
                     <div class="jhon-smith-skill-name">
                     <?php
                     $jhon_smith_my_design_skill_items_single_title = $jhon_smith_my_design_skill_items_single['jhon_smith_my_design_skill_item_text'];
-                    if($jhon_smith_my_design_skill_items_single_title){
+                    if( isset ($jhon_smith_my_design_skill_items_single_title) && !empty ($jhon_smith_my_design_skill_items_single_title) ){
                         printf(
                             /* translators: %s: My Skills Development Item Skill Title */
                             __('%s','jhon-smith'),
@@ -104,7 +104,7 @@
 
                     <div class="jhon-smith-skill-bar" data-percent="<?php
                                 $jhon_smith_my_design_skill_items_single_percent = $jhon_smith_my_design_skill_items_single['jhon_smith_my_design_skill_item_percent'];
-                                if($jhon_smith_my_design_skill_items_single_percent){
+                                if( isset ($jhon_smith_my_design_skill_items_single_percent) && !empty ($jhon_smith_my_design_skill_items_single_percent) ){
                                     echo esc_attr($jhon_smith_my_design_skill_items_single_percent."%");
                                 }
                                 else {
@@ -115,7 +115,7 @@
                             <div class="jhon-smith-skill-percentage">
                             <?php
                                 $jhon_smith_my_design_skill_items_single_percent = $jhon_smith_my_design_skill_items_single['jhon_smith_my_design_skill_item_percent'];
-                                if($jhon_smith_my_design_skill_items_single_percent){
+                                if( isset ($jhon_smith_my_design_skill_items_single_percent) && !empty ($jhon_smith_my_design_skill_items_single_percent) ){
                                     printf(
                                         /* translators: %s: My Skills Design Item Skill Percent */
                                         __('%s','jhon-smith'),
@@ -199,7 +199,7 @@
                     <h3>
                     <?php
                         $jhon_smith_my_development_skills_title = get_post_meta(get_the_ID(), 'jhon_smith_my_development_skills_title', true);
-                        if($jhon_smith_my_development_skills_title){
+                        if( isset ($jhon_smith_my_development_skills_title) && !empty ($jhon_smith_my_development_skills_title) ){
                             printf(
                                 /* translators: %s: My Design Section Title */
                                 __('%s','jhon-smith'),
@@ -215,7 +215,7 @@
                 
                 <?php
                 $jhon_smith_my_development_skill_items = get_post_meta(get_the_ID(), 'jhon_smith_my_development_skill_items', true);
-                if($jhon_smith_my_development_skill_items): 
+                if( isset ($jhon_smith_my_development_skill_items) && !empty ($jhon_smith_my_development_skill_items) ): 
                     
                 foreach($jhon_smith_my_development_skill_items as $jhon_smith_my_development_skill_items_single):
                 ?>
@@ -226,7 +226,7 @@
                     <div class="jhon-smith-skill-name">
                     <?php
                     $jhon_smith_my_development_skill_items_single_title = $jhon_smith_my_development_skill_items_single['jhon_smith_my_development_skill_item_text'];
-                    if($jhon_smith_my_development_skill_items_single_title){
+                    if( isset ($jhon_smith_my_development_skill_items_single_title) && !empty ($jhon_smith_my_development_skill_items_single_title) ){
                         printf(
                             /* translators: %s: My Skills Development Item Skill Title */
                             __('%s','jhon-smith'),
@@ -241,7 +241,7 @@
 
                     <div class="jhon-smith-skill-bar" data-percent="<?php
                                 $jhon_smith_my_development_skill_items_single_percent = $jhon_smith_my_development_skill_items_single['jhon_smith_my_development_skill_item_percent'];
-                                if($jhon_smith_my_development_skill_items_single_percent){
+                                if( isset ($jhon_smith_my_development_skill_items_single_percent) && !empty ($jhon_smith_my_development_skill_items_single_percent) ){
                                     echo esc_attr($jhon_smith_my_development_skill_items_single_percent."%");
                                 }
                                 else {
@@ -251,7 +251,7 @@
                         <div class="jhon-smith-skill-animation">
                             <div class="jhon-smith-skill-percentage"><?php
                                 $jhon_smith_my_development_skill_items_single_percent = $jhon_smith_my_development_skill_items_single['jhon_smith_my_development_skill_item_percent'];
-                                if($jhon_smith_my_development_skill_items_single_percent){
+                                if( isset ($jhon_smith_my_development_skill_items_single_percent) && !empty ($jhon_smith_my_development_skill_items_single_percent) ){
                                     printf(
                                         /* translators: %s: My Skills Developement Item Skill Percent */
                                         __('%s','jhon-smith'),

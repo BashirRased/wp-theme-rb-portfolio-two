@@ -7,7 +7,7 @@ $jhon_smith_header_img = get_post_meta(get_the_ID(), 'jhon_smith_header_img', tr
 
 ?>
 
-<header class="jhon-smith-header-area jhon-smith-scroll-menu" id="jhon-smith-header-area" style="background-image: url(<?php echo esc_url($jhon_smith_header_img); ?>);">
+<header class="jhon-smith-header-area jhon-smith-scroll-menu" id="jhon-smith-header-area" <?php if ( isset ($jhon_smith_header_img) && !empty ($jhon_smith_header_img)) : ?>style="background-image: url(<?php echo esc_url($jhon_smith_header_img); ?>);" <?php endif; ?> >
     
     <!--====================================== 
     ===== Header Content Area Strat Here =====
@@ -21,7 +21,7 @@ $jhon_smith_header_img = get_post_meta(get_the_ID(), 'jhon_smith_header_img', tr
                     // Header Section Title
                     $jhon_smith_header_title = get_post_meta(get_the_ID(), 'jhon_smith_header_title', true);
 
-                    if($jhon_smith_header_title) : ?>
+                    if( isset ($jhon_smith_header_title) && !empty ($jhon_smith_header_title) ) : ?>
 
                     <div class="jhon-smith-header-content-title">
                         <h1>
@@ -45,7 +45,7 @@ $jhon_smith_header_img = get_post_meta(get_the_ID(), 'jhon_smith_header_img', tr
                     $jhon_smith_header_subtitle_2 = get_post_meta(get_the_ID(), 'jhon_smith_header_subtitle_2', true);
 
                     // Header Section Sub-Title 02
-                    if($jhon_smith_header_subtitle_2) : ?>
+                    if( isset ($jhon_smith_header_subtitle_2)  && !empty ($jhon_smith_header_subtitle_2) ) : ?>
                     <div class="jhon-smith-header-content-subtitle">
                         <h3>
 

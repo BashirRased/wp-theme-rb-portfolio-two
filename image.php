@@ -4,9 +4,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package WordPress
- * @subpackage RB Free Theme
- * @since Jhon Smith 1.0.0
+ * @package RB Free Theme
+ * @subpackage Jhon Smith
+ * @version Jhon Smith 1.0.1
+ * @since Jhon Smith 1.0.1
  */
 
 get_header();
@@ -25,7 +26,7 @@ get_header();
                 }
             ?>
 
-            <main id="jhon-smith-primary" class="<?php echo esc_attr(wp_kses_post($jhon_smith_page_content_class)); ?>" role="post">
+            <main id="jhon-smith-primary" class="<?php echo esc_attr($jhon_smith_page_content_class); ?>" role="post">
 
             <?php
             /* Start the Loop */
@@ -62,7 +63,7 @@ get_header();
 
                     <?php if (wp_get_attachment_caption()) : ?>
                         <figcaption class="jhon-smith-attachment-image-caption-text">
-                            <?php echo wp_kses_post(wp_get_attachment_caption()); ?>
+                            <?php esc_html_e(wp_get_attachment_caption()); ?>
                         </figcaption>
                     <?php endif; ?>
 

@@ -14,7 +14,7 @@
                         <span class="jhon-smith-theme-color">
                         <?php
                         $jhon_smith_my_services_title_theme_color = get_post_meta(get_the_ID(), 'jhon_smith_my_services_title_theme_color', true);
-                        if($jhon_smith_my_services_title_theme_color){
+                        if( isset ($jhon_smith_my_services_title_theme_color)  && !empty ($jhon_smith_my_services_title_theme_color) ){
                             printf(
                                 /* translators: %s: My Services Section Title Theme Color */
                                 __('%s','jhon-smith'),
@@ -29,7 +29,7 @@
 
                         <?php
                         $jhon_smith_my_services_title_black = get_post_meta(get_the_ID(), 'jhon_smith_my_services_title_black', true);
-                        if($jhon_smith_my_services_title_black){
+                        if( isset ($jhon_smith_my_services_title_black) && !empty ($jhon_smith_my_services_title_black) ){
                             printf(
                                 /* translators: %s: My Services Section Title Theme Color */
                                 __('%s','jhon-smith'),
@@ -58,7 +58,7 @@
             
             <?php
             $jhon_smith_my_service_items = get_post_meta(get_the_ID(), 'jhon_smith_my_service_items', true);
-            if($jhon_smith_my_service_items): 
+            if( isset ($jhon_smith_my_service_items) && !empty ($jhon_smith_my_service_items) ): 
                 
             foreach($jhon_smith_my_service_items as $jhon_smith_my_service_items_single):
             ?>
@@ -69,7 +69,7 @@
                         <div class="jhon-smith-services-icon">
                             <i class="<?php
                                 $jhon_smith_my_service_item_icon = $jhon_smith_my_service_items_single['jhon_smith_my_service_item_icon'];
-                                if($jhon_smith_my_service_item_icon){
+                                if( isset ($jhon_smith_my_service_item_icon)  && !empty ($jhon_smith_my_service_item_icon) ){
                                     echo esc_attr($jhon_smith_my_service_item_icon);
                                 }
                                 else {
@@ -81,7 +81,7 @@
                             <h4>
                             <?php
                             $jhon_smith_my_service_item_title = $jhon_smith_my_service_items_single['jhon_smith_my_service_item_title'];
-                            if($jhon_smith_my_service_item_title){
+                            if( isset ($jhon_smith_my_service_item_title)  && !empty ($jhon_smith_my_service_item_title) ){
                                 printf(
                                     /* translators: %s: My Services Item Title */
                                     __('%s','jhon-smith'),
@@ -98,7 +98,7 @@
                             <p>
                             <?php
                             $jhon_smith_my_service_item_description = $jhon_smith_my_service_items_single['jhon_smith_my_service_item_description'];
-                            if($jhon_smith_my_service_item_description){
+                            if( isset ($jhon_smith_my_service_item_description)  && !empty ($jhon_smith_my_service_item_description) ){
                                 printf(
                                     /* translators: %s: My Services Item Description */
                                     __('%s','jhon-smith'),

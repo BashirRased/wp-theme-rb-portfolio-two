@@ -9,7 +9,7 @@
                     
                     <?php
                     $jhon_smith_testimonials_items = get_post_meta(get_the_ID(), 'jhon_smith_testimonials_items', true);
-                    if($jhon_smith_testimonials_items): 
+                    if( isset ($jhon_smith_testimonials_items) && !empty ($jhon_smith_testimonials_items) ): 
                         
                     foreach($jhon_smith_testimonials_items as $jhon_smith_testimonials_items_single):
                     ?>
@@ -19,7 +19,7 @@
                             <div class="jhon-smith-client-img">
                                 <img src="<?php
                                 $jhon_smith_testimonials_item_image = $jhon_smith_testimonials_items_single['jhon_smith_testimonials_item_image'];
-                                if($jhon_smith_testimonials_item_image){
+                                if( isset ($jhon_smith_testimonials_item_image) && !empty ($jhon_smith_testimonials_item_image) ){
                                     echo esc_url($jhon_smith_testimonials_item_image);
                                 }
                                 else {
@@ -30,7 +30,7 @@
                             <div class="jhon-smith-client-name jhon-smith-strong-text">
                                 <h4><?php
                             $jhon_smith_testimonials_item_title = $jhon_smith_testimonials_items_single['jhon_smith_testimonials_item_title'];
-                            if($jhon_smith_testimonials_item_title){
+                            if( isset ($jhon_smith_testimonials_item_title) && !empty ($jhon_smith_testimonials_item_title) ){
                                 printf(
                                     /* translators: %s: Testimonials Item Title */
                                     __('%s','jhon-smith'),
@@ -44,7 +44,7 @@
                             </div>
                             <div class="jhon-smith-client-designation"><?php
                             $jhon_smith_testimonials_item_sub_title = $jhon_smith_testimonials_items_single['jhon_smith_testimonials_item_sub_title'];
-                            if($jhon_smith_testimonials_item_sub_title){
+                            if( isset ($jhon_smith_testimonials_item_sub_title) && !empty ($jhon_smith_testimonials_item_sub_title) ){
                                 printf(
                                     /* translators: %s: Testimonials Item Sub-title */
                                     __('%s','jhon-smith'),
@@ -59,7 +59,7 @@
                         <div class="jhon-smith-review">
                             <p><?php
                             $jhon_smith_testimonials_item_description = $jhon_smith_testimonials_items_single['jhon_smith_testimonials_item_description'];
-                            if($jhon_smith_testimonials_item_description){
+                            if( isset ($jhon_smith_testimonials_item_description) && !empty ($jhon_smith_testimonials_item_description) ){
                                 printf(
                                     /* translators: %s: Testimonials Item Description */
                                     __('%s','jhon-smith'),

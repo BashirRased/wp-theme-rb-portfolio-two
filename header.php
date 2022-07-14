@@ -6,9 +6,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package WordPress
- * @subpackage RB Free Theme
- * @since Jhon Smith 1.0.0
+ * @package RB Free Theme
+ * @subpackage Jhon Smith
+ * @version Jhon Smith 1.0.1
+ * @since Jhon Smith 1.0.1
  */
 
 ?>
@@ -23,6 +24,27 @@
 <?php
 wp_body_open();
 ?>
+
+<!--================================= 
+===== Preloader Area Strat Here =====
+==================================-->
+<div class="pre-loader">
+    <div class="sk-cube-grid">
+        <div class="sk-cube sk-cube1"></div>
+        <div class="sk-cube sk-cube2"></div>
+        <div class="sk-cube sk-cube3"></div>
+        <div class="sk-cube sk-cube4"></div>
+        <div class="sk-cube sk-cube5"></div>
+        <div class="sk-cube sk-cube6"></div>
+        <div class="sk-cube sk-cube7"></div>
+        <div class="sk-cube sk-cube8"></div>
+        <div class="sk-cube sk-cube9"></div>
+    </div>
+</div>
+<!--=============================== 
+===== Preloader Area End Here =====
+================================-->
+
 <div id="jhon-smith-page" class="jhon-smith-page-content">
 	<a class="skip-link screen-reader-text" href="#jhon-smith-page-content">
         <?php esc_html_e('Skip to content', 'jhon-smith'); ?>

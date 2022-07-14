@@ -4,32 +4,16 @@
  * 
  * Template Name: Home Page Template
  *
- * @package WordPress
- * @subpackage RB Free Theme
- * @since Jhon Smith 1.0.0
+ * @package RB Free Theme
+ * @subpackage Jhon Smith
+ * @version Jhon Smith 1.0.1
+ * @since Jhon Smith 1.0.1
  */
 
-get_header(); ?>
+get_header();
+?>
 
-<!--================================= 
-===== Preloader Area Strat Here =====
-==================================-->
-<div class="pre-loader">
-    <div class="sk-cube-grid">
-        <div class="sk-cube sk-cube1"></div>
-        <div class="sk-cube sk-cube2"></div>
-        <div class="sk-cube sk-cube3"></div>
-        <div class="sk-cube sk-cube4"></div>
-        <div class="sk-cube sk-cube5"></div>
-        <div class="sk-cube sk-cube6"></div>
-        <div class="sk-cube sk-cube7"></div>
-        <div class="sk-cube sk-cube8"></div>
-        <div class="sk-cube sk-cube9"></div>
-    </div>
-</div>
-<!--=============================== 
-===== Preloader Area End Here =====
-================================-->
+<div id="jhon-smith-page-content" class="jhon-smith-main-page">
 
 <?php
 get_template_part('homepage-sections/header-section');
@@ -39,5 +23,10 @@ get_template_part('homepage-sections/hire-me-section');
 get_template_part('homepage-sections/my-services-section');
 get_template_part('homepage-sections/countup-section');
 get_template_part('homepage-sections/my-testimonial-section');
-get_template_part('homepage-sections/contact-me-section');get_footer();
+get_template_part('homepage-sections/contact-me-section');
 ?>
+
+</div><!-- #jhon-smith-page-content -->
+
+<?php
+get_footer();

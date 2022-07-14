@@ -4,8 +4,9 @@
  *
  * The template loading under functions.php.
  *
- * @package WordPress
- * @subpackage RB Free Theme
+ * @package RB Free Theme
+ * @subpackage Jhon Smith
+ * @version Jhon Smith 1.0.1
  * @since Jhon Smith 1.0.0
  */
 

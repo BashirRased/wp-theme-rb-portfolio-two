@@ -2,14 +2,14 @@
 
 /*
 Theme Name: Jhon Smith
-Theme URI: https://github.com/BashirRased/jhon-smith
+Theme URI: https://github.com/BashirRased/wp-theme-jhon-smith
 Author: Bashir Rased
-Author URI: http://bashir-rased.com/ 
+Author URI: https://profiles.wordpress.org/bashirrased2017/ 
 Description: Jhon Smith is a portfolio website.
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: jhon-smith
@@ -43,6 +43,10 @@ Jhon Smith is distributed under the terms of the GNU GPL.
 /***********************************
 ***** 01. CSS Reset Start Here *****
 ***********************************/
+article:focus-visible {
+	box-shadow: 0 0 5px 5px #0d65ed;
+}
+
 html,
 body {
 	border: none;
@@ -113,10 +117,14 @@ path {
 	transition: all 0.15s linear;
 }
 
-a:hover,
-a:focus {
+a:hover {
 	text-decoration: underline;
 }
+
+a:focus {
+	text-decoration: underline overline;
+}
+
 /*********************************
 ***** 01. CSS Reset End Here *****
 *********************************/
@@ -216,6 +224,7 @@ ol.alignright {
 	width: auto;
 	z-index: 100000;
 }
+
 /*****************************************************
 ***** 02. WordPress Recommended Classes End Here *****
 *****************************************************/
@@ -236,24 +245,27 @@ ol.alignright {
 	z-index: 1;
 }
 
-.jhon-smith-btn:hover {
+.jhon-smith-btn:hover,
+.jhon-smith-btn:focus {
 	color: #fff;
 }
 
-.jhon-smith-btn::before{
+.jhon-smith-btn::before {
 	content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #0d65ed;
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #0d65ed;
+	z-index: -1;
 }
 
-.jhon-smith-btn:hover::before {
+.jhon-smith-btn:hover::before,
+.jhon-smith-btn:focus::before {
 	width: 100%;
 }
+
 /******************************************
 ***** 03. Common Classes CSS End Here *****
 ******************************************/
@@ -263,7 +275,7 @@ ol.alignright {
 ***** 04. Header Breadcrumbs Area CSS Start Here *****
 *****************************************************/
 .jhon-smith-header-breadcrumbs-area {
-	padding: 15px;	
+	padding: 15px;
 	color: #fff;
 	text-align: center;
 	min-height: 350px;
@@ -282,7 +294,7 @@ ol.alignright {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	background-color: rgba(0,0,0,.5);
+	background-color: rgba(0, 0, 0, .5);
 }
 
 .jhon-smith-header-breadcrumbs-title {
@@ -309,7 +321,7 @@ ol.alignright {
 	position: absolute;
 	bottom: -12px;
 	left: 50%;
-	transform: translate(-50%,-50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg);
 	width: 15px;
 	height: 15px;
 	background-color: #fff;
@@ -355,7 +367,7 @@ ol.alignright {
 .jhon-smith-post-item {
 	margin: 20px 0;
 	padding: 15px;
-	background-color: #fff;	
+	background-color: #fff;
 	box-shadow: 0 0 5px 5px #ccc;
 }
 
@@ -409,6 +421,7 @@ ol.alignright {
 	color: #0d65ed;
 	margin-right: 5px;
 }
+
 /* 5.1. Post Item CSS Start Here */
 
 /* 5.2. Post Format CSS Start Here */
@@ -473,6 +486,7 @@ ol.alignright {
 .jhon-smith-content-entry-body .wp-block-quote:first-child {
 	display: block;
 }
+
 /* 5.2. Post Format CSS Start Here */
 
 /* 3.2. Pagination Area CSS Start Here */
@@ -490,7 +504,8 @@ ol.alignright {
 }
 
 .jhon-smith-page-content .page-numbers.current,
-.jhon-smith-page-content .page-numbers:hover {
+.jhon-smith-page-content .page-numbers:hover,
+.jhon-smith-page-content .page-numbers:focus {
 	background-color: #0d65ed;
 	color: #fff;
 }
@@ -498,6 +513,7 @@ ol.alignright {
 .jhon-smith-page-content .page-numbers:focus {
 	text-decoration: underline;
 }
+
 /* 3.2. Pagination Area CSS End Here */
 
 /*********************************************
@@ -510,14 +526,14 @@ ol.alignright {
 .jhon-smith-post-single-item {
 	margin: 20px 0;
 	padding: 15px;
-	background-color: #fff;	
+	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
 .jhon-smith-content-single-entry-footer {
 	margin: 20px 0;
 	padding: 15px;
-	background-color: #fff;	
+	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
@@ -554,17 +570,19 @@ ol.alignright {
 }
 
 .jhon-smith-wp-pages-link-area .post-page-numbers:hover,
+.jhon-smith-wp-pages-link-area .post-page-numbers:focus,
 .jhon-smith-wp-pages-link-area .post-page-numbers.current {
 	color: #fff;
 	background-color: #0d65ed;
 }
+
 /* 4.1. WP Pages Link Area End Here */
 
 /* 4.2. Comments Area Start Here */
 .jhon-smith-comments-area {
 	margin: 20px 0;
 	padding: 15px;
-	background-color: #fff;	
+	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
@@ -577,11 +595,12 @@ ol.alignright {
 .jhon-smith-comment-title {
 	color: #0d65ed;
 }
+
 /* 4.2.1. Comments Count CSS End Here */
 
 /* 4.2.2. Comments List CSS Start Here */
 .jhon-smith-comments-list {
-	padding: 10px 0;	
+	padding: 10px 0;
 }
 
 .jhon-smith-comments-list .comment {
@@ -610,7 +629,7 @@ ol.alignright {
 
 .jhon-smith-comments-list .comment-author .url:hover,
 .jhon-smith-comments-list .comment-author .url:focus {
-	text-decoration: underline;	
+	text-decoration: underline;
 }
 
 .jhon-smith-comments-list .comment-metadata {
@@ -636,22 +655,28 @@ ol.alignright {
 	transition: all .3s;
 	z-index: 1;
 }
-.jhon-smith-comments-list .comment-reply-link:hover {
+
+.jhon-smith-comments-list .comment-reply-link:hover,
+.jhon-smith-comments-list .comment-reply-link:focus {
 	color: #fff;
 }
-.jhon-smith-comments-list .comment-reply-link::before{
+
+.jhon-smith-comments-list .comment-reply-link::before {
 	content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #0d65ed;
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #0d65ed;
+	z-index: -1;
 }
-.jhon-smith-comments-list .comment-reply-link:hover::before {
+
+.jhon-smith-comments-list .comment-reply-link:hover::before,
+.jhon-smith-comments-list .comment-reply-link:focus::before {
 	width: 100%;
 }
+
 /* 4.2.2. Comments List CSS End Here */
 
 /* 4.2.3. Comments Form CSS Start Here */
@@ -676,22 +701,24 @@ ol.alignright {
 	z-index: 1;
 }
 
-.jhon-smith-comments-form .logged-in-as a:hover {
+.jhon-smith-comments-form .logged-in-as a:hover,
+.jhon-smith-comments-form .logged-in-as a:focus {
 	color: #fff;
 }
 
-.jhon-smith-comments-form .logged-in-as a::before{
+.jhon-smith-comments-form .logged-in-as a::before {
 	content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #0d65ed;
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #0d65ed;
+	z-index: -1;
 }
 
-.jhon-smith-comments-form .logged-in-as a:hover::before {
+.jhon-smith-comments-form .logged-in-as a:hover::before,
+.jhon-smith-comments-form .logged-in-as a:focus::before {
 	width: 100%;
 }
 
@@ -700,11 +727,11 @@ ol.alignright {
 }
 
 .jhon-smith-comments-form .jhon-smith-comments-form label {
-    display: block;
-    margin: 10px 0;
+	display: block;
+	margin: 10px 0;
 }
 
-.jhon-smith-comments-form input[type='text'], 
+.jhon-smith-comments-form input[type='text'],
 .jhon-smith-comments-form input[type='email'],
 .jhon-smith-comments-form input[type='url'] {
 	width: 100%;
@@ -712,21 +739,21 @@ ol.alignright {
 	border: 2px solid #0d65ed;
 }
 
-.jhon-smith-comments-form input[type='text']:focus, 
+.jhon-smith-comments-form input[type='text']:focus,
 .jhon-smith-comments-form input[type='email']:focus,
 .jhon-smith-comments-form input[type='url']:focus {
 	border: 2px solid #0d65ed;
 }
 
 .jhon-smith-comments-form textarea {
-    width: 100%;
+	width: 100%;
 	margin: 10px 0;
-	padding: 20px;	
+	padding: 20px;
 	border: 2px solid #0d65ed;
 }
 
 .jhon-smith-comments-form textarea:focus-visible {
-    border: 2px solid #0d65ed;
+	border: 2px solid #0d65ed;
 }
 
 .jhon-smith-comments-form .comment-form .submit {
@@ -735,16 +762,18 @@ ol.alignright {
 	padding: 10px;
 	cursor: pointer;
 	background-color: transparent;
-    color: #0d65ed;
+	color: #0d65ed;
 	border: 1px solid #0d65ed;
-    transition: .3s all ease-in-out;
+	transition: .3s all ease-in-out;
 }
 
-.jhon-smith-comments-form .comment-form .submit:hover {
+.jhon-smith-comments-form .comment-form .submit:hover,
+.jhon-smith-comments-form .comment-form .submit:focus {
 	background-color: #0d65ed;
 	border-color: #0d65ed;
 	color: #fff;
 }
+
 /* 4.2.3. Comments Form CSS End Here */
 
 /* 4.2.4. Comments Reply Form CSS Start Here */
@@ -768,24 +797,27 @@ ol.alignright {
 	z-index: 1;
 }
 
-.jhon-smith-comments-list #cancel-comment-reply-link:hover {
+.jhon-smith-comments-list #cancel-comment-reply-link:hover,
+.jhon-smith-comments-list #cancel-comment-reply-link:focus {
 	color: #fff;
 }
 
-.jhon-smith-comments-list #cancel-comment-reply-link::before{
+.jhon-smith-comments-list #cancel-comment-reply-link::before {
 	content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #0d65ed;
-    z-index: -1;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #0d65ed;
+	z-index: -1;
 }
 
-.jhon-smith-comments-list #cancel-comment-reply-link:hover::before {
+.jhon-smith-comments-list #cancel-comment-reply-link:hover::before,
+.jhon-smith-comments-list #cancel-comment-reply-link:focus::before {
 	width: 100%;
 }
+
 /* 4.2.4. Comments Reply Form CSS End Here */
 
 /* 4.2. Comments Area End Here */
@@ -803,7 +835,7 @@ ol.alignright {
 }
 
 .jhon-smith-post-navigation .nav-previous,
-.jhon-smith-post-navigation .nav-next  {
+.jhon-smith-post-navigation .nav-next {
 	width: 50%;
 }
 
@@ -812,12 +844,13 @@ ol.alignright {
 }
 
 @media all and (max-width: 991px) {
+
 	.jhon-smith-post-navigation .nav-previous,
-	.jhon-smith-post-navigation .nav-next  {
+	.jhon-smith-post-navigation .nav-next {
 		width: 100%;
 		margin: 10px 0;
 	}
-	
+
 	.jhon-smith-post-navigation .nav-next {
 		text-align: left;
 	}
@@ -838,7 +871,8 @@ ol.alignright {
 	border: 1px solid #0d65ed;
 }
 
-.jhon-smith-post-navigation a i:hover {
+.jhon-smith-post-navigation a i:hover,
+.jhon-smith-post-navigation a i:focus {
 	background-color: #0d65ed;
 	color: #fff;
 }
@@ -882,7 +916,7 @@ ol.alignright {
 .jhon-smith-search-page-header {
 	margin: 20px 0;
 	padding: 15px;
-	background-color: #fff;	
+	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
@@ -901,7 +935,7 @@ ol.alignright {
 .jhon-smith-error-404-page-content {
 	margin: 20px 0;
 	padding: 15px;
-	background-color: #fff;	
+	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
@@ -928,7 +962,7 @@ ol.alignright {
 .jhon-smith-widget-item {
 	margin: 20px 0;
 	padding: 15px;
-	background-color: #fff;	
+	background-color: #fff;
 	box-shadow: 0 0 5px 5px #ccc;
 }
 
@@ -945,7 +979,8 @@ ol.alignright {
 	color: #0d65ed;
 }
 
-.jhon-smith-widget-item a:hover, .jhon-smith-widget-item a:focus {
+.jhon-smith-widget-item a:hover,
+.jhon-smith-widget-item a:focus {
 	text-decoration: underline;
 }
 
@@ -961,19 +996,22 @@ ol.alignright {
 	color: #0d65ed;
 	float: right;
 }
+
 /* 7.1. Quotation Widget CSS End Here */
 
 /* 7.2. Code Widget CSS Start Here */
-.wp-block-code > code {
+.wp-block-code>code {
 	color: #0d65ed;
 	border-color: #0d65ed;
 }
+
 /* 7.2. Code Widget CSS End Here */
 
 /* 7.3. Preformatted Text Widget CSS Start Here */
 .wp-block-preformatted {
 	color: #0d65ed;
 }
+
 /* 7.3. Preformatted Text Widget CSS End Here */
 
 /* 7.4. Pull Quotation Widget CSS Start Here */
@@ -989,6 +1027,7 @@ ol.alignright {
 .wp-block-pullquote cite {
 	color: #0d65ed;
 }
+
 /* 7.4. Pull Quotation Widget CSS End Here */
 
 /* 7.5. Table Widget CSS Start Here */
@@ -1002,6 +1041,7 @@ ol.alignright {
 	color: #fff;
 	background-color: #0d65ed;
 }
+
 /* 7.5. Table Widget CSS End Here */
 
 /* 7.6. Images Widget CSS Start Here */
@@ -1014,12 +1054,14 @@ ol.alignright {
 	color: #fff;
 	padding: 10px;
 }
+
 /* 7.6. Images Widget CSS End Here */
 
 /* 7.7. Gallery Widget CSS Start Here */
 .wp-block-gallery {
 	margin: 10px 0;
 }
+
 /* 7.7. Gallery Widget CSS End Here */
 
 /* 7.8. Audio Widget CSS Start Here */
@@ -1027,7 +1069,7 @@ ol.alignright {
 	margin: 10px 0;
 }
 
-.wp-block-audio audio{
+.wp-block-audio audio {
 	min-width: 100%;
 }
 
@@ -1036,12 +1078,14 @@ ol.alignright {
 	color: #fff;
 	padding: 10px;
 }
+
 /* 7.8. Audio Widget CSS End Here */
 
 /* 7.8. Cover Widget CSS Start Here */
 .wp-block-cover {
 	margin: 10px 0;
 }
+
 /* 7.8. Cover Widget CSS End Here */
 
 /* 7.9. Files Widget CSS Start Here */
@@ -1049,7 +1093,7 @@ ol.alignright {
 	margin: 10px 0;
 	padding: 10px;
 	background-color: #ccc;
-	word-wrap: break-word;	
+	word-wrap: break-word;
 }
 
 .wp-block-file a {
@@ -1068,12 +1112,14 @@ ol.alignright {
 	background-color: #0d65ed;
 	color: #fff;
 }
+
 /* 7.9. Files Widget CSS End Here */
 
 /* 7.10. Media & Text Widget CSS Start Here */
 .wp-block-media-text {
 	margin: 10px 0;
 }
+
 /* 7.10. Media & Text Widget CSS End Here */
 
 /* 7.11. Video Widget CSS Start Here */
@@ -1086,14 +1132,15 @@ ol.alignright {
 	color: #fff;
 	padding: 10px;
 }
+
 /* 7.11. Video Widget CSS End Here */
 
 /* 7.12. Button Widget CSS Start Here */
-.wp-block-buttons > .wp-block-button {
+.wp-block-buttons>.wp-block-button {
 	margin: 10px 10px 10px 0;
 }
 
-.is-style-outline > .wp-block-button__link:not(.has-text-color) {
+.is-style-outline>.wp-block-button__link:not(.has-text-color) {
 	background-color: transparent;
 	color: #0d65ed;
 	border: 1px solid #0d65ed;
@@ -1118,6 +1165,7 @@ ol.alignright {
 	background-color: #fff;
 	color: #0d65ed;
 }
+
 /* 7.12. Button Widget CSS End Here */
 
 /* 7.13. Separator Widget CSS Start Here */
@@ -1126,12 +1174,13 @@ ol.alignright {
 	color: #0d65ed;
 	opacity: 1;
 }
+
 /* 7.13. Separator Widget CSS End Here */
 
 /* 7.14. Archive List Widget CSS Start Here */
 .wp-block-archives-list {
 	padding: 0;
-	
+
 }
 
 .wp-block-archives-list li {
@@ -1150,7 +1199,7 @@ ol.alignright {
 	background-color: #0d65ed;
 	top: 50%;
 	left: 0;
-	transform: translate(-50%,-50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .wp-block-archives-list li:last-child:nth-child(1) {
@@ -1166,9 +1215,11 @@ ol.alignright {
 	text-decoration: none;
 }
 
-.wp-block-archives-list li a:hover {
+.wp-block-archives-list li a:hover,
+.wp-block-archives-list li a:focus {
 	text-decoration: underline;
 }
+
 /* 7.14. Archive List Widget CSS End Here */
 
 /* 7.15. Calendar Widget CSS Start Here */
@@ -1192,6 +1243,7 @@ ol.alignright {
 .wp-calendar-table #today a {
 	color: #fff;
 }
+
 /* 7.15. Calendar Widget CSS End Here */
 
 /* 7.16. Categories List Widget CSS Start Here */
@@ -1219,10 +1271,11 @@ ol.alignright {
 	background-color: #0d65ed;
 	top: 50%;
 	left: 0;
-	transform: translate(-50%,-50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.wp-block-categories-list a:hover {
+.wp-block-categories-list a:hover,
+.wp-block-categories-list a:focus {
 	color: #0d65ed;
 }
 
@@ -1233,6 +1286,7 @@ ol.alignright {
 .wp-block-categories-list li:last-child a {
 	border-bottom: none;
 }
+
 /* 7.16. Categories List Widget CSS End Here */
 
 /* 7.1. Search Widget CSS Start Here */
@@ -1241,11 +1295,11 @@ ol.alignright {
 	background-color: #0d65ed;
 	color: #fff;
 	margin: 10px 0;
-	padding: 10px;	
+	padding: 10px;
 }
 
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
-	padding: 0 0 0 5px;	
+	padding: 0 0 0 5px;
 	min-height: 50px;
 	border: 1px solid #0d65ed;
 }
@@ -1259,8 +1313,8 @@ ol.alignright {
 	background-color: #0d65ed;
 	color: #fff;
 }
-/* 7.1. Search Widget CSS End Here */
 
+/* 7.1. Search Widget CSS End Here */
 
 
 /* 7.3. Recent Post Widget CSS Start Here */
@@ -1284,16 +1338,18 @@ ol.alignright {
 	background-color: #0d65ed;
 	top: 50%;
 	left: 0;
-	transform: translate(-50%,-50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg);
 }
 
-.wp-block-latest-posts li a:hover {
+.wp-block-latest-posts li a:hover,
+.wp-block-categories-list a:focus {
 	color: #0d65ed;
 }
 
 .wp-block-latest-posts li:last-child a {
 	border-bottom: none;
 }
+
 /* 7.3. Recent Post Widget CSS End Here */
 
 /* 7.4. Recent Comments Widget CSS Start Here */
@@ -1315,12 +1371,13 @@ ol.alignright {
 	background-color: #0d65ed;
 	top: 50%;
 	left: 0;
-	transform: translate(-50%,-50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .wp-block-latest-comments__comment:last-child {
 	border-bottom: none;
 }
+
 /* 7.4. Recent Comments Widget CSS End Here */
 
 /* 7.5. Page List Widget CSS Start Here */
@@ -1347,12 +1404,13 @@ ol.alignright {
 	background-color: #0d65ed;
 	top: 50%;
 	left: 0;
-	transform: translate(-50%,-50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .wp-block-page-list li:last-child a {
 	border-bottom: none;
 }
+
 /* 7.5. Page List Widget CSS End Here */
 
 
@@ -1375,7 +1433,7 @@ nav[aria-label="Meta"] ul li::before {
 	background-color: #0d65ed;
 	top: 50%;
 	left: 0;
-	transform: translate(-50%,-50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg);
 }
 
 nav[aria-label="Meta"] ul li:last-child {
@@ -1401,7 +1459,7 @@ nav[aria-label="Meta"] ul li:last-child {
 	background-color: #0d65ed;
 	top: 50%;
 	left: 0;
-	transform: translate(-50%,-50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .wp-block-rss li:last-child {
@@ -1439,7 +1497,7 @@ nav[aria-label="Meta"] ul li:last-child {
 }
 
 .jhon-smith-widget-item .menu li a {
-	border-bottom: 1px solid #ccc;	
+	border-bottom: 1px solid #ccc;
 	padding: 10px;
 	position: relative;
 	list-style: none;
@@ -1454,11 +1512,8 @@ nav[aria-label="Meta"] ul li:last-child {
 	background-color: #0d65ed;
 	top: 50%;
 	left: 0;
-	transform: translate(-50%,-50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg);
 }
-
-
-
 
 
 /* 7.8. Tag Widget CSS Start Here */
@@ -1475,6 +1530,7 @@ nav[aria-label="Meta"] ul li:last-child {
 	color: #fff;
 	background-color: #0d65ed;
 }
+
 /* 7.8. Tag Widget CSS End Here */
 
 /* 7.9. Meta Widget CSS Start Here */
@@ -1497,12 +1553,13 @@ nav[aria-label="Meta"] ul li:last-child {
 	background-color: #0d65ed;
 	top: 50%;
 	left: 0;
-	transform: translate(-50%,-50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .widget_meta ul li:last-child {
 	border-bottom: none;
 }
+
 /* 7.9. Meta Widget CSS End Here */
 
 /* 7.10. List Widget CSS Start Here */
@@ -1525,12 +1582,13 @@ nav[aria-label="Meta"] ul li:last-child {
 	background-color: #0d65ed;
 	top: 50%;
 	left: 0;
-	transform: translate(-50%,-50%) rotate(45deg);
+	transform: translate(-50%, -50%) rotate(45deg);
 }
 
 .widget_block ul li:last-child {
 	border-bottom: none;
 }
+
 /* 7.10. List Widget CSS End Here */
 
 .wp-block-rss {
@@ -1555,6 +1613,7 @@ nav[aria-label="Meta"] ul li:last-child {
 	color: #fff;
 	padding: 10px;
 }
+
 /* 7.14. Image Gallery Widget CSS End Here */
 
 /* 7.17. Headline Widget CSS Start Here */
@@ -1566,6 +1625,7 @@ nav[aria-label="Meta"] ul li:last-child {
 .wp-block-group__inner-container h6 {
 	color: #0d65ed;
 }
+
 /* 7.17. Headline Widget CSS End Here */
 
 /*****************************************
@@ -1606,6 +1666,7 @@ nav[aria-label="Meta"] ul li:last-child {
 	text-align: center;
 	line-height: 50px;
 }
+
 /***************************************
 ***** 09. Search Form CSS End Here *****
 ***************************************/

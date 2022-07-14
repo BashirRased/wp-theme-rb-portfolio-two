@@ -6,7 +6,7 @@ $jhon_smith_countup_image = get_post_meta(get_the_ID(), 'jhon_smith_countup_imag
 <!--============================== 
 ===== Countup Area Strat Here =====
 ===============================-->
-<section class="jhon-smith-countup" style="background-image: url(<?php echo esc_url($jhon_smith_countup_image); ?>);">
+<section class="jhon-smith-countup" <?php if ( isset ($jhon_smith_countup_image) && !empty ($jhon_smith_countup_image)) : ?> style="background-image: url(<?php echo esc_url($jhon_smith_countup_image); ?>);" <?php endif; ?> >
 
     <!--================================== 
     ===== Section Content Strat Here =====
@@ -16,7 +16,7 @@ $jhon_smith_countup_image = get_post_meta(get_the_ID(), 'jhon_smith_countup_imag
             
             <?php
             $jhon_smith_countup_items = get_post_meta(get_the_ID(), 'jhon_smith_countup_items', true);
-            if($jhon_smith_countup_items): 
+            if( isset ($jhon_smith_countup_items) && !empty ($jhon_smith_countup_items) ): 
                 
             foreach($jhon_smith_countup_items as $jhon_smith_countup_items_single):
             ?>
@@ -27,7 +27,7 @@ $jhon_smith_countup_image = get_post_meta(get_the_ID(), 'jhon_smith_countup_imag
                     <div class="jhon-smith-countup-icon">
                         <i class="<?php
                                 $jhon_smith_countup_item_icon = $jhon_smith_countup_items_single['jhon_smith_countup_item_icon'];
-                                if($jhon_smith_countup_item_icon){
+                                if( isset ($jhon_smith_countup_item_icon) && !empty ($jhon_smith_countup_item_icon) ){
                                     echo esc_attr($jhon_smith_countup_item_icon);
                                 }
                                 else {
@@ -40,7 +40,7 @@ $jhon_smith_countup_image = get_post_meta(get_the_ID(), 'jhon_smith_countup_imag
                         <h2>
                         <?php
                         $jhon_smith_countup_item_number = $jhon_smith_countup_items_single['jhon_smith_countup_item_number'];
-                        if($jhon_smith_countup_item_number){
+                        if( isset ($jhon_smith_countup_item_number) && !empty ($jhon_smith_countup_item_number) ){
                             printf(
                                 /* translators: %s: CountUp Item Number */
                                 __('%s','jhon-smith'),
@@ -58,7 +58,7 @@ $jhon_smith_countup_image = get_post_meta(get_the_ID(), 'jhon_smith_countup_imag
                         <p>
                         <?php
                         $jhon_smith_countup_item_title = $jhon_smith_countup_items_single['jhon_smith_countup_item_title'];
-                        if($jhon_smith_countup_item_title){
+                        if( isset ($jhon_smith_countup_item_title) && !empty ($jhon_smith_countup_item_title) ){
                             printf(
                                 /* translators: %s: CountUp Item Title */
                                 __('%s','jhon-smith'),

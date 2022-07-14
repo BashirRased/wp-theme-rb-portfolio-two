@@ -1,13 +1,13 @@
 /*
 Theme Name: Jhon Smith
-Theme URI: https://github.com/BashirRased/jhon-smith
+Theme URI: https://github.com/BashirRased/wp-theme-jhon-smith
 Author: Bashir Rased
-Author URI: http://bashir-rased.com/ 
+Author URI: https://profiles.wordpress.org/bashirrased2017/ 
 Description: Jhon Smith is a portfolio website.
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: jhon-smith
@@ -60,22 +60,6 @@ Table of JS Content End Here
 	===========================*/
 
 	$(document).ready(function(){
-		
-		/*==================================
-		02. Nice Scrollbar jQuery Start Here
-		==================================*/
-		$("body").niceScroll({
-			cursorwidth:8,
-			cursorcolor:'#0d65ed',
-			cursorborder: "none",
-			cursorborderradius:15,
-			zindex: 9999,
-			autohidemode: false,
-			cursorminheight:200,
-		});
-		/*================================
-		02. Nice Scrollbar jQuery End Here
-		================================*/
 		
 		/*=======================================
 		03. Header Menu Section $ Start Here

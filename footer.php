@@ -6,9 +6,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package WordPress
- * @subpackage RB Free Theme
- * @since Jhon Smith 1.0.0
+ * @package RB Free Theme
+ * @subpackage Jhon Smith
+ * @version Jhon Smith 1.0.1
+ * @since Jhon Smith 1.0.1
  */
 
 ?>
@@ -25,7 +26,7 @@
 				==================================-->
 				<div class="col-lg-6">
 					<?php
-						$fromYear = (int)esc_html('2010','jhon-smith');
+						$fromYear = (int)esc_html('2022','jhon-smith');
 						$thisYear = (int)esc_html(date('Y'),'jhon-smith');
 						$copyrightYear = $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');
 
@@ -55,7 +56,7 @@
                             /* translators:
                             %5$s: Powered By URL.
 							*/
-                            esc_url('http://bashir-rased.com/'),
+                            esc_url('https://profiles.wordpress.org/bashirrased2017/'),
 
                             /* translators:
 							%6$s: Powered By Name.
@@ -144,9 +145,9 @@
 	<!--===================================== 
 	===== Scroll to Top Area Strat Here =====
 	======================================-->
-	<div class="jhon-smith-scroll-to-top">
+	<button class="jhon-smith-scroll-to-top">
         <i class="fa-solid fa-angles-up"></i>
-	</div>
+	</button>
 	<!--=================================== 
 	===== Scroll to Top Area End Here =====
 	====================================-->

@@ -4,9 +4,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package WordPress
- * @subpackage RB Free Theme
- * @since Jhon Smith 1.0.0
+ * @package RB Free Theme
+ * @subpackage Jhon Smith
+ * @version Jhon Smith 1.0.1
+ * @since Jhon Smith 1.0.1
  */
 
 ?>
@@ -61,18 +62,6 @@ the_post_navigation(
 	array(
 		'prev_text' => '<i class="fa-solid fa-angle-left"></i> %title',
 		'next_text' => '%title <i class="fa-solid fa-angle-right"></i>',
-		
-		// 'in_same_term' => 'true',
-		// 'excluded_terms' => '',
-
-		// 'taxonomy' => 'category',
-
-		// 'screen_reader_text' => 'Post navigation',
-
-		// Aria label with .post-navigation
-		// 'aria_label' => 'Posts',
-
-		// Class with nav.navigation
 		'class' => 'jhon-smith-post-navigation'
 	)
 );

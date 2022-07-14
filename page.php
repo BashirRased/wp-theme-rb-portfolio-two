@@ -4,9 +4,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-page
  *
- * @package WordPress
- * @subpackage RB Free Theme
- * @since Jhon Smith 1.0.0
+ * @package RB Free Theme
+ * @subpackage Jhon Smith
+ * @version Jhon Smith 1.0.1
+ * @since Jhon Smith 1.0.1
  */
 
 get_header();
@@ -25,7 +26,7 @@ get_header();
                 }
             ?>
             
-            <main id="jhon-smith-primary" class="<?php echo esc_attr(wp_kses_post($jhon_smith_page_content_class)); ?>" role="page">
+            <main id="jhon-smith-primary" class="<?php echo esc_attr($jhon_smith_page_content_class); ?>" role="page">
 
                 <?php
                 /* Start the Loop */

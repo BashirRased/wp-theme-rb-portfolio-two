@@ -7,8 +7,9 @@
  * @link https://developer.wordpress.org/reference/functions/wp_unique_id/
  * @link https://developer.wordpress.org/reference/functions/get_search_form/
  *
- * @package WordPress
- * @subpackage RB Free Theme
+ * @package RB Free Theme
+ * @subpackage Jhon Smith
+ * @version Jhon Smith 1.0.1
  * @since Jhon Smith 1.0.0
  */
 

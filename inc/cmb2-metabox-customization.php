@@ -2,9 +2,10 @@
 /**
  * The template for cmb2 metabox function.
  *
- * @package WordPress
- * @subpackage theme_name
- * @since Theme Name 1.0.0
+ * @package RB Free Theme
+ * @subpackage Jhon Smith
+ * @version Jhon Smith 1.0.1
+ * @since Jhon Smith 1.0.0
  */
 
 /*=============================================

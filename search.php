@@ -4,9 +4,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package WordPress
- * @subpackage RB Free Theme
- * @since Jhon Smith 1.0.0
+ * @package RB Free Theme
+ * @subpackage Jhon Smith
+ * @version Jhon Smith 1.0.1
+ * @since Jhon Smith 1.0.1
  */
 
 get_header();
@@ -26,7 +27,7 @@ get_header();
 				}
 			?>
 
-			<main id="jhon-smith-primary" class="<?php echo esc_attr(wp_kses_post($jhon_smith_page_content_class)); ?>">
+			<main id="jhon-smith-primary" class="<?php echo esc_attr($jhon_smith_page_content_class); ?>">
 				<?php
 				if ( have_posts() ) {
 					?>
@@ -76,9 +77,7 @@ get_header();
 					
 					// Post Pagination.
 					the_posts_pagination(array(
-						'mid_size'  => 2,
-						'prev_text' => ('<i class="fas fa-chevron-left"></i>'),
-						'next_text' => ('<i class="fas fa-chevron-right"></i>')
+						'mid_size'  => 2
 					));	
 
 					// If no content, include the "No posts found" template.

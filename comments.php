@@ -7,9 +7,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package WordPress
- * @subpackage RB Free Theme
- * @since Jhon Smith 1.0.0
+ * @package RB Free Theme
+ * @subpackage Jhon Smith
+ * @version Jhon Smith 1.0.1
+ * @since Jhon Smith 1.0.1
  */
 
 /*
@@ -57,39 +58,14 @@ $jhon_smith_comment_count = get_comments_number();
     <!-- Comments List Show -->
     <div class="jhon-smith-comments-list">
         <?php
-        wp_list_comments(array(
-            // 'walker' => '',
-            // 'max_depth' => '',
-
-            // Set Comments List Style Values('ul'|'ol'|'div')
-            // 'style' => 'ul',
-
-            // 'callback' => '',
-            // 'end-callback' => '',
-            // 'type' => '',
-            // 'page' => '',
-            // 'per_page' => '',
-
-            // Comment Author Image
-            // 'avatar_size' => 100,
-
-            // 'reverse_top_level' => '',
-            // 'reverse_children' => '',
-            // 'format' => '',
-            // 'short_ping' => '',
-            // 'echo' => ''
-        ));
+        wp_list_comments();
         ?>
     </div><!-- .jhon-smith-comments-list -->
 
     <!-- Comments Pagination -->
     <div class="jhon-smith-comments-pagination">
         <?php
-        the_comments_pagination(array(
-            // 'screen_reader_text' => 'Comments navigation',
-            // 'aria_label' => 'Comments',
-            // 'class' => 'comments-pagination'
-        ));
+        the_comments_pagination();
         ?>
     </div><!-- .jhon-smith-comments-pagination -->
 
@@ -106,37 +82,7 @@ $jhon_smith_comment_count = get_comments_number();
 
     <!-- Comments Form -->
     <div class="jhon-smith-comments-form">
-        <?php comment_form( array(
-            // 'fields' => array(
-            //     'author' => '',
-            //     'email' => '',
-            //     'url' => '',
-            //     'cookies' => ''
-            // ),
-            // 'comment_field' => '',
-            // 'must_log_in' => '',
-            // 'logged_in_as' => '',
-            // 'comment_notes_before' => '',
-            // 'comment_notes_after' => '',
-            // 'action' => '',
-            // 'id_form' => '',
-            // 'id_submit' => '',
-            // 'class_container' => '',
-            // 'class_form' => '',
-            // 'class_submit' => '',
-            // 'name_submit' => '',
-            // 'title_reply' => '',
-            // 'title_reply_to' => '',
-            // 'title_reply_before' => '',
-            // 'title_reply_after' => '',
-            // 'cancel_reply_before' => '',
-            // 'cancel_reply_after' => '',
-            // 'cancel_reply_link' => '',
-            // 'label_submit' => '',
-            // 'submit_button' => '',
-            // 'submit_field' => '',
-            // 'format' => ''
-        )); ?>
+        <?php comment_form(); ?>
     </div><!-- .jhon-smith-comments-form -->
 
 </div>
