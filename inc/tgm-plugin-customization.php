@@ -3,29 +3,29 @@
  * The template for tgm all required & recommander plugin list.
  *
  * @package RB Free Theme
- * @subpackage Jhon Smith
- * @version Jhon Smith 1.0.1
- * @since Jhon Smith 1.0.0
+ * @subpackage RB Portfolio Two
+ * @version RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.0
  */
  
-function jhon_smith_required_plugins() {
+function rbp_two_required_plugins() {
 
 	$plugins = array(
 
 		array(
-			'name'      => __('CMB2','jhon-smith'),
+			'name'      => __('CMB2','rbp-two'),
 			'slug'      => 'cmb2',
 			'required'  => true,
 		),
 
 		array(
-			'name'      => __('Contact Form 7','jhon-smith'),
+			'name'      => __('Contact Form 7','rbp-two'),
 			'slug'      => 'contact-form-7',
 			'required'  => true,
 		),
 
 		array(
-			'name'      => __('RB Site Social Links','jhon-smith'),
+			'name'      => __('RB Site Social Links','rbp-two'),
 			'slug'      => 'rb-site-social-links',
 			'required'  => true,
 		)
@@ -48,4 +48,4 @@ function jhon_smith_required_plugins() {
 	tgmpa( $plugins, $config );
 
 }
-add_action('tgmpa_register','jhon_smith_required_plugins');
+add_action('tgmpa_register','rbp_two_required_plugins');

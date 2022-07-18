@@ -5,12 +5,12 @@
  * The template loading under functions.php.
  *
  * @package RB Free Theme
- * @subpackage Jhon Smith
- * @version Jhon Smith 1.0.1
- * @since Jhon Smith 1.0.0
+ * @subpackage RB Portfolio Two
+ * @version RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.0
  */
 
-if (!function_exists('jhon_smith_theme_setup')) {
+if (!function_exists('rbp_two_theme_setup')) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -18,21 +18,21 @@ if (!function_exists('jhon_smith_theme_setup')) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 *
-	 * @since Jhon Smith 1.0
+	 * @since RB Portfolio Two 1.0
 	 *
 	 * @return void
 	 */
-	function jhon_smith_theme_setup() {
+	function rbp_two_theme_setup() {
 		// Set content-width.
-        $GLOBALS['content_width'] = apply_filters('jhon_smith_content_width', 706);
+        $GLOBALS['content_width'] = apply_filters('rbp_two_content_width', 706);
 		
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Twenty Twenty-One, use a find and replace
-		 * to change 'jhon-smith' to the name of your theme in all the template files.
+		 * to change 'rbp-two' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain('jhon-smith', get_template_directory().'/languages');
+		load_theme_textdomain('rbp-two', get_template_directory().'/languages');
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support('automatic-feed-links');
@@ -140,4 +140,4 @@ if (!function_exists('jhon_smith_theme_setup')) {
 		add_theme_support('responsive-embeds');
 	}
 }
-add_action('after_setup_theme', 'jhon_smith_theme_setup');
+add_action('after_setup_theme', 'rbp_two_theme_setup');

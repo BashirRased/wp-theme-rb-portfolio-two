@@ -1,21 +1,21 @@
 <!--========================================== 
 ===== Header Breadcrumbs Area Strat Here =====
 ===========================================-->
-<div class="jhon-smith-header-breadcrumbs-area" style="background-image: url(<?php header_image(); ?>);">
+<div class="rbp-two-header-breadcrumbs-area" style="background-image: url(<?php header_image(); ?>);">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
 
-                <section class="jhon-smith-header-breadcrumbs">
+                <section class="rbp-two-header-breadcrumbs">
 
-                    <?php jhon_smith_breadcrumbs(); ?>
+                    <?php rbp_two_breadcrumbs(); ?>
 
-                </section><!-- .jhon-smith-header-breadcrumbs -->
+                </section><!-- .rbp-two-header-breadcrumbs -->
 
             </div>
         </div><!-- row end -->
     </div><!-- container end -->
-</div><!-- .jhon-smith-header-breadcrumbs-area -->
+</div><!-- .rbp-two-header-breadcrumbs-area -->
 <!--======================================== 
 ===== Header Breadcrumbs Area End Here =====
 =========================================-->

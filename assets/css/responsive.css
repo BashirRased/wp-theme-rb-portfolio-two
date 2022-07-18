@@ -1,33 +1,33 @@
 @charset "UTF-8";
 
 /*
-Theme Name: Jhon Smith
-Theme URI: https://github.com/BashirRased/wp-theme-jhon-smith
+Theme Name: RB Portfolio Two
+Theme URI: https://github.com/BashirRased/wp-theme-rbp-two
 Author: Bashir Rased
 Author URI: https://profiles.wordpress.org/bashirrased2017/ 
 Description: 
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: jhon-smith
+Text Domain: rbp-two
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks
 
-Jhon Smith WordPress Theme, (C) 2022 WordPress.org
-Jhon Smith is distributed under the terms of the GNU GPL.
+RB Portfolio Two WordPress Theme, (C) 2022 WordPress.org
+RB Portfolio Two is distributed under the terms of the GNU GPL.
 */
 
 @media all and (max-width: 991px) {
 
-	.jhon-smith-header-desktop-menu {
+	.rbp-two-header-desktop-menu {
 		width: 100%;
 		background-color: #0d65ed;
 	}
 
-	.jhon-smith-dropdown-menu,
-	.jhon-smith-multi-dropdown-menu {
+	.rbp-two-dropdown-menu,
+	.rbp-two-multi-dropdown-menu {
 		display: none;
 		box-shadow: none;
 		position: relative;
@@ -38,24 +38,24 @@ Jhon Smith is distributed under the terms of the GNU GPL.
 		transition: all 0.3s ease-in-out;
 	}
 
-	.jhon-smith-dropdown-menu-open {
+	.rbp-two-dropdown-menu-open {
 		display: block;
 	}
 
-	.jhon-smith-header-desktop-menu i {
+	.rbp-two-header-desktop-menu i {
 		display: none;
 	}
 
-	.jhon-smith-dropdown-menu li:hover>ul,
-	.jhon-smith-dropdown-menu li:focus-within>ul {
+	.rbp-two-dropdown-menu li:hover>ul,
+	.rbp-two-dropdown-menu li:focus-within>ul {
 		top: 100%;
 	}
 
-	.jhon-smith-dropdown-menu li {
+	.rbp-two-dropdown-menu li {
 		border-bottom: none;
 	}
 
-	.jhon-smith-dropdown-menu li a {
+	.rbp-two-dropdown-menu li a {
 		text-align: center;
 	}
 
@@ -73,47 +73,47 @@ Jhon Smith is distributed under the terms of the GNU GPL.
 		text-align: center;
 	}
 
-	.jhon-smith-header-desktop-menu ul li a {
+	.rbp-two-header-desktop-menu ul li a {
 		padding: 30px 15px;
 		color: #fff;
 		border-bottom: 1px solid #fff;
 	}
 
-	.jhon-smith-header-desktop-menu ul li a:hover,
-	.jhon-smith-header-desktop-menu ul li a:focus,
-	.jhon-smith-header-fixed .jhon-smith-header-desktop-menu ul li a,
-	.jhon-smith-header-fixed .jhon-smith-header-desktop-menu ul li a:hover,
-	.jhon-smith-header-fixed .jhon-smith-header-desktop-menu ul li a:focus {
+	.rbp-two-header-desktop-menu ul li a:hover,
+	.rbp-two-header-desktop-menu ul li a:focus,
+	.rbp-two-header-fixed .rbp-two-header-desktop-menu ul li a,
+	.rbp-two-header-fixed .rbp-two-header-desktop-menu ul li a:hover,
+	.rbp-two-header-fixed .rbp-two-header-desktop-menu ul li a:focus {
 		color: #fff;
 		box-shadow: 0 0 5px 5px #0d65ed;
 		border: 2px solid #fff;
 	}
 
-	.jhon-smith-content-title {
+	.rbp-two-content-title {
 		margin-top: 50px;
 	}
 
-	.jhon-smith-header-site-branding-area {
+	.rbp-two-header-site-branding-area {
 		float: left;
 	}
 
-	.jhon-smith-header-mobile-menu-area {
+	.rbp-two-header-mobile-menu-area {
 		display: block;
 		float: right;
 	}
 
-	.jhon-smith-header-desktop-menu {
+	.rbp-two-header-desktop-menu {
 		display: none;
 	}
 
-	.jhon-smith-header-desktop-menu li {
+	.rbp-two-header-desktop-menu li {
 		float: none;
 		display: block;
 		width: 100%;
 		text-align: center;
 	}
 
-	.jhon-smith-header-desktop-menu a {
+	.rbp-two-header-desktop-menu a {
 		color: #fff;
 	}
 
@@ -121,21 +121,21 @@ Jhon Smith is distributed under the terms of the GNU GPL.
 
 	/**/
 
-	.jhon-smith-about-me-left {
+	.rbp-two-about-me-left {
 		margin-bottom: 30px;
 	}
 
-	.jhon-smith-footer-area .float-left,
-	.jhon-smith-footer-area .float-right {
+	.rbp-two-footer-area .float-left,
+	.rbp-two-footer-area .float-right {
 		float: none !important;
 	}
 
-	.jhon-smith-copyright-text {
+	.rbp-two-copyright-text {
 		text-align: center;
 		margin-bottom: 40px;
 	}
 
-	.jhon-smith-footer-social-icons {
+	.rbp-two-footer-social-icons {
 		text-align: center;
 	}
 }

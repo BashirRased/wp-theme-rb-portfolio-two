@@ -7,9 +7,9 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package RB Free Theme
- * @subpackage Jhon Smith
- * @version Jhon Smith 1.0.1
- * @since Jhon Smith 1.0.1
+ * @subpackage RB Portfolio Two
+ * @version RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.1
  */
 
 ?>
@@ -17,7 +17,7 @@
     <!--============================== 
 	===== Footer Area Strat Here =====
 	===============================-->
-	<footer class="jhon-smith-footer-area">
+	<footer class="rbp-two-footer-area">
 		<div class="container">
 			<div class="row">
 			
@@ -26,17 +26,17 @@
 				==================================-->
 				<div class="col-lg-6">
 					<?php
-						$fromYear = (int)esc_html('2022','jhon-smith');
-						$thisYear = (int)esc_html(date('Y'),'jhon-smith');
+						$fromYear = (int)esc_html('2022','rbp-two');
+						$thisYear = (int)esc_html(date('Y'),'rbp-two');
 						$copyrightYear = $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');
 
 						printf(
-							'<p class="jhon-smith-copyright-text">%1$s <a href="%2$s" target="_blank">%3$s</a> %4$s <a href="%5$s" target="_blank"> %6$s </a> %7$s %8$s</p>',
+							'<p class="rbp-two-copyright-text">%1$s <a href="%2$s" target="_blank">%3$s</a> %4$s <a href="%5$s" target="_blank"> %6$s </a> %7$s %8$s</p>',
 							
                             /* translators:
 							%1$s: Copyright Symbol.
 							*/
-							esc_html('Copyright &copy; By ','jhon-smith'),
+							esc_html('Copyright &copy; By ','rbp-two'),
 
                             /* translators:
 							%2$s: Home URL.
@@ -46,12 +46,12 @@
                             /* translators:
 							%3$s: Site Name.
 							*/
-							esc_html(get_bloginfo('name'),'jhon-smith'),
+							esc_html(get_bloginfo('name'),'rbp-two'),
 
                             /* translators:
 							%4$s: Powered By.
 							*/
-							esc_html('Powered By ','jhon-smith'),
+							esc_html('Powered By ','rbp-two'),
 
                             /* translators:
                             %5$s: Powered By URL.
@@ -61,17 +61,17 @@
                             /* translators:
 							%6$s: Powered By Name.
 							*/
-							esc_html('Bashir Rased','jhon-smith'),
+							esc_html('Bashir Rased','rbp-two'),
 
                             /* translators:
                             %7$s: Copyright Year.
 							*/
-							esc_html($copyrightYear,'jhon-smith'),
+							esc_html($copyrightYear,'rbp-two'),
 
                             /* translators:
 							%8$s: Copyright Condition.
 							*/
-							esc_html('| All Rights Reserved.','jhon-smith')
+							esc_html('| All Rights Reserved.','rbp-two')
 						);
 					?>
 					
@@ -84,14 +84,14 @@
 				===== Social Icons Area Strat Here =====
 				=====================================-->
 				<div class="col-lg-6">					
-					<div class="jhon-smith-footer-social-icons float-end">
+					<div class="rbp-two-footer-social-icons float-end">
 						<ul>
                             
                             <!-- Facebook URL -->
                             <?php
                             if(get_option('rb_link')): ?>
                             <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Facebook', 'jhon-smith'); ?>"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Facebook', 'rbp-two'); ?>"><i class="fa-brands fa-facebook-f"></i></a>
 							</li>
                             <?php endif; ?>
 
@@ -99,7 +99,7 @@
                             <?php
                             if(get_option('rb_link')): ?>
                             <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Twitter', 'jhon-smith'); ?>"><i class="fa-brands fa-twitter"></i></a>
+								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Twitter', 'rbp-two'); ?>"><i class="fa-brands fa-twitter"></i></a>
 							</li>
                             <?php endif; ?>
 
@@ -107,7 +107,7 @@
                             <?php
                             if(get_option('rb_link')): ?>
                             <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Facebook', 'jhon-smith'); ?>"><i class="fa-brands fa-instagram"></i></a>
+								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Facebook', 'rbp-two'); ?>"><i class="fa-brands fa-instagram"></i></a>
 							</li>
                             <?php endif; ?>
 							
@@ -115,7 +115,7 @@
                             <?php
                             if(get_option('rb_link')): ?>
                             <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Linkedin', 'jhon-smith'); ?>"><i class="fa-brands fa-linkedin-in"></i></a>
+								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Linkedin', 'rbp-two'); ?>"><i class="fa-brands fa-linkedin-in"></i></a>
 							</li>
                             <?php endif; ?>
 
@@ -123,7 +123,7 @@
                             <?php
                             if(get_option('rb_link')): ?>
                             <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Pinterest', 'jhon-smith'); ?>"><i class="fa-brands fa-pinterest-p"></i></a>
+								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Pinterest', 'rbp-two'); ?>"><i class="fa-brands fa-pinterest-p"></i></a>
 							</li>
                             <?php endif; ?>
 
@@ -145,14 +145,14 @@
 	<!--===================================== 
 	===== Scroll to Top Area Strat Here =====
 	======================================-->
-	<button class="jhon-smith-scroll-to-top">
+	<button class="rbp-two-scroll-to-top">
         <i class="fa-solid fa-angles-up"></i>
 	</button>
 	<!--=================================== 
 	===== Scroll to Top Area End Here =====
 	====================================-->
 	
-	</div><!-- #jhon-smith-page -->
+	</div><!-- #rbp-two-page -->
     <?php wp_footer(); ?>
     </body>
 </html>

@@ -3,33 +3,33 @@
  * Custom template breadcrumbs for this theme
  *
  * @package RB Free Theme
- * @subpackage Jhon Smith
- * @version Jhon Smith 1.0.1
- * @since Jhon Smith 1.0.0
+ * @subpackage RB Portfolio Two
+ * @version RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.0
  */
 
 /* Post Author Meta */
-if (!function_exists('jhon_smith_breadcrumbs')) {
+if (!function_exists('rbp_two_breadcrumbs')) {
 
-	function jhon_smith_breadcrumbs() {
+	function rbp_two_breadcrumbs() {
         
         // Front Page
         if(is_front_page() && is_home()): ?>
 
-            <h2 class="jhon-smith-header-breadcrumbs-title">
-                <?php echo esc_html('Home Page','jhon-smith'); ?>
+            <h2 class="rbp-two-header-breadcrumbs-title">
+                <?php echo esc_html('Home Page','rbp-two'); ?>
             </h2>
 
-            <nav class="jhon-smith-header-breadcrumbs-nav">
+            <nav class="rbp-two-header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="jhon-smith-header-breadcrumbs-icon">
+                    <li class="rbp-two-header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <?php echo esc_html('Home','jhon-smith'); ?>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <?php echo esc_html('Home','rbp-two'); ?>
                     </li>
                     
                 </ul>
@@ -39,23 +39,23 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
         <!-- Single Post -->
         <?php elseif(is_singular('post')): ?>
 
-            <h2 class="jhon-smith-header-breadcrumbs-title">
-                <?php echo esc_html('signle blog post','jhon-smith'); ?>
+            <h2 class="rbp-two-header-breadcrumbs-title">
+                <?php echo esc_html('signle blog post','rbp-two'); ?>
             </h2>
 
-            <nav class="jhon-smith-header-breadcrumbs-nav">
+            <nav class="rbp-two-header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="jhon-smith-header-breadcrumbs-icon">
+                    <li class="rbp-two-header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','jhon-smith'); ?></a>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rbp-two'); ?></a>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
@@ -63,18 +63,18 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
                     if(!empty(get_permalink(get_option('page_for_posts')))) :
                     ?>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <a href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>"><?php echo esc_html('Blog','jhon-smith'); ?></a>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <a href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>"><?php echo esc_html('Blog','rbp-two'); ?></a>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
                     <?php endif; ?>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <?php echo esc_html(get_the_title(),'jhon-smith'); ?>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <?php echo esc_html(get_the_title(),'rbp-two'); ?>
                     </li>
                     
                 </ul>
@@ -84,37 +84,37 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
         <!-- Single Page -->
         <?php elseif(is_singular('page')): ?>
 
-            <h2 class="jhon-smith-header-breadcrumbs-title">
+            <h2 class="rbp-two-header-breadcrumbs-title">
                 <?php
                 if(get_option( 'page_on_front')){
-                    echo esc_html('Home page','jhon-smith');
+                    echo esc_html('Home page','rbp-two');
                 }
                 else{
-                    echo esc_html('signle page','jhon-smith');
+                    echo esc_html('signle page','rbp-two');
                 }
                 ?>
             </h2>
 
-            <nav class="jhon-smith-header-breadcrumbs-nav">
+            <nav class="rbp-two-header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="jhon-smith-header-breadcrumbs-icon">
+                    <li class="rbp-two-header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
+                    <li class="rbp-two-header-breadcrumbs-text">
                         <a href="<?php echo esc_url(home_url('/')); ?>">
-                        <?php echo esc_html('Home','jhon-smith'); ?>
+                        <?php echo esc_html('Home','rbp-two'); ?>
                         </a>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <?php echo esc_html(get_the_title(),'jhon-smith'); ?>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <?php echo esc_html(get_the_title(),'rbp-two'); ?>
                     </li>
                     
                 </ul>
@@ -124,28 +124,28 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
         <!-- Attachment Page -->
         <?php elseif(is_singular('attachment')): ?>
 
-            <h2 class="jhon-smith-header-breadcrumbs-title">
-                <?php echo esc_html('attachment page','jhon-smith'); ?>
+            <h2 class="rbp-two-header-breadcrumbs-title">
+                <?php echo esc_html('attachment page','rbp-two'); ?>
             </h2>
 
-            <nav class="jhon-smith-header-breadcrumbs-nav">
+            <nav class="rbp-two-header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="jhon-smith-header-breadcrumbs-icon">
+                    <li class="rbp-two-header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','jhon-smith'); ?></a>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rbp-two'); ?></a>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <?php echo esc_html(get_the_title(),'jhon-smith'); ?>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <?php echo esc_html(get_the_title(),'rbp-two'); ?>
                     </li>
                     
                 </ul>
@@ -155,27 +155,27 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
         <!-- Search Page -->
         <?php elseif(is_search()): ?>
 
-            <h2 class="jhon-smith-header-breadcrumbs-title">
-                <?php echo esc_html('search page','jhon-smith'); ?>
+            <h2 class="rbp-two-header-breadcrumbs-title">
+                <?php echo esc_html('search page','rbp-two'); ?>
             </h2>
 
-            <nav class="jhon-smith-header-breadcrumbs-nav">
+            <nav class="rbp-two-header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="jhon-smith-header-breadcrumbs-icon">
+                    <li class="rbp-two-header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','jhon-smith'); ?></a>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rbp-two'); ?></a>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
+                    <li class="rbp-two-header-breadcrumbs-text">
                         <?php
                         printf(
                             '%1$s<strong>%2$s</strong>',
@@ -183,7 +183,7 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
                             %1$s: Normal Text.
                             %2$s: Color Text.
                             */
-                            esc_html__('Search Keyword: ', 'jhon-smith'),
+                            esc_html__('Search Keyword: ', 'rbp-two'),
                             get_search_query()
                         );
                         ?>
@@ -196,20 +196,20 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
         <!-- 404 Error Page -->
         <?php elseif(is_404()): ?>
 
-            <h2 class="jhon-smith-header-breadcrumbs-title">
-                <?php echo esc_html('404 page','jhon-smith'); ?>
+            <h2 class="rbp-two-header-breadcrumbs-title">
+                <?php echo esc_html('404 page','rbp-two'); ?>
             </h2>
 
-            <nav class="jhon-smith-header-breadcrumbs-nav">
+            <nav class="rbp-two-header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="jhon-smith-header-breadcrumbs-icon">
+                    <li class="rbp-two-header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','jhon-smith'); ?></a>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rbp-two'); ?></a>
                     </li>
                     
                 </ul>
@@ -219,28 +219,28 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
         <!-- Author Page -->
         <?php elseif(is_author()): ?>
 
-            <h2 class="jhon-smith-header-breadcrumbs-title">
-                <?php echo esc_html('Author page','jhon-smith'); ?>
+            <h2 class="rbp-two-header-breadcrumbs-title">
+                <?php echo esc_html('Author page','rbp-two'); ?>
             </h2>
 
-            <nav class="jhon-smith-header-breadcrumbs-nav">
+            <nav class="rbp-two-header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="jhon-smith-header-breadcrumbs-icon">
+                    <li class="rbp-two-header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','jhon-smith'); ?></a>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rbp-two'); ?></a>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <?php echo esc_html(get_the_author(),'jhon-smith'); ?>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <?php echo esc_html(get_the_author(),'rbp-two'); ?>
                     </li>
                     
                 </ul>
@@ -250,28 +250,28 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
         <!-- Year Archive -->
         <?php elseif(is_year()): ?>
 
-        <h2 class="jhon-smith-header-breadcrumbs-title">
-            <?php echo esc_html('Year Archive','jhon-smith'); ?>
+        <h2 class="rbp-two-header-breadcrumbs-title">
+            <?php echo esc_html('Year Archive','rbp-two'); ?>
         </h2>
 
-        <nav class="jhon-smith-header-breadcrumbs-nav">
+        <nav class="rbp-two-header-breadcrumbs-nav">
 
             <ul>
 
-                <li class="jhon-smith-header-breadcrumbs-icon">
+                <li class="rbp-two-header-breadcrumbs-icon">
                     <i class="fa-solid fa-house"></i>
                 </li>
 
-                <li class="jhon-smith-header-breadcrumbs-text">
-                    <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','jhon-smith'); ?></a>
+                <li class="rbp-two-header-breadcrumbs-text">
+                    <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rbp-two'); ?></a>
                 </li>
 
-                <li class="jhon-smith-header-breadcrumbs-separator">
+                <li class="rbp-two-header-breadcrumbs-separator">
                     <i class="fa-solid fa-right-long"></i>
                 </li>
 
-                <li class="jhon-smith-header-breadcrumbs-text">
-                    <?php echo esc_html(get_the_date("Y"),'jhon-smith'); ?>
+                <li class="rbp-two-header-breadcrumbs-text">
+                    <?php echo esc_html(get_the_date("Y"),'rbp-two'); ?>
                 </li>
                 
             </ul>
@@ -286,38 +286,38 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
         $archive_day   = get_the_time('d');
         ?>
 
-            <h2 class="jhon-smith-header-breadcrumbs-title">
-                <?php echo esc_html('Month Archive','jhon-smith'); ?>
+            <h2 class="rbp-two-header-breadcrumbs-title">
+                <?php echo esc_html('Month Archive','rbp-two'); ?>
             </h2>
 
-            <nav class="jhon-smith-header-breadcrumbs-nav">
+            <nav class="rbp-two-header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="jhon-smith-header-breadcrumbs-icon">
+                    <li class="rbp-two-header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','jhon-smith'); ?></a>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rbp-two'); ?></a>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
+                    <li class="rbp-two-header-breadcrumbs-text">
                         <a href="<?php echo esc_url(get_year_link($archive_year)); ?>">
-                            <?php echo esc_html(get_the_date("Y"),'jhon-smith'); ?>
+                            <?php echo esc_html(get_the_date("Y"),'rbp-two'); ?>
                         </a>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <?php echo esc_html(get_the_date("F, Y"),'jhon-smith'); ?>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <?php echo esc_html(get_the_date("F, Y"),'rbp-two'); ?>
                     </li>
                     
                 </ul>
@@ -332,48 +332,48 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
         $archive_day   = get_the_time('d');
         ?>
 
-            <h2 class="jhon-smith-header-breadcrumbs-title">
-                <?php echo esc_html('Day Archive','jhon-smith'); ?>
+            <h2 class="rbp-two-header-breadcrumbs-title">
+                <?php echo esc_html('Day Archive','rbp-two'); ?>
             </h2>
 
-            <nav class="jhon-smith-header-breadcrumbs-nav">
+            <nav class="rbp-two-header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="jhon-smith-header-breadcrumbs-icon">
+                    <li class="rbp-two-header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','jhon-smith'); ?></a>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rbp-two'); ?></a>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
+                    <li class="rbp-two-header-breadcrumbs-text">
                         <a href="<?php echo esc_url(get_year_link($archive_year)); ?>">
-                            <?php echo esc_html(get_the_date("Y"),'jhon-smith'); ?>
+                            <?php echo esc_html(get_the_date("Y"),'rbp-two'); ?>
                         </a>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
+                    <li class="rbp-two-header-breadcrumbs-text">
                         <a href="<?php echo esc_url(get_month_link($archive_year, $archive_month)); ?>">
-                            <?php echo esc_html(get_the_date("F"),'jhon-smith'); ?>
+                            <?php echo esc_html(get_the_date("F"),'rbp-two'); ?>
                         </a>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <?php echo esc_html(get_the_date("l, jS F, Y"),'jhon-smith'); ?>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <?php echo esc_html(get_the_date("l, jS F, Y"),'rbp-two'); ?>
                     </li>
                     
                 </ul>
@@ -383,37 +383,37 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
         <!-- Tag Page -->
         <?php elseif(is_tag()): ?>
 
-            <h2 class="jhon-smith-header-breadcrumbs-title">
-                <?php echo esc_html('Tag page','jhon-smith'); ?>
+            <h2 class="rbp-two-header-breadcrumbs-title">
+                <?php echo esc_html('Tag page','rbp-two'); ?>
             </h2>
 
-            <p class="jhon-smith-header-breadcrumbs-description">
+            <p class="rbp-two-header-breadcrumbs-description">
                 <?php
                 printf(
                     /* translators: %s: Archive Description. */
-                    esc_html__('%s', 'jhon-smith'),
+                    esc_html__('%s', 'rbp-two'),
                     get_the_archive_description()
                 );
                 ?>
             </p>
 
-            <nav class="jhon-smith-header-breadcrumbs-nav">
+            <nav class="rbp-two-header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="jhon-smith-header-breadcrumbs-icon">
+                    <li class="rbp-two-header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','jhon-smith'); ?></a>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rbp-two'); ?></a>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
+                    <li class="rbp-two-header-breadcrumbs-text">
                         <?php single_tag_title(); ?>
                     </li>
                     
@@ -440,30 +440,30 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
             $parents_id = array_reverse($parents_id);
         ?>
 
-            <h2 class="jhon-smith-header-breadcrumbs-title">
-                <?php echo esc_html('Category page','jhon-smith'); ?>
+            <h2 class="rbp-two-header-breadcrumbs-title">
+                <?php echo esc_html('Category page','rbp-two'); ?>
             </h2>
 
-            <p class="jhon-smith-header-breadcrumbs-description">
+            <p class="rbp-two-header-breadcrumbs-description">
                 <?php
                 printf(
                     /* translators: %s: Archive Description. */
-                    esc_html__('%s', 'jhon-smith'),
+                    esc_html__('%s', 'rbp-two'),
                     get_the_archive_description()
                 );
                 ?>
             </p>
 
-            <nav class="jhon-smith-header-breadcrumbs-nav">
+            <nav class="rbp-two-header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="jhon-smith-header-breadcrumbs-icon">
+                    <li class="rbp-two-header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','jhon-smith'); ?></a>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rbp-two'); ?></a>
                     </li>
 
                     <?php
@@ -477,24 +477,24 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
                     $parent_term_name = $parent_term_name->name;
                     ?>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
+                    <li class="rbp-two-header-breadcrumbs-text">
                         <a href="<?php echo esc_url(wp_kses_post($parent_term_link)); ?>">
-                        <?php echo esc_html($parent_term_name,'jhon-smith'); ?>
+                        <?php echo esc_html($parent_term_name,'rbp-two'); ?>
                         </a>
                     </li>
 
                     <?php endforeach; ?>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
-                        <?php echo esc_html($term_name,'jhon-smith'); ?>
+                    <li class="rbp-two-header-breadcrumbs-text">
+                        <?php echo esc_html($term_name,'rbp-two'); ?>
                     </li>
                     
                 </ul>
@@ -519,31 +519,31 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
             $parents_id = array_reverse($parents_id);
         ?>
 
-            <h2 class="jhon-smith-header-breadcrumbs-title">
-                <?php echo esc_html('Custom Taxonomy page','jhon-smith'); ?>
+            <h2 class="rbp-two-header-breadcrumbs-title">
+                <?php echo esc_html('Custom Taxonomy page','rbp-two'); ?>
             </h2>
 
-            <p class="jhon-smith-header-breadcrumbs-description">
+            <p class="rbp-two-header-breadcrumbs-description">
                 <?php
                 printf(
                     /* translators: %s: Archive Description. */
-                    esc_html__('%s', 'jhon-smith'),
+                    esc_html__('%s', 'rbp-two'),
                     get_the_archive_description()
                 );
                 ?>
             </p>
 
-            <nav class="jhon-smith-header-breadcrumbs-nav">
+            <nav class="rbp-two-header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="jhon-smith-header-breadcrumbs-icon">
+                    <li class="rbp-two-header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
+                    <li class="rbp-two-header-breadcrumbs-text">
                         <a href="<?php echo esc_url(home_url('/')); ?>">
-                        <?php echo esc_html('Home','jhon-smith'); ?>
+                        <?php echo esc_html('Home','rbp-two'); ?>
                     </a>
                     </li>
 
@@ -558,17 +558,17 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
                         $parent_term_name = $parent_term_name->name;
                     ?>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
+                    <li class="rbp-two-header-breadcrumbs-text">
                         <a href="<?php echo esc_url(wp_kses_post($parent_term_link)); ?>">
                         <?php
                         printf(
                             /* translators: Parent Term Name. */
                             '%s',
-                            esc_html($parent_term_name, 'jhon-smith')
+                            esc_html($parent_term_name, 'rbp-two')
                         );
                         ?>
                         </a>
@@ -576,16 +576,16 @@ if (!function_exists('jhon_smith_breadcrumbs')) {
 
                     <?php endforeach; ?>
 
-                    <li class="jhon-smith-header-breadcrumbs-separator">
+                    <li class="rbp-two-header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="jhon-smith-header-breadcrumbs-text">
+                    <li class="rbp-two-header-breadcrumbs-text">
                         <?php
                         printf(
                             /* translators: Term Name. */
                             '%s',
-                            esc_html($term_name, 'jhon-smith')
+                            esc_html($term_name, 'rbp-two')
                         );
                         ?>
                     </li>

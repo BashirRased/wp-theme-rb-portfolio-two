@@ -7,9 +7,9 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package RB Free Theme
- * @subpackage Jhon Smith
- * @version Jhon Smith 1.0.1
- * @since Jhon Smith 1.0.1
+ * @subpackage RB Portfolio Two
+ * @version RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.1
  */
 
 ?>
@@ -45,15 +45,15 @@ wp_body_open();
 ===== Preloader Area End Here =====
 ================================-->
 
-<div id="jhon-smith-page" class="jhon-smith-page-content">
-	<a class="skip-link screen-reader-text" href="#jhon-smith-page-content">
-        <?php esc_html_e('Skip to content', 'jhon-smith'); ?>
+<div id="rbp-two-page" class="rbp-two-page-content">
+	<a class="skip-link screen-reader-text" href="#rbp-two-page-content">
+        <?php esc_html_e('Skip to content', 'rbp-two'); ?>
     </a>
     
 <!--======================================================
 ===== Header Menu with Site Branding Area Strat Here =====
 =======================================================-->
-<div class="jhon-smith-header-menu-area">
+<div class="rbp-two-header-menu-area">
     <div class="container">
         <div class="row">
             
@@ -65,8 +65,8 @@ wp_body_open();
                 ?>
                 
                 <!--===== Mobile Menu Strat Here =====-->
-                <div class="jhon-smith-header-mobile-menu-area">
-                    <button class="jhon-smith-header-mobile-menu-btn">
+                <div class="rbp-two-header-mobile-menu-area">
+                    <button class="rbp-two-header-mobile-menu-btn">
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
@@ -80,7 +80,7 @@ wp_body_open();
     
         </div><!-- row end -->
     </div><!-- container end -->
-</div><!-- .jhon-smith-header-menu-area -->
+</div><!-- .rbp-two-header-menu-area -->
 <!--==================================================== 
 ===== Header Menu with Site Branding Area End Here =====
 ======================================================-->

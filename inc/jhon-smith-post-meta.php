@@ -3,26 +3,26 @@
  * Custom template post meta for this theme
  *
  * @package RB Free Theme
- * @subpackage Jhon Smith
- * @version Jhon Smith 1.0.1
- * @since Jhon Smith 1.0.0
+ * @subpackage RB Portfolio Two
+ * @version RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.0
  */
 
 /* Post Author Meta */
-if (!function_exists('jhon_smith_posted_by')) {
+if (!function_exists('rbp_two_posted_by')) {
 	/**
 	 * Prints HTML with meta information about theme author.
 	 *
-	 * @since Jhon Smith 1.0.0
+	 * @since RB Portfolio Two 1.0.0
 	 *
 	 * @return void
 	 */
-	function jhon_smith_posted_by() {
+	function rbp_two_posted_by() {
 		if (! get_the_author_meta('description') && post_type_supports(get_post_type(), 'author')) {
-			echo '<span class="jhon-smith-posted-by"><i class="fas fa-user"></i>';
+			echo '<span class="rbp-two-posted-by"><i class="fas fa-user"></i>';
 			printf(
 				/* translators: %s: Author name. */
-				esc_html__(' %s', 'jhon-smith'),
+				esc_html__(' %s', 'rbp-two'),
 				'<a href="'.esc_url(get_author_posts_url( get_the_author_meta('ID'))).'" rel="author">'.esc_html(get_the_author()).'</a>'
 			);
 			echo '</span>';
@@ -31,15 +31,15 @@ if (!function_exists('jhon_smith_posted_by')) {
 }
 
 /* Post Date Meta */
-if (!function_exists('jhon_smith_posted_on')) {
+if (!function_exists('rbp_two_posted_on')) {
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
 	 *
-	 * @since Jhon Smith 1.0.0
+	 * @since RB Portfolio Two 1.0.0
 	 *
 	 * @return void
 	 */
-	function jhon_smith_posted_on() {
+	function rbp_two_posted_on() {
 		$archive_year  = get_the_time('Y');
 		$archive_month = get_the_time('m'); 
         $archive_day   = get_the_time('d');
@@ -58,7 +58,7 @@ if (!function_exists('jhon_smith_posted_on')) {
 			esc_attr(get_the_date(DATE_W3C)),
 			esc_html(get_the_date())
 		);
-		echo '<span class="jhon-smith-posted-on"><i class="fas fa-calendar-alt"></i>';
+		echo '<span class="rbp-two-posted-on"><i class="fas fa-calendar-alt"></i>';
 		printf(
 			'%s',
 			$time_string // phpcs:ignore WordPress.Security.EscapeOutput
@@ -68,15 +68,15 @@ if (!function_exists('jhon_smith_posted_on')) {
 }
 
 /* Post Categories Meta */
-if(!function_exists('jhon_smith_posted_category')){
-	function jhon_smith_posted_category(){
+if(!function_exists('rbp_two_posted_category')){
+	function rbp_two_posted_category(){
 		/* translators: Used between list items, there is a space after the comma. */
-		$categories_list = get_the_category_list(__(', ', 'jhon-smith') );
+		$categories_list = get_the_category_list(__(', ', 'rbp-two') );
 		if ($categories_list) {
-			echo '<span class="jhon-smith-posted-categories"><i class="fas fa-folder-open"></i>';
+			echo '<span class="rbp-two-posted-categories"><i class="fas fa-folder-open"></i>';
 			printf(
 				/* translators: %s: List of categories. */
-				esc_html__('%s', 'jhon-smith'),
+				esc_html__('%s', 'rbp-two'),
 				$categories_list // phpcs:ignore WordPress.Security.EscapeOutput
 			);
 			echo '</span>';
@@ -85,31 +85,31 @@ if(!function_exists('jhon_smith_posted_category')){
 }
 
 /* Post Comments Meta */
-if (!function_exists('jhon_smith_posted_comments')) {
-	function jhon_smith_posted_comments() {
-		echo '<span class="jhon-smith-posted-comments"><i class="fas fa-comments"></i>';
+if (!function_exists('rbp_two_posted_comments')) {
+	function rbp_two_posted_comments() {
+		echo '<span class="rbp-two-posted-comments"><i class="fas fa-comments"></i>';
 		comments_popup_link(
-			__('No Comments','jhon-smith'),
-			__('1 Comment','jhon-smith'),
-			__('% Comments','jhon-smith'),
-			'jhon-smith-posted-comments-btn',
-			__('Comments Off','jhon-smith')
+			__('No Comments','rbp-two'),
+			__('1 Comment','rbp-two'),
+			__('% Comments','rbp-two'),
+			'rbp-two-posted-comments-btn',
+			__('Comments Off','rbp-two')
 		);
 		echo '</span>';
 	}
 }
 
 /* Post Edit Meta */
-if(!function_exists('jhon_smith_edit_post_link')) {
+if(!function_exists('rbp_two_edit_post_link')) {
     
-    function jhon_smith_edit_post_link() {
+    function rbp_two_edit_post_link() {
         // Edit post link.
         edit_post_link(
             // $text Parameter
-            __('Edit', 'jhon-smith'),
+            __('Edit', 'rbp-two'),
 
             // $before Parameter
-            '<span class="jhon-smith-posted-edit">
+            '<span class="rbp-two-posted-edit">
 			<i class="fas fa-edit"></i>',
 
             // $after Parameter
@@ -119,25 +119,25 @@ if(!function_exists('jhon_smith_edit_post_link')) {
             null,
 
             // $class Parameter (For Edit Text)
-            'jhon-smith-post-edit-link'
+            'rbp-two-post-edit-link'
         );
     }
 
 }
 
 /* Post Tag Meta */
-if(!function_exists('jhon_smith_tag_list')) {
+if(!function_exists('rbp_two_tag_list')) {
     
-    function jhon_smith_tag_list (){
+    function rbp_two_tag_list (){
         
         if (has_tag()) {
-			echo '<footer class="jhon-smith-content-single-entry-footer">';
+			echo '<footer class="rbp-two-content-single-entry-footer">';
             echo get_the_tag_list(
                 // $before Parameter
-                '<span class="jhon-smith-posted-tags"><i class="fas fa-tags"></i> ',
+                '<span class="rbp-two-posted-tags"><i class="fas fa-tags"></i> ',
     
                 // $sep Parameter
-                __(', ', 'jhon-smith'),
+                __(', ', 'rbp-two'),
     
                 // $after Parameter
                 '</span>',

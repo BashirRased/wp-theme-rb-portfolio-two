@@ -3,19 +3,19 @@
  * Custom post thumbnail tags for this theme
  *
  * @package RB Free Theme
- * @subpackage Jhon Smith
- * @version Jhon Smith 1.0.1
- * @since Jhon Smith 1.0.0
+ * @subpackage RB Portfolio Two
+ * @version RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.0
  */
 
  /**
  * Determines if post thumbnail can be displayed.
  *
- * @since Jhon Smith 1.0.0
+ * @since RB Portfolio Two 1.0.0
  *
  * @return bool
  */
-function jhon_smith_can_show_post_thumbnail() {
+function rbp_two_can_show_post_thumbnail() {
 	/**
 	 * Filters whether post thumbnail can be displayed.
 	 *
@@ -25,30 +25,30 @@ function jhon_smith_can_show_post_thumbnail() {
 	 */
 
 	return apply_filters(
-		'jhon_smith_can_show_post_thumbnail', ! post_password_required() && ! is_attachment() && has_post_thumbnail()
+		'rbp_two_can_show_post_thumbnail', ! post_password_required() && ! is_attachment() && has_post_thumbnail()
 	);
 }
 
-if (!function_exists('jhon_smith_post_thumbnail')) {
+if (!function_exists('rbp_two_post_thumbnail')) {
 	/**
 	 * Displays an optional post thumbnail.
 	 *
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 *
-	 * @since Jhon Smith 1.0.0
+	 * @since RB Portfolio Two 1.0.0
 	 *
 	 * @return void
 	 */
-	function jhon_smith_post_thumbnail() {
-		if (!jhon_smith_can_show_post_thumbnail()) {
+	function rbp_two_post_thumbnail() {
+		if (!rbp_two_can_show_post_thumbnail()) {
 			return;
 		}
 		?>
 
 		<?php if (is_singular()) : ?>
 
-			<figure class="jhon-smith-post-thumbnail">
+			<figure class="rbp-two-post-thumbnail">
 				<?php
 				// Lazy-loading attributes should be skipped for thumbnails since they are immediately in the viewport.
 				the_post_thumbnail('post-thumbnail', array( 'loading' => false));
@@ -64,9 +64,9 @@ if (!function_exists('jhon_smith_post_thumbnail')) {
 
 		<?php elseif(! get_post_format() && !is_singular() ) : ?>
 
-			<figure class="jhon-smith-post-thumbnail">
+			<figure class="rbp-two-post-thumbnail">
 
-				<a class="jhon-smith-post-thumbnail-inner alignwide" href="<?php the_permalink(); ?>">
+				<a class="rbp-two-post-thumbnail-inner alignwide" href="<?php the_permalink(); ?>">
 					<?php the_post_thumbnail('post-thumbnail'); ?>
 				</a>
 				

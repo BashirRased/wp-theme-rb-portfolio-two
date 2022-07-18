@@ -5,15 +5,15 @@
  * Template Name: Home Page Template
  *
  * @package RB Free Theme
- * @subpackage Jhon Smith
- * @version Jhon Smith 1.0.1
- * @since Jhon Smith 1.0.1
+ * @subpackage RB Portfolio Two
+ * @version RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.1
  */
 
 get_header();
 ?>
 
-<div id="jhon-smith-page-content" class="jhon-smith-main-page">
+<div id="rbp-two-page-content" class="rbp-two-main-page">
 
 <?php
 get_template_part('homepage-sections/header-section');
@@ -26,7 +26,7 @@ get_template_part('homepage-sections/my-testimonial-section');
 get_template_part('homepage-sections/contact-me-section');
 ?>
 
-</div><!-- #jhon-smith-page-content -->
+</div><!-- #rbp-two-page-content -->
 
 <?php
 get_footer();

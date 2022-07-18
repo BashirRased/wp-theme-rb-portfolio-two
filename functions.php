@@ -5,59 +5,59 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
  * @package RB Free Theme
- * @subpackage Jhon Smith
- * @version Jhon Smith 1.0.1
- * @since Jhon Smith 1.0.0
+ * @subpackage RB Portfolio Two
+ * @version RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.0
  */
 
 // Theme Setup
-if(file_exists(dirname(__FILE__).'/inc/jhon-smith-theme-setup.php')) {
-	require_once(dirname(__FILE__).'/inc/jhon-smith-theme-setup.php');
+if(file_exists(dirname(__FILE__).'/inc/rbp-two-theme-setup.php')) {
+	require_once(dirname(__FILE__).'/inc/rbp-two-theme-setup.php');
 }
 
 // Theme Menus
-if(file_exists(dirname(__FILE__).'/inc/jhon-smith-menu-register.php')) {
-	require_once(dirname(__FILE__).'/inc/jhon-smith-menu-register.php');
+if(file_exists(dirname(__FILE__).'/inc/rbp-two-menu-register.php')) {
+	require_once(dirname(__FILE__).'/inc/rbp-two-menu-register.php');
 }
 
 // Theme Assets
-if(file_exists(dirname(__FILE__).'/inc/jhon-smith-assets.php')) {
-	require_once(dirname(__FILE__).'/inc/jhon-smith-assets.php');
+if(file_exists(dirname(__FILE__).'/inc/rbp-two-assets.php')) {
+	require_once(dirname(__FILE__).'/inc/rbp-two-assets.php');
 }
 
 // Theme Widgets
-if(file_exists(dirname(__FILE__).'/inc/jhon-smith-widget-register.php')) {
-	require_once(dirname(__FILE__).'/inc/jhon-smith-widget-register.php');
+if(file_exists(dirname(__FILE__).'/inc/rbp-two-widget-register.php')) {
+	require_once(dirname(__FILE__).'/inc/rbp-two-widget-register.php');
 }
 
 // Theme Thumbnail
-if(file_exists(dirname(__FILE__).'/inc/jhon-smith-thumbnail.php')) {
-	require_once(dirname(__FILE__).'/inc/jhon-smith-thumbnail.php');
+if(file_exists(dirname(__FILE__).'/inc/rbp-two-thumbnail.php')) {
+	require_once(dirname(__FILE__).'/inc/rbp-two-thumbnail.php');
 }
 
 // Theme Post Meta
-if(file_exists(dirname(__FILE__).'/inc/jhon-smith-post-meta.php')) {
-	require_once(dirname(__FILE__).'/inc/jhon-smith-post-meta.php');
+if(file_exists(dirname(__FILE__).'/inc/rbp-two-post-meta.php')) {
+	require_once(dirname(__FILE__).'/inc/rbp-two-post-meta.php');
 }
 
 // Theme Excerpt
-if(file_exists(dirname(__FILE__).'/inc/jhon-smith-excerpt.php')) {
-	require_once(dirname(__FILE__).'/inc/jhon-smith-excerpt.php');
+if(file_exists(dirname(__FILE__).'/inc/rbp-two-excerpt.php')) {
+	require_once(dirname(__FILE__).'/inc/rbp-two-excerpt.php');
 }
 
 // Theme Breadcrumbs
-if(file_exists(dirname(__FILE__).'/inc/jhon-smith-breadcrumbs.php')) {
-	require_once(dirname(__FILE__).'/inc/jhon-smith-breadcrumbs.php');
+if(file_exists(dirname(__FILE__).'/inc/rbp-two-breadcrumbs.php')) {
+	require_once(dirname(__FILE__).'/inc/rbp-two-breadcrumbs.php');
 }
 
 // Theme Post Format Meta
-if(file_exists(dirname(__FILE__).'/inc/jhon-smith-post-format.php')) {
-	require_once(dirname(__FILE__).'/inc/jhon-smith-post-format.php');
+if(file_exists(dirname(__FILE__).'/inc/rbp-two-post-format.php')) {
+	require_once(dirname(__FILE__).'/inc/rbp-two-post-format.php');
 }
 
 // Skip Focus Link
-if(file_exists(dirname(__FILE__).'/inc/jhon-smith-skip-focus-links.php')) {
-	require_once(dirname(__FILE__).'/inc/jhon-smith-skip-focus-links.php');
+if(file_exists(dirname(__FILE__).'/inc/rbp-two-skip-focus-links.php')) {
+	require_once(dirname(__FILE__).'/inc/rbp-two-skip-focus-links.php');
 }
 
 // TGM Plugin Activation

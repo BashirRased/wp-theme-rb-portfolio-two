@@ -1,7 +1,7 @@
 <!--=================================== 
 ===== My Services Area Strat Here =====
 ====================================-->
-<section class="jhon-smith-services jhon-smith-scroll-menu" id="jhon-smith-services">
+<section class="rbp-two-services rbp-two-scroll-menu" id="rbp-two-services">
 
     <!--================================ 
     ===== Section Title Strat Here =====
@@ -9,35 +9,35 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="jhon-smith-section-title">
+                <div class="rbp-two-section-title">
                     <h2>
-                        <span class="jhon-smith-theme-color">
+                        <span class="rbp-two-theme-color">
                         <?php
-                        $jhon_smith_my_services_title_theme_color = get_post_meta(get_the_ID(), 'jhon_smith_my_services_title_theme_color', true);
-                        if( isset ($jhon_smith_my_services_title_theme_color)  && !empty ($jhon_smith_my_services_title_theme_color) ){
+                        $rbp_two_my_services_title_theme_color = get_post_meta(get_the_ID(), 'rbp_two_my_services_title_theme_color', true);
+                        if( isset ($rbp_two_my_services_title_theme_color)  && !empty ($rbp_two_my_services_title_theme_color) ){
                             printf(
                                 /* translators: %s: My Services Section Title Theme Color */
-                                __('%s','jhon-smith'),
-                                $jhon_smith_my_services_title_theme_color
+                                __('%s','rbp-two'),
+                                $rbp_two_my_services_title_theme_color
                                 );
                         }
                         else {
-                            esc_html_e('My','jhon-smith');
+                            esc_html_e('My','rbp-two');
                         }
                         ?>
                         </span>
 
                         <?php
-                        $jhon_smith_my_services_title_black = get_post_meta(get_the_ID(), 'jhon_smith_my_services_title_black', true);
-                        if( isset ($jhon_smith_my_services_title_black) && !empty ($jhon_smith_my_services_title_black) ){
+                        $rbp_two_my_services_title_black = get_post_meta(get_the_ID(), 'rbp_two_my_services_title_black', true);
+                        if( isset ($rbp_two_my_services_title_black) && !empty ($rbp_two_my_services_title_black) ){
                             printf(
                                 /* translators: %s: My Services Section Title Theme Color */
-                                __('%s','jhon-smith'),
-                                $jhon_smith_my_services_title_black
+                                __('%s','rbp-two'),
+                                $rbp_two_my_services_title_black
                                 );
                         }
                         else {
-                            esc_html_e('Services','jhon-smith');
+                            esc_html_e('Services','rbp-two');
                         }
                         ?>
 
@@ -57,56 +57,56 @@
         <div class="row">
             
             <?php
-            $jhon_smith_my_service_items = get_post_meta(get_the_ID(), 'jhon_smith_my_service_items', true);
-            if( isset ($jhon_smith_my_service_items) && !empty ($jhon_smith_my_service_items) ): 
+            $rbp_two_my_service_items = get_post_meta(get_the_ID(), 'rbp_two_my_service_items', true);
+            if( isset ($rbp_two_my_service_items) && !empty ($rbp_two_my_service_items) ): 
                 
-            foreach($jhon_smith_my_service_items as $jhon_smith_my_service_items_single):
+            foreach($rbp_two_my_service_items as $rbp_two_my_service_items_single):
             ?>
             <!--===== 01. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="jhon-smith-section-content">
-                    <div class="jhon-smith-single-service">
-                        <div class="jhon-smith-services-icon">
+                <div class="rbp-two-section-content">
+                    <div class="rbp-two-single-service">
+                        <div class="rbp-two-services-icon">
                             <i class="<?php
-                                $jhon_smith_my_service_item_icon = $jhon_smith_my_service_items_single['jhon_smith_my_service_item_icon'];
-                                if( isset ($jhon_smith_my_service_item_icon)  && !empty ($jhon_smith_my_service_item_icon) ){
-                                    echo esc_attr($jhon_smith_my_service_item_icon);
+                                $rbp_two_my_service_item_icon = $rbp_two_my_service_items_single['rbp_two_my_service_item_icon'];
+                                if( isset ($rbp_two_my_service_item_icon)  && !empty ($rbp_two_my_service_item_icon) ){
+                                    echo esc_attr($rbp_two_my_service_item_icon);
                                 }
                                 else {
                                     echo esc_attr('fas fa-palette');
                                 }
                                 ?>"></i>
                         </div>
-                        <div class="jhon-smith-services-title">
+                        <div class="rbp-two-services-title">
                             <h4>
                             <?php
-                            $jhon_smith_my_service_item_title = $jhon_smith_my_service_items_single['jhon_smith_my_service_item_title'];
-                            if( isset ($jhon_smith_my_service_item_title)  && !empty ($jhon_smith_my_service_item_title) ){
+                            $rbp_two_my_service_item_title = $rbp_two_my_service_items_single['rbp_two_my_service_item_title'];
+                            if( isset ($rbp_two_my_service_item_title)  && !empty ($rbp_two_my_service_item_title) ){
                                 printf(
                                     /* translators: %s: My Services Item Title */
-                                    __('%s','jhon-smith'),
-                                    $jhon_smith_my_service_item_title
+                                    __('%s','rbp-two'),
+                                    $rbp_two_my_service_item_title
                                 );
                             }
                             else {
-                                esc_html_e('Graphic Design','jhon-smith');
+                                esc_html_e('Graphic Design','rbp-two');
                             }
                             ?>
                             </h4>
                         </div>
-                        <div class="jhon-smith-services-description">
+                        <div class="rbp-two-services-description">
                             <p>
                             <?php
-                            $jhon_smith_my_service_item_description = $jhon_smith_my_service_items_single['jhon_smith_my_service_item_description'];
-                            if( isset ($jhon_smith_my_service_item_description)  && !empty ($jhon_smith_my_service_item_description) ){
+                            $rbp_two_my_service_item_description = $rbp_two_my_service_items_single['rbp_two_my_service_item_description'];
+                            if( isset ($rbp_two_my_service_item_description)  && !empty ($rbp_two_my_service_item_description) ){
                                 printf(
                                     /* translators: %s: My Services Item Description */
-                                    __('%s','jhon-smith'),
-                                    $jhon_smith_my_service_item_description
+                                    __('%s','rbp-two'),
+                                    $rbp_two_my_service_item_description
                                 );
                             }
                             else {
-                                esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.','jhon-smith');
+                                esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.','rbp-two');
                             }
                             ?>
                             </p>
@@ -119,16 +119,16 @@
             <?php endforeach; else: ?>
             <!--===== 01. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="jhon-smith-section-content">
-                    <div class="jhon-smith-single-service">
-                        <div class="jhon-smith-services-icon">
+                <div class="rbp-two-section-content">
+                    <div class="rbp-two-single-service">
+                        <div class="rbp-two-services-icon">
                             <i class="fas fa-palette"></i>
                         </div>
-                        <div class="jhon-smith-services-title">
-                            <h4><?php esc_html_e('Graphic Design', 'jhon-smith'); ?></h4>
+                        <div class="rbp-two-services-title">
+                            <h4><?php esc_html_e('Graphic Design', 'rbp-two'); ?></h4>
                         </div>
-                        <div class="jhon-smith-services-description">
-                            <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'jhon-smith'); ?></p>
+                        <div class="rbp-two-services-description">
+                            <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'rbp-two'); ?></p>
                         </div>
                     </div>
                 </div>
@@ -137,16 +137,16 @@
             
             <!--===== 02. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="jhon-smith-section-content">
-                    <div class="jhon-smith-single-service">
-                        <div class="jhon-smith-services-icon">
+                <div class="rbp-two-section-content">
+                    <div class="rbp-two-single-service">
+                        <div class="rbp-two-services-icon">
                             <i class="fas fa-laptop-code"></i>
                         </div>
-                        <div class="jhon-smith-services-title">
-                            <h4><?php esc_html_e('Web Design', 'jhon-smith'); ?></h4>
+                        <div class="rbp-two-services-title">
+                            <h4><?php esc_html_e('Web Design', 'rbp-two'); ?></h4>
                         </div>
-                        <div class="jhon-smith-services-description">
-                            <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'jhon-smith'); ?></p>
+                        <div class="rbp-two-services-description">
+                            <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'rbp-two'); ?></p>
                         </div>
                     </div>
                 </div>
@@ -155,16 +155,16 @@
             
             <!--===== 03. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="jhon-smith-section-content">
-                    <div class="jhon-smith-single-service">
-                        <div class="jhon-smith-services-icon">
+                <div class="rbp-two-section-content">
+                    <div class="rbp-two-single-service">
+                        <div class="rbp-two-services-icon">
                             <i class="fab fa-wordpress"></i>
                         </div>
-                        <div class="jhon-smith-services-title">
-                            <h4><?php esc_html_e('WordPress', 'jhon-smith'); ?></h4>
+                        <div class="rbp-two-services-title">
+                            <h4><?php esc_html_e('WordPress', 'rbp-two'); ?></h4>
                         </div>
-                        <div class="jhon-smith-services-description">
-                            <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'jhon-smith'); ?></p>
+                        <div class="rbp-two-services-description">
+                            <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'rbp-two'); ?></p>
                         </div>
                     </div>
                 </div>
@@ -173,16 +173,16 @@
             
             <!--===== 04. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="jhon-smith-section-content">
-                    <div class="jhon-smith-single-service">
-                        <div class="jhon-smith-services-icon">
+                <div class="rbp-two-section-content">
+                    <div class="rbp-two-single-service">
+                        <div class="rbp-two-services-icon">
                             <i class="fab fa-laravel"></i>
                         </div>
-                        <div class="jhon-smith-services-title">
-                            <h4><?php esc_html_e('Laravel', 'jhon-smith'); ?></h4>
+                        <div class="rbp-two-services-title">
+                            <h4><?php esc_html_e('Laravel', 'rbp-two'); ?></h4>
                         </div>
-                        <div class="jhon-smith-services-description">
-                            <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'jhon-smith'); ?></p>
+                        <div class="rbp-two-services-description">
+                            <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'rbp-two'); ?></p>
                         </div>
                     </div>
                 </div>
@@ -191,16 +191,16 @@
             
             <!--===== 05. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="jhon-smith-section-content">
-                    <div class="jhon-smith-single-service">
-                        <div class="jhon-smith-services-icon">
+                <div class="rbp-two-section-content">
+                    <div class="rbp-two-single-service">
+                        <div class="rbp-two-services-icon">
                             <i class="fab fa-google-play"></i>
                         </div>
-                        <div class="jhon-smith-services-title">
-                            <h4><?php esc_html_e('Apps Development', 'jhon-smith'); ?></h4>
+                        <div class="rbp-two-services-title">
+                            <h4><?php esc_html_e('Apps Development', 'rbp-two'); ?></h4>
                         </div>
-                        <div class="jhon-smith-services-description">
-                            <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'jhon-smith'); ?></p>
+                        <div class="rbp-two-services-description">
+                            <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'rbp-two'); ?></p>
                         </div>
                     </div>
                 </div>
@@ -209,16 +209,16 @@
             
             <!--===== 06. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="jhon-smith-section-content">
-                    <div class="jhon-smith-single-service">
-                        <div class="jhon-smith-services-icon">
+                <div class="rbp-two-section-content">
+                    <div class="rbp-two-single-service">
+                        <div class="rbp-two-services-icon">
                             <i class="fas fa-cogs"></i>
                         </div>
-                        <div class="jhon-smith-services-title">
-                            <h4><?php esc_html_e('24/7 Support', 'jhon-smith'); ?></h4>
+                        <div class="rbp-two-services-title">
+                            <h4><?php esc_html_e('24/7 Support', 'rbp-two'); ?></h4>
                         </div>
-                        <div class="jhon-smith-services-description">
-                            <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'jhon-smith'); ?></p>
+                        <div class="rbp-two-services-description">
+                            <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'rbp-two'); ?></p>
                         </div>
                     </div>
                 </div>

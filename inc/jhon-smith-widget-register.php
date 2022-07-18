@@ -5,25 +5,25 @@
  * The template loading under functions.php.
  *
  * @package RB Free Theme
- * @subpackage Jhon Smith
- * @version Jhon Smith 1.0.1
- * @since Jhon Smith 1.0.0
+ * @subpackage RB Portfolio Two
+ * @version RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.0
  */
 
 // widget register
-function jhon_smith_widget_area(){
+function rbp_two_widget_area(){
 	register_sidebar(array(
-		'name' 			=> __('Add Widget Area Name', 'jhon-smith'),
-		'description' 	=> __('Add Widget Area Description', 'jhon-smith'),
-		'id' 			=> 'jhon-smith-sidebar-right',
-        'before_sidebar'=> '<aside id="jhon-smith-secondary" class="jhon-smith-widget-area col-lg-4">',
+		'name' 			=> __('Add Widget Area Name', 'rbp-two'),
+		'description' 	=> __('Add Widget Area Description', 'rbp-two'),
+		'id' 			=> 'rbp-two-sidebar-right',
+        'before_sidebar'=> '<aside id="rbp-two-secondary" class="rbp-two-widget-area col-lg-4">',
 		'after_sidebar' => '</aside>',
-		'before_widget' => '<div id="jhon-smith-widget-%1$s" class="jhon-smith-widget-item">',
+		'before_widget' => '<div id="rbp-two-widget-%1$s" class="rbp-two-widget-item">',
 		'after_widget' 	=> '</div>',
-		'before_title' 	=> '<h2 class="jhon-smith-widget-item-title">',
+		'before_title' 	=> '<h2 class="rbp-two-widget-item-title">',
 		'after_title' 	=> '</h2>',
         'class'  => ''
 	)); 
     
 }
-add_action('widgets_init', 'jhon_smith_widget_area');
+add_action('widgets_init', 'rbp_two_widget_area');

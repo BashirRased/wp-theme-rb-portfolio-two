@@ -5,45 +5,45 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
  * @package RB Free Theme
- * @subpackage Jhon Smith
- * @version Jhon Smith 1.0.1
- * @since Jhon Smith 1.0.1
+ * @subpackage RB Portfolio Two
+ * @version RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.1
  */
 
 get_header();
 
 ?>
 
-<div id="jhon-smith-page-content" class="jhon-smith-search-page">
+<div id="rbp-two-page-content" class="rbp-two-search-page">
     <div class="container">
         <div class="row">
 
 			<?php
-				if(is_active_sidebar('jhon-smith-sidebar-right')){
-					$jhon_smith_page_content_class = 'col-lg-8';
+				if(is_active_sidebar('rbp-two-sidebar-right')){
+					$rbp_two_page_content_class = 'col-lg-8';
 				}
 				else {
-					$jhon_smith_page_content_class = 'col-lg-12';
+					$rbp_two_page_content_class = 'col-lg-12';
 				}
 			?>
 
-			<main id="jhon-smith-primary" class="<?php echo esc_attr($jhon_smith_page_content_class); ?>">
+			<main id="rbp-two-primary" class="<?php echo esc_attr($rbp_two_page_content_class); ?>">
 				<?php
 				if ( have_posts() ) {
 					?>
-					<header class="jhon-smith-search-page-header alignwide">
+					<header class="rbp-two-search-page-header alignwide">
 
-						<h2 class="jhon-smith-search-page-header-title">
+						<h2 class="rbp-two-search-page-header-title">
 							<?php
 							printf(
 								/* translators: %s: Search term. */
-								esc_html__('Results for "%s"','jhon-smith'),
+								esc_html__('Results for "%s"','rbp-two'),
 								'<span>'.esc_html(get_search_query()).'</span>'
 							);
 							?>
-						</h2><!-- .jhon-smith-search-page-title -->
+						</h2><!-- .rbp-two-search-page-title -->
 
-						<p class="jhon-smith-search-result-count">
+						<p class="rbp-two-search-result-count">
 						<?php
 						printf(
 							esc_html(
@@ -52,15 +52,15 @@ get_header();
 									'We found %d result for your search.',
 									'We found %d results for your search.',
 									(int) $wp_query->found_posts,
-									'jhon-smith'
+									'rbp-two'
 								)
 							),
 							(int) $wp_query->found_posts
 						);
 						?>
-						</p><!-- .jhon-smith-search-result-count -->
+						</p><!-- .rbp-two-search-result-count -->
 
-					</header><!-- .jhon-smith-search-page-header -->
+					</header><!-- .rbp-two-search-page-header -->
 					
 					<?php
 					// Start the Loop.
@@ -86,17 +86,17 @@ get_header();
 				}
 				?>
 					
-			</main><!-- #jhon-smith-primary -->
+			</main><!-- #rbp-two-primary -->
 
 			<?php
-			if(is_active_sidebar('jhon-smith-sidebar-right')){
+			if(is_active_sidebar('rbp-two-sidebar-right')){
 				get_sidebar();
 			}
 			?>
 
         </div><!-- row end -->        
     </div><!-- container end -->
-</div><!-- #jhon-smith-page-content -->
+</div><!-- #rbp-two-page-content -->
 
 <?php
 get_footer();

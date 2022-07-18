@@ -8,9 +8,9 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package RB Free Theme
- * @subpackage Jhon Smith
- * @version Jhon Smith 1.0.1
- * @since Jhon Smith 1.0.1
+ * @subpackage RB Portfolio Two
+ * @version RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.1
  */
 
 /*
@@ -22,68 +22,68 @@ if ( post_password_required() ) {
 	return;
 }
 
-$jhon_smith_comment_count = get_comments_number();
+$rbp_two_comment_count = get_comments_number();
 ?>
 
 <!--================================
 ----- Comments Area Start Here -----
 =================================-->
-<div class="jhon-smith-comments-area">
+<div class="rbp-two-comments-area">
     
     <?php if (have_comments()) : ?>
 
     <!-- Total Number of Comments -->
-    <div class="jhon-smith-comments-count">
+    <div class="rbp-two-comments-count">
         <?php
-        if ($jhon_smith_comment_count) {
+        if ($rbp_two_comment_count) {
             printf(
                 /* translators:
                 1: Number of comments,
                 2: Post title.
                 */
                 _nx(
-                    '%1$s comment on <span class="jhon-smith-comment-title">&ldquo;%2$s&rdquo;</span>',
-                    '%1$s comments on <span class="jhon-smith-comment-title">&ldquo;%2$s&rdquo;</span>', $jhon_smith_comment_count,
+                    '%1$s comment on <span class="rbp-two-comment-title">&ldquo;%2$s&rdquo;</span>',
+                    '%1$s comments on <span class="rbp-two-comment-title">&ldquo;%2$s&rdquo;</span>', $rbp_two_comment_count,
                     'Comments title',
-                    'jhon-smith'
+                    'rbp-two'
                 ),
-                number_format_i18n($jhon_smith_comment_count),
+                number_format_i18n($rbp_two_comment_count),
                 get_the_title()
             );            
         }
         ?>
 
-    </div><!-- .jhon-smith-comments-count -->
+    </div><!-- .rbp-two-comments-count -->
 
     <!-- Comments List Show -->
-    <div class="jhon-smith-comments-list">
+    <div class="rbp-two-comments-list">
         <?php
         wp_list_comments();
         ?>
-    </div><!-- .jhon-smith-comments-list -->
+    </div><!-- .rbp-two-comments-list -->
 
     <!-- Comments Pagination -->
-    <div class="jhon-smith-comments-pagination">
+    <div class="rbp-two-comments-pagination">
         <?php
         the_comments_pagination();
         ?>
-    </div><!-- .jhon-smith-comments-pagination -->
+    </div><!-- .rbp-two-comments-pagination -->
 
     <!-- Comments Close -->
-    <div class="jhon-smith-comments-close">
+    <div class="rbp-two-comments-close">
         <?php if (!comments_open()) : ?>
-			<p class="jhon-smith-comments-close-text">
-                <?php esc_html_e('Comments are closed.', 'jhon-smith'); ?>
+			<p class="rbp-two-comments-close-text">
+                <?php esc_html_e('Comments are closed.', 'rbp-two'); ?>
             </p>
 		<?php endif; ?>
-    </div><!-- .jhon-smith-comments-close -->
+    </div><!-- .rbp-two-comments-close -->
 
     <?php endif; ?>
 
     <!-- Comments Form -->
-    <div class="jhon-smith-comments-form">
+    <div class="rbp-two-comments-form">
         <?php comment_form(); ?>
-    </div><!-- .jhon-smith-comments-form -->
+    </div><!-- .rbp-two-comments-form -->
 
 </div>
 <!--==============================

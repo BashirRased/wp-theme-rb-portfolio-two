@@ -5,28 +5,28 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-page
  *
  * @package RB Free Theme
- * @subpackage Jhon Smith
- * @version Jhon Smith 1.0.1
- * @since Jhon Smith 1.0.1
+ * @subpackage RB Portfolio Two
+ * @version RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.1
  */
 
 get_header();
 ?>
 
-<div id="jhon-smith-page-content" class="jhon-smith-single-page">
+<div id="rbp-two-page-content" class="rbp-two-single-page">
     <div class="container">
         <div class="row">
 
             <?php
-                if(is_active_sidebar('jhon-smith-sidebar-right')){
-                    $jhon_smith_page_content_class = 'col-lg-8';
+                if(is_active_sidebar('rbp-two-sidebar-right')){
+                    $rbp_two_page_content_class = 'col-lg-8';
                 }
                 else {
-                    $jhon_smith_page_content_class = 'col-lg-12';
+                    $rbp_two_page_content_class = 'col-lg-12';
                 }
             ?>
             
-            <main id="jhon-smith-primary" class="<?php echo esc_attr($jhon_smith_page_content_class); ?>" role="page">
+            <main id="rbp-two-primary" class="<?php echo esc_attr($rbp_two_page_content_class); ?>" role="page">
 
                 <?php
                 /* Start the Loop */
@@ -38,17 +38,17 @@ get_header();
                 endwhile; // End of the loop.
                 ?>
 
-            </main><!-- #jhon-smith-primary -->
+            </main><!-- #rbp-two-primary -->
 
             <?php
-			if(is_active_sidebar('jhon-smith-sidebar-right')){
+			if(is_active_sidebar('rbp-two-sidebar-right')){
 				get_sidebar();
 			}
 			?>
 
         </div><!-- row end -->        
     </div><!-- container end -->
-</div><!-- #jhon-smith-page-content -->
+</div><!-- #rbp-two-page-content -->
 
 <?php
 get_footer();

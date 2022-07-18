@@ -1,9 +1,9 @@
-=== Jhon Smith ===
+=== RB Portfolio Two ===
 Contributors: bashirrased
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Tags: one-column, blog, custom-logo, custom-menu, featured-images, right-sidebar
 
 == Installation ==
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
-2. Type in Jhon Smith in the search form and press the 'Enter' key on your keyboard.
+2. Type in RB Portfolio Two in the search form and press the 'Enter' key on your keyboard.
 3. Click on the 'Activate' button to use your new theme right away.
 
 == Frequently Asked Questions ==
@@ -126,7 +126,7 @@ Source:  https://www.pexels.com/photo/man-about-to-touch-his-face-wearing-blue-s
   - Copyright 2010-2018 Metafizzy
 
 == Copyright ==
-Jhon Smith WordPress Theme, 2020-2021 WordPress.org
-Jhon Smith is distributed under the terms of the GNU GPL.
+RB Portfolio Two WordPress Theme, 2020-2021 WordPress.org
+RB Portfolio Two is distributed under the terms of the GNU GPL.
 
 == Changelog ==

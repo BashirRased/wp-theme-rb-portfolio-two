@@ -1,22 +1,22 @@
 @charset "UTF-8";
 
 /*
-Theme Name: Jhon Smith
-Theme URI: https://github.com/BashirRased/wp-theme-jhon-smith
+Theme Name: RB Portfolio Two
+Theme URI: https://github.com/BashirRased/wp-theme-rbp-two
 Author: Bashir Rased
 Author URI: https://profiles.wordpress.org/bashirrased2017/ 
-Description: Jhon Smith is a portfolio website.
+Description: RB Portfolio Two is a portfolio website.
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: jhon-smith
+Text Domain: rbp-two
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks
 
-Jhon Smith WordPress Theme, (C) 2022 WordPress.org
-Jhon Smith is distributed under the terms of the GNU GPL.
+RB Portfolio Two WordPress Theme, (C) 2022 WordPress.org
+RB Portfolio Two is distributed under the terms of the GNU GPL.
 */
 
 /*=========================================
@@ -232,7 +232,7 @@ ol.alignright {
 /********************************************
 ***** 03. Common Classes CSS Start Here *****
 ********************************************/
-.jhon-smith-btn {
+.rbp-two-btn {
 	position: relative;
 	display: inline-block;
 	margin: 10px 0;
@@ -245,12 +245,12 @@ ol.alignright {
 	z-index: 1;
 }
 
-.jhon-smith-btn:hover,
-.jhon-smith-btn:focus {
+.rbp-two-btn:hover,
+.rbp-two-btn:focus {
 	color: #fff;
 }
 
-.jhon-smith-btn::before {
+.rbp-two-btn::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -261,8 +261,8 @@ ol.alignright {
 	z-index: -1;
 }
 
-.jhon-smith-btn:hover::before,
-.jhon-smith-btn:focus::before {
+.rbp-two-btn:hover::before,
+.rbp-two-btn:focus::before {
 	width: 100%;
 }
 
@@ -274,7 +274,7 @@ ol.alignright {
 /*****************************************************
 ***** 04. Header Breadcrumbs Area CSS Start Here *****
 *****************************************************/
-.jhon-smith-header-breadcrumbs-area {
+.rbp-two-header-breadcrumbs-area {
 	padding: 15px;
 	color: #fff;
 	text-align: center;
@@ -286,7 +286,7 @@ ol.alignright {
 	z-index: 1;
 }
 
-.jhon-smith-header-breadcrumbs-area::before {
+.rbp-two-header-breadcrumbs-area::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -297,7 +297,7 @@ ol.alignright {
 	background-color: rgba(0, 0, 0, .5);
 }
 
-.jhon-smith-header-breadcrumbs-title {
+.rbp-two-header-breadcrumbs-title {
 	position: relative;
 	display: inline-block;
 	color: #0d65ed;
@@ -305,7 +305,7 @@ ol.alignright {
 	padding-bottom: 10px;
 }
 
-.jhon-smith-header-breadcrumbs-title::before {
+.rbp-two-header-breadcrumbs-title::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -316,7 +316,7 @@ ol.alignright {
 	background-color: #0d65ed;
 }
 
-.jhon-smith-header-breadcrumbs-title::after {
+.rbp-two-header-breadcrumbs-title::after {
 	content: '';
 	position: absolute;
 	bottom: -12px;
@@ -327,31 +327,31 @@ ol.alignright {
 	background-color: #fff;
 }
 
-.jhon-smith-header-breadcrumbs-description {
+.rbp-two-header-breadcrumbs-description {
 	margin-top: 20px;
 }
 
-.jhon-smith-header-breadcrumbs-nav {
+.rbp-two-header-breadcrumbs-nav {
 	margin-top: 10px;
 }
 
-.jhon-smith-header-breadcrumbs-nav ul li {
+.rbp-two-header-breadcrumbs-nav ul li {
 	display: inline-block;
 	list-style: none;
 	margin: 5px;
 }
 
-.jhon-smith-header-breadcrumbs-nav ul li a {
+.rbp-two-header-breadcrumbs-nav ul li a {
 	text-decoration: none;
 	color: #0d65ed;
 }
 
-.jhon-smith-header-breadcrumbs-nav ul li a:hover,
-.jhon-smith-header-breadcrumbs-nav ul li a:focus {
+.rbp-two-header-breadcrumbs-nav ul li a:hover,
+.rbp-two-header-breadcrumbs-nav ul li a:focus {
 	text-decoration: underline;
 }
 
-.jhon-smith-header-breadcrumbs-text strong {
+.rbp-two-header-breadcrumbs-text strong {
 	color: #0d65ed;
 }
 
@@ -364,60 +364,60 @@ ol.alignright {
 ***********************************************/
 
 /* 5.1. Post Item CSS Start Here */
-.jhon-smith-post-item {
+.rbp-two-post-item {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0 0 5px 5px #ccc;
 }
 
-.jhon-smith-post-thumbnail img {
+.rbp-two-post-thumbnail img {
 	width: 100%;
 	height: auto;
 }
 
-.jhon-smith-content-header-entry-title a,
-.jhon-smith-content-single-entry-header-title a {
+.rbp-two-content-header-entry-title a,
+.rbp-two-content-single-entry-header-title a {
 	text-decoration: none;
 	color: #0d65ed;
 }
 
-.jhon-smith-content-header-entry-title a:hover,
-.jhon-smith-content-header-entry-title a:focus,
-.jhon-smith-content-entry-meta a:hover,
-.jhon-smith-content-entry-meta a:focus,
-.jhon-smith-content-single-entry-meta a:hover,
-.jhon-smith-content-single-entry-meta a:focus {
+.rbp-two-content-header-entry-title a:hover,
+.rbp-two-content-header-entry-title a:focus,
+.rbp-two-content-entry-meta a:hover,
+.rbp-two-content-entry-meta a:focus,
+.rbp-two-content-single-entry-meta a:hover,
+.rbp-two-content-single-entry-meta a:focus {
 	text-decoration: underline;
 	color: #0d65ed;
 }
 
-.jhon-smith-content-entry-meta,
-.jhon-smith-content-single-entry-meta {
+.rbp-two-content-entry-meta,
+.rbp-two-content-single-entry-meta {
 	margin: 10px 0;
 	padding: 10px 0;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
 
-.jhon-smith-content-entry-meta a,
-.jhon-smith-content-single-entry-meta a {
+.rbp-two-content-entry-meta a,
+.rbp-two-content-single-entry-meta a {
 	text-decoration: none;
 	color: #000;
 }
 
-.jhon-smith-posted-by,
-.jhon-smith-posted-on,
-.jhon-smith-posted-categories,
-.jhon-smith-posted-comments {
+.rbp-two-posted-by,
+.rbp-two-posted-on,
+.rbp-two-posted-categories,
+.rbp-two-posted-comments {
 	margin-right: 20px;
 }
 
-.jhon-smith-posted-by i,
-.jhon-smith-posted-on i,
-.jhon-smith-posted-categories i,
-.jhon-smith-posted-comments i,
-.jhon-smith-posted-edit .fa-edit {
+.rbp-two-posted-by i,
+.rbp-two-posted-on i,
+.rbp-two-posted-categories i,
+.rbp-two-posted-comments i,
+.rbp-two-posted-edit .fa-edit {
 	color: #0d65ed;
 	margin-right: 5px;
 }
@@ -425,7 +425,7 @@ ol.alignright {
 /* 5.1. Post Item CSS Start Here */
 
 /* 5.2. Post Format CSS Start Here */
-.jhon-smith-posted-format-meta {
+.rbp-two-posted-format-meta {
 	display: inline-block;
 	background-color: #ccc;
 	color: #000;
@@ -434,83 +434,83 @@ ol.alignright {
 	border-radius: 25px;
 }
 
-.jhon-smith-posted-format-meta i,
-.jhon-smith-posted-format-meta .jhon-smith-posted-format-meta-text {
+.rbp-two-posted-format-meta i,
+.rbp-two-posted-format-meta .rbp-two-posted-format-meta-text {
 	color: #0d65ed;
 }
 
-.jhon-smith-content-entry-body .wp-block-image {
+.rbp-two-content-entry-body .wp-block-image {
 	display: none;
 }
 
-.jhon-smith-content-entry-body .wp-block-image:first-child {
+.rbp-two-content-entry-body .wp-block-image:first-child {
 	display: block;
 }
 
-.jhon-smith-content-entry-body .wp-block-video {
+.rbp-two-content-entry-body .wp-block-video {
 	display: none;
 }
 
-.jhon-smith-content-entry-body .wp-block-video:first-child {
+.rbp-two-content-entry-body .wp-block-video:first-child {
 	display: block;
 }
 
-.jhon-smith-content-entry-body .wp-block-audio {
+.rbp-two-content-entry-body .wp-block-audio {
 	display: none;
 }
 
-.jhon-smith-content-entry-body .wp-block-audio:first-child {
+.rbp-two-content-entry-body .wp-block-audio:first-child {
 	display: block;
 }
 
-.jhon-smith-content-entry-body .wp-block-gallery {
+.rbp-two-content-entry-body .wp-block-gallery {
 	display: none;
 }
 
-.jhon-smith-content-entry-body .wp-block-gallery:first-child {
+.rbp-two-content-entry-body .wp-block-gallery:first-child {
 	display: flex;
 }
 
-.jhon-smith-content-entry-body .wp-block-file {
+.rbp-two-content-entry-body .wp-block-file {
 	display: none;
 }
 
-.jhon-smith-content-entry-body .wp-block-file:first-child {
+.rbp-two-content-entry-body .wp-block-file:first-child {
 	display: block;
 }
 
-.jhon-smith-content-entry-body .wp-block-quote {
+.rbp-two-content-entry-body .wp-block-quote {
 	display: none;
 }
 
-.jhon-smith-content-entry-body .wp-block-quote:first-child {
+.rbp-two-content-entry-body .wp-block-quote:first-child {
 	display: block;
 }
 
 /* 5.2. Post Format CSS Start Here */
 
 /* 3.2. Pagination Area CSS Start Here */
-.jhon-smith-page-content .pagination {
+.rbp-two-page-content .pagination {
 	margin: 20px 0;
 	background-color: #fff;
 	box-shadow: 0 0 5px 5px #ccc;
 	padding: 15px 10px;
 }
 
-.jhon-smith-page-content .page-numbers {
+.rbp-two-page-content .page-numbers {
 	border: 1px solid #0d65ed;
 	padding: 5px 10px;
 	text-decoration: none;
 }
 
-.jhon-smith-page-content .page-numbers.current,
-.jhon-smith-page-content .page-numbers:hover,
-.jhon-smith-page-content .page-numbers:focus {
+.rbp-two-page-content .page-numbers.current,
+.rbp-two-page-content .page-numbers:hover,
+.rbp-two-page-content .page-numbers:focus {
 	background-color: #0d65ed;
 	color: #fff;
 }
 
-.jhon-smith-page-content .page-numbers:focus {
+.rbp-two-page-content .page-numbers:focus {
 	text-decoration: underline;
 }
 
@@ -523,55 +523,55 @@ ol.alignright {
 /******************************************************
 ***** 04. WP Single Post Page Area CSS Start Here *****
 ******************************************************/
-.jhon-smith-post-single-item {
+.rbp-two-post-single-item {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
-.jhon-smith-content-single-entry-footer {
+.rbp-two-content-single-entry-footer {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
-.jhon-smith-posted-tags i {
+.rbp-two-posted-tags i {
 	color: #0d65ed;
 }
 
-.jhon-smith-posted-tags a {
+.rbp-two-posted-tags a {
 	color: #0d6efd;
 	text-decoration: none;
 }
 
-.jhon-smith-posted-tags a:hover,
-.jhon-smith-posted-tags a:focus {
+.rbp-two-posted-tags a:hover,
+.rbp-two-posted-tags a:focus {
 	color: #0d6efd;
 	text-decoration: underline;
 }
 
-.jhon-smith-content-single-entry-header-title {
+.rbp-two-content-single-entry-header-title {
 	color: #0d65ed;
 }
 
 /* 4.1. WP Pages Link Area Start Here */
-.jhon-smith-wp-pages-link-area {
+.rbp-two-wp-pages-link-area {
 	margin: 10px 0;
 	padding: 10px 0;
 }
 
-.jhon-smith-wp-pages-link-area .post-page-numbers {
+.rbp-two-wp-pages-link-area .post-page-numbers {
 	display: inline-block;
 	border: 1px solid #0d65ed;
 	padding: 5px 10px;
 	margin-right: 2px;
 }
 
-.jhon-smith-wp-pages-link-area .post-page-numbers:hover,
-.jhon-smith-wp-pages-link-area .post-page-numbers:focus,
-.jhon-smith-wp-pages-link-area .post-page-numbers.current {
+.rbp-two-wp-pages-link-area .post-page-numbers:hover,
+.rbp-two-wp-pages-link-area .post-page-numbers:focus,
+.rbp-two-wp-pages-link-area .post-page-numbers.current {
 	color: #fff;
 	background-color: #0d65ed;
 }
@@ -579,7 +579,7 @@ ol.alignright {
 /* 4.1. WP Pages Link Area End Here */
 
 /* 4.2. Comments Area Start Here */
-.jhon-smith-comments-area {
+.rbp-two-comments-area {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
@@ -587,63 +587,63 @@ ol.alignright {
 }
 
 /* 4.2.1. Comments Count CSS Start Here */
-.jhon-smith-comments-count {
+.rbp-two-comments-count {
 	padding: 10px;
 	box-shadow: 0 0 5px 5px #ccc;
 }
 
-.jhon-smith-comment-title {
+.rbp-two-comment-title {
 	color: #0d65ed;
 }
 
 /* 4.2.1. Comments Count CSS End Here */
 
 /* 4.2.2. Comments List CSS Start Here */
-.jhon-smith-comments-list {
+.rbp-two-comments-list {
 	padding: 10px 0;
 }
 
-.jhon-smith-comments-list .comment {
+.rbp-two-comments-list .comment {
 	list-style: none;
 	margin: 20px 0;
 }
 
-.jhon-smith-comments-list .comment-body {
+.rbp-two-comments-list .comment-body {
 	background-color: #ccc;
 	padding: 15px;
 	margin-left: 30px;
 }
 
-.jhon-smith-comments-list .parent .comment-body {
+.rbp-two-comments-list .parent .comment-body {
 	margin-left: 0;
 }
 
-.jhon-smith-comments-list .comment-author {
+.rbp-two-comments-list .comment-author {
 	padding: 10px 0;
 }
 
-.jhon-smith-comments-list .comment-author .url {
+.rbp-two-comments-list .comment-author .url {
 	text-decoration: none;
 	color: #0d65ed;
 }
 
-.jhon-smith-comments-list .comment-author .url:hover,
-.jhon-smith-comments-list .comment-author .url:focus {
+.rbp-two-comments-list .comment-author .url:hover,
+.rbp-two-comments-list .comment-author .url:focus {
 	text-decoration: underline;
 }
 
-.jhon-smith-comments-list .comment-metadata {
+.rbp-two-comments-list .comment-metadata {
 	border-bottom: 1px solid #0d65ed;
 	border-top: 1px solid #0d65ed;
 	padding: 10px 0;
 }
 
-.jhon-smith-comments-list .comment-metadata a {
+.rbp-two-comments-list .comment-metadata a {
 	color: #000;
 	text-decoration: none;
 }
 
-.jhon-smith-comments-list .comment-reply-link {
+.rbp-two-comments-list .comment-reply-link {
 	position: relative;
 	display: inline-block;
 	margin: 10px 0;
@@ -656,12 +656,12 @@ ol.alignright {
 	z-index: 1;
 }
 
-.jhon-smith-comments-list .comment-reply-link:hover,
-.jhon-smith-comments-list .comment-reply-link:focus {
+.rbp-two-comments-list .comment-reply-link:hover,
+.rbp-two-comments-list .comment-reply-link:focus {
 	color: #fff;
 }
 
-.jhon-smith-comments-list .comment-reply-link::before {
+.rbp-two-comments-list .comment-reply-link::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -672,23 +672,23 @@ ol.alignright {
 	z-index: -1;
 }
 
-.jhon-smith-comments-list .comment-reply-link:hover::before,
-.jhon-smith-comments-list .comment-reply-link:focus::before {
+.rbp-two-comments-list .comment-reply-link:hover::before,
+.rbp-two-comments-list .comment-reply-link:focus::before {
 	width: 100%;
 }
 
 /* 4.2.2. Comments List CSS End Here */
 
 /* 4.2.3. Comments Form CSS Start Here */
-.jhon-smith-comments-form {
+.rbp-two-comments-form {
 	padding: 10px 0;
 }
 
-.jhon-smith-comments-form .comment-reply-title {
+.rbp-two-comments-form .comment-reply-title {
 	color: #0d65ed;
 }
 
-.jhon-smith-comments-form .logged-in-as a {
+.rbp-two-comments-form .logged-in-as a {
 	position: relative;
 	display: inline-block;
 	margin: 10px 0;
@@ -701,12 +701,12 @@ ol.alignright {
 	z-index: 1;
 }
 
-.jhon-smith-comments-form .logged-in-as a:hover,
-.jhon-smith-comments-form .logged-in-as a:focus {
+.rbp-two-comments-form .logged-in-as a:hover,
+.rbp-two-comments-form .logged-in-as a:focus {
 	color: #fff;
 }
 
-.jhon-smith-comments-form .logged-in-as a::before {
+.rbp-two-comments-form .logged-in-as a::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -717,46 +717,46 @@ ol.alignright {
 	z-index: -1;
 }
 
-.jhon-smith-comments-form .logged-in-as a:hover::before,
-.jhon-smith-comments-form .logged-in-as a:focus::before {
+.rbp-two-comments-form .logged-in-as a:hover::before,
+.rbp-two-comments-form .logged-in-as a:focus::before {
 	width: 100%;
 }
 
-.jhon-smith-comments-form .required-field-message {
+.rbp-two-comments-form .required-field-message {
 	display: block;
 }
 
-.jhon-smith-comments-form .jhon-smith-comments-form label {
+.rbp-two-comments-form .rbp-two-comments-form label {
 	display: block;
 	margin: 10px 0;
 }
 
-.jhon-smith-comments-form input[type='text'],
-.jhon-smith-comments-form input[type='email'],
-.jhon-smith-comments-form input[type='url'] {
+.rbp-two-comments-form input[type='text'],
+.rbp-two-comments-form input[type='email'],
+.rbp-two-comments-form input[type='url'] {
 	width: 100%;
 	padding: 10px;
 	border: 2px solid #0d65ed;
 }
 
-.jhon-smith-comments-form input[type='text']:focus,
-.jhon-smith-comments-form input[type='email']:focus,
-.jhon-smith-comments-form input[type='url']:focus {
+.rbp-two-comments-form input[type='text']:focus,
+.rbp-two-comments-form input[type='email']:focus,
+.rbp-two-comments-form input[type='url']:focus {
 	border: 2px solid #0d65ed;
 }
 
-.jhon-smith-comments-form textarea {
+.rbp-two-comments-form textarea {
 	width: 100%;
 	margin: 10px 0;
 	padding: 20px;
 	border: 2px solid #0d65ed;
 }
 
-.jhon-smith-comments-form textarea:focus-visible {
+.rbp-two-comments-form textarea:focus-visible {
 	border: 2px solid #0d65ed;
 }
 
-.jhon-smith-comments-form .comment-form .submit {
+.rbp-two-comments-form .comment-form .submit {
 	display: inline-block;
 	margin: 10px 0;
 	padding: 10px;
@@ -767,8 +767,8 @@ ol.alignright {
 	transition: .3s all ease-in-out;
 }
 
-.jhon-smith-comments-form .comment-form .submit:hover,
-.jhon-smith-comments-form .comment-form .submit:focus {
+.rbp-two-comments-form .comment-form .submit:hover,
+.rbp-two-comments-form .comment-form .submit:focus {
 	background-color: #0d65ed;
 	border-color: #0d65ed;
 	color: #fff;
@@ -777,13 +777,13 @@ ol.alignright {
 /* 4.2.3. Comments Form CSS End Here */
 
 /* 4.2.4. Comments Reply Form CSS Start Here */
-.jhon-smith-comments-list .comment-respond {
+.rbp-two-comments-list .comment-respond {
 	box-shadow: 0 0 5px 5px #ccc;
 	margin: 20px 0;
 	padding: 20px;
 }
 
-.jhon-smith-comments-list #cancel-comment-reply-link {
+.rbp-two-comments-list #cancel-comment-reply-link {
 	position: relative;
 	display: inline-block;
 	text-transform: capitalize;
@@ -797,12 +797,12 @@ ol.alignright {
 	z-index: 1;
 }
 
-.jhon-smith-comments-list #cancel-comment-reply-link:hover,
-.jhon-smith-comments-list #cancel-comment-reply-link:focus {
+.rbp-two-comments-list #cancel-comment-reply-link:hover,
+.rbp-two-comments-list #cancel-comment-reply-link:focus {
 	color: #fff;
 }
 
-.jhon-smith-comments-list #cancel-comment-reply-link::before {
+.rbp-two-comments-list #cancel-comment-reply-link::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -813,8 +813,8 @@ ol.alignright {
 	z-index: -1;
 }
 
-.jhon-smith-comments-list #cancel-comment-reply-link:hover::before,
-.jhon-smith-comments-list #cancel-comment-reply-link:focus::before {
+.rbp-two-comments-list #cancel-comment-reply-link:hover::before,
+.rbp-two-comments-list #cancel-comment-reply-link:focus::before {
 	width: 100%;
 }
 
@@ -822,62 +822,62 @@ ol.alignright {
 
 /* 4.2. Comments Area End Here */
 
-.jhon-smith-post-navigation {
+.rbp-two-post-navigation {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
-.jhon-smith-post-navigation .nav-links {
+.rbp-two-post-navigation .nav-links {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.jhon-smith-post-navigation .nav-previous,
-.jhon-smith-post-navigation .nav-next {
+.rbp-two-post-navigation .nav-previous,
+.rbp-two-post-navigation .nav-next {
 	width: 50%;
 }
 
-.jhon-smith-post-navigation .nav-next {
+.rbp-two-post-navigation .nav-next {
 	text-align: right;
 }
 
 @media all and (max-width: 991px) {
 
-	.jhon-smith-post-navigation .nav-previous,
-	.jhon-smith-post-navigation .nav-next {
+	.rbp-two-post-navigation .nav-previous,
+	.rbp-two-post-navigation .nav-next {
 		width: 100%;
 		margin: 10px 0;
 	}
 
-	.jhon-smith-post-navigation .nav-next {
+	.rbp-two-post-navigation .nav-next {
 		text-align: left;
 	}
 }
 
-.jhon-smith-post-navigation a {
+.rbp-two-post-navigation a {
 	text-decoration: none;
 	color: #0d6efd;
 }
 
-.jhon-smith-post-navigation a:hover,
-.jhon-smith-post-navigation a:focus {
+.rbp-two-post-navigation a:hover,
+.rbp-two-post-navigation a:focus {
 	text-decoration: underline;
 }
 
-.jhon-smith-post-navigation a i {
+.rbp-two-post-navigation a i {
 	padding: 5px 10px;
 	border: 1px solid #0d65ed;
 }
 
-.jhon-smith-post-navigation a i:hover,
-.jhon-smith-post-navigation a i:focus {
+.rbp-two-post-navigation a i:hover,
+.rbp-two-post-navigation a i:focus {
 	background-color: #0d65ed;
 	color: #fff;
 }
 
-.jhon-smith-author-bio {
+.rbp-two-author-bio {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
@@ -885,7 +885,7 @@ ol.alignright {
 	display: flex;
 }
 
-.jhon-smith-author-bio .avatar {
+.rbp-two-author-bio .avatar {
 	border: 2px solid #0d65ed;
 	padding: 5px;
 	margin: 0 20px 20px 0;
@@ -893,7 +893,7 @@ ol.alignright {
 	width: auto;
 }
 
-.jhon-smith-author-title {
+.rbp-two-author-title {
 	color: #0d65ed;
 	text-transform: capitalize;
 }
@@ -906,21 +906,21 @@ ol.alignright {
 ***** 05. WP Search Page Area CSS End Here *****
 ***********************************************/
 
-.jhon-smith-no-result {
+.rbp-two-no-result {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0 0 5px 5px #ccc;
 }
 
-.jhon-smith-search-page-header {
+.rbp-two-search-page-header {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
-.jhon-smith-search-page-header-title span {
+.rbp-two-search-page-header-title span {
 	color: #0d65ed;
 }
 
@@ -932,22 +932,22 @@ ol.alignright {
 ***** 06. WP 404 Error Page Area CSS End Here *****
 **************************************************/
 
-.jhon-smith-error-404-page-content {
+.rbp-two-error-404-page-content {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
-.jhon-smith-error-page-header-title {
+.rbp-two-error-page-header-title {
 	text-align: center;
 	font-size: 120px;
 	margin: 0;
 	color: #0d65ed;
 }
 
-.jhon-smith-error-page-header-subtitle,
-.jhon-smith-error-page-body {
+.rbp-two-error-page-header-subtitle,
+.rbp-two-error-page-body {
 	text-align: center;
 }
 
@@ -959,14 +959,14 @@ ol.alignright {
 ***** 07. Widget Area CSS Start Here *****
 *****************************************/
 
-.jhon-smith-widget-item {
+.rbp-two-widget-item {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0 0 5px 5px #ccc;
 }
 
-.jhon-smith-widget-item-title {
+.rbp-two-widget-item-title {
 	padding: 10px 0;
 	background: #0d65ed;
 	color: #fff;
@@ -974,13 +974,13 @@ ol.alignright {
 	text-transform: uppercase;
 }
 
-.jhon-smith-widget-item a {
+.rbp-two-widget-item a {
 	text-decoration: none;
 	color: #0d65ed;
 }
 
-.jhon-smith-widget-item a:hover,
-.jhon-smith-widget-item a:focus {
+.rbp-two-widget-item a:hover,
+.rbp-two-widget-item a:focus {
 	text-decoration: underline;
 }
 
@@ -1466,11 +1466,11 @@ nav[aria-label="Meta"] ul li:last-child {
 	border-bottom: none;
 }
 
-.jhon-smith-widget-item .menu i {
+.rbp-two-widget-item .menu i {
 	display: none;
 }
 
-.jhon-smith-widget-item .menu .jhon-smith-dropdown-menu {
+.rbp-two-widget-item .menu .rbp-two-dropdown-menu {
 	position: relative;
 	right: 0;
 	background-color: transparent;
@@ -1478,12 +1478,12 @@ nav[aria-label="Meta"] ul li:last-child {
 	padding-left: 10px;
 }
 
-.jhon-smith-widget-item .menu .jhon-smith-dropdown-menu li {
+.rbp-two-widget-item .menu .rbp-two-dropdown-menu li {
 	text-align: left;
 	border-bottom: none;
 }
 
-.jhon-smith-widget-item .menu .jhon-smith-multi-dropdown-menu {
+.rbp-two-widget-item .menu .rbp-two-multi-dropdown-menu {
 	position: relative;
 	background-color: transparent;
 	box-shadow: none;
@@ -1492,11 +1492,11 @@ nav[aria-label="Meta"] ul li:last-child {
 	padding-left: 10px;
 }
 
-.jhon-smith-widget-item .menu li {
+.rbp-two-widget-item .menu li {
 	list-style: none;
 }
 
-.jhon-smith-widget-item .menu li a {
+.rbp-two-widget-item .menu li a {
 	border-bottom: 1px solid #ccc;
 	padding: 10px;
 	position: relative;
@@ -1504,7 +1504,7 @@ nav[aria-label="Meta"] ul li:last-child {
 	display: block;
 }
 
-.jhon-smith-widget-item .menu li a::before {
+.rbp-two-widget-item .menu li a::before {
 	content: "";
 	position: absolute;
 	width: 10px;
@@ -1635,22 +1635,22 @@ nav[aria-label="Meta"] ul li:last-child {
 /*****************************************
 ***** 09. Search Form CSS Start Here *****
 *****************************************/
-.jhon-smith-search-form {
+.rbp-two-search-form {
 	position: relative;
 	margin: 10px 0;
 }
 
-.jhon-smith-content-none-search-keyword {
+.rbp-two-content-none-search-keyword {
 	color: #0d65ed;
 }
 
-.jhon-smith-search-box {
+.rbp-two-search-box {
 	width: 100%;
 	padding: 10px;
 	border: 1px solid #0d65ed;
 }
 
-.jhon-smith-search-btn {
+.rbp-two-search-btn {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1661,7 +1661,7 @@ nav[aria-label="Meta"] ul li:last-child {
 	color: #fff;
 }
 
-.jhon-smith-search-btn i {
+.rbp-two-search-btn i {
 	display: block;
 	text-align: center;
 	line-height: 50px;

@@ -1,7 +1,7 @@
 <!--================================== 
 ===== Contact Me Area Strat Here =====
 ===================================-->
-<section class="contact-me jhon-smith-scroll-menu" id="contact-me">
+<section class="contact-me rbp-two-scroll-menu" id="contact-me">
 
     <!--================================ 
     ===== Section Title Strat Here =====
@@ -9,30 +9,30 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="jhon-smith-section-title">
+                <div class="rbp-two-section-title">
                     <h2><?php
-                        $jhon_smith_contact_me_title_black = get_post_meta(get_the_ID(), 'jhon_smith_contact_me_title_black', true);
-                        if( isset ($jhon_smith_contact_me_title_black) && !empty ($jhon_smith_contact_me_title_black) ){
+                        $rbp_two_contact_me_title_black = get_post_meta(get_the_ID(), 'rbp_two_contact_me_title_black', true);
+                        if( isset ($rbp_two_contact_me_title_black) && !empty ($rbp_two_contact_me_title_black) ){
                             printf(
                                 /* translators: %s: Contact Me Section Title Theme Color */
-                                __('%s','jhon-smith'),
-                                $jhon_smith_contact_me_title_black
+                                __('%s','rbp-two'),
+                                $rbp_two_contact_me_title_black
                                 );
                         }
                         else {
-                            esc_html_e('Contact','jhon-smith');
+                            esc_html_e('Contact','rbp-two');
                         }
-                        ?> <span class="jhon-smith-theme-color"><?php
-                        $jhon_smith_contact_me_title_theme_color = get_post_meta(get_the_ID(), 'jhon_smith_contact_me_title_theme_color', true);
-                        if( isset ($jhon_smith_contact_me_title_theme_color) && !empty ($jhon_smith_contact_me_title_theme_color) ){
+                        ?> <span class="rbp-two-theme-color"><?php
+                        $rbp_two_contact_me_title_theme_color = get_post_meta(get_the_ID(), 'rbp_two_contact_me_title_theme_color', true);
+                        if( isset ($rbp_two_contact_me_title_theme_color) && !empty ($rbp_two_contact_me_title_theme_color) ){
                             printf(
                                 /* translators: %s: Contact Me Section Title Theme Color */
-                                __('%s','jhon-smith'),
-                                $jhon_smith_contact_me_title_theme_color
+                                __('%s','rbp-two'),
+                                $rbp_two_contact_me_title_theme_color
                                 );
                         }
                         else {
-                            esc_html_e('Me','jhon-smith');
+                            esc_html_e('Me','rbp-two');
                         }
                         ?></span></h2>
                 </div>
@@ -52,19 +52,19 @@
         <div class="row">
             
             <?php
-            $jhon_smith_contact_me_items = get_post_meta(get_the_ID(), 'jhon_smith_contact_me_items', true);
-            if( isset ($jhon_smith_contact_me_items) && !empty ($jhon_smith_contact_me_items) ): 
+            $rbp_two_contact_me_items = get_post_meta(get_the_ID(), 'rbp_two_contact_me_items', true);
+            if( isset ($rbp_two_contact_me_items) && !empty ($rbp_two_contact_me_items) ): 
                 
-            foreach($jhon_smith_contact_me_items as $jhon_smith_contact_me_items_single):
+            foreach($rbp_two_contact_me_items as $rbp_two_contact_me_items_single):
             ?>
             <!--===== 01. Single Contact Info Item Strat Here =====-->
             <div class="col-lg-4">
-                <div class="jhon-smith-contact-info-box">
-                    <div class="jhon-smith-contact-info-icon">
+                <div class="rbp-two-contact-info-box">
+                    <div class="rbp-two-contact-info-icon">
                         <i class="<?php
-                                $jhon_smith_contact_me_item_icon = $jhon_smith_contact_me_items_single['jhon_smith_contact_me_item_icon'];
-                                if( isset ($jhon_smith_contact_me_item_icon) && !empty ($jhon_smith_contact_me_item_icon) ){
-                                    echo esc_attr($jhon_smith_contact_me_item_icon);
+                                $rbp_two_contact_me_item_icon = $rbp_two_contact_me_items_single['rbp_two_contact_me_item_icon'];
+                                if( isset ($rbp_two_contact_me_item_icon) && !empty ($rbp_two_contact_me_item_icon) ){
+                                    echo esc_attr($rbp_two_contact_me_item_icon);
                                 }
                                 else {
                                     echo esc_attr('fas fa-phone-alt');
@@ -72,19 +72,19 @@
                                 ?>">
                         </i>
                     </div>
-                    <div class="jhon-smith-contact-info-text">
+                    <div class="rbp-two-contact-info-text">
                         <p>
                         <?php
-                        $jhon_smith_contact_me_item_description = $jhon_smith_contact_me_items_single['jhon_smith_contact_me_item_description'];
-                        if( isset ($jhon_smith_contact_me_item_description) && !empty ($jhon_smith_contact_me_item_description) ){
+                        $rbp_two_contact_me_item_description = $rbp_two_contact_me_items_single['rbp_two_contact_me_item_description'];
+                        if( isset ($rbp_two_contact_me_item_description) && !empty ($rbp_two_contact_me_item_description) ){
                             printf(
                                 /* translators: %s: Contact Me Item Description */
-                                __('%s','jhon-smith'),
-                                $jhon_smith_contact_me_item_description
+                                __('%s','rbp-two'),
+                                $rbp_two_contact_me_item_description
                             );
                         }
                         else {
-                            esc_html_e('+44 1632 967704, +20 0129 147 2249','jhon-smith');
+                            esc_html_e('+44 1632 967704, +20 0129 147 2249','rbp-two');
                         }
                         ?>
                         </p>
@@ -96,12 +96,12 @@
             <?php endforeach; else: ?>
             <!--===== 01. Single Contact Info Item Strat Here =====-->
             <div class="col-lg-4">
-                <div class="jhon-smith-contact-info-box">
-                    <div class="jhon-smith-contact-info-icon">
+                <div class="rbp-two-contact-info-box">
+                    <div class="rbp-two-contact-info-icon">
                         <i class="fas fa-phone-alt"></i>
                     </div>
-                    <div class="jhon-smith-contact-info-text">
-                        <p><?php esc_html_e('+44 1632 967704, +20 0129 147 2249', 'jhon-smith'); ?></p>
+                    <div class="rbp-two-contact-info-text">
+                        <p><?php esc_html_e('+44 1632 967704, +20 0129 147 2249', 'rbp-two'); ?></p>
                     </div>
                 </div>
             </div>
@@ -109,12 +109,12 @@
             
             <!--===== 02. Single Contact Info Item Strat Here =====-->
             <div class="col-lg-4">
-                <div class="jhon-smith-contact-info-box">
-                    <div class="jhon-smith-contact-info-icon">
+                <div class="rbp-two-contact-info-box">
+                    <div class="rbp-two-contact-info-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <div class="jhon-smith-contact-info-text">
-                        <p><?php esc_html_e('support@website.com, smith@example.com', 'jhon-smith'); ?></p>
+                    <div class="rbp-two-contact-info-text">
+                        <p><?php esc_html_e('support@website.com, smith@example.com', 'rbp-two'); ?></p>
                     </div>
                 </div>
             </div>
@@ -122,12 +122,12 @@
             
             <!--===== 03. Single Contact Info Item Strat Here =====-->
             <div class="col-lg-4">
-                <div class="jhon-smith-contact-info-box">
-                    <div class="jhon-smith-contact-info-icon">
+                <div class="rbp-two-contact-info-box">
+                    <div class="rbp-two-contact-info-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <div class="jhon-smith-contact-info-text">
-                        <p><?php esc_html_e('Address: 4612 Los Angeles CA. United State', 'jhon-smith'); ?></p>
+                    <div class="rbp-two-contact-info-text">
+                        <p><?php esc_html_e('Address: 4612 Los Angeles CA. United State', 'rbp-two'); ?></p>
                     </div>
                 </div>
             </div>

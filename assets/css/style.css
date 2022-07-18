@@ -1,22 +1,22 @@
 @charset "UTF-8";
 
 /*
-Theme Name: Jhon Smith
-Theme URI: https://github.com/BashirRased/wp-theme-jhon-smith
+Theme Name: RB Portfolio Two
+Theme URI: https://github.com/BashirRased/wp-theme-rbp-two
 Author: Bashir Rased
 Author URI: https://profiles.wordpress.org/bashirrased2017/ 
-Description: Jhon Smith is a portfolio website.
+Description: RB Portfolio Two is a portfolio website.
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: jhon-smith
+Text Domain: rbp-two
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks
 
-Jhon Smith WordPress Theme, (C) 2022 WordPress.org
-Jhon Smith is distributed under the terms of the GNU GPL.
+RB Portfolio Two WordPress Theme, (C) 2022 WordPress.org
+RB Portfolio Two is distributed under the terms of the GNU GPL.
 */
 
 /*=============================
@@ -52,14 +52,14 @@ Table of CSS Content End Here
 04. Header Menu with Site Branding Area CSS Start Here
 ******************************************************/
 
-.jhon-smith-header-menu-area {
+.rbp-two-header-menu-area {
 	background-color: transparent;
 	z-index: 99;
 	position: relative;
 	box-shadow: 0 0 1px 1px #ccc;
 }
 
-.jhon-smith-header-fixed {
+.rbp-two-header-fixed {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -69,58 +69,58 @@ Table of CSS Content End Here
 	box-shadow: 0 3px 2px rgba(0, 0, 0, .1);
 }
 
-.admin-bar .jhon-smith-header-fixed {
+.admin-bar .rbp-two-header-fixed {
 	top: 32px;
 }
 
 /* 4.1. Header Logo CSS Start Here */
-.jhon-smith-header-site-branding-area {
+.rbp-two-header-site-branding-area {
 	padding: 5px 15px;
 	display: flex;
 }
 
-.jhon-smith-header-logo {
+.rbp-two-header-logo {
 	margin-right: 20px;
 }
 
-.jhon-smith-header-logo img {
+.rbp-two-header-logo img {
 	height: 70px;
 	width: auto;
 }
 
-.jhon-smith-header-site-title {
+.rbp-two-header-site-title {
 	margin: 0;
 	font-size: 30px;
 }
 
-.jhon-smith-header-site-tagline {
+.rbp-two-header-site-tagline {
 	margin: 0;
 	font-size: 14px;
 }
 
-.jhon-smith-header-site-title a {
+.rbp-two-header-site-title a {
 	text-decoration: none;
 	color: #0d65ed;
 }
 
-.jhon-smith-header-site-title a:hover {
+.rbp-two-header-site-title a:hover {
 	text-decoration: underline;
 }
 
-.jhon-smith-header-site-title a:focus {
+.rbp-two-header-site-title a:focus {
 	text-decoration: underline overline;
 }
 
 /* 4.1. Header Logo CSS End Here */
 
 /* 4.2. Header Mobile Menu CSS Start Here */
-.jhon-smith-header-mobile-menu-area {
+.rbp-two-header-mobile-menu-area {
 	display: none;
 	overflow: hidden;
 	padding: 14px;
 }
 
-.jhon-smith-header-mobile-menu-btn {
+.rbp-two-header-mobile-menu-btn {
 	font-size: 20px;
 	width: 50px;
 	height: 50px;
@@ -130,7 +130,7 @@ Table of CSS Content End Here
 	background-color: #0d65ed;
 }
 
-.jhon-smith-header-mobile-menu-btn:focus {
+.rbp-two-header-mobile-menu-btn:focus {
 	border: 2px solid #fff;
 	box-shadow: 0 0 5px 5px #0d65ed;
 }
@@ -138,7 +138,7 @@ Table of CSS Content End Here
 /* 4.2. Header Mobile Menu CSS End Here */
 
 /* 4.3. Header Desktop Menu CSS Start Here */
-.jhon-smith-header-desktop-menu ul {
+.rbp-two-header-desktop-menu ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -146,14 +146,14 @@ Table of CSS Content End Here
 	z-index: 99;
 }
 
-.jhon-smith-header-desktop-menu ul li {
+.rbp-two-header-desktop-menu ul li {
 	float: left;
 	height: 100%;
 	position: relative;
 }
 
-.jhon-smith-header-desktop-menu ul li:hover>.jhon-smith-dropdown-menu,
-.jhon-smith-header-desktop-menu ul li:focus-within>.jhon-smith-dropdown-menu {
+.rbp-two-header-desktop-menu ul li:hover>.rbp-two-dropdown-menu,
+.rbp-two-header-desktop-menu ul li:focus-within>.rbp-two-dropdown-menu {
 	right: 0;
 }
 
@@ -166,41 +166,41 @@ Table of CSS Content End Here
 	border: 3px solid #0d65ed;
 }
 
-.jhon-smith-header-desktop-menu ul li a {
+.rbp-two-header-desktop-menu ul li a {
 	text-decoration: none;
 	display: block;
 	padding: 28px 10px;
 	color: #000;
 }
 
-.jhon-smith-header-desktop-menu ul li a:hover,
-.jhon-smith-header-desktop-menu ul li a:focus,
-.jhon-smith-header-fixed .jhon-smith-header-desktop-menu ul li a:hover,
-.jhon-smith-header-fixed .jhon-smith-header-desktop-menu ul li a:focus {
+.rbp-two-header-desktop-menu ul li a:hover,
+.rbp-two-header-desktop-menu ul li a:focus,
+.rbp-two-header-fixed .rbp-two-header-desktop-menu ul li a:hover,
+.rbp-two-header-fixed .rbp-two-header-desktop-menu ul li a:focus {
 	color: #0d65ed;
 }
 
-.jhon-smith-header-fixed .jhon-smith-header-desktop-menu ul li a {
+.rbp-two-header-fixed .rbp-two-header-desktop-menu ul li a {
 	color: #000;
 }
 
-.jhon-smith-header-desktop-menu ul li i {
+.rbp-two-header-desktop-menu ul li i {
 	margin-left: 10px;
 	color: #000;
 }
 
-.jhon-smith-header-desktop-menu ul li a:hover i,
-.jhon-smith-header-desktop-menu ul li a:focus i {
+.rbp-two-header-desktop-menu ul li a:hover i,
+.rbp-two-header-desktop-menu ul li a:focus i {
 	color: #0d65ed;
 }
 
-.jhon-smith-header-desktop-menu ul li .jhon-smith-dropdown-menu i,
-.jhon-smith-header-desktop-menu ul li .jhon-smith-multi-dropdown-menu i {
+.rbp-two-header-desktop-menu ul li .rbp-two-dropdown-menu i,
+.rbp-two-header-desktop-menu ul li .rbp-two-multi-dropdown-menu i {
 	margin-left: 0;
 	margin-right: 10px;
 }
 
-.jhon-smith-dropdown-menu {
+.rbp-two-dropdown-menu {
 	position: absolute;
 	background-color: #fff;
 	right: -9999px;
@@ -211,22 +211,22 @@ Table of CSS Content End Here
 	z-index: 999999;
 }
 
-.jhon-smith-dropdown-menu li {
+.rbp-two-dropdown-menu li {
 	text-align: center;
 	width: 100%;
 }
 
-.jhon-smith-dropdown-menu li a {
+.rbp-two-dropdown-menu li a {
 	border-top: 2px solid #0d65ed;
 	text-align: left;
 }
 
-.jhon-smith-dropdown-menu li:hover>ul,
-.jhon-smith-dropdown-menu li:focus-within>ul {
+.rbp-two-dropdown-menu li:hover>ul,
+.rbp-two-dropdown-menu li:focus-within>ul {
 	top: 0;
 }
 
-.jhon-smith-multi-dropdown-menu {
+.rbp-two-multi-dropdown-menu {
 	position: absolute;
 	background-color: #fff;
 	top: -9999px;
@@ -235,7 +235,7 @@ Table of CSS Content End Here
 	box-shadow: 0 0 5px 5px #0d65ed;
 }
 
-.jhon-smith-multi-dropdown-menu li a {
+.rbp-two-multi-dropdown-menu li a {
 	border-right: 2px solid #0d65ed;
 }
 
@@ -279,7 +279,7 @@ img {
 /*===============================
 02. Common Classes CSS Start Here
 ===============================*/
-.jhon-smith-btn {
+.rbp-two-btn {
 	position: relative;
 	display: inline-block;
 	text-decoration: none;
@@ -291,7 +291,7 @@ img {
 	z-index: 0;
 }
 
-.jhon-smith-btn:before {
+.rbp-two-btn:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -302,29 +302,29 @@ img {
 	z-index: -1;
 }
 
-.jhon-smith-btn:hover:before,
-.jhon-smith-btn:focus:before {
+.rbp-two-btn:hover:before,
+.rbp-two-btn:focus:before {
 	width: 100%;
 }
 
-.jhon-smith-btn a {
+.rbp-two-btn a {
 	text-decoration: none;
 	display: block;
 	color: #fff;
 }
 
-.jhon-smith-strong-text {
+.rbp-two-strong-text {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 }
 
-.jhon-smith-content-title h3 {
+.rbp-two-content-title h3 {
 	position: relative;
 	display: inline-block;
 	margin-bottom: 30px;
 }
 
-.jhon-smith-content-title h3:after {
+.rbp-two-content-title h3:after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -340,33 +340,33 @@ img {
 /*==============================
 04. Section Title CSS Start Here
 ==============================*/
-.jhon-smith-section-title {
+.rbp-two-section-title {
 	text-align: center;
 	margin: 20px 0 70px;
 }
 
-.jhon-smith-section-title h2 {
+.rbp-two-section-title h2 {
 	position: relative;
 	display: inline-block;
 	font-size: 40px;
 	margin-bottom: 10px;
 }
 
-.jhon-smith-section-title h2:before,
-.jhon-smith-section-title h2:after {
+.rbp-two-section-title h2:before,
+.rbp-two-section-title h2:after {
 	content: "";
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 }
 
-.jhon-smith-section-title h2:before {
+.rbp-two-section-title h2:before {
 	bottom: -20px;
 	width: 100%;
 	height: 2px;
 }
 
-.jhon-smith-section-title h2:after {
+.rbp-two-section-title h2:after {
 	bottom: -29px;
 	width: 20px;
 	height: 20px;
@@ -381,7 +381,7 @@ img {
 /*============================
 05. Header Area CSS Start Here
 ============================*/
-.jhon-smith-header-area {
+.rbp-two-header-area {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -394,7 +394,7 @@ img {
 	z-index: 9;
 }
 
-.jhon-smith-header-area:before {
+.rbp-two-header-area:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -406,7 +406,7 @@ img {
 }
 
 /*===== 5.2. Header Content CSS Start Here =====*/
-.jhon-smith-header-content {
+.rbp-two-header-content {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -416,19 +416,19 @@ img {
 	color: #ffffff;
 }
 
-.jhon-smith-header-content-title h1 {
+.rbp-two-header-content-title h1 {
 	font-size: 70px;
 	margin-bottom: 30px;
 }
 
-.jhon-smith-header-content-subtitle h3 {
+.rbp-two-header-content-subtitle h3 {
 	font-size: 40px;
 }
 
 /*===== 5.2. Header Content CSS End Here =====*/
 
 /*===== 5.3. Header Scrolldown Button CSS Start Here =====*/
-.jhon-smith-header-scroll-down {
+.rbp-two-header-scroll-down {
 	position: absolute;
 	bottom: 35px;
 	left: 50%;
@@ -440,7 +440,7 @@ img {
 	cursor: pointer;
 }
 
-.jhon-smith-header-scroll-down:after {
+.rbp-two-header-scroll-down:after {
 	content: "";
 	position: absolute;
 	top: 10px;
@@ -451,10 +451,10 @@ img {
 	background-color: #ffffff;
 	border-radius: 10px;
 	opacity: 1;
-	animation: jhon_smith_down_effect 2s ease 0s infinite;
+	animation: rbp_two_down_effect 2s ease 0s infinite;
 }
 
-@-webkit-keyframes jhon_smith_down_effect {
+@-webkit-keyframes rbp_two_down_effect {
 	0% {
 		opacity: 1;
 		top: 10px;
@@ -466,7 +466,7 @@ img {
 	}
 }
 
-@keyframes jhon_smith_down_effect {
+@keyframes rbp_two_down_effect {
 	0% {
 		opacity: 1;
 		top: 10px;
@@ -478,11 +478,11 @@ img {
 	}
 }
 
-.jhon-smith-header-scroll-down:focus {
+.rbp-two-header-scroll-down:focus {
 	border: 2px solid #0d65ed;
 }
 
-.jhon-smith-header-scroll-down:focus:after {
+.rbp-two-header-scroll-down:focus:after {
 	background-color: #0d65ed;
 }
 
@@ -495,38 +495,38 @@ img {
 /*=================================
 06. About Me Section CSS Start Here
 =================================*/
-.jhon-smith-about-me-title h6 {
+.rbp-two-about-me-title h6 {
 	margin-bottom: 20px;
 }
 
-.jhon-smith-about-me-description p {
+.rbp-two-about-me-description p {
 	margin-bottom: 20px;
 }
 
-.jhon-smith-about-me-separator {
+.rbp-two-about-me-separator {
 	width: 100%;
 	height: 1px;
 	background-color: #cccccc;
 	margin: 20px 0;
 }
 
-.jhon-smith-about-me-details ul {
+.rbp-two-about-me-details ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-.jhon-smith-about-me-details ul li {
+.rbp-two-about-me-details ul li {
 	display: block;
 	margin-bottom: 20px;
 	font-size: 20px;
 }
 
-.jhon-smith-about-me-details ul li span {
+.rbp-two-about-me-details ul li span {
 	display: inline-block;
 }
 
-.jhon-smith-user-icon {
+.rbp-two-user-icon {
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
@@ -554,7 +554,7 @@ img {
 /*==================================
 07. My Skills Section CSS Start Here
 ==================================*/
-.jhon-smith-skill-bar {
+.rbp-two-skill-bar {
 	position: relative;
 	width: 100%;
 	height: 12px;
@@ -565,12 +565,12 @@ img {
 	margin-bottom: 25px;
 }
 
-.jhon-smith-skill-name {
+.rbp-two-skill-name {
 	font-size: 18px;
 	margin-bottom: 5px;
 }
 
-.jhon-smith-skill-animation {
+.rbp-two-skill-animation {
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -579,7 +579,7 @@ img {
 	border-radius: 6px;
 }
 
-.jhon-smith-skill-percentage {
+.rbp-two-skill-percentage {
 	position: absolute;
 	top: -37px;
 	right: -20px;
@@ -587,7 +587,7 @@ img {
 	padding: 2px 7px;
 }
 
-.jhon-smith-skill-percentage:before {
+.rbp-two-skill-percentage:before {
 	content: "";
 	position: absolute;
 	bottom: -6px;
@@ -604,7 +604,7 @@ img {
 /*================================
 08. Hire Me Section CSS Start Here
 ================================*/
-.jhon-smith-hire-me {
+.rbp-two-hire-me {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -616,7 +616,7 @@ img {
 	z-index: 1;
 }
 
-.jhon-smith-hire-me:before {
+.rbp-two-hire-me:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -627,16 +627,16 @@ img {
 	z-index: -1;
 }
 
-.jhon-smith-hire-me-content {
+.rbp-two-hire-me-content {
 	text-align: center;
 }
 
-.jhon-smith-hire-me-content h2 {
+.rbp-two-hire-me-content h2 {
 	font-size: 48px;
 	margin-bottom: 10px;
 }
 
-.jhon-smith-hire-me-content p {
+.rbp-two-hire-me-content p {
 	margin-bottom: 30px;
 }
 
@@ -655,7 +655,7 @@ img {
 /*=================================
 09. Services Section CSS Start Here
 =================================*/
-.jhon-smith-single-service {
+.rbp-two-single-service {
 	position: relative;
 	padding: 32px 38px;
 	text-align: center;
@@ -664,8 +664,8 @@ img {
 	z-index: 0;
 }
 
-.jhon-smith-single-service:before,
-.jhon-smith-single-service:after {
+.rbp-two-single-service:before,
+.rbp-two-single-service:after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -673,37 +673,37 @@ img {
 	height: 100%;
 }
 
-.jhon-smith-single-service:before {
+.rbp-two-single-service:before {
 	width: 100%;
 	background-color: #ffffff;
 	z-index: -2;
 }
 
-.jhon-smith-single-service:after {
+.rbp-two-single-service:after {
 	width: 2px;
 	z-index: -1;
 	transition: all 0.4s ease-in-out;
 }
 
-.jhon-smith-single-service:hover:after,
-.jhon-smith-single-service:focus:after {
+.rbp-two-single-service:hover:after,
+.rbp-two-single-service:focus:after {
 	width: 100%;
 }
 
-.jhon-smith-single-service:hover .jhon-smith-services-icon,
-.jhon-smith-single-service:hover .jhon-smith-services-title,
-.jhon-smith-single-service:hover .jhon-smith-services-description,
-.jhon-smith-single-service:focus .jhon-smith-services-icon,
-.jhon-smith-single-service:focus .jhon-smith-services-title,
-.jhon-smith-single-service:focus .jhon-smith-services-description {
+.rbp-two-single-service:hover .rbp-two-services-icon,
+.rbp-two-single-service:hover .rbp-two-services-title,
+.rbp-two-single-service:hover .rbp-two-services-description,
+.rbp-two-single-service:focus .rbp-two-services-icon,
+.rbp-two-single-service:focus .rbp-two-services-title,
+.rbp-two-single-service:focus .rbp-two-services-description {
 	color: #ffffff;
 }
 
-.jhon-smith-services-icon {
+.rbp-two-services-icon {
 	font-size: 50px;
 }
 
-.jhon-smith-services-description {
+.rbp-two-services-description {
 	font-size: 13px;
 	color: #777777;
 }
@@ -715,7 +715,7 @@ img {
 /*================================
 10. CountTo Section CSS Start Here
 ================================*/
-.jhon-smith-countup {
+.rbp-two-countup {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -727,7 +727,7 @@ img {
 	z-index: 1;
 }
 
-.jhon-smith-countup:before {
+.rbp-two-countup:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -738,25 +738,25 @@ img {
 	z-index: -1;
 }
 
-.jhon-smith-single-countup-item {
+.rbp-two-single-countup-item {
 	text-align: center;
 }
 
-.jhon-smith-countup-icon {
+.rbp-two-countup-icon {
 	font-size: 50px;
 }
 
-.jhon-smith-countup-number {
+.rbp-two-countup-number {
 	font-size: 60px;
 }
 
-.jhon-smith-separator-countup {
+.rbp-two-separator-countup {
 	width: 100px;
 	height: 3px;
 	margin: 20px auto;
 }
 
-.jhon-smith-countup-text {
+.rbp-two-countup-text {
 	text-transform: capitalize;
 	font-size: 20px;
 }
@@ -768,14 +768,14 @@ img {
 /*==================================
 11. Portfolio Section CSS Start Here
 ==================================*/
-.jhon-smith-portfolio-menu ul {
+.rbp-two-portfolio-menu ul {
 	list-style: none;
 	padding: 0;
 	margin: 20px 0;
 	text-align: center;
 }
 
-.jhon-smith-portfolio-menu ul li {
+.rbp-two-portfolio-menu ul li {
 	display: inline-block;
 	margin: 0 10px 20px 0;
 	padding: 15px 20px;
@@ -783,18 +783,18 @@ img {
 	transition: all 0.4s ease-in-out;
 }
 
-.jhon-smith-portfolio-menu ul li:hover,
-.jhon-smith-portfolio-menu ul li:focus,
-.jhon-smith-active-portfolio {
+.rbp-two-portfolio-menu ul li:hover,
+.rbp-two-portfolio-menu ul li:focus,
+.rbp-two-active-portfolio {
 	color: #ffffff;
 }
 
-.jhon-smith-portfolio-signle {
+.rbp-two-portfolio-signle {
 	position: relative;
 	margin-bottom: 20px;
 }
 
-.jhon-smith-portfolio-signle:before {
+.rbp-two-portfolio-signle:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -804,12 +804,12 @@ img {
 	transition: all 0.4s ease-in-out;
 }
 
-.jhon-smith-portfolio-signle:hover:before,
-.jhon-smith-portfolio-signle:focus:before {
+.rbp-two-portfolio-signle:hover:before,
+.rbp-two-portfolio-signle:focus:before {
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
-.jhon-smith-portfolio-text {
+.rbp-two-portfolio-text {
 	display: none;
 	position: absolute;
 	bottom: 0;
@@ -820,14 +820,14 @@ img {
 	transition: all 0.3s ease-in-out;
 }
 
-.jhon-smith-portfolio-signle:hover .jhon-smith-portfolio-icons,
-.jhon-smith-portfolio-signle:hover .jhon-smith-portfolio-text,
-.jhon-smith-portfolio-signle:focus .jhon-smith-portfolio-icons,
-.jhon-smith-portfolio-signle:focus .jhon-smith-portfolio-text {
+.rbp-two-portfolio-signle:hover .rbp-two-portfolio-icons,
+.rbp-two-portfolio-signle:hover .rbp-two-portfolio-text,
+.rbp-two-portfolio-signle:focus .rbp-two-portfolio-icons,
+.rbp-two-portfolio-signle:focus .rbp-two-portfolio-text {
 	display: block;
 }
 
-.jhon-smith-portfolio-icons {
+.rbp-two-portfolio-icons {
 	display: none;
 	position: absolute;
 	top: 50%;
@@ -836,7 +836,7 @@ img {
 	transition: all 0.4s ease-in-out;
 }
 
-.jhon-smith-portfolio-icon {
+.rbp-two-portfolio-icon {
 	display: inline-block;
 	width: 50px;
 	height: 50px;
@@ -846,7 +846,7 @@ img {
 	margin: 0 10px 10px 0;
 }
 
-.jhon-smith-portfolio-icon i {
+.rbp-two-portfolio-icon i {
 	color: #ffffff;
 }
 
@@ -857,25 +857,25 @@ img {
 /*===============================
 12. Resume Section CSS Start Here
 ===============================*/
-.jhon-smith-resume-single-item {
+.rbp-two-resume-single-item {
 	background-color: #ffffff;
 	padding: 30px 20px;
 	margin-bottom: 20px;
 	box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.08);
 }
 
-.jhon-smith-resume-single-item-subtitle {
+.rbp-two-resume-single-item-subtitle {
 	display: inline-block;
 	color: #ffffff;
 	padding: 5px 10px;
 	margin-bottom: 10px;
 }
 
-.jhon-smith-resume-single-item-title {
+.rbp-two-resume-single-item-title {
 	margin-bottom: 20px;
 }
 
-.jhon-smith-resume-single-item-title p {
+.rbp-two-resume-single-item-title p {
 	color: #777777;
 }
 
@@ -890,7 +890,7 @@ img {
 	z-index: 0;
 }
 
-.jhon-smith-testimonials {
+.rbp-two-testimonials {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -902,7 +902,7 @@ img {
 	text-align: center;
 }
 
-.jhon-smith-testimonials:before {
+.rbp-two-testimonials:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -912,7 +912,7 @@ img {
 	background-color: rgba(0, 0, 0, .68);
 }
 
-.jhon-smith-client-img {
+.rbp-two-client-img {
 	margin: 20px auto;
 	overflow: hidden;
 	width: 170px;
@@ -920,11 +920,11 @@ img {
 	border-radius: 50%;
 }
 
-.jhon-smith-client-name {
+.rbp-two-client-name {
 	font-size: 22px;
 }
 
-.jhon-smith-client-designation {
+.rbp-two-client-designation {
 	margin-bottom: 30px;
 }
 
@@ -943,15 +943,15 @@ img {
 /*===================================
 14. Contact Me Section CSS Start Here
 ===================================*/
-.jhon-smith-contact-info-box {
+.rbp-two-contact-info-box {
 	padding: 40px 50px;
 	margin-bottom: 60px;
 	text-align: center;
 	position: relative;
 }
 
-.jhon-smith-contact-info-box:before,
-.jhon-smith-contact-info-box:after {
+.rbp-two-contact-info-box:before,
+.rbp-two-contact-info-box:after {
 	content: "";
 	position: absolute;
 	width: 60px;
@@ -959,29 +959,29 @@ img {
 	transition: all 0.4s ease-in-out;
 }
 
-.jhon-smith-contact-info-box:before {
+.rbp-two-contact-info-box:before {
 	top: 0;
 	left: 0;
 	border-bottom: none !important;
 	border-right: none !important;
 }
 
-.jhon-smith-contact-info-box:after {
+.rbp-two-contact-info-box:after {
 	bottom: 0;
 	right: 0;
 	border-top: none !important;
 	border-left: none !important;
 }
 
-.jhon-smith-contact-info-box:hover:before,
-.jhon-smith-contact-info-box:hover:after,
-.jhon-smith-contact-info-box:focus:before,
-.jhon-smith-contact-info-box:focus:after {
+.rbp-two-contact-info-box:hover:before,
+.rbp-two-contact-info-box:hover:after,
+.rbp-two-contact-info-box:focus:before,
+.rbp-two-contact-info-box:focus:after {
 	width: 100px;
 	height: 100px;
 }
 
-.jhon-smith-contact-info-icon {
+.rbp-two-contact-info-icon {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 20px;
@@ -995,13 +995,13 @@ img {
 	cursor: pointer;
 }
 
-.jhon-smith-contact-info-icon:hover,
-.jhon-smith-contact-info-icon:focus {
+.rbp-two-contact-info-icon:hover,
+.rbp-two-contact-info-icon:focus {
 	color: #ffffff;
 }
 
-.jhon-smith-contact-field input,
-.jhon-smith-contact-field textarea {
+.rbp-two-contact-field input,
+.rbp-two-contact-field textarea {
 	padding: 10px 10px 0;
 	border-top: none;
 	border-right: none;
@@ -1011,7 +1011,7 @@ img {
 	background-color: transparent;
 }
 
-.jhon-smith-massage-send {
+.rbp-two-massage-send {
 	padding: 10px 30px;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -1020,8 +1020,8 @@ img {
 	background-color: transparent;
 }
 
-.jhon-smith-massage-send:hover,
-.jhon-smith-massage-send:focus {
+.rbp-two-massage-send:hover,
+.rbp-two-massage-send:focus {
 	color: #ffffff;
 }
 
@@ -1032,30 +1032,30 @@ img {
 /*============================
 15. Footer Area CSS Start Here
 ============================*/
-.jhon-smith-footer-area {
+.rbp-two-footer-area {
 	padding: 50px 0;
 }
 
-.jhon-smith-copyright-text {
+.rbp-two-copyright-text {
 	margin-top: 20px;
 }
 
-.jhon-smith-copyright-text a {
+.rbp-two-copyright-text a {
 	text-decoration: none;
 }
 
-.jhon-smith-footer-social-icons ul {
+.rbp-two-footer-social-icons ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-.jhon-smith-footer-social-icons li {
+.rbp-two-footer-social-icons li {
 	display: inline-block;
 	margin: 8px;
 }
 
-.jhon-smith-footer-social-icons a {
+.rbp-two-footer-social-icons a {
 	text-decoration: none;
 	display: block;
 	width: 48px;
@@ -1068,25 +1068,25 @@ img {
 	position: relative;
 }
 
-.jhon-smith-footer-social-icons a:hover,
-.jhon-smith-footer-social-icons a:focus {
+.rbp-two-footer-social-icons a:hover,
+.rbp-two-footer-social-icons a:focus {
 	color: #ffffff;
 }
 
-.jhon-smith-footer-social-icons a:before {
+.rbp-two-footer-social-icons a:before {
 	transition-delay: 100ms;
 	visibility: hidden;
 	z-index: 999;
 }
 
-.jhon-smith-footer-social-icons a:hover:before,
-.jhon-smith-footer-social-icons a:hover:after,
-.jhon-smith-footer-social-icons a:focus:before,
-.jhon-smith-footer-social-icons a:focus:after {
+.rbp-two-footer-social-icons a:hover:before,
+.rbp-two-footer-social-icons a:hover:after,
+.rbp-two-footer-social-icons a:focus:before,
+.rbp-two-footer-social-icons a:focus:after {
 	visibility: visible;
 }
 
-.jhon-smith-footer-social-icons a:after {
+.rbp-two-footer-social-icons a:after {
 	content: attr(aria-label);
 	position: absolute;
 	top: -53%;
@@ -1109,7 +1109,7 @@ img {
 /*=====================================
 16. Scroll To Top Button CSS Start Here
 =====================================*/
-.jhon-smith-scroll-to-top {
+.rbp-two-scroll-to-top {
 	display: none;
 	position: fixed;
 	font-size: 22px;
@@ -1128,7 +1128,7 @@ img {
 	background-color: #0d65ed;
 }
 
-.jhon-smith-scroll-to-top:focus {
+.rbp-two-scroll-to-top:focus {
 	box-shadow: 0 0 5px 5px #0d65ed;
 	border: 2px solid #fff;
 }

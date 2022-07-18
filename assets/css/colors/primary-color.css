@@ -1,22 +1,22 @@
 @charset "UTF-8";
 
 /*
-Theme Name: Jhon Smith
-Theme URI: https://github.com/BashirRased/wp-theme-jhon-smith
+Theme Name: RB Portfolio Two
+Theme URI: https://github.com/BashirRased/wp-theme-rbp-two
 Author: Bashir Rased
 Author URI: https://profiles.wordpress.org/bashirrased2017/ 
-Description: Jhon Smith is a portfolio website.
+Description: RB Portfolio Two is a portfolio website.
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: jhon-smith
+Text Domain: rbp-two
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks
 
-Jhon Smith WordPress Theme, (C) 2022 WordPress.org
-Jhon Smith is distributed under the terms of the GNU GPL.
+RB Portfolio Two WordPress Theme, (C) 2022 WordPress.org
+RB Portfolio Two is distributed under the terms of the GNU GPL.
 */
 
 /*=============================
@@ -60,16 +60,16 @@ Table of CSS Content End Here
 /*===============================
 02. Common Classes CSS Start Here
 ===============================*/
-.jhon-smith-theme-color {
+.rbp-two-theme-color {
 	color: #0d65ed;
 }
-.jhon-smith-btn:before {
+.rbp-two-btn:before {
 	background-color: #0d65ed;
 }
 /*=============================
 02. Common Classes CSS End Here
 =============================*/
-.jhon-smith-content-title h3:after {
+.rbp-two-content-title h3:after {
 	background-color: #0d65ed;
 }
 /*====================================
@@ -83,7 +83,7 @@ Table of CSS Content End Here
 /*==============================
 04. Section Title CSS Start Here
 ==============================*/
-.jhon-smith-section-title h2:after {
+.rbp-two-section-title h2:after {
 	background-color: #0d65ed;	
 }
 /*============================
@@ -97,23 +97,23 @@ Table of CSS Content End Here
 /*===== 5.1. Header Top CSS Start Here =====*/
 
 /* 5.1.1. Header Logo CSS Start Here */
-.jhon-smith-header-logo h1 a {
+.rbp-two-header-logo h1 a {
 	color: #0d65ed;
 }
 /* 5.1.1. Header Logo CSS End Here */
 
 /* 5.1.2. Header Mobile Menu CSS Start Here */
-.jhon-smith-mobile-menu-icon {
+.rbp-two-mobile-menu-icon {
 	background-color: #0d65ed;
 }
 /* 5.1.2. Header Mobile Menu CSS End Here */
 
 /* 5.1.3. Header Desktop Menu CSS Start Here */
-.jhon-smith-header-active-menu {
+.rbp-two-header-active-menu {
 	color: #0d65ed !important;
 }
 @media all and (max-width: 991px) {
-	.jhon-smith-desktop-menu li {
+	.rbp-two-desktop-menu li {
 		background-color: #0d65ed;
 	}
 }
@@ -122,7 +122,7 @@ Table of CSS Content End Here
 /*===== 5.1. Header Top CSS End Here =====*/
 
 /*===== 5.2. Header Content CSS Start Here =====*/
-.jhon-smith-type-effect {
+.rbp-two-type-effect {
 	border-right: 6px solid #0d65ed;
 }
 /*===== 5.2. Header Content CSS End Here =====*/
@@ -142,7 +142,7 @@ Table of CSS Content End Here
 .btn-contact-me a {
 	color: #0d65ed;
 }
-.jhon-smith-user-icon {
+.rbp-two-user-icon {
 	background-color: #0d65ed;
 }
 /*===============================
@@ -152,13 +152,13 @@ Table of CSS Content End Here
 /*==================================
 07. My Skills Section CSS Start Here
 ==================================*/
-.jhon-smith-skill-animation {
+.rbp-two-skill-animation {
 	background-color: #0d65ed;
 }
-.jhon-smith-skill-percentage {
+.rbp-two-skill-percentage {
 	background-color: #0d65ed;
 }
-.jhon-smith-skill-percentage:before {
+.rbp-two-skill-percentage:before {
 	border-color: #0d65ed transparent transparent transparent;
 }
 /*================================
@@ -176,10 +176,10 @@ Table of CSS Content End Here
 /*=================================
 09. Services Section CSS Start Here
 =================================*/
-.jhon-smith-single-service:after {
+.rbp-two-single-service:after {
 	background-color: #0d65ed;
 }
-.jhon-smith-services-icon {
+.rbp-two-services-icon {
 	color: #0d65ed;
 }
 /*===============================
@@ -189,7 +189,7 @@ Table of CSS Content End Here
 /*================================
 10. CountTo Section CSS Start Here
 ================================*/
-.jhon-smith-separator-countup {
+.rbp-two-separator-countup {
 	background-color: #0d65ed;
 }
 /*==============================
@@ -199,12 +199,12 @@ Table of CSS Content End Here
 /*==================================
 11. Portfolio Section CSS Start Here
 ==================================*/
-.jhon-smith-portfolio-menu ul li:hover,
-.jhon-smith-active-portfolio {
+.rbp-two-portfolio-menu ul li:hover,
+.rbp-two-active-portfolio {
 	background-color: #0d65ed;
 	border: 1px solid #0d65ed !important;
 }
-.jhon-smith-portfolio-icon {
+.rbp-two-portfolio-icon {
 	background-color: #0d65ed;
 }
 /*================================
@@ -214,7 +214,7 @@ Table of CSS Content End Here
 /*===============================
 12. Resume Section CSS Start Here
 ===============================*/
-.jhon-smith-resume-single-item-subtitle {
+.rbp-two-resume-single-item-subtitle {
 	background-color: #0d65ed;
 }
 /*=============================
@@ -224,10 +224,10 @@ Table of CSS Content End Here
 /*====================================
 13. Testimonial Section CSS Start Here
 ====================================*/
-.jhon-smith-client-img {
+.rbp-two-client-img {
 	border: 5px solid #0d65ed;
 }
-.jhon-smith-client-name {
+.rbp-two-client-name {
 	color: #0d65ed;
 }
 .owl-dots .owl-dot.active {
@@ -240,26 +240,26 @@ Table of CSS Content End Here
 /*===================================
 14. Contact Me Section CSS Start Here
 ===================================*/
-.jhon-smith-contact-info-box:before,
-.jhon-smith-contact-info-box:after {
+.rbp-two-contact-info-box:before,
+.rbp-two-contact-info-box:after {
 	border: 2px solid #0d65ed;
 }
-.jhon-smith-contact-info-icon {
+.rbp-two-contact-info-icon {
 	color: #0d65ed;
 	border: 1px solid #0d65ed;
 }
-.jhon-smith-contact-info-icon:hover {
+.rbp-two-contact-info-icon:hover {
 	background-color: #0d65ed;
 }
-.jhon-smith-contact-field input:focus,
-.jhon-smith-contact-field textarea:focus {
+.rbp-two-contact-field input:focus,
+.rbp-two-contact-field textarea:focus {
 	border-bottom: 1px solid #0d65ed;
 }
-.jhon-smith-massage-send {
+.rbp-two-massage-send {
 	color: #0d65ed;
 	border: 1px solid #0d65ed;
 }
-.jhon-smith-massage-send:hover {
+.rbp-two-massage-send:hover {
 	background-color: #0d65ed;
 }
 /*=================================
@@ -269,18 +269,18 @@ Table of CSS Content End Here
 /*============================
 15. Footer Area CSS Start Here
 ============================*/
-.jhon-smith-copyright-text a {
+.rbp-two-copyright-text a {
 	color: #0d65ed;
 }
-.jhon-smith-footer-social-icons a {
+.rbp-two-footer-social-icons a {
 	color: #0d65ed;
 	border: 1px solid #0d65ed;
 }
-.jhon-smith-footer-social-icons a:hover {
+.rbp-two-footer-social-icons a:hover {
 	background-color: #0d65ed;
 	border: 1px solid #0d65ed;
 }
-.jhon-smith-footer-social-icons a:before {
+.rbp-two-footer-social-icons a:before {
 	content: "";
 	position: absolute;
 	left: calc(50% - 7px);
@@ -288,7 +288,7 @@ Table of CSS Content End Here
 	transform: translateY(-8px);
 	border-top-color: #0d65ed;
 }
-.jhon-smith-footer-social-icons a:after {
+.rbp-two-footer-social-icons a:after {
 	background-color: #0d65ed;
 }
 /*==========================
@@ -298,7 +298,7 @@ Table of CSS Content End Here
 /*=====================================
 16. Scroll To Top Button CSS Start Here
 =====================================*/
-.jhon-smith-scroll-to-top {
+.rbp-two-scroll-to-top {
 	background-color: #0d65ed;
 }
 /*===================================
@@ -308,7 +308,7 @@ Table of CSS Content End Here
 /*=================================
 17. Main Page Design CSS Start Here
 =================================*/
-.jhon-smith-feature-icon i {
+.rbp-two-feature-icon i {
 	background-color: #0d65ed;
 }
 /*===============================

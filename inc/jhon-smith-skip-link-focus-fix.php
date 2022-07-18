@@ -5,11 +5,11 @@
  * This does not enqueue the script because it is tiny and because it is only for IE11,
  * thus it does not warrant having an entire dedicated blocking script being loaded.
  *
- * @since Jhon Smith 1.0.0
+ * @since RB Portfolio Two 1.0.0
  *
  * @link https://git.io/vWdr2
  */
-function jhon_smith_skip_link_focus_fix() {
+function rbp_two_skip_link_focus_fix() {
 
 	// If SCRIPT_DEBUG is defined and true, print the unminified file.
 	if ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG) {
@@ -25,4 +25,4 @@ function jhon_smith_skip_link_focus_fix() {
 	</script>
 	<?php
 }
-add_action('wp_print_footer_scripts', 'jhon_smith_skip_link_focus_fix');
+add_action('wp_print_footer_scripts', 'rbp_two_skip_link_focus_fix');
