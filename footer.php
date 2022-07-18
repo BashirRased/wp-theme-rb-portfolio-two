@@ -17,7 +17,7 @@
     <!--============================== 
 	===== Footer Area Strat Here =====
 	===============================-->
-	<footer class="rbp-two-footer-area">
+	<footer class="rb-portfolio-two-footer-area">
 		<div class="container">
 			<div class="row">
 			
@@ -26,17 +26,17 @@
 				==================================-->
 				<div class="col-lg-6">
 					<?php
-						$fromYear = (int)esc_html('2022','rbp-two');
-						$thisYear = (int)esc_html(date('Y'),'rbp-two');
+						$fromYear = (int)esc_html('2022','rb-portfolio-two');
+						$thisYear = (int)esc_html(date('Y'),'rb-portfolio-two');
 						$copyrightYear = $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');
 
 						printf(
-							'<p class="rbp-two-copyright-text">%1$s <a href="%2$s" target="_blank">%3$s</a> %4$s <a href="%5$s" target="_blank"> %6$s </a> %7$s %8$s</p>',
+							'<p class="rb-portfolio-two-copyright-text">%1$s <a href="%2$s" target="_blank">%3$s</a> %4$s <a href="%5$s" target="_blank"> %6$s </a> %7$s %8$s</p>',
 							
                             /* translators:
 							%1$s: Copyright Symbol.
 							*/
-							esc_html('Copyright &copy; By ','rbp-two'),
+							esc_html('Copyright &copy; By ','rb-portfolio-two'),
 
                             /* translators:
 							%2$s: Home URL.
@@ -46,12 +46,12 @@
                             /* translators:
 							%3$s: Site Name.
 							*/
-							esc_html(get_bloginfo('name'),'rbp-two'),
+							esc_html(get_bloginfo('name'),'rb-portfolio-two'),
 
                             /* translators:
 							%4$s: Powered By.
 							*/
-							esc_html('Powered By ','rbp-two'),
+							esc_html('Powered By ','rb-portfolio-two'),
 
                             /* translators:
                             %5$s: Powered By URL.
@@ -61,17 +61,17 @@
                             /* translators:
 							%6$s: Powered By Name.
 							*/
-							esc_html('Bashir Rased','rbp-two'),
+							esc_html('Bashir Rased','rb-portfolio-two'),
 
                             /* translators:
                             %7$s: Copyright Year.
 							*/
-							esc_html($copyrightYear,'rbp-two'),
+							esc_html($copyrightYear,'rb-portfolio-two'),
 
                             /* translators:
 							%8$s: Copyright Condition.
 							*/
-							esc_html('| All Rights Reserved.','rbp-two')
+							esc_html('| All Rights Reserved.','rb-portfolio-two')
 						);
 					?>
 					
@@ -84,14 +84,14 @@
 				===== Social Icons Area Strat Here =====
 				=====================================-->
 				<div class="col-lg-6">					
-					<div class="rbp-two-footer-social-icons float-end">
+					<div class="rb-portfolio-two-footer-social-icons float-end">
 						<ul>
                             
                             <!-- Facebook URL -->
                             <?php
                             if(get_option('rb_link')): ?>
                             <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Facebook', 'rbp-two'); ?>"><i class="fa-brands fa-facebook-f"></i></a>
+								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Facebook', 'rb-portfolio-two'); ?>"><i class="fa-brands fa-facebook-f"></i></a>
 							</li>
                             <?php endif; ?>
 
@@ -99,7 +99,7 @@
                             <?php
                             if(get_option('rb_link')): ?>
                             <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Twitter', 'rbp-two'); ?>"><i class="fa-brands fa-twitter"></i></a>
+								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Twitter', 'rb-portfolio-two'); ?>"><i class="fa-brands fa-twitter"></i></a>
 							</li>
                             <?php endif; ?>
 
@@ -107,7 +107,7 @@
                             <?php
                             if(get_option('rb_link')): ?>
                             <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Facebook', 'rbp-two'); ?>"><i class="fa-brands fa-instagram"></i></a>
+								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Facebook', 'rb-portfolio-two'); ?>"><i class="fa-brands fa-instagram"></i></a>
 							</li>
                             <?php endif; ?>
 							
@@ -115,7 +115,7 @@
                             <?php
                             if(get_option('rb_link')): ?>
                             <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Linkedin', 'rbp-two'); ?>"><i class="fa-brands fa-linkedin-in"></i></a>
+								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Linkedin', 'rb-portfolio-two'); ?>"><i class="fa-brands fa-linkedin-in"></i></a>
 							</li>
                             <?php endif; ?>
 
@@ -123,7 +123,7 @@
                             <?php
                             if(get_option('rb_link')): ?>
                             <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Pinterest', 'rbp-two'); ?>"><i class="fa-brands fa-pinterest-p"></i></a>
+								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Pinterest', 'rb-portfolio-two'); ?>"><i class="fa-brands fa-pinterest-p"></i></a>
 							</li>
                             <?php endif; ?>
 
@@ -145,14 +145,14 @@
 	<!--===================================== 
 	===== Scroll to Top Area Strat Here =====
 	======================================-->
-	<button class="rbp-two-scroll-to-top">
+	<button class="rb-portfolio-two-scroll-to-top">
         <i class="fa-solid fa-angles-up"></i>
 	</button>
 	<!--=================================== 
 	===== Scroll to Top Area End Here =====
 	====================================-->
 	
-	</div><!-- #rbp-two-page -->
+	</div><!-- #rb-portfolio-two-page -->
     <?php wp_footer(); ?>
     </body>
 </html>

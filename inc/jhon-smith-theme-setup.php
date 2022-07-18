@@ -10,7 +10,7 @@
  * @since RB Portfolio Two 1.0.0
  */
 
-if (!function_exists('rbp_two_theme_setup')) {
+if (!function_exists('rb_portfolio_two_theme_setup')) {
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
@@ -22,17 +22,17 @@ if (!function_exists('rbp_two_theme_setup')) {
 	 *
 	 * @return void
 	 */
-	function rbp_two_theme_setup() {
+	function rb_portfolio_two_theme_setup() {
 		// Set content-width.
-        $GLOBALS['content_width'] = apply_filters('rbp_two_content_width', 706);
+        $GLOBALS['content_width'] = apply_filters('rb_portfolio_two_content_width', 706);
 		
 		/*
 		 * Make theme available for translation.
 		 * Translations can be filed in the /languages/ directory.
 		 * If you're building a theme based on Twenty Twenty-One, use a find and replace
-		 * to change 'rbp-two' to the name of your theme in all the template files.
+		 * to change 'rb-portfolio-two' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain('rbp-two', get_template_directory().'/languages');
+		load_theme_textdomain('rb-portfolio-two', get_template_directory().'/languages');
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support('automatic-feed-links');
@@ -140,4 +140,4 @@ if (!function_exists('rbp_two_theme_setup')) {
 		add_theme_support('responsive-embeds');
 	}
 }
-add_action('after_setup_theme', 'rbp_two_theme_setup');
+add_action('after_setup_theme', 'rb_portfolio_two_theme_setup');

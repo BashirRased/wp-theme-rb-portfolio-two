@@ -11,4 +11,4 @@
  */
 
 the_excerpt();
-rbp_two_read_more_text();
+rb_portfolio_two_read_more_text();

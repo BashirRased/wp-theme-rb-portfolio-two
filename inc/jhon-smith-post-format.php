@@ -8,12 +8,12 @@
  * @since RB Portfolio Two 1.0.0
  */
 
-if(!function_exists('rbp_two_post_format_meta')) {
-    function rbp_two_post_format_meta() { ?>        
+if(!function_exists('rb_portfolio_two_post_format_meta')) {
+    function rb_portfolio_two_post_format_meta() { ?>        
         
         <!-- Sticky Post Format -->
         <?php if(is_sticky()): ?>
-        <div class="rbp-two-posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-bookmark"></i>
             <?php
             printf(
@@ -21,9 +21,9 @@ if(!function_exists('rbp_two_post_format_meta')) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="rbp-two-posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rbp-two'),
-                esc_html__('Sticky', 'rbp-two')
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
+                esc_html__('Post Type:', 'rb-portfolio-two'),
+                esc_html__('Sticky', 'rb-portfolio-two')
             );
             ?>
         </div>
@@ -31,7 +31,7 @@ if(!function_exists('rbp_two_post_format_meta')) {
 
         <!-- Password Post Format -->
         <?php if(post_password_required()): ?>
-        <div class="rbp-two-posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-lock"></i>
             <?php
             printf(
@@ -39,9 +39,9 @@ if(!function_exists('rbp_two_post_format_meta')) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="rbp-two-posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rbp-two'),
-                esc_html__('Password', 'rbp-two')
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
+                esc_html__('Post Type:', 'rb-portfolio-two'),
+                esc_html__('Password', 'rb-portfolio-two')
             );
             ?>
         </div>
@@ -49,7 +49,7 @@ if(!function_exists('rbp_two_post_format_meta')) {
 
          <!-- Password Post Format -->
          <?php if(post_password_required()): ?>
-        <div class="rbp-two-posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-lock"></i>
             <?php
             printf(
@@ -57,9 +57,9 @@ if(!function_exists('rbp_two_post_format_meta')) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="rbp-two-posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rbp-two'),
-                esc_html__('Password', 'rbp-two')
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
+                esc_html__('Post Type:', 'rb-portfolio-two'),
+                esc_html__('Password', 'rb-portfolio-two')
             );
             ?>
         </div>
@@ -70,7 +70,7 @@ if(!function_exists('rbp_two_post_format_meta')) {
 
         // Image Post Format
         if('image' === $post_format): ?>
-        <div class="rbp-two-posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-image"></i>
             <?php
             printf(
@@ -78,9 +78,9 @@ if(!function_exists('rbp_two_post_format_meta')) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="rbp-two-posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rbp-two'),
-                esc_html__('Image', 'rbp-two')
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
+                esc_html__('Post Type:', 'rb-portfolio-two'),
+                esc_html__('Image', 'rb-portfolio-two')
             );
             ?>
         </div>
@@ -89,7 +89,7 @@ if(!function_exists('rbp_two_post_format_meta')) {
         // Gallery Post Format
         elseif('gallery' === $post_format):
         ?>
-        <div class="rbp-two-posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-icons"></i>
             <?php
             printf(
@@ -97,9 +97,9 @@ if(!function_exists('rbp_two_post_format_meta')) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="rbp-two-posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rbp-two'),
-                esc_html__('Gallery', 'rbp-two')
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
+                esc_html__('Post Type:', 'rb-portfolio-two'),
+                esc_html__('Gallery', 'rb-portfolio-two')
             );
             ?>
         </div>
@@ -108,7 +108,7 @@ if(!function_exists('rbp_two_post_format_meta')) {
         // Audio Post Format
         elseif('audio' === $post_format):
         ?>
-        <div class="rbp-two-posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-music"></i>
             <?php
             printf(
@@ -116,9 +116,9 @@ if(!function_exists('rbp_two_post_format_meta')) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="rbp-two-posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rbp-two'),
-                esc_html__('Audio', 'rbp-two')
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
+                esc_html__('Post Type:', 'rb-portfolio-two'),
+                esc_html__('Audio', 'rb-portfolio-two')
             );
             ?>
         </div>
@@ -127,7 +127,7 @@ if(!function_exists('rbp_two_post_format_meta')) {
         // Video Post Format
         elseif('video' === $post_format):
         ?>
-        <div class="rbp-two-posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-video"></i>
             <?php
             printf(
@@ -135,9 +135,9 @@ if(!function_exists('rbp_two_post_format_meta')) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="rbp-two-posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rbp-two'),
-                esc_html__('Video', 'rbp-two')
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
+                esc_html__('Post Type:', 'rb-portfolio-two'),
+                esc_html__('Video', 'rb-portfolio-two')
             );
             ?>
         </div>
@@ -146,7 +146,7 @@ if(!function_exists('rbp_two_post_format_meta')) {
         // Link Post Format
         elseif('link' === $post_format):
         ?>
-        <div class="rbp-two-posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-link"></i>
             <?php
             printf(
@@ -154,9 +154,9 @@ if(!function_exists('rbp_two_post_format_meta')) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="rbp-two-posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rbp-two'),
-                esc_html__('Link', 'rbp-two')
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
+                esc_html__('Post Type:', 'rb-portfolio-two'),
+                esc_html__('Link', 'rb-portfolio-two')
             );
             ?>
         </div>
@@ -165,7 +165,7 @@ if(!function_exists('rbp_two_post_format_meta')) {
         // Quote Post Format
         elseif('quote' === $post_format):
         ?>
-        <div class="rbp-two-posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-brands fa-rocketchat"></i>
             <?php
             printf(
@@ -173,9 +173,9 @@ if(!function_exists('rbp_two_post_format_meta')) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="rbp-two-posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rbp-two'),
-                esc_html__('Quote', 'rbp-two')
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
+                esc_html__('Post Type:', 'rb-portfolio-two'),
+                esc_html__('Quote', 'rb-portfolio-two')
             );
             ?>
         </div>
@@ -184,7 +184,7 @@ if(!function_exists('rbp_two_post_format_meta')) {
         // Status Post Format
         elseif('status' === $post_format):
         ?>
-        <div class="rbp-two-posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-clipboard"></i>
             <?php
             printf(
@@ -192,9 +192,9 @@ if(!function_exists('rbp_two_post_format_meta')) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="rbp-two-posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rbp-two'),
-                esc_html__('Status', 'rbp-two')
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
+                esc_html__('Post Type:', 'rb-portfolio-two'),
+                esc_html__('Status', 'rb-portfolio-two')
             );
             ?>
         </div>
@@ -203,7 +203,7 @@ if(!function_exists('rbp_two_post_format_meta')) {
         // Aside Post Format
         elseif('aside' === $post_format):
         ?>
-        <div class="rbp-two-posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-image-portrait"></i>
             <?php
             printf(
@@ -211,9 +211,9 @@ if(!function_exists('rbp_two_post_format_meta')) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="rbp-two-posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rbp-two'),
-                esc_html__('Aside', 'rbp-two')
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
+                esc_html__('Post Type:', 'rb-portfolio-two'),
+                esc_html__('Aside', 'rb-portfolio-two')
             );
             ?>
         </div>
@@ -222,7 +222,7 @@ if(!function_exists('rbp_two_post_format_meta')) {
         // Chat Post Format
         elseif('chat' === $post_format):
         ?>
-        <div class="rbp-two-posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-comments"></i>
             <?php
             printf(
@@ -230,9 +230,9 @@ if(!function_exists('rbp_two_post_format_meta')) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="rbp-two-posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rbp-two'),
-                esc_html__('Chat', 'rbp-two')
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
+                esc_html__('Post Type:', 'rb-portfolio-two'),
+                esc_html__('Chat', 'rb-portfolio-two')
             );
             ?>
         </div>	
@@ -241,7 +241,7 @@ if(!function_exists('rbp_two_post_format_meta')) {
         // Standard Post Format
         else:
         ?>
-        <div class="rbp-two-posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-brands fa-blogger-b"></i>
             <?php
             printf(
@@ -249,9 +249,9 @@ if(!function_exists('rbp_two_post_format_meta')) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="rbp-two-posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rbp-two'),
-                esc_html__('Standard', 'rbp-two')
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
+                esc_html__('Post Type:', 'rb-portfolio-two'),
+                esc_html__('Standard', 'rb-portfolio-two')
             );
             ?>
         </div>

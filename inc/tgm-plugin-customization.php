@@ -8,24 +8,24 @@
  * @since RB Portfolio Two 1.0.0
  */
  
-function rbp_two_required_plugins() {
+function rb_portfolio_two_required_plugins() {
 
 	$plugins = array(
 
 		array(
-			'name'      => __('CMB2','rbp-two'),
+			'name'      => __('CMB2','rb-portfolio-two'),
 			'slug'      => 'cmb2',
 			'required'  => true,
 		),
 
 		array(
-			'name'      => __('Contact Form 7','rbp-two'),
+			'name'      => __('Contact Form 7','rb-portfolio-two'),
 			'slug'      => 'contact-form-7',
 			'required'  => true,
 		),
 
 		array(
-			'name'      => __('RB Site Social Links','rbp-two'),
+			'name'      => __('RB Site Social Links','rb-portfolio-two'),
 			'slug'      => 'rb-site-social-links',
 			'required'  => true,
 		)
@@ -48,4 +48,4 @@ function rbp_two_required_plugins() {
 	tgmpa( $plugins, $config );
 
 }
-add_action('tgmpa_register','rbp_two_required_plugins');
+add_action('tgmpa_register','rb_portfolio_two_required_plugins');

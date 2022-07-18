@@ -11,19 +11,19 @@
  */
 
 // widget register
-function rbp_two_widget_area(){
+function rb_portfolio_two_widget_area(){
 	register_sidebar(array(
-		'name' 			=> __('Add Widget Area Name', 'rbp-two'),
-		'description' 	=> __('Add Widget Area Description', 'rbp-two'),
-		'id' 			=> 'rbp-two-sidebar-right',
-        'before_sidebar'=> '<aside id="rbp-two-secondary" class="rbp-two-widget-area col-lg-4">',
+		'name' 			=> __('Add Widget Area Name', 'rb-portfolio-two'),
+		'description' 	=> __('Add Widget Area Description', 'rb-portfolio-two'),
+		'id' 			=> 'rb-portfolio-two-sidebar-right',
+        'before_sidebar'=> '<aside id="rb-portfolio-two-secondary" class="rb-portfolio-two-widget-area col-lg-4">',
 		'after_sidebar' => '</aside>',
-		'before_widget' => '<div id="rbp-two-widget-%1$s" class="rbp-two-widget-item">',
+		'before_widget' => '<div id="rb-portfolio-two-widget-%1$s" class="rb-portfolio-two-widget-item">',
 		'after_widget' 	=> '</div>',
-		'before_title' 	=> '<h2 class="rbp-two-widget-item-title">',
+		'before_title' 	=> '<h2 class="rb-portfolio-two-widget-item-title">',
 		'after_title' 	=> '</h2>',
         'class'  => ''
 	)); 
     
 }
-add_action('widgets_init', 'rbp_two_widget_area');
+add_action('widgets_init', 'rb_portfolio_two_widget_area');

@@ -1,6 +1,6 @@
 /*
 Theme Name: RB Portfolio Two
-Theme URI: https://github.com/BashirRased/wp-theme-rbp-two
+Theme URI: https://github.com/BashirRased/wp-theme-rb-portfolio-two
 Author: Bashir Rased
 Author URI: https://profiles.wordpress.org/bashirrased2017/ 
 Description: RB Portfolio Two is a portfolio website.
@@ -10,7 +10,7 @@ Requires PHP: 5.6
 Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: rbp-two
+Text Domain: rb-portfolio-two
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks
 
 RB Portfolio Two WordPress Theme, (C) 2022 WordPress.org
@@ -67,36 +67,36 @@ Table of JS Content End Here
 		/*===== 3.1. Header Fixed Menu Start Here =====*/
 		$(window).scroll(function(){
 			if ($(window).scrollTop() >= 50) {
-				$('.rbp-two-header-menu-area').addClass('rbp-two-header-fixed');
+				$('.rb-portfolio-two-header-menu-area').addClass('rb-portfolio-two-header-fixed');
 			}
 			else {
-				$('.rbp-two-header-menu-area').removeClass('rbp-two-header-fixed');
+				$('.rb-portfolio-two-header-menu-area').removeClass('rb-portfolio-two-header-fixed');
 			}
 		});
 		/*===== 3.1. Header Fixed Menu End Here =====*/
 		
 		/*===== 3.2. Active Menu Click Highlight jQuery Start Here =====*/
-		var sidenav = $('.rbp-two-header-desktop-menu a');
-		$(sidenav).on('click', '.rbp-two-header-desktop-menu a', function() {
-			$(this).addClass('rbp-two-header-active-menu').siblings().removeClass('rbp-two-header-active-menu');		
+		var sidenav = $('.rb-portfolio-two-header-desktop-menu a');
+		$(sidenav).on('click', '.rb-portfolio-two-header-desktop-menu a', function() {
+			$(this).addClass('rb-portfolio-two-header-active-menu').siblings().removeClass('rb-portfolio-two-header-active-menu');		
 		});
 		/*===== 3.2. Active Menu Click Highlight jQuery End Here =====*/
 		
 		/*===== 3.3. Active Menu Scroll Highlight jQuery Start Here =====*/
 		$(window).on('scroll', function() {
-			$('.rbp-two-scroll-menu').each(function() {
+			$('.rb-portfolio-two-scroll-menu').each(function() {
 				if ($(window).scrollTop() >= $(this).position().top - 50) {
 					var id = $(this).attr('id');
-					$('.rbp-two-header-desktop-menu a').removeClass('rbp-two-header-active-menu');
-					$('.rbp-two-header-desktop-menu a[href*=\\#' + id + ']').addClass('rbp-two-header-active-menu');
+					$('.rb-portfolio-two-header-desktop-menu a').removeClass('rb-portfolio-two-header-active-menu');
+					$('.rb-portfolio-two-header-desktop-menu a[href*=\\#' + id + ']').addClass('rb-portfolio-two-header-active-menu');
 				}
 			});
 		});
 		/*===== 3.3. Active Menu Scroll Highlight jQuery End Here =====*/
 		
 		/*===== 3.4. Mobile Menu Toggle jQuery Start Here =====*/
-		$(".rbp-two-header-mobile-menu-btn").click(function(){
-			$(".rbp-two-header-desktop-menu").slideToggle();
+		$(".rb-portfolio-two-header-mobile-menu-btn").click(function(){
+			$(".rb-portfolio-two-header-desktop-menu").slideToggle();
 		});
 		/*===== 3.4. Mobile Menu Toggle $ End Here =====*/
 		
@@ -104,30 +104,30 @@ Table of JS Content End Here
 		$(window).resize(function(){
 			var RBMenu = $(window).width();
 			if(RBMenu > 991){
-				$(".rbp-two-header-desktop-menu").show();				
+				$(".rb-portfolio-two-header-desktop-menu").show();				
 			}
 			else{
-				$(".rbp-two-header-desktop-menu").hide();			
+				$(".rb-portfolio-two-header-desktop-menu").hide();			
 			}
 		});
 		/*===== 3.5. Menu Resize Open/Close $ End Here =====*/
 
-		$(".sub-menu .sub-menu").addClass("rbp-two-multi-dropdown-menu");
-        $(".rbp-two-multi-dropdown-menu").removeClass("sub-menu");
+		$(".sub-menu .sub-menu").addClass("rb-portfolio-two-multi-dropdown-menu");
+        $(".rb-portfolio-two-multi-dropdown-menu").removeClass("sub-menu");
 
-        $(".sub-menu").addClass("rbp-two-dropdown-menu");
-        $(".rbp-two-dropdown-menu").removeClass("sub-menu");
+        $(".sub-menu").addClass("rb-portfolio-two-dropdown-menu");
+        $(".rb-portfolio-two-dropdown-menu").removeClass("sub-menu");
 
-		$(".rbp-two-multi-dropdown-menu").siblings("a").prepend
+		$(".rb-portfolio-two-multi-dropdown-menu").siblings("a").prepend
 		('<i class="fas fa-chevron-left"></i>');
 
-		$(".rbp-two-dropdown-menu").siblings("a").append('<i class="fas fa-chevron-down"></i>');
+		$(".rb-portfolio-two-dropdown-menu").siblings("a").append('<i class="fas fa-chevron-down"></i>');
 
 		$(".menu-item-has-children").children("a").append('<button><span class="fas fa-chevron-down"></span></button>');
 
         $('.menu-item-has-children button').on("click", function (event) {
             event.preventDefault();
-            $(this).parent("a").siblings("ul").toggleClass('rbp-two-dropdown-menu-open');
+            $(this).parent("a").siblings("ul").toggleClass('rb-portfolio-two-dropdown-menu-open');
         });
 		/*=====================================
 		03. Header Menu Section $ End Here
@@ -136,8 +136,8 @@ Table of JS Content End Here
 		/*=======================================
 		04. Skill Bar Animation $ Start Here
 		=======================================*/
-		$('.rbp-two-skill-bar').each(function() {
-			$(this).find('.rbp-two-skill-animation').animate({ width: $(this).attr('data-percent') }, 3000);
+		$('.rb-portfolio-two-skill-bar').each(function() {
+			$(this).find('.rb-portfolio-two-skill-animation').animate({ width: $(this).attr('data-percent') }, 3000);
 		});
 		/*=====================================
 		04. Skill Bar Animation $ End Here
@@ -146,8 +146,8 @@ Table of JS Content End Here
 		/*===================================
 		05. CountTo Section $ Start Here
 		===================================*/
-		$(".rbp-two-countup").appear(function() {
-			$(".rbp-two-countup-number").countTo();
+		$(".rb-portfolio-two-countup").appear(function() {
+			$(".rb-portfolio-two-countup-number").countTo();
 		}, {
 			accX: 0,
 			accY: -350
@@ -161,8 +161,8 @@ Table of JS Content End Here
 		=====================================*/
 		$('#container').imagesLoaded( function() {
 			/*===== 6.1. Isotope Masonry Start Here =====*/
-			var $grid = $('.rbp-two-portfolio-grid').isotope({
-			  itemSelector: '.rbp-two-portfolio-item',
+			var $grid = $('.rb-portfolio-two-portfolio-grid').isotope({
+			  itemSelector: '.rb-portfolio-two-portfolio-item',
 			  percentPosition: true,
 			  masonry: {
 				columnWidth: 1
@@ -171,16 +171,16 @@ Table of JS Content End Here
 			/*===== 6.1. Isotope Masonry End Here =====*/
 		
 			/*===== 6.2. Isotope Filtering Start Here =====*/
-			$('.rbp-two-portfolio-menu ul').on( 'click', 'li', function() {
+			$('.rb-portfolio-two-portfolio-menu ul').on( 'click', 'li', function() {
 			  var filterValue = $(this).attr('data-filter');
 			  $grid.isotope({ filter: filterValue });
 			});	
 			/*===== 6.2. Isotope Filtering End Here =====*/
 		
 			/*===== 6.3. Active Filter Menu Highlight Start Here =====*/
-			$('.rbp-two-portfolio-menu li').on('click', function(event){
-				$(this).siblings('.rbp-two-active-portfolio').removeClass('rbp-two-active-portfolio');
-				$(this).addClass('rbp-two-active-portfolio');
+			$('.rb-portfolio-two-portfolio-menu li').on('click', function(event){
+				$(this).siblings('.rb-portfolio-two-active-portfolio').removeClass('rb-portfolio-two-active-portfolio');
+				$(this).addClass('rb-portfolio-two-active-portfolio');
 				event.preventDefault();
 			});		
 			/*===== 6.3. Active Filter Menu Highlight End Here =====*/
@@ -222,15 +222,15 @@ Table of JS Content End Here
 		$(window).scroll(function(){		  
 		  var RBScroll = $(window).scrollTop();		  
 		  if( RBScroll > 100 ){
-			  $(".rbp-two-scroll-to-top").fadeIn();
+			  $(".rb-portfolio-two-scroll-to-top").fadeIn();
 		  }else {
-			  $(".rbp-two-scroll-to-top").fadeOut();
+			  $(".rb-portfolio-two-scroll-to-top").fadeOut();
 		  }
 		});
 		/*===== 8.1. Scroll To Top Button Hide/Show End Here =====*/
 		
 		/*===== 8.2. Scroll To Top Button Click Effect Start Here =====*/
-		$(".rbp-two-scroll-to-top").on('click', function(){
+		$(".rb-portfolio-two-scroll-to-top").on('click', function(){
 			$("html, body").animate({'scrollTop' : 0}, 3000);
 			return false;
 		});

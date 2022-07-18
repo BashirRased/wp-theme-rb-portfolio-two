@@ -19,5 +19,5 @@ if (
     		echo render_block($link_post);
     	}
     }
-	rbp_two_read_more_text();
+	rb_portfolio_two_read_more_text();
 }

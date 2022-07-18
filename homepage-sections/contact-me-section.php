@@ -1,7 +1,7 @@
 <!--================================== 
 ===== Contact Me Area Strat Here =====
 ===================================-->
-<section class="contact-me rbp-two-scroll-menu" id="contact-me">
+<section class="contact-me rb-portfolio-two-scroll-menu" id="contact-me">
 
     <!--================================ 
     ===== Section Title Strat Here =====
@@ -9,30 +9,30 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="rbp-two-section-title">
+                <div class="rb-portfolio-two-section-title">
                     <h2><?php
-                        $rbp_two_contact_me_title_black = get_post_meta(get_the_ID(), 'rbp_two_contact_me_title_black', true);
-                        if( isset ($rbp_two_contact_me_title_black) && !empty ($rbp_two_contact_me_title_black) ){
+                        $rb_portfolio_two_contact_me_title_black = get_post_meta(get_the_ID(), 'rb_portfolio_two_contact_me_title_black', true);
+                        if( isset ($rb_portfolio_two_contact_me_title_black) && !empty ($rb_portfolio_two_contact_me_title_black) ){
                             printf(
                                 /* translators: %s: Contact Me Section Title Theme Color */
-                                __('%s','rbp-two'),
-                                $rbp_two_contact_me_title_black
+                                __('%s','rb-portfolio-two'),
+                                $rb_portfolio_two_contact_me_title_black
                                 );
                         }
                         else {
-                            esc_html_e('Contact','rbp-two');
+                            esc_html_e('Contact','rb-portfolio-two');
                         }
-                        ?> <span class="rbp-two-theme-color"><?php
-                        $rbp_two_contact_me_title_theme_color = get_post_meta(get_the_ID(), 'rbp_two_contact_me_title_theme_color', true);
-                        if( isset ($rbp_two_contact_me_title_theme_color) && !empty ($rbp_two_contact_me_title_theme_color) ){
+                        ?> <span class="rb-portfolio-two-theme-color"><?php
+                        $rb_portfolio_two_contact_me_title_theme_color = get_post_meta(get_the_ID(), 'rb_portfolio_two_contact_me_title_theme_color', true);
+                        if( isset ($rb_portfolio_two_contact_me_title_theme_color) && !empty ($rb_portfolio_two_contact_me_title_theme_color) ){
                             printf(
                                 /* translators: %s: Contact Me Section Title Theme Color */
-                                __('%s','rbp-two'),
-                                $rbp_two_contact_me_title_theme_color
+                                __('%s','rb-portfolio-two'),
+                                $rb_portfolio_two_contact_me_title_theme_color
                                 );
                         }
                         else {
-                            esc_html_e('Me','rbp-two');
+                            esc_html_e('Me','rb-portfolio-two');
                         }
                         ?></span></h2>
                 </div>
@@ -52,19 +52,19 @@
         <div class="row">
             
             <?php
-            $rbp_two_contact_me_items = get_post_meta(get_the_ID(), 'rbp_two_contact_me_items', true);
-            if( isset ($rbp_two_contact_me_items) && !empty ($rbp_two_contact_me_items) ): 
+            $rb_portfolio_two_contact_me_items = get_post_meta(get_the_ID(), 'rb_portfolio_two_contact_me_items', true);
+            if( isset ($rb_portfolio_two_contact_me_items) && !empty ($rb_portfolio_two_contact_me_items) ): 
                 
-            foreach($rbp_two_contact_me_items as $rbp_two_contact_me_items_single):
+            foreach($rb_portfolio_two_contact_me_items as $rb_portfolio_two_contact_me_items_single):
             ?>
             <!--===== 01. Single Contact Info Item Strat Here =====-->
             <div class="col-lg-4">
-                <div class="rbp-two-contact-info-box">
-                    <div class="rbp-two-contact-info-icon">
+                <div class="rb-portfolio-two-contact-info-box">
+                    <div class="rb-portfolio-two-contact-info-icon">
                         <i class="<?php
-                                $rbp_two_contact_me_item_icon = $rbp_two_contact_me_items_single['rbp_two_contact_me_item_icon'];
-                                if( isset ($rbp_two_contact_me_item_icon) && !empty ($rbp_two_contact_me_item_icon) ){
-                                    echo esc_attr($rbp_two_contact_me_item_icon);
+                                $rb_portfolio_two_contact_me_item_icon = $rb_portfolio_two_contact_me_items_single['rb_portfolio_two_contact_me_item_icon'];
+                                if( isset ($rb_portfolio_two_contact_me_item_icon) && !empty ($rb_portfolio_two_contact_me_item_icon) ){
+                                    echo esc_attr($rb_portfolio_two_contact_me_item_icon);
                                 }
                                 else {
                                     echo esc_attr('fas fa-phone-alt');
@@ -72,19 +72,19 @@
                                 ?>">
                         </i>
                     </div>
-                    <div class="rbp-two-contact-info-text">
+                    <div class="rb-portfolio-two-contact-info-text">
                         <p>
                         <?php
-                        $rbp_two_contact_me_item_description = $rbp_two_contact_me_items_single['rbp_two_contact_me_item_description'];
-                        if( isset ($rbp_two_contact_me_item_description) && !empty ($rbp_two_contact_me_item_description) ){
+                        $rb_portfolio_two_contact_me_item_description = $rb_portfolio_two_contact_me_items_single['rb_portfolio_two_contact_me_item_description'];
+                        if( isset ($rb_portfolio_two_contact_me_item_description) && !empty ($rb_portfolio_two_contact_me_item_description) ){
                             printf(
                                 /* translators: %s: Contact Me Item Description */
-                                __('%s','rbp-two'),
-                                $rbp_two_contact_me_item_description
+                                __('%s','rb-portfolio-two'),
+                                $rb_portfolio_two_contact_me_item_description
                             );
                         }
                         else {
-                            esc_html_e('+44 1632 967704, +20 0129 147 2249','rbp-two');
+                            esc_html_e('+44 1632 967704, +20 0129 147 2249','rb-portfolio-two');
                         }
                         ?>
                         </p>
@@ -96,12 +96,12 @@
             <?php endforeach; else: ?>
             <!--===== 01. Single Contact Info Item Strat Here =====-->
             <div class="col-lg-4">
-                <div class="rbp-two-contact-info-box">
-                    <div class="rbp-two-contact-info-icon">
+                <div class="rb-portfolio-two-contact-info-box">
+                    <div class="rb-portfolio-two-contact-info-icon">
                         <i class="fas fa-phone-alt"></i>
                     </div>
-                    <div class="rbp-two-contact-info-text">
-                        <p><?php esc_html_e('+44 1632 967704, +20 0129 147 2249', 'rbp-two'); ?></p>
+                    <div class="rb-portfolio-two-contact-info-text">
+                        <p><?php esc_html_e('+44 1632 967704, +20 0129 147 2249', 'rb-portfolio-two'); ?></p>
                     </div>
                 </div>
             </div>
@@ -109,12 +109,12 @@
             
             <!--===== 02. Single Contact Info Item Strat Here =====-->
             <div class="col-lg-4">
-                <div class="rbp-two-contact-info-box">
-                    <div class="rbp-two-contact-info-icon">
+                <div class="rb-portfolio-two-contact-info-box">
+                    <div class="rb-portfolio-two-contact-info-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <div class="rbp-two-contact-info-text">
-                        <p><?php esc_html_e('support@website.com, smith@example.com', 'rbp-two'); ?></p>
+                    <div class="rb-portfolio-two-contact-info-text">
+                        <p><?php esc_html_e('support@website.com, smith@example.com', 'rb-portfolio-two'); ?></p>
                     </div>
                 </div>
             </div>
@@ -122,12 +122,12 @@
             
             <!--===== 03. Single Contact Info Item Strat Here =====-->
             <div class="col-lg-4">
-                <div class="rbp-two-contact-info-box">
-                    <div class="rbp-two-contact-info-icon">
+                <div class="rb-portfolio-two-contact-info-box">
+                    <div class="rb-portfolio-two-contact-info-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <div class="rbp-two-contact-info-text">
-                        <p><?php esc_html_e('Address: 4612 Los Angeles CA. United State', 'rbp-two'); ?></p>
+                    <div class="rb-portfolio-two-contact-info-text">
+                        <p><?php esc_html_e('Address: 4612 Los Angeles CA. United State', 'rb-portfolio-two'); ?></p>
                     </div>
                 </div>
             </div>

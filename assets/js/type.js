@@ -1,6 +1,6 @@
 /*
 Theme Name: RB Portfolio Two
-Theme URI: https://github.com/BashirRased/wp-theme-rbp-two
+Theme URI: https://github.com/BashirRased/wp-theme-rb-portfolio-two
 Author: Bashir Rased
 Author URI: https://profiles.wordpress.org/bashirrased2017/ 
 Description: RB Portfolio Two is a portfolio website.
@@ -10,7 +10,7 @@ Requires PHP: 5.6
 Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: rbp-two
+Text Domain: rb-portfolio-two
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks
 
 RB Portfolio Two WordPress Theme, (C) 2022 WordPress.org
@@ -59,7 +59,7 @@ TxtType.prototype.tick = function() {
 };
 
 window.onload = function() {
-	var elements = document.getElementsByClassName('rbp-two-type-effect');
+	var elements = document.getElementsByClassName('rb-portfolio-two-type-effect');
 	for (var i=0; i<elements.length; i++) {
 		var toRotate = elements[i].getAttribute('data-type');
 		var period = elements[i].getAttribute('data-period');

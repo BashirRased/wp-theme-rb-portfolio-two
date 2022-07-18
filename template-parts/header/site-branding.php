@@ -14,36 +14,36 @@ $site_tagline  = get_bloginfo('description', 'display');
 ?>
                   
 <!--===== Header Logo Area Strat Here =====-->
-<div class="rbp-two-header-site-branding-area">
+<div class="rb-portfolio-two-header-site-branding-area">
     
     <?php if (has_custom_logo()) : ?>
-        <div class="rbp-two-header-logo">
+        <div class="rb-portfolio-two-header-logo">
             <?php the_custom_logo(); ?>
         </div>
     <?php endif; ?>
     
     <?php if ($site_title): ?>
-    <div class="rbp-two-header-site-title-and-tagline">
+    <div class="rb-portfolio-two-header-site-title-and-tagline">
 
-        <h1 class="rbp-two-header-site-title">
+        <h1 class="rb-portfolio-two-header-site-title">
             <a href="<?php echo esc_url(home_url('/')); ?>">
                 <?php
                 printf(
                     /* translators: Site Title. */
                     '%s',
-                    esc_html($site_title, 'rbp-two')
+                    esc_html($site_title, 'rb-portfolio-two')
                 );
                 ?>
             </a>
         </h1>
 
         <?php if ($site_tagline && true === get_theme_mod( 'display_title_and_tagline', true)) : ?>
-            <p class="rbp-two-header-site-tagline">
+            <p class="rb-portfolio-two-header-site-tagline">
                 <?php
                 printf(
                     /* translators: Site Tagline. */
                     '%s',
-                    esc_html($site_tagline, 'rbp-two')
+                    esc_html($site_tagline, 'rb-portfolio-two')
                 );
                 ?>
             </p>

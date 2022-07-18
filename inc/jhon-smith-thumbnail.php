@@ -15,7 +15,7 @@
  *
  * @return bool
  */
-function rbp_two_can_show_post_thumbnail() {
+function rb_portfolio_two_can_show_post_thumbnail() {
 	/**
 	 * Filters whether post thumbnail can be displayed.
 	 *
@@ -25,11 +25,11 @@ function rbp_two_can_show_post_thumbnail() {
 	 */
 
 	return apply_filters(
-		'rbp_two_can_show_post_thumbnail', ! post_password_required() && ! is_attachment() && has_post_thumbnail()
+		'rb_portfolio_two_can_show_post_thumbnail', ! post_password_required() && ! is_attachment() && has_post_thumbnail()
 	);
 }
 
-if (!function_exists('rbp_two_post_thumbnail')) {
+if (!function_exists('rb_portfolio_two_post_thumbnail')) {
 	/**
 	 * Displays an optional post thumbnail.
 	 *
@@ -40,15 +40,15 @@ if (!function_exists('rbp_two_post_thumbnail')) {
 	 *
 	 * @return void
 	 */
-	function rbp_two_post_thumbnail() {
-		if (!rbp_two_can_show_post_thumbnail()) {
+	function rb_portfolio_two_post_thumbnail() {
+		if (!rb_portfolio_two_can_show_post_thumbnail()) {
 			return;
 		}
 		?>
 
 		<?php if (is_singular()) : ?>
 
-			<figure class="rbp-two-post-thumbnail">
+			<figure class="rb-portfolio-two-post-thumbnail">
 				<?php
 				// Lazy-loading attributes should be skipped for thumbnails since they are immediately in the viewport.
 				the_post_thumbnail('post-thumbnail', array( 'loading' => false));
@@ -64,9 +64,9 @@ if (!function_exists('rbp_two_post_thumbnail')) {
 
 		<?php elseif(! get_post_format() && !is_singular() ) : ?>
 
-			<figure class="rbp-two-post-thumbnail">
+			<figure class="rb-portfolio-two-post-thumbnail">
 
-				<a class="rbp-two-post-thumbnail-inner alignwide" href="<?php the_permalink(); ?>">
+				<a class="rb-portfolio-two-post-thumbnail-inner alignwide" href="<?php the_permalink(); ?>">
 					<?php the_post_thumbnail('post-thumbnail'); ?>
 				</a>
 				

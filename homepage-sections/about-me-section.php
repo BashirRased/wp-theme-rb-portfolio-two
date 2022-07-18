@@ -1,7 +1,7 @@
 <!--================================ 
 ===== About Me Area Strat Here =====
 =================================-->
-<section class="rbp-two-about-me rbp-two-scroll-menu" id="rbp-two-about-me">
+<section class="rb-portfolio-two-about-me rb-portfolio-two-scroll-menu" id="rb-portfolio-two-about-me">
 
     <!--================================ 
     ===== Section Title Strat Here =====
@@ -9,34 +9,34 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="rbp-two-section-title">
+                <div class="rb-portfolio-two-section-title">
                     <h2>
                         <?php
-                        $rbp_two_about_me_title_black = get_post_meta(get_the_ID(), 'rbp_two_about_me_title_black', true);
-                        if(isset($rbp_two_about_me_title_black) && !empty($rbp_two_about_me_title_black)){
+                        $rb_portfolio_two_about_me_title_black = get_post_meta(get_the_ID(), 'rb_portfolio_two_about_me_title_black', true);
+                        if(isset($rb_portfolio_two_about_me_title_black) && !empty($rb_portfolio_two_about_me_title_black)){
                             printf(
                                 /* translators: %s: About Me Section Title Black */
-                                __('%s','rbp-two'),
-                                $rbp_two_about_me_title_black
+                                __('%s','rb-portfolio-two'),
+                                $rb_portfolio_two_about_me_title_black
                                 );
                         }
                         else {
-                            esc_html_e('About','rbp-two');
+                            esc_html_e('About','rb-portfolio-two');
                         }
                         ?>
 
-                        <span class="rbp-two-theme-color">
+                        <span class="rb-portfolio-two-theme-color">
                         <?php
-                        $rbp_two_about_me_title_theme_color = get_post_meta(get_the_ID(), 'rbp_two_about_me_title_theme_color', true);
-                        if( isset ($rbp_two_about_me_title_theme_color) && !empty ($rbp_two_about_me_title_theme_color) ){
+                        $rb_portfolio_two_about_me_title_theme_color = get_post_meta(get_the_ID(), 'rb_portfolio_two_about_me_title_theme_color', true);
+                        if( isset ($rb_portfolio_two_about_me_title_theme_color) && !empty ($rb_portfolio_two_about_me_title_theme_color) ){
                             printf(
                                 /* translators: %s: About Me Section Title Theme Color */
-                                __('%s','rbp-two'),
-                                $rbp_two_about_me_title_theme_color
+                                __('%s','rb-portfolio-two'),
+                                $rb_portfolio_two_about_me_title_theme_color
                                 );
                         }
                         else {
-                            esc_html_e('Me','rbp-two');
+                            esc_html_e('Me','rb-portfolio-two');
                         }
                         ?>
                         </span>
@@ -58,55 +58,55 @@
             
             <!--===== About Me Section Left Area Strat Here =====-->
             <div class="col-lg-5">
-                <div class="rbp-two-about-me-left">
+                <div class="rb-portfolio-two-about-me-left">
                     <img src="<?php
-                       $rbp_two_about_me_content_img = get_post_meta(get_the_ID(), 'rbp_two_about_me_content_img', true);
-                        if( isset ($rbp_two_about_me_content_img) && !empty ($rbp_two_about_me_content_img) ){
-                            echo esc_url ($rbp_two_about_me_content_img);
+                       $rb_portfolio_two_about_me_content_img = get_post_meta(get_the_ID(), 'rb_portfolio_two_about_me_content_img', true);
+                        if( isset ($rb_portfolio_two_about_me_content_img) && !empty ($rb_portfolio_two_about_me_content_img) ){
+                            echo esc_url ($rb_portfolio_two_about_me_content_img);
                         }
                         else {
                             echo esc_url(get_template_directory_uri().'/assets/img/user.jpg');
                         }
-                        ?>" alt="<?php echo esc_attr('User Image', 'rbp-two'); ?>" />
+                        ?>" alt="<?php echo esc_attr('User Image', 'rb-portfolio-two'); ?>" />
                 </div>
             </div>
             <!--===== About Me Section Left Area End Here =====-->
             
             <!--===== About Me Section Right Area Strat Here =====-->
             <div class="col-lg-7">
-                <div class="rbp-two-about-me-right">
+                <div class="rb-portfolio-two-about-me-right">
                     
                     <!--===== About Me Section Title Area Strat Here =====-->
-                    <div class="rbp-two-about-me-title">
+                    <div class="rb-portfolio-two-about-me-title">
                         
                         <h3>
                         <?php
-                        $rbp_two_about_me_content_title = get_post_meta(get_the_ID(), 'rbp_two_about_me_content_title', true);
-                        if( isset ($rbp_two_about_me_content_title) && !empty ($rbp_two_about_me_content_title) ){
+                        $rb_portfolio_two_about_me_content_title = get_post_meta(get_the_ID(), 'rb_portfolio_two_about_me_content_title', true);
+                        if( isset ($rb_portfolio_two_about_me_content_title) && !empty ($rb_portfolio_two_about_me_content_title) ){
                             printf(
                                 /* translators: %s: About Me Content Title */
-                                __('%s','rbp-two'),
-                                $rbp_two_about_me_content_title
+                                __('%s','rb-portfolio-two'),
+                                $rb_portfolio_two_about_me_content_title
                                 );
                         }
                         else {
-                            esc_html_e('RB Portfolio Two','rbp-two');
+                            esc_html_e('RB Portfolio Two','rb-portfolio-two');
                         }
                         ?>
                         </h3>
                         
                         <h6>
                         <?php
-                        $rbp_two_about_me_content_sub_title = get_post_meta(get_the_ID(), 'rbp_two_about_me_content_sub_title', true);
-                        if( isset ($rbp_two_about_me_content_sub_title) && !empty ($rbp_two_about_me_content_sub_title) ){
+                        $rb_portfolio_two_about_me_content_sub_title = get_post_meta(get_the_ID(), 'rb_portfolio_two_about_me_content_sub_title', true);
+                        if( isset ($rb_portfolio_two_about_me_content_sub_title) && !empty ($rb_portfolio_two_about_me_content_sub_title) ){
                             printf(
                                 /* translators: %s: About Me Content Sub Title */
-                                __('%s','rbp-two'),
-                                $rbp_two_about_me_content_sub_title
+                                __('%s','rb-portfolio-two'),
+                                $rb_portfolio_two_about_me_content_sub_title
                                 );
                         }
                         else {
-                            esc_html_e('I am a Full-Stack Web Developer','rbp-two');
+                            esc_html_e('I am a Full-Stack Web Developer','rb-portfolio-two');
                         }
                         ?>
                         </h6>
@@ -115,26 +115,26 @@
                     <!--===== About Me Section Title Area End Here =====-->
                     
                     <!--===== About Me Section Description Area Strat Here =====-->
-                    <div class="rbp-two-about-me-description">
+                    <div class="rb-portfolio-two-about-me-description">
                         <?php
-                        $rbp_two_about_me_content_description = get_post_meta(get_the_ID(), 'rbp_two_about_me_content_description', true);
-                        if( isset ($rbp_two_about_me_content_description) && !empty ($rbp_two_about_me_content_description) ){
+                        $rb_portfolio_two_about_me_content_description = get_post_meta(get_the_ID(), 'rb_portfolio_two_about_me_content_description', true);
+                        if( isset ($rb_portfolio_two_about_me_content_description) && !empty ($rb_portfolio_two_about_me_content_description) ){
                             printf(
                                 /* translators: %s: About Me Content Description */
-                                __('%s','rbp-two'),
-                                $rbp_two_about_me_content_description
+                                __('%s','rb-portfolio-two'),
+                                $rb_portfolio_two_about_me_content_description
                                 );
                         }
                         else { ?>
 
                         <p>
                             <?php
-                            esc_html_e("My name is RB Portfolio Two. I am a freelancer based in UK and I have been building noteworthy websites for years. For this time i've done all types of projects.","rbp-two"); ?>
+                            esc_html_e("My name is RB Portfolio Two. I am a freelancer based in UK and I have been building noteworthy websites for years. For this time i've done all types of projects.","rb-portfolio-two"); ?>
                         </p>
 
                         <p>
                             <?php
-                            esc_html_e("I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster. If you're interested in working with me, don't hesitate to hire me.","rbp-two"); ?>
+                            esc_html_e("I help convert a vision and an idea into meaningful and useful products. Having a sharp eye for product evolution helps me prioritize tasks, iterate fast and deliver faster. If you're interested in working with me, don't hesitate to hire me.","rb-portfolio-two"); ?>
                         </p>
 
                         <?php } ?>
@@ -143,26 +143,26 @@
                     <!--===== About Me Section Description Area End Here =====-->
                     
                     <!--===== About Me Section Description Area Strat Here =====-->
-                    <div class="rbp-two-about-me-separator"></div>
+                    <div class="rb-portfolio-two-about-me-separator"></div>
                     <!--===== About Me Section Description Area End Here =====-->
                     
                     <!--===== About Me Section Details Area Strat Here =====-->
-                    <div class="rbp-two-about-me-details">
+                    <div class="rb-portfolio-two-about-me-details">
                         <ul>
 
                             <?php
-                            $rbp_two_about_me_content_details = get_post_meta(get_the_ID(), 'rbp_two_about_me_content_details', true);
-                            if( isset ($rbp_two_about_me_content_details) && !empty ($rbp_two_about_me_content_details) ): 
+                            $rb_portfolio_two_about_me_content_details = get_post_meta(get_the_ID(), 'rb_portfolio_two_about_me_content_details', true);
+                            if( isset ($rb_portfolio_two_about_me_content_details) && !empty ($rb_portfolio_two_about_me_content_details) ): 
                                 
-                            foreach($rbp_two_about_me_content_details as $rbp_two_about_me_content_details_single):
+                            foreach($rb_portfolio_two_about_me_content_details as $rb_portfolio_two_about_me_content_details_single):
                             ?>
                             <li>
-                                <span class="rbp-two-user-icon">
+                                <span class="rb-portfolio-two-user-icon">
 
                                 <i class="<?php
-                                $rbp_two_about_me_content_details_single_icon = $rbp_two_about_me_content_details_single['rbp_two_about_me_content_details_icon'];
-                                if( isset ($rbp_two_about_me_content_details_single_icon) && !empty ($rbp_two_about_me_content_details_single_icon) ){
-                                    echo esc_attr($rbp_two_about_me_content_details_single_icon);
+                                $rb_portfolio_two_about_me_content_details_single_icon = $rb_portfolio_two_about_me_content_details_single['rb_portfolio_two_about_me_content_details_icon'];
+                                if( isset ($rb_portfolio_two_about_me_content_details_single_icon) && !empty ($rb_portfolio_two_about_me_content_details_single_icon) ){
+                                    echo esc_attr($rb_portfolio_two_about_me_content_details_single_icon);
                                 }
                                 else {
                                     echo esc_attr('fas fa-user');
@@ -172,37 +172,37 @@
 
                                 </span>
 
-                                <span class="rbp-two-user-title rbp-two-strong-text rbp-two-theme-color">
+                                <span class="rb-portfolio-two-user-title rb-portfolio-two-strong-text rb-portfolio-two-theme-color">
 
                                 <?php
-                                $rbp_two_about_me_content_details_single_title = $rbp_two_about_me_content_details_single['rbp_two_about_me_content_details_strong_text'];
-                                if( isset ($rbp_two_about_me_content_details_single_title) && !empty ($rbp_two_about_me_content_details_single_title) ){
+                                $rb_portfolio_two_about_me_content_details_single_title = $rb_portfolio_two_about_me_content_details_single['rb_portfolio_two_about_me_content_details_strong_text'];
+                                if( isset ($rb_portfolio_two_about_me_content_details_single_title) && !empty ($rb_portfolio_two_about_me_content_details_single_title) ){
                                     printf(
                                         /* translators: %s: About Me Content Details Title */
-                                        __('%s','rbp-two'),
-                                        $rbp_two_about_me_content_details_single_title
+                                        __('%s','rb-portfolio-two'),
+                                        $rb_portfolio_two_about_me_content_details_single_title
                                         );
                                 }
                                 else {
-                                    esc_html_e('Name','rbp-two');
+                                    esc_html_e('Name','rb-portfolio-two');
                                 }
                                 ?>
                                 </span>
 
-                                <span><?php esc_html_e(':','rbp-two'); ?></span>
+                                <span><?php esc_html_e(':','rb-portfolio-two'); ?></span>
 
-                                <span class="rbp-two-user-details">
+                                <span class="rb-portfolio-two-user-details">
                                 <?php
-                                $rbp_two_about_me_content_details_single_text = $rbp_two_about_me_content_details_single['rbp_two_about_me_content_details_normal_text'];
-                                if( isset ($rbp_two_about_me_content_details_single_text) && !empty ($rbp_two_about_me_content_details_single_text) ){
+                                $rb_portfolio_two_about_me_content_details_single_text = $rb_portfolio_two_about_me_content_details_single['rb_portfolio_two_about_me_content_details_normal_text'];
+                                if( isset ($rb_portfolio_two_about_me_content_details_single_text) && !empty ($rb_portfolio_two_about_me_content_details_single_text) ){
                                     printf(
                                         /* translators: %s: About Me Content Details Text */
-                                        __('%s','rbp-two'),
-                                        $rbp_two_about_me_content_details_single_text
+                                        __('%s','rb-portfolio-two'),
+                                        $rb_portfolio_two_about_me_content_details_single_text
                                         );
                                 }
                                 else {
-                                    esc_html_e('RB Portfolio Two','rbp-two');
+                                    esc_html_e('RB Portfolio Two','rb-portfolio-two');
                                 }
                                 ?>
                                 </span>
@@ -210,41 +210,41 @@
 
                             <?php endforeach; else: ?>
                             <li>
-                                <span class="rbp-two-user-icon"><i class="fas fa-user"></i></span>
-                                <span class="rbp-two-user-title rbp-two-strong-text rbp-two-theme-color">
-                                    <?php esc_html_e("Name","rbp-two"); ?>
+                                <span class="rb-portfolio-two-user-icon"><i class="fas fa-user"></i></span>
+                                <span class="rb-portfolio-two-user-title rb-portfolio-two-strong-text rb-portfolio-two-theme-color">
+                                    <?php esc_html_e("Name","rb-portfolio-two"); ?>
                                 </span>
-                                <span><?php esc_html_e(":","rbp-two"); ?></span>
-                                <span class="rbp-two-user-details">
-                                <?php esc_html_e("RB Portfolio Two","rbp-two"); ?></span>
+                                <span><?php esc_html_e(":","rb-portfolio-two"); ?></span>
+                                <span class="rb-portfolio-two-user-details">
+                                <?php esc_html_e("RB Portfolio Two","rb-portfolio-two"); ?></span>
                             </li>
 
                             <li>
-                                <span class="rbp-two-user-icon"><i class="fas fa-magic"></i></span>
-                                <span class="rbp-two-user-title rbp-two-strong-text rbp-two-theme-color"><?php esc_html_e("Date of Birth","rbp-two"); ?></span>
-                                <span><?php esc_html_e(":","rbp-two"); ?></span>
-                                <span class="rbp-two-user-details"><?php esc_html_e("05 November 1994","rbp-two"); ?></span>
+                                <span class="rb-portfolio-two-user-icon"><i class="fas fa-magic"></i></span>
+                                <span class="rb-portfolio-two-user-title rb-portfolio-two-strong-text rb-portfolio-two-theme-color"><?php esc_html_e("Date of Birth","rb-portfolio-two"); ?></span>
+                                <span><?php esc_html_e(":","rb-portfolio-two"); ?></span>
+                                <span class="rb-portfolio-two-user-details"><?php esc_html_e("05 November 1994","rb-portfolio-two"); ?></span>
                             </li>
 
                             <li>
-                                <span class="rbp-two-user-icon"><i class="fas fa-phone-alt"></i></span>
-                                <span class="rbp-two-user-title rbp-two-strong-text rbp-two-theme-color"><?php esc_html_e("Phone","rbp-two"); ?></span>
-                                <span><?php esc_html_e(":","rbp-two"); ?></span>
-                                <span class="rbp-two-user-details"><?php esc_html_e("+44 1632 967704, +20 0129 147 2249","rbp-two"); ?></span>
+                                <span class="rb-portfolio-two-user-icon"><i class="fas fa-phone-alt"></i></span>
+                                <span class="rb-portfolio-two-user-title rb-portfolio-two-strong-text rb-portfolio-two-theme-color"><?php esc_html_e("Phone","rb-portfolio-two"); ?></span>
+                                <span><?php esc_html_e(":","rb-portfolio-two"); ?></span>
+                                <span class="rb-portfolio-two-user-details"><?php esc_html_e("+44 1632 967704, +20 0129 147 2249","rb-portfolio-two"); ?></span>
                             </li>
 
                             <li>
-                                <span class="rbp-two-user-icon"><i class="fas fa-envelope"></i></span>
-                                <span class="rbp-two-user-title rbp-two-strong-text rbp-two-theme-color"><?php esc_html_e("E-mail","rbp-two"); ?></span>
-                                <span><?php esc_html_e(":","rbp-two"); ?></span>
-                                <span class="rbp-two-user-details"><?php esc_html_e("support@website.com, smith@example.com","rbp-two"); ?></span>
+                                <span class="rb-portfolio-two-user-icon"><i class="fas fa-envelope"></i></span>
+                                <span class="rb-portfolio-two-user-title rb-portfolio-two-strong-text rb-portfolio-two-theme-color"><?php esc_html_e("E-mail","rb-portfolio-two"); ?></span>
+                                <span><?php esc_html_e(":","rb-portfolio-two"); ?></span>
+                                <span class="rb-portfolio-two-user-details"><?php esc_html_e("support@website.com, smith@example.com","rb-portfolio-two"); ?></span>
                             </li>
 
                             <li>
-                                <span class="rbp-two-user-icon"><i class="fas fa-map-marker-alt"></i></span>
-                                <span class="rbp-two-user-title rbp-two-strong-text rbp-two-theme-color"><?php esc_html_e("Address","rbp-two"); ?></span>
-                                <span><?php esc_html_e(":","rbp-two"); ?></span>
-                                <span class="rbp-two-user-details"><?php esc_html_e("4612 Los Angeles CA, United State.","rbp-two"); ?></span>
+                                <span class="rb-portfolio-two-user-icon"><i class="fas fa-map-marker-alt"></i></span>
+                                <span class="rb-portfolio-two-user-title rb-portfolio-two-strong-text rb-portfolio-two-theme-color"><?php esc_html_e("Address","rb-portfolio-two"); ?></span>
+                                <span><?php esc_html_e(":","rb-portfolio-two"); ?></span>
+                                <span class="rb-portfolio-two-user-details"><?php esc_html_e("4612 Los Angeles CA, United State.","rb-portfolio-two"); ?></span>
                             </li>
 
                             <?php endif; ?>
@@ -253,36 +253,36 @@
                     <!--===== About Me Section Details Area End Here =====-->
                     
                     <!--===== About Me Section Bottons Area Strat Here =====-->
-                    <div class="rbp-two-about-me-btns">
+                    <div class="rb-portfolio-two-about-me-btns">
                         
                         <?php
-                        $rbp_two_about_me_content_buttons = get_post_meta(get_the_ID(), 'rbp_two_about_me_content_buttons', true);
-                        if( isset ($rbp_two_about_me_content_buttons) && !empty ($rbp_two_about_me_content_buttons) ): 
+                        $rb_portfolio_two_about_me_content_buttons = get_post_meta(get_the_ID(), 'rb_portfolio_two_about_me_content_buttons', true);
+                        if( isset ($rb_portfolio_two_about_me_content_buttons) && !empty ($rb_portfolio_two_about_me_content_buttons) ): 
                             
-                        foreach($rbp_two_about_me_content_buttons as $rbp_two_about_me_content_buttons_single):
+                        foreach($rb_portfolio_two_about_me_content_buttons as $rb_portfolio_two_about_me_content_buttons_single):
                         ?>
 
-                        <div class="rbp-two-btn btn-download-cv">
+                        <div class="rb-portfolio-two-btn btn-download-cv">
                             <a href="<?php
-                                $rbp_two_about_me_content_buttons_single_url = $rbp_two_about_me_content_buttons_single['rbp_two_about_me_content_button_url'];
-                                if( isset ($rbp_two_about_me_content_buttons_single_url) && !empty ($rbp_two_about_me_content_buttons_single_url) ){
-                                    echo esc_url($rbp_two_about_me_content_buttons_single_url);
+                                $rb_portfolio_two_about_me_content_buttons_single_url = $rb_portfolio_two_about_me_content_buttons_single['rb_portfolio_two_about_me_content_button_url'];
+                                if( isset ($rb_portfolio_two_about_me_content_buttons_single_url) && !empty ($rb_portfolio_two_about_me_content_buttons_single_url) ){
+                                    echo esc_url($rb_portfolio_two_about_me_content_buttons_single_url);
                                 }
                                 else {
                                     echo esc_url('#');
                                 }
                                 ?>">
                                 <?php
-                                $rbp_two_about_me_content_buttons_single_text = $rbp_two_about_me_content_buttons_single['rbp_two_about_me_content_button_text'];
-                                if( isset ($rbp_two_about_me_content_buttons_single_text) && !empty ($rbp_two_about_me_content_buttons_single_text) ){
+                                $rb_portfolio_two_about_me_content_buttons_single_text = $rb_portfolio_two_about_me_content_buttons_single['rb_portfolio_two_about_me_content_button_text'];
+                                if( isset ($rb_portfolio_two_about_me_content_buttons_single_text) && !empty ($rb_portfolio_two_about_me_content_buttons_single_text) ){
                                     printf(
                                         /* translators: %s: About Me Button Text */
-                                        __('%s','rbp-two'),
-                                        $rbp_two_about_me_content_buttons_single_text
+                                        __('%s','rb-portfolio-two'),
+                                        $rb_portfolio_two_about_me_content_buttons_single_text
                                         );
                                 }
                                 else {
-                                    esc_html_e('Download CV','rbp-two');
+                                    esc_html_e('Download CV','rb-portfolio-two');
                                 }
                                 ?>
                                 </a>
@@ -290,11 +290,11 @@
 
                         <?php endforeach; else: ?>
                             
-                        <div class="rbp-two-btn btn-download-cv">
-                            <a href="<?php echo esc_url('#'); ?>"><?php esc_html_e('Download CV','rbp-two'); ?></a>
+                        <div class="rb-portfolio-two-btn btn-download-cv">
+                            <a href="<?php echo esc_url('#'); ?>"><?php esc_html_e('Download CV','rb-portfolio-two'); ?></a>
                         </div>
-                        <div class="rbp-two-btn btn-contact-me">
-                            <a href="<?php echo esc_url('#'); ?>"><?php esc_html_e('Contact Me','rbp-two'); ?></a>
+                        <div class="rb-portfolio-two-btn btn-contact-me">
+                            <a href="<?php echo esc_url('#'); ?>"><?php esc_html_e('Contact Me','rb-portfolio-two'); ?></a>
                         </div>
 
                         <?php endif; ?>

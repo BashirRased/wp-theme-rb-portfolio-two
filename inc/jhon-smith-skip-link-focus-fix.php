@@ -9,7 +9,7 @@
  *
  * @link https://git.io/vWdr2
  */
-function rbp_two_skip_link_focus_fix() {
+function rb_portfolio_two_skip_link_focus_fix() {
 
 	// If SCRIPT_DEBUG is defined and true, print the unminified file.
 	if ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG) {
@@ -25,4 +25,4 @@ function rbp_two_skip_link_focus_fix() {
 	</script>
 	<?php
 }
-add_action('wp_print_footer_scripts', 'rbp_two_skip_link_focus_fix');
+add_action('wp_print_footer_scripts', 'rb_portfolio_two_skip_link_focus_fix');

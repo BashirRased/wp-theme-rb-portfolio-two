@@ -12,46 +12,46 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('rbp-two-post-single-item'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('rb-portfolio-two-post-single-item'); ?>>
 
-	<?php rbp_two_post_format_meta(); ?>
+	<?php rb_portfolio_two_post_format_meta(); ?>
 
-	<?php rbp_two_post_thumbnail(); ?>
+	<?php rb_portfolio_two_post_thumbnail(); ?>
 
-	<header class="rbp-two-content-single-entry-header alignwide">
+	<header class="rb-portfolio-two-content-single-entry-header alignwide">
 		<?php
-		the_title('<h1 class="rbp-two-content-single-entry-header-title">', '</h1>');
+		the_title('<h1 class="rb-portfolio-two-content-single-entry-header-title">', '</h1>');
 		?>
-	</header><!-- .rbp-two-content-single-entry-header -->
+	</header><!-- .rb-portfolio-two-content-single-entry-header -->
 
-	<div class="rbp-two-content-single-entry-meta">
+	<div class="rb-portfolio-two-content-single-entry-meta">
 		<?php
-		rbp_two_posted_by();
-		rbp_two_posted_on();
-		rbp_two_posted_category();
-		rbp_two_posted_comments();
-		rbp_two_edit_post_link();
+		rb_portfolio_two_posted_by();
+		rb_portfolio_two_posted_on();
+		rb_portfolio_two_posted_category();
+		rb_portfolio_two_posted_comments();
+		rb_portfolio_two_edit_post_link();
 		?>
 	</div>
 
 	<?php if (!empty(get_the_content()) ): ?>
-	<div class="rbp-two-content-single-entry-body">
+	<div class="rb-portfolio-two-content-single-entry-body">
 		<?php		
 		the_content();
 		wp_link_pages(
 			array(
 				// Start WP Link Pages Area
-                'before'        => '<div class="rbp-two-wp-pages-link-area">',
+                'before'        => '<div class="rb-portfolio-two-wp-pages-link-area">',
                 'after'         => '</div>'
 			)
 		);
 		?>
-	</div><!-- .rbp-two-content-single-entry-body -->
+	</div><!-- .rb-portfolio-two-content-single-entry-body -->
 	<?php endif; ?>
 
 </article><!-- #post-<?php the_ID(); ?> -->
 
-<?php rbp_two_tag_list(); ?>
+<?php rb_portfolio_two_tag_list(); ?>
 
 <?php if (!is_singular('attachment')): ?>
 	<?php get_template_part('template-parts/post/author-bio' ); ?>
@@ -62,7 +62,7 @@ the_post_navigation(
 	array(
 		'prev_text' => '<i class="fa-solid fa-angle-left"></i> %title',
 		'next_text' => '%title <i class="fa-solid fa-angle-right"></i>',
-		'class' => 'rbp-two-post-navigation'
+		'class' => 'rb-portfolio-two-post-navigation'
 	)
 );
 ?>

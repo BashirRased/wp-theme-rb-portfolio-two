@@ -2,7 +2,7 @@
 
 /*
 Theme Name: RB Portfolio Two
-Theme URI: https://github.com/BashirRased/wp-theme-rbp-two
+Theme URI: https://github.com/BashirRased/wp-theme-rb-portfolio-two
 Author: Bashir Rased
 Author URI: https://profiles.wordpress.org/bashirrased2017/ 
 Description: 
@@ -12,7 +12,7 @@ Requires PHP: 5.6
 Version: 1.0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: rbp-two
+Text Domain: rb-portfolio-two
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks
 
 RB Portfolio Two WordPress Theme, (C) 2022 WordPress.org
@@ -21,13 +21,13 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 
 @media all and (max-width: 991px) {
 
-	.rbp-two-header-desktop-menu {
+	.rb-portfolio-two-header-desktop-menu {
 		width: 100%;
 		background-color: #0d65ed;
 	}
 
-	.rbp-two-dropdown-menu,
-	.rbp-two-multi-dropdown-menu {
+	.rb-portfolio-two-dropdown-menu,
+	.rb-portfolio-two-multi-dropdown-menu {
 		display: none;
 		box-shadow: none;
 		position: relative;
@@ -38,24 +38,24 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 		transition: all 0.3s ease-in-out;
 	}
 
-	.rbp-two-dropdown-menu-open {
+	.rb-portfolio-two-dropdown-menu-open {
 		display: block;
 	}
 
-	.rbp-two-header-desktop-menu i {
+	.rb-portfolio-two-header-desktop-menu i {
 		display: none;
 	}
 
-	.rbp-two-dropdown-menu li:hover>ul,
-	.rbp-two-dropdown-menu li:focus-within>ul {
+	.rb-portfolio-two-dropdown-menu li:hover>ul,
+	.rb-portfolio-two-dropdown-menu li:focus-within>ul {
 		top: 100%;
 	}
 
-	.rbp-two-dropdown-menu li {
+	.rb-portfolio-two-dropdown-menu li {
 		border-bottom: none;
 	}
 
-	.rbp-two-dropdown-menu li a {
+	.rb-portfolio-two-dropdown-menu li a {
 		text-align: center;
 	}
 
@@ -73,47 +73,47 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 		text-align: center;
 	}
 
-	.rbp-two-header-desktop-menu ul li a {
+	.rb-portfolio-two-header-desktop-menu ul li a {
 		padding: 30px 15px;
 		color: #fff;
 		border-bottom: 1px solid #fff;
 	}
 
-	.rbp-two-header-desktop-menu ul li a:hover,
-	.rbp-two-header-desktop-menu ul li a:focus,
-	.rbp-two-header-fixed .rbp-two-header-desktop-menu ul li a,
-	.rbp-two-header-fixed .rbp-two-header-desktop-menu ul li a:hover,
-	.rbp-two-header-fixed .rbp-two-header-desktop-menu ul li a:focus {
+	.rb-portfolio-two-header-desktop-menu ul li a:hover,
+	.rb-portfolio-two-header-desktop-menu ul li a:focus,
+	.rb-portfolio-two-header-fixed .rb-portfolio-two-header-desktop-menu ul li a,
+	.rb-portfolio-two-header-fixed .rb-portfolio-two-header-desktop-menu ul li a:hover,
+	.rb-portfolio-two-header-fixed .rb-portfolio-two-header-desktop-menu ul li a:focus {
 		color: #fff;
 		box-shadow: 0 0 5px 5px #0d65ed;
 		border: 2px solid #fff;
 	}
 
-	.rbp-two-content-title {
+	.rb-portfolio-two-content-title {
 		margin-top: 50px;
 	}
 
-	.rbp-two-header-site-branding-area {
+	.rb-portfolio-two-header-site-branding-area {
 		float: left;
 	}
 
-	.rbp-two-header-mobile-menu-area {
+	.rb-portfolio-two-header-mobile-menu-area {
 		display: block;
 		float: right;
 	}
 
-	.rbp-two-header-desktop-menu {
+	.rb-portfolio-two-header-desktop-menu {
 		display: none;
 	}
 
-	.rbp-two-header-desktop-menu li {
+	.rb-portfolio-two-header-desktop-menu li {
 		float: none;
 		display: block;
 		width: 100%;
 		text-align: center;
 	}
 
-	.rbp-two-header-desktop-menu a {
+	.rb-portfolio-two-header-desktop-menu a {
 		color: #fff;
 	}
 
@@ -121,21 +121,21 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 
 	/**/
 
-	.rbp-two-about-me-left {
+	.rb-portfolio-two-about-me-left {
 		margin-bottom: 30px;
 	}
 
-	.rbp-two-footer-area .float-left,
-	.rbp-two-footer-area .float-right {
+	.rb-portfolio-two-footer-area .float-left,
+	.rb-portfolio-two-footer-area .float-right {
 		float: none !important;
 	}
 
-	.rbp-two-copyright-text {
+	.rb-portfolio-two-copyright-text {
 		text-align: center;
 		margin-bottom: 40px;
 	}
 
-	.rbp-two-footer-social-icons {
+	.rb-portfolio-two-footer-social-icons {
 		text-align: center;
 	}
 }

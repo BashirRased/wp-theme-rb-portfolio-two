@@ -11,14 +11,14 @@
  */
 
 // after theme setup
-if (!function_exists('rbp_two_menu_setup')) {
-    function rbp_two_menu_setup(){
+if (!function_exists('rb_portfolio_two_menu_setup')) {
+    function rb_portfolio_two_menu_setup(){
 
 // Menu Register
 register_nav_menu(
-    'header-menu', __('Menu Name 1','rbp-two')
+    'header-menu', __('Menu Name 1','rb-portfolio-two')
 );
 
 }
-add_action('after_setup_theme', 'rbp_two_menu_setup');
+add_action('after_setup_theme', 'rb_portfolio_two_menu_setup');
 }

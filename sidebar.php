@@ -8,7 +8,7 @@
  * @since RB Portfolio Two 1.0.0
  */
 
-if (!is_active_sidebar('rbp-two-sidebar-right')) {
+if (!is_active_sidebar('rb-portfolio-two-sidebar-right')) {
 	return;
 }
-dynamic_sidebar('rbp-two-sidebar-right');
+dynamic_sidebar('rb-portfolio-two-sidebar-right');

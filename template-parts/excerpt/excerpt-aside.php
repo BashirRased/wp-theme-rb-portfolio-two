@@ -46,5 +46,5 @@ if ($widget_blocks) {
     		echo render_block($aside_post);
     	}
     }
-	rbp_two_read_more_text();
+	rb_portfolio_two_read_more_text();
 }

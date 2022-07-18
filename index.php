@@ -17,19 +17,19 @@
 
 get_header(); ?>
 
-<div id="rbp-two-page-content" class="rbp-two-main-page">
+<div id="rb-portfolio-two-page-content" class="rb-portfolio-two-main-page">
 	<div class="container">
 		<div class="row">
 
 			<?php
-				if(is_active_sidebar('rbp-two-sidebar-right')){
-					$rbp_two_page_content_class = 'col-lg-8';
+				if(is_active_sidebar('rb-portfolio-two-sidebar-right')){
+					$rb_portfolio_two_page_content_class = 'col-lg-8';
 				}
 				else {
-					$rbp_two_page_content_class = 'col-lg-12';
+					$rb_portfolio_two_page_content_class = 'col-lg-12';
 				}
 			?>
-			<main id="rbp-two-primary" class="<?php echo esc_attr($rbp_two_page_content_class); ?>" role="main">
+			<main id="rb-portfolio-two-primary" class="<?php echo esc_attr($rb_portfolio_two_page_content_class); ?>" role="main">
 
 				<?php
 				if (have_posts()) {
@@ -56,17 +56,17 @@ get_header(); ?>
 				}
 				?>
 
-			</main><!-- #rbp-two-primary -->
+			</main><!-- #rb-portfolio-two-primary -->
 		
 			<?php
-			if(is_active_sidebar('rbp-two-sidebar-right')){
+			if(is_active_sidebar('rb-portfolio-two-sidebar-right')){
 				get_sidebar();
 			}
 			?>
 		
 		</div><!-- row end -->        
 	</div><!-- container end -->
-</div><!-- #rbp-two-page-content -->
+</div><!-- #rb-portfolio-two-page-content -->
 
 <?php
 get_footer();

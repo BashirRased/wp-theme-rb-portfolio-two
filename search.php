@@ -14,36 +14,36 @@ get_header();
 
 ?>
 
-<div id="rbp-two-page-content" class="rbp-two-search-page">
+<div id="rb-portfolio-two-page-content" class="rb-portfolio-two-search-page">
     <div class="container">
         <div class="row">
 
 			<?php
-				if(is_active_sidebar('rbp-two-sidebar-right')){
-					$rbp_two_page_content_class = 'col-lg-8';
+				if(is_active_sidebar('rb-portfolio-two-sidebar-right')){
+					$rb_portfolio_two_page_content_class = 'col-lg-8';
 				}
 				else {
-					$rbp_two_page_content_class = 'col-lg-12';
+					$rb_portfolio_two_page_content_class = 'col-lg-12';
 				}
 			?>
 
-			<main id="rbp-two-primary" class="<?php echo esc_attr($rbp_two_page_content_class); ?>">
+			<main id="rb-portfolio-two-primary" class="<?php echo esc_attr($rb_portfolio_two_page_content_class); ?>">
 				<?php
 				if ( have_posts() ) {
 					?>
-					<header class="rbp-two-search-page-header alignwide">
+					<header class="rb-portfolio-two-search-page-header alignwide">
 
-						<h2 class="rbp-two-search-page-header-title">
+						<h2 class="rb-portfolio-two-search-page-header-title">
 							<?php
 							printf(
 								/* translators: %s: Search term. */
-								esc_html__('Results for "%s"','rbp-two'),
+								esc_html__('Results for "%s"','rb-portfolio-two'),
 								'<span>'.esc_html(get_search_query()).'</span>'
 							);
 							?>
-						</h2><!-- .rbp-two-search-page-title -->
+						</h2><!-- .rb-portfolio-two-search-page-title -->
 
-						<p class="rbp-two-search-result-count">
+						<p class="rb-portfolio-two-search-result-count">
 						<?php
 						printf(
 							esc_html(
@@ -52,15 +52,15 @@ get_header();
 									'We found %d result for your search.',
 									'We found %d results for your search.',
 									(int) $wp_query->found_posts,
-									'rbp-two'
+									'rb-portfolio-two'
 								)
 							),
 							(int) $wp_query->found_posts
 						);
 						?>
-						</p><!-- .rbp-two-search-result-count -->
+						</p><!-- .rb-portfolio-two-search-result-count -->
 
-					</header><!-- .rbp-two-search-page-header -->
+					</header><!-- .rb-portfolio-two-search-page-header -->
 					
 					<?php
 					// Start the Loop.
@@ -86,17 +86,17 @@ get_header();
 				}
 				?>
 					
-			</main><!-- #rbp-two-primary -->
+			</main><!-- #rb-portfolio-two-primary -->
 
 			<?php
-			if(is_active_sidebar('rbp-two-sidebar-right')){
+			if(is_active_sidebar('rb-portfolio-two-sidebar-right')){
 				get_sidebar();
 			}
 			?>
 
         </div><!-- row end -->        
     </div><!-- container end -->
-</div><!-- #rbp-two-page-content -->
+</div><!-- #rb-portfolio-two-page-content -->
 
 <?php
 get_footer();

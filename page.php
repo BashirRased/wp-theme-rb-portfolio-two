@@ -13,20 +13,20 @@
 get_header();
 ?>
 
-<div id="rbp-two-page-content" class="rbp-two-single-page">
+<div id="rb-portfolio-two-page-content" class="rb-portfolio-two-single-page">
     <div class="container">
         <div class="row">
 
             <?php
-                if(is_active_sidebar('rbp-two-sidebar-right')){
-                    $rbp_two_page_content_class = 'col-lg-8';
+                if(is_active_sidebar('rb-portfolio-two-sidebar-right')){
+                    $rb_portfolio_two_page_content_class = 'col-lg-8';
                 }
                 else {
-                    $rbp_two_page_content_class = 'col-lg-12';
+                    $rb_portfolio_two_page_content_class = 'col-lg-12';
                 }
             ?>
             
-            <main id="rbp-two-primary" class="<?php echo esc_attr($rbp_two_page_content_class); ?>" role="page">
+            <main id="rb-portfolio-two-primary" class="<?php echo esc_attr($rb_portfolio_two_page_content_class); ?>" role="page">
 
                 <?php
                 /* Start the Loop */
@@ -38,17 +38,17 @@ get_header();
                 endwhile; // End of the loop.
                 ?>
 
-            </main><!-- #rbp-two-primary -->
+            </main><!-- #rb-portfolio-two-primary -->
 
             <?php
-			if(is_active_sidebar('rbp-two-sidebar-right')){
+			if(is_active_sidebar('rb-portfolio-two-sidebar-right')){
 				get_sidebar();
 			}
 			?>
 
         </div><!-- row end -->        
     </div><!-- container end -->
-</div><!-- #rbp-two-page-content -->
+</div><!-- #rb-portfolio-two-page-content -->
 
 <?php
 get_footer();

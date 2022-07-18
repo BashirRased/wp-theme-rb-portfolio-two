@@ -1,12 +1,12 @@
 <?php
 // Hire Me Section Background Image
-$rbp_two_hire_me_image = get_post_meta(get_the_ID(), 'rbp_two_hire_me_image', true);
+$rb_portfolio_two_hire_me_image = get_post_meta(get_the_ID(), 'rb_portfolio_two_hire_me_image', true);
 ?>
 
 <!--=============================== 
 ===== Hire Me Area Strat Here =====
 ================================-->
-<section class="rbp-two-hire-me" <?php if ( isset ($rbp_two_hire_me_image) && !empty ($rbp_two_hire_me_image)) : ?> style="background-image: url(<?php echo esc_url($rbp_two_hire_me_image); ?>);" <?php endif; ?> >
+<section class="rb-portfolio-two-hire-me" <?php if ( isset ($rb_portfolio_two_hire_me_image) && !empty ($rb_portfolio_two_hire_me_image)) : ?> style="background-image: url(<?php echo esc_url($rb_portfolio_two_hire_me_image); ?>);" <?php endif; ?> >
     
     <!--================================== 
     ===== Section Content Strat Here =====
@@ -14,58 +14,58 @@ $rbp_two_hire_me_image = get_post_meta(get_the_ID(), 'rbp_two_hire_me_image', tr
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="rbp-two-hire-me-content">
+                <div class="rb-portfolio-two-hire-me-content">
                     <h2>
                     <?php
-                        $rbp_two_hire_me_title = get_post_meta(get_the_ID(), 'rbp_two_hire_me_title', true);
-                        if( isset ($rbp_two_hire_me_title) && !empty ($rbp_two_hire_me_title) ){
+                        $rb_portfolio_two_hire_me_title = get_post_meta(get_the_ID(), 'rb_portfolio_two_hire_me_title', true);
+                        if( isset ($rb_portfolio_two_hire_me_title) && !empty ($rb_portfolio_two_hire_me_title) ){
                             printf(
                                 /* translators: %s: My Skills Section Title Theme Color */
-                                __('%s','rbp-two'),
-                                $rbp_two_hire_me_title
+                                __('%s','rb-portfolio-two'),
+                                $rb_portfolio_two_hire_me_title
                                 );
                         }
                         else {
-                            esc_html_e("Let's Work Together!","rbp-two");
+                            esc_html_e("Let's Work Together!","rb-portfolio-two");
                         }
                     ?>
                     </h2>
                     <p>
                     <?php
-                        $rbp_two_hire_me_sub_title = get_post_meta(get_the_ID(), 'rbp_two_hire_me_sub_title', true);
-                        if( isset ($rbp_two_hire_me_sub_title)  && !empty ($rbp_two_hire_me_sub_title) ){
+                        $rb_portfolio_two_hire_me_sub_title = get_post_meta(get_the_ID(), 'rb_portfolio_two_hire_me_sub_title', true);
+                        if( isset ($rb_portfolio_two_hire_me_sub_title)  && !empty ($rb_portfolio_two_hire_me_sub_title) ){
                             printf(
                                 /* translators: %s: My Skills Section Title Theme Color */
-                                __('%s','rbp-two'),
-                                $rbp_two_hire_me_sub_title
+                                __('%s','rb-portfolio-two'),
+                                $rb_portfolio_two_hire_me_sub_title
                                 );
                         }
                         else {
-                            esc_html_e('I am available for freelance projects. Hire me and get your project done.','rbp-two');
+                            esc_html_e('I am available for freelance projects. Hire me and get your project done.','rb-portfolio-two');
                         }
                     ?>
                     </p>
-                    <div class="rbp-two-btn btn-hire-me">
+                    <div class="rb-portfolio-two-btn btn-hire-me">
                         <a href="<?php
-                        $rbp_two_hire_me_btn_url = get_post_meta(get_the_ID(), 'rbp_two_hire_me_btn_url', true);
-                        if( isset ($rbp_two_hire_me_btn_url) && !empty ($rbp_two_hire_me_btn_url) ){
-                            echo esc_url($rbp_two_hire_me_btn_url);
+                        $rb_portfolio_two_hire_me_btn_url = get_post_meta(get_the_ID(), 'rb_portfolio_two_hire_me_btn_url', true);
+                        if( isset ($rb_portfolio_two_hire_me_btn_url) && !empty ($rb_portfolio_two_hire_me_btn_url) ){
+                            echo esc_url($rb_portfolio_two_hire_me_btn_url);
                         }
                         else {
                             echo esc_url('#');
                         }
                         ?>">
                         <?php
-                        $rbp_two_hire_me_btn_text = get_post_meta(get_the_ID(), 'rbp_two_hire_me_btn_text', true);
-                        if( isset ($rbp_two_hire_me_btn_text) && !empty ($rbp_two_hire_me_btn_text) ){
+                        $rb_portfolio_two_hire_me_btn_text = get_post_meta(get_the_ID(), 'rb_portfolio_two_hire_me_btn_text', true);
+                        if( isset ($rb_portfolio_two_hire_me_btn_text) && !empty ($rb_portfolio_two_hire_me_btn_text) ){
                             printf(
                                 /* translators: %s: My Skills Section Title Theme Color */
-                                __('%s','rbp-two'),
-                                $rbp_two_hire_me_btn_text
+                                __('%s','rb-portfolio-two'),
+                                $rb_portfolio_two_hire_me_btn_text
                                 );
                         }
                         else {
-                            esc_html_e('hire me','rbp-two');
+                            esc_html_e('hire me','rb-portfolio-two');
                         }
                         ?>
                         </a>

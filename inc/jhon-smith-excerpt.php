@@ -13,8 +13,8 @@
  *
  * @since RB Portfolio Two 1.0.0
  */
-if(!function_exists('rbp_two_read_more_text')) {
-	function rbp_two_read_more_text() {
+if(!function_exists('rb_portfolio_two_read_more_text')) {
+	function rb_portfolio_two_read_more_text() {
 	
 		if (!empty(get_the_content()) ){
 			$read_more = printf(
@@ -23,9 +23,9 @@ if(!function_exists('rbp_two_read_more_text')) {
 				%2$s: Read More Text.
 				%3$s: Name of current post.
 				*/
-				'<a class="rbp-two-btn" href="%1$s">%2$s %3$s</a>',
+				'<a class="rb-portfolio-two-btn" href="%1$s">%2$s %3$s</a>',
 				esc_url(get_permalink()),
-				esc_html__('Read More', 'rbp-two'),
+				esc_html__('Read More', 'rb-portfolio-two'),
 				the_title('<span class="screen-reader-text">', '</span>', false)
 			);
 		}
@@ -39,10 +39,10 @@ if(!function_exists('rbp_two_read_more_text')) {
  * @param int $more Excerpt more text.
  * @return int (Maybe) modified excerpt more text.
  */
-function rbp_two_excerpt_more($more) {
+function rb_portfolio_two_excerpt_more($more) {
     return false;
 }
-add_filter('excerpt_more', 'rbp_two_excerpt_more');
+add_filter('excerpt_more', 'rb_portfolio_two_excerpt_more');
 
 /**
  * Filter the excerpt length to 30 words.
@@ -50,7 +50,7 @@ add_filter('excerpt_more', 'rbp_two_excerpt_more');
  * @param int $length Excerpt length.
  * @return int (Maybe) modified excerpt length.
  */
-function rbp_two_excerpt_length($length) {
+function rb_portfolio_two_excerpt_length($length) {
     return 30;
 }
-add_filter('excerpt_length', 'rbp_two_excerpt_length');
+add_filter('excerpt_length', 'rb_portfolio_two_excerpt_length');

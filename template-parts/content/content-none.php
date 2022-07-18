@@ -12,30 +12,30 @@
 
 ?>
 
-<section class="rbp-two-no-result">
-	<header class="rbp-two-content-none-header alignwide">
+<section class="rb-portfolio-two-no-result">
+	<header class="rb-portfolio-two-content-none-header alignwide">
 		<?php if (is_search()) : ?>
 
-			<h2 class="rbp-two-content-none-header-title">
+			<h2 class="rb-portfolio-two-content-none-header-title">
 				<?php
 				printf(
 					/* translators: %s: Search term. */
-					esc_html__('Results for "%s"', 'rbp-two'),
-					'<span class="rbp-two-content-none-search-keyword">'.esc_html(get_search_query()).'</span>'
+					esc_html__('Results for "%s"', 'rb-portfolio-two'),
+					'<span class="rb-portfolio-two-content-none-search-keyword">'.esc_html(get_search_query()).'</span>'
 				);
 				?>
 			</h2>
 
 		<?php else : ?>
 
-			<h2 class="rbp-two-content-none-header-title">
-                <?php esc_html_e('Nothing here', 'rbp-two'); ?>
+			<h2 class="rb-portfolio-two-content-none-header-title">
+                <?php esc_html_e('Nothing here', 'rb-portfolio-two'); ?>
             </h2>
 
 		<?php endif; ?>
-	</header><!-- .rbp-two-content-none-header -->
+	</header><!-- .rb-portfolio-two-content-none-header -->
 
-	<div class="rbp-two-content-none-body">
+	<div class="rb-portfolio-two-content-none-body">
 
 		<?php if (is_home() && current_user_can('publish_posts') ) : ?>
 
@@ -43,7 +43,7 @@
 			printf(
 				'<p>'.wp_kses(
 					/* translators: %s: Link to WP admin new post page. */
-					__('Ready to publish your first post? <a href="%s">Get started here</a>.', 'rbp-two'),
+					__('Ready to publish your first post? <a href="%s">Get started here</a>.', 'rb-portfolio-two'),
 					array(
 						'a' => array(
 							'href' => array(),
@@ -57,18 +57,18 @@
 		<?php elseif (is_search()) : ?>
 
 			<p>
-				<?php esc_html_e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'rbp-two'); ?>
+				<?php esc_html_e('Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'rb-portfolio-two'); ?>
 			</p>
 			<?php get_search_form(); ?>
 
 		<?php else : ?>
 
 			<p>
-				<?php esc_html_e('It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'rbp-two'); ?>
+				<?php esc_html_e('It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'rb-portfolio-two'); ?>
 			</p>
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
-	</div><!-- .rbp-two-content-none-body -->
+	</div><!-- .rb-portfolio-two-content-none-body -->
 
-</section><!-- .rbp-two-no-result -->
+</section><!-- .rb-portfolio-two-no-result -->

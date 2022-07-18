@@ -13,7 +13,7 @@
 get_header();
 ?>
 
-<div id="rbp-two-page-content" class="rbp-two-main-page">
+<div id="rb-portfolio-two-page-content" class="rb-portfolio-two-main-page">
 
 <?php
 get_template_part('homepage-sections/header-section');
@@ -26,7 +26,7 @@ get_template_part('homepage-sections/my-testimonial-section');
 get_template_part('homepage-sections/contact-me-section');
 ?>
 
-</div><!-- #rbp-two-page-content -->
+</div><!-- #rb-portfolio-two-page-content -->
 
 <?php
 get_footer();

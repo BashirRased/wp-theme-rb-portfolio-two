@@ -12,37 +12,37 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('rbp-two-post-item'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('rb-portfolio-two-post-item'); ?>>
 
-	<?php rbp_two_post_format_meta(); ?>
+	<?php rb_portfolio_two_post_format_meta(); ?>
 
-	<?php rbp_two_post_thumbnail(); ?>
+	<?php rb_portfolio_two_post_thumbnail(); ?>
 
-	<header class="rbp-two-content-entry-header">
+	<header class="rb-portfolio-two-content-entry-header">
 		<?php				
 		the_title(
 			sprintf(
-			'<h2 class="rbp-two-content-header-entry-title">
+			'<h2 class="rb-portfolio-two-content-header-entry-title">
 				<a href="%s">',esc_url(get_permalink())), '</a>
 			</h2>'
 		);
 		?>	
-	</header><!-- .rbp-two-content-entry-header -->
+	</header><!-- .rb-portfolio-two-content-entry-header -->
 
-	<div class="rbp-two-content-entry-meta">
+	<div class="rb-portfolio-two-content-entry-meta">
 		<?php
-		rbp_two_posted_by();
-		rbp_two_posted_on();
-		rbp_two_posted_category();
-		rbp_two_posted_comments();
-		rbp_two_edit_post_link();
+		rb_portfolio_two_posted_by();
+		rb_portfolio_two_posted_on();
+		rb_portfolio_two_posted_category();
+		rb_portfolio_two_posted_comments();
+		rb_portfolio_two_edit_post_link();
 		?>
 	</div>
 
-	<div class="rbp-two-content-entry-body">
+	<div class="rb-portfolio-two-content-entry-body">
 		<?php
 		get_template_part('template-parts/excerpt/excerpt', get_post_format());
 		?>
-	</div><!-- .rbp-two-content-entry-body -->
+	</div><!-- .rb-portfolio-two-content-entry-body -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

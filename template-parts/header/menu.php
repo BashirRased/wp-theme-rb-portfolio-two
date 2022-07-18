@@ -12,7 +12,7 @@
 
 <!--===== Header Desktop Menu Strat Here =====-->
 <div class="col-lg-6 col-md-12">
-    <div class="rbp-two-header-desktop-menu float-end">
+    <div class="rb-portfolio-two-header-desktop-menu float-end">
         <?php
         if (has_nav_menu('header-menu')) {
             wp_nav_menu(array(
