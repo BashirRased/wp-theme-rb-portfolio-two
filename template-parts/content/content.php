@@ -7,43 +7,42 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.0
  */
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('post-item'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('rb-portfolio-two-post-item'); ?>>
 
-	<?php
-		do_action ( 'rb_portfolio_two_post_format' );
-		do_action ( 'rb_portfolio_two_post_thumbnail' );
-	?>
+	<?php rb_portfolio_two_post_format_meta(); ?>
 
-	<header class="content-entry-header">
+	<?php rb_portfolio_two_post_thumbnail(); ?>
+
+	<header class="rb-portfolio-two-content-entry-header">
 		<?php				
 		the_title(
 			sprintf(
-			'<h2 class="content-header-entry-title">
+			'<h2 class="rb-portfolio-two-content-header-entry-title">
 				<a href="%s">',esc_url(get_permalink())), '</a>
 			</h2>'
 		);
 		?>	
-	</header><!-- .content-entry-header -->
+	</header><!-- .rb-portfolio-two-content-entry-header -->
 
-	<div class="content-entry-meta">
+	<div class="rb-portfolio-two-content-entry-meta">
 		<?php
-			do_action ( 'rb_portfolio_two_post_by' );
-			do_action ( 'rb_portfolio_two_post_on' );
-			do_action ( 'rb_portfolio_two_post_category' );
-			do_action ( 'rb_portfolio_two_post_comments' );
-			do_action ( 'rb_portfolio_two_post_edit' );
+		rb_portfolio_two_posted_by();
+		rb_portfolio_two_posted_on();
+		rb_portfolio_two_posted_category();
+		rb_portfolio_two_posted_comments();
+		rb_portfolio_two_edit_post_link();
 		?>
 	</div>
 
-	<div class="content-entry-body">
+	<div class="rb-portfolio-two-content-entry-body">
 		<?php
 		get_template_part('template-parts/excerpt/excerpt', get_post_format());
 		?>
-	</div><!-- .content-entry-body -->
+	</div><!-- .rb-portfolio-two-content-entry-body -->
 
 </article><!-- #post-<?php the_ID(); ?> -->

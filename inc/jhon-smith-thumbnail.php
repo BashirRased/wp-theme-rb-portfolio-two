@@ -5,13 +5,13 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.0
  */
 
  /**
  * Determines if post thumbnail can be displayed.
  *
- * @since RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.0
  *
  * @return bool
  */
@@ -29,18 +29,18 @@ function rb_portfolio_two_can_show_post_thumbnail() {
 	);
 }
 
-if (!function_exists('custom_post_thumbnail')) {
+if (!function_exists('rb_portfolio_two_post_thumbnail')) {
 	/**
 	 * Displays an optional post thumbnail.
 	 *
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 *
-	 * @since RB Portfolio Two 1.0.2
+	 * @since RB Portfolio Two 1.0.0
 	 *
 	 * @return void
 	 */
-	function custom_post_thumbnail() {
+	function rb_portfolio_two_post_thumbnail() {
 		if (!rb_portfolio_two_can_show_post_thumbnail()) {
 			return;
 		}
@@ -48,7 +48,7 @@ if (!function_exists('custom_post_thumbnail')) {
 
 		<?php if (is_singular()) : ?>
 
-			<figure class="post-thumbnail">
+			<figure class="rb-portfolio-two-post-thumbnail">
 				<?php
 				// Lazy-loading attributes should be skipped for thumbnails since they are immediately in the viewport.
 				the_post_thumbnail('post-thumbnail', array( 'loading' => false));
@@ -64,9 +64,9 @@ if (!function_exists('custom_post_thumbnail')) {
 
 		<?php elseif(! get_post_format() && !is_singular() ) : ?>
 
-			<figure class="post-thumbnail">
+			<figure class="rb-portfolio-two-post-thumbnail">
 
-				<a class="post-thumbnail-inner alignwide" href="<?php the_permalink(); ?>">
+				<a class="rb-portfolio-two-post-thumbnail-inner alignwide" href="<?php the_permalink(); ?>">
 					<?php the_post_thumbnail('post-thumbnail'); ?>
 				</a>
 				
@@ -82,4 +82,3 @@ if (!function_exists('custom_post_thumbnail')) {
 		<?php
 	}
 }
-add_action( 'rb_portfolio_two_post_thumbnail', 'custom_post_thumbnail');

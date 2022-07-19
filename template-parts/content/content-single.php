@@ -7,52 +7,51 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.1
  */
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('post-single-item'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('rb-portfolio-two-post-single-item'); ?>>
 
-	<?php
-		do_action ( 'rb_portfolio_two_post_format' );
-		do_action ( 'rb_portfolio_two_post_thumbnail' );
-	?>
+	<?php rb_portfolio_two_post_format_meta(); ?>
 
-	<header class="content-single-entry-header alignwide">
+	<?php rb_portfolio_two_post_thumbnail(); ?>
+
+	<header class="rb-portfolio-two-content-single-entry-header alignwide">
 		<?php
-		the_title('<h1 class="content-single-entry-header-title">', '</h1>');
+		the_title('<h1 class="rb-portfolio-two-content-single-entry-header-title">', '</h1>');
 		?>
-	</header><!-- .content-single-entry-header -->
+	</header><!-- .rb-portfolio-two-content-single-entry-header -->
 
-	<div class="content-single-entry-meta">
+	<div class="rb-portfolio-two-content-single-entry-meta">
 		<?php
-			do_action ( 'rb_portfolio_two_post_by' );
-			do_action ( 'rb_portfolio_two_post_on' );
-			do_action ( 'rb_portfolio_two_post_category' );
-			do_action ( 'rb_portfolio_two_post_comments' );
-			do_action ( 'rb_portfolio_two_post_edit' );
+		rb_portfolio_two_posted_by();
+		rb_portfolio_two_posted_on();
+		rb_portfolio_two_posted_category();
+		rb_portfolio_two_posted_comments();
+		rb_portfolio_two_edit_post_link();
 		?>
 	</div>
 
 	<?php if (!empty(get_the_content()) ): ?>
-	<div class="content-single-entry-body">
+	<div class="rb-portfolio-two-content-single-entry-body">
 		<?php		
 		the_content();
 		wp_link_pages(
 			array(
 				// Start WP Link Pages Area
-                'before'        => '<div class="wp-pages-link-area">',
+                'before'        => '<div class="rb-portfolio-two-wp-pages-link-area">',
                 'after'         => '</div>'
 			)
 		);
 		?>
-	</div><!-- .content-single-entry-body -->
+	</div><!-- .rb-portfolio-two-content-single-entry-body -->
 	<?php endif; ?>
 
 </article><!-- #post-<?php the_ID(); ?> -->
 
-<?php do_action ( 'rb_portfolio_two_tag' ); ?>
+<?php rb_portfolio_two_tag_list(); ?>
 
 <?php if (!is_singular('attachment')): ?>
 	<?php get_template_part('template-parts/post/author-bio' ); ?>

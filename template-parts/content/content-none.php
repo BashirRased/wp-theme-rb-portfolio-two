@@ -7,35 +7,35 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.0
  */
 
 ?>
 
-<section class="no-result">
-	<header class="content-none-header alignwide">
+<section class="rb-portfolio-two-no-result">
+	<header class="rb-portfolio-two-content-none-header alignwide">
 		<?php if (is_search()) : ?>
 
-			<h2 class="content-none-header-title">
+			<h2 class="rb-portfolio-two-content-none-header-title">
 				<?php
 				printf(
 					/* translators: %s: Search term. */
 					esc_html__('Results for "%s"', 'rb-portfolio-two'),
-					'<span class="content-none-search-keyword">'.esc_html(get_search_query()).'</span>'
+					'<span class="rb-portfolio-two-content-none-search-keyword">'.esc_html(get_search_query()).'</span>'
 				);
 				?>
 			</h2>
 
 		<?php else : ?>
 
-			<h2 class="content-none-header-title">
+			<h2 class="rb-portfolio-two-content-none-header-title">
                 <?php esc_html_e('Nothing here', 'rb-portfolio-two'); ?>
             </h2>
 
 		<?php endif; ?>
-	</header><!-- .content-none-header -->
+	</header><!-- .rb-portfolio-two-content-none-header -->
 
-	<div class="content-none-body">
+	<div class="rb-portfolio-two-content-none-body">
 
 		<?php if (is_home() && current_user_can('publish_posts') ) : ?>
 
@@ -69,6 +69,6 @@
 			<?php get_search_form(); ?>
 
 		<?php endif; ?>
-	</div><!-- .content-none-body -->
+	</div><!-- .rb-portfolio-two-content-none-body -->
 
-</section><!-- .no-result -->
+</section><!-- .rb-portfolio-two-no-result -->

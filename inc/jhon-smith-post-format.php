@@ -5,15 +5,15 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.0
  */
 
-if(!function_exists( 'custom_post_format' )) {
-    function custom_post_format() { ?>        
+if(!function_exists('rb_portfolio_two_post_format_meta')) {
+    function rb_portfolio_two_post_format_meta() { ?>        
         
         <!-- Sticky Post Format -->
         <?php if(is_sticky()): ?>
-        <div class="posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-bookmark"></i>
             <?php
             printf(
@@ -21,7 +21,7 @@ if(!function_exists( 'custom_post_format' )) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
                 esc_html__('Post Type:', 'rb-portfolio-two'),
                 esc_html__('Sticky', 'rb-portfolio-two')
             );
@@ -31,7 +31,7 @@ if(!function_exists( 'custom_post_format' )) {
 
         <!-- Password Post Format -->
         <?php if(post_password_required()): ?>
-        <div class="posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-lock"></i>
             <?php
             printf(
@@ -39,7 +39,7 @@ if(!function_exists( 'custom_post_format' )) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
                 esc_html__('Post Type:', 'rb-portfolio-two'),
                 esc_html__('Password', 'rb-portfolio-two')
             );
@@ -49,7 +49,7 @@ if(!function_exists( 'custom_post_format' )) {
 
          <!-- Password Post Format -->
          <?php if(post_password_required()): ?>
-        <div class="posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-lock"></i>
             <?php
             printf(
@@ -57,7 +57,7 @@ if(!function_exists( 'custom_post_format' )) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
                 esc_html__('Post Type:', 'rb-portfolio-two'),
                 esc_html__('Password', 'rb-portfolio-two')
             );
@@ -70,7 +70,7 @@ if(!function_exists( 'custom_post_format' )) {
 
         // Image Post Format
         if('image' === $post_format): ?>
-        <div class="posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-image"></i>
             <?php
             printf(
@@ -78,7 +78,7 @@ if(!function_exists( 'custom_post_format' )) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
                 esc_html__('Post Type:', 'rb-portfolio-two'),
                 esc_html__('Image', 'rb-portfolio-two')
             );
@@ -89,7 +89,7 @@ if(!function_exists( 'custom_post_format' )) {
         // Gallery Post Format
         elseif('gallery' === $post_format):
         ?>
-        <div class="posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-icons"></i>
             <?php
             printf(
@@ -97,7 +97,7 @@ if(!function_exists( 'custom_post_format' )) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
                 esc_html__('Post Type:', 'rb-portfolio-two'),
                 esc_html__('Gallery', 'rb-portfolio-two')
             );
@@ -108,7 +108,7 @@ if(!function_exists( 'custom_post_format' )) {
         // Audio Post Format
         elseif('audio' === $post_format):
         ?>
-        <div class="posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-music"></i>
             <?php
             printf(
@@ -116,7 +116,7 @@ if(!function_exists( 'custom_post_format' )) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
                 esc_html__('Post Type:', 'rb-portfolio-two'),
                 esc_html__('Audio', 'rb-portfolio-two')
             );
@@ -127,7 +127,7 @@ if(!function_exists( 'custom_post_format' )) {
         // Video Post Format
         elseif('video' === $post_format):
         ?>
-        <div class="posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-video"></i>
             <?php
             printf(
@@ -135,7 +135,7 @@ if(!function_exists( 'custom_post_format' )) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
                 esc_html__('Post Type:', 'rb-portfolio-two'),
                 esc_html__('Video', 'rb-portfolio-two')
             );
@@ -146,7 +146,7 @@ if(!function_exists( 'custom_post_format' )) {
         // Link Post Format
         elseif('link' === $post_format):
         ?>
-        <div class="posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-link"></i>
             <?php
             printf(
@@ -154,7 +154,7 @@ if(!function_exists( 'custom_post_format' )) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
                 esc_html__('Post Type:', 'rb-portfolio-two'),
                 esc_html__('Link', 'rb-portfolio-two')
             );
@@ -165,7 +165,7 @@ if(!function_exists( 'custom_post_format' )) {
         // Quote Post Format
         elseif('quote' === $post_format):
         ?>
-        <div class="posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-brands fa-rocketchat"></i>
             <?php
             printf(
@@ -173,7 +173,7 @@ if(!function_exists( 'custom_post_format' )) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
                 esc_html__('Post Type:', 'rb-portfolio-two'),
                 esc_html__('Quote', 'rb-portfolio-two')
             );
@@ -184,7 +184,7 @@ if(!function_exists( 'custom_post_format' )) {
         // Status Post Format
         elseif('status' === $post_format):
         ?>
-        <div class="posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-clipboard"></i>
             <?php
             printf(
@@ -192,7 +192,7 @@ if(!function_exists( 'custom_post_format' )) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
                 esc_html__('Post Type:', 'rb-portfolio-two'),
                 esc_html__('Status', 'rb-portfolio-two')
             );
@@ -203,7 +203,7 @@ if(!function_exists( 'custom_post_format' )) {
         // Aside Post Format
         elseif('aside' === $post_format):
         ?>
-        <div class="posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-image-portrait"></i>
             <?php
             printf(
@@ -211,7 +211,7 @@ if(!function_exists( 'custom_post_format' )) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
                 esc_html__('Post Type:', 'rb-portfolio-two'),
                 esc_html__('Aside', 'rb-portfolio-two')
             );
@@ -222,7 +222,7 @@ if(!function_exists( 'custom_post_format' )) {
         // Chat Post Format
         elseif('chat' === $post_format):
         ?>
-        <div class="posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-solid fa-comments"></i>
             <?php
             printf(
@@ -230,7 +230,7 @@ if(!function_exists( 'custom_post_format' )) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
                 esc_html__('Post Type:', 'rb-portfolio-two'),
                 esc_html__('Chat', 'rb-portfolio-two')
             );
@@ -241,7 +241,7 @@ if(!function_exists( 'custom_post_format' )) {
         // Standard Post Format
         else:
         ?>
-        <div class="posted-format-meta">
+        <div class="rb-portfolio-two-posted-format-meta">
             <i class="fa-brands fa-blogger-b"></i>
             <?php
             printf(
@@ -249,7 +249,7 @@ if(!function_exists( 'custom_post_format' )) {
                 %1$s: Post Type: Common Text.
                 %2$s: Post Type: Change Text.
                 */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
+                '%1$s <strong class="rb-portfolio-two-posted-format-meta-text">%2$s</strong>',
                 esc_html__('Post Type:', 'rb-portfolio-two'),
                 esc_html__('Standard', 'rb-portfolio-two')
             );
@@ -259,4 +259,3 @@ if(!function_exists( 'custom_post_format' )) {
         <?php endif;
     }
 }
-add_action( 'rb_portfolio_two_post_format', 'custom_post_format');

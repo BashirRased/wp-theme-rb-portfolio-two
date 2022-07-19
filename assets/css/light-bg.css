@@ -22,27 +22,27 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 body {
 	color: #222222;	
 }
-.theme-colors {
+.rb-portfolio-two-theme-colors {
 	background-color: #ffffff;
 }
-.about-me {
+.rb-portfolio-two-about-me {
 	background-color: #ccc;
 }
-.services {
+.rb-portfolio-two-services {
 	background-color: #ccc;
 }
-.portfolio-menu ul li {
+.rb-portfolio-two-portfolio-menu ul li {
 	border: 1px solid #222222;
 }
-.section-title h2:before {
+.rb-portfolio-two-section-title h2:before {
 	background-color: #222222;
 }
-.my-resume {
+.rb-portfolio-two-my-resume {
 	background-color: #ccc;
 }
-.contact-info-box {
+.rb-portfolio-two-contact-info-box {
 	background-color: #ccc;
 }
-.footer-area {
+.rb-portfolio-two-footer-area {
 	background-color: #ccc;
 }

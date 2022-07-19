@@ -7,13 +7,13 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.1
  */
 
 get_header();
 ?>
 
-<div id="page-content" class="main-page">
+<div id="rb-portfolio-two-page-content" class="rb-portfolio-two-main-page">
 
 <?php
 get_template_part('homepage-sections/header-section');
@@ -26,7 +26,7 @@ get_template_part('homepage-sections/my-testimonial-section');
 get_template_part('homepage-sections/contact-me-section');
 ?>
 
-</div><!-- #page-content -->
+</div><!-- #rb-portfolio-two-page-content -->
 
 <?php
 get_footer();

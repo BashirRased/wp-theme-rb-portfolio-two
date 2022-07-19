@@ -1,21 +1,21 @@
 <!--========================================== 
 ===== Header Breadcrumbs Area Strat Here =====
 ===========================================-->
-<div class="header-breadcrumbs-area" style="background-image: url(<?php header_image(); ?>);">
+<div class="rb-portfolio-two-header-breadcrumbs-area" style="background-image: url(<?php header_image(); ?>);">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
 
-                <section class="header-breadcrumbs">
+                <section class="rb-portfolio-two-header-breadcrumbs">
 
-                    <?php do_action ( 'rb_portfolio_two_breadcrumbs' ); ?>
+                    <?php rb_portfolio_two_breadcrumbs(); ?>
 
-                </section><!-- .header-breadcrumbs -->
+                </section><!-- .rb-portfolio-two-header-breadcrumbs -->
 
             </div>
         </div><!-- row end -->
     </div><!-- container end -->
-</div><!-- .header-breadcrumbs-area -->
+</div><!-- .rb-portfolio-two-header-breadcrumbs-area -->
 <!--======================================== 
 ===== Header Breadcrumbs Area End Here =====
 =========================================-->

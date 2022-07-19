@@ -7,13 +7,13 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.2
+ * @since RB Portfolio Two 1.0.1
  */
 
 get_header();
 ?>
 
-<div id="page-content" class="single-post-page">
+<div id="rb-portfolio-two-page-content" class="rb-portfolio-two-single-post-page">
     <div class="container">
         <div class="row">
 
@@ -26,7 +26,7 @@ get_header();
                 }
             ?>
 
-            <main id="primary" class="<?php echo esc_attr($rb_portfolio_two_page_content_class); ?>">
+            <main id="rb-portfolio-two-primary" class="<?php echo esc_attr($rb_portfolio_two_page_content_class); ?>" role="post">
 
             <?php
             /* Start the Loop */
@@ -34,40 +34,40 @@ get_header();
                 the_post();
             ?>
 
-            <article id="post-<?php the_ID(); ?>" <?php post_class('post-single-item'); ?>>
+            <article id="post-<?php the_ID(); ?>" <?php post_class('rb-portfolio-two-post-single-item'); ?>>
 
-                <header class="content-single-entry-header alignwide">
+                <header class="rb-portfolio-two-content-single-entry-header alignwide">
                     <?php
-                    the_title('<h1 class="content-single-entry-header-title">', '</h1>');
+                    the_title('<h1 class="rb-portfolio-two-content-single-entry-header-title">', '</h1>');
                     ?>
-                </header><!-- .content-single-entry-header -->
+                </header><!-- .rb-portfolio-two-content-single-entry-header -->
 
-                <div class="content-single-entry-meta">
+                <div class="rb-portfolio-two-content-single-entry-meta">
                     <?php
-                        do_action ( 'rb_portfolio_two_post_on' );
-                        do_action ( 'rb_portfolio_two_post_comments' );
-                        do_action ( 'rb_portfolio_two_post_edit' );
+                    rb_portfolio_two_posted_on();
+                    rb_portfolio_two_posted_comments();
+                    rb_portfolio_two_edit_post_link();
                     ?>
                 </div>
 
-                <figure class="attachment-image">
+                <figure class="rb-portfolio-two-attachment-image">
                     <?php
                     /**
                      * Filter the default image attachment size.
                      *
-                     * @since RB Portfolio Two 1.0.2
+                     * @since RB Portfolio Two 1.0.0
                      *
                      */
                     echo wp_get_attachment_image(get_the_ID(), 'full');
                     ?>
 
                     <?php if (wp_get_attachment_caption()) : ?>
-                        <figcaption class="attachment-image-caption-text">
+                        <figcaption class="rb-portfolio-two-attachment-image-caption-text">
                             <?php esc_html_e(wp_get_attachment_caption()); ?>
                         </figcaption>
                     <?php endif; ?>
 
-                </figure><!-- .attachment-image -->
+                </figure><!-- .rb-portfolio-two-attachment-image -->
 
             </article><!-- #post-<?php the_ID(); ?> -->
 
@@ -80,7 +80,7 @@ get_header();
             endwhile; // End of the loop.
             ?>
 
-            </main><!-- #primary -->
+            </main><!-- #rb-portfolio-two-primary -->
 
             <?php
 			if(is_active_sidebar('rb-portfolio-two-sidebar-right')){
@@ -90,7 +90,7 @@ get_header();
 
         </div><!-- row end -->        
     </div><!-- container end -->
-</div><!-- #page-content -->
+</div><!-- #rb-portfolio-two-page-content -->
 
 <?php
 get_footer();

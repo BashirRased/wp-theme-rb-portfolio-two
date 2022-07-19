@@ -6,7 +6,7 @@ $rb_portfolio_two_hire_me_image = get_post_meta(get_the_ID(), 'rb_portfolio_two_
 <!--=============================== 
 ===== Hire Me Area Strat Here =====
 ================================-->
-<section class="hire-me" <?php if ( isset ($rb_portfolio_two_hire_me_image) && !empty ($rb_portfolio_two_hire_me_image)) : ?> style="background-image: url(<?php echo esc_url($rb_portfolio_two_hire_me_image); ?>);" <?php endif; ?> >
+<section class="rb-portfolio-two-hire-me" <?php if ( isset ($rb_portfolio_two_hire_me_image) && !empty ($rb_portfolio_two_hire_me_image)) : ?> style="background-image: url(<?php echo esc_url($rb_portfolio_two_hire_me_image); ?>);" <?php endif; ?> >
     
     <!--================================== 
     ===== Section Content Strat Here =====
@@ -14,7 +14,7 @@ $rb_portfolio_two_hire_me_image = get_post_meta(get_the_ID(), 'rb_portfolio_two_
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="hire-me-content">
+                <div class="rb-portfolio-two-hire-me-content">
                     <h2>
                     <?php
                         $rb_portfolio_two_hire_me_title = get_post_meta(get_the_ID(), 'rb_portfolio_two_hire_me_title', true);
@@ -45,7 +45,7 @@ $rb_portfolio_two_hire_me_image = get_post_meta(get_the_ID(), 'rb_portfolio_two_
                         }
                     ?>
                     </p>
-                    <div class="btn btn-hire-me">
+                    <div class="rb-portfolio-two-btn btn-hire-me">
                         <a href="<?php
                         $rb_portfolio_two_hire_me_btn_url = get_post_meta(get_the_ID(), 'rb_portfolio_two_hire_me_btn_url', true);
                         if( isset ($rb_portfolio_two_hire_me_btn_url) && !empty ($rb_portfolio_two_hire_me_btn_url) ){
