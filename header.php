@@ -9,7 +9,7 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.1
+ * @since RB Portfolio Two 1.0.2
  */
 
 ?>
@@ -45,15 +45,15 @@ wp_body_open();
 ===== Preloader Area End Here =====
 ================================-->
 
-<div id="rb-portfolio-two-page" class="rb-portfolio-two-page-content">
-	<a class="skip-link screen-reader-text" href="#rb-portfolio-two-page-content">
+<div id="page" class="page-content">
+	<a class="skip-link screen-reader-text" href="#page-content">
         <?php esc_html_e('Skip to content', 'rb-portfolio-two'); ?>
     </a>
     
 <!--======================================================
 ===== Header Menu with Site Branding Area Strat Here =====
 =======================================================-->
-<div class="rb-portfolio-two-header-menu-area">
+<div class="header-menu-area">
     <div class="container">
         <div class="row">
             
@@ -65,8 +65,8 @@ wp_body_open();
                 ?>
                 
                 <!--===== Mobile Menu Strat Here =====-->
-                <div class="rb-portfolio-two-header-mobile-menu-area">
-                    <button class="rb-portfolio-two-header-mobile-menu-btn">
+                <div class="header-mobile-menu-area">
+                    <button class="header-mobile-menu-btn">
                         <i class="fas fa-bars"></i>
                     </button>
                 </div>
@@ -80,7 +80,7 @@ wp_body_open();
     
         </div><!-- row end -->
     </div><!-- container end -->
-</div><!-- .rb-portfolio-two-header-menu-area -->
+</div><!-- .header-menu-area -->
 <!--==================================================== 
 ===== Header Menu with Site Branding Area End Here =====
 ======================================================-->

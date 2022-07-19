@@ -5,16 +5,16 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.0
+ * @since RB Portfolio Two 1.0.2
  */
 
  /**
  * Creates continue reading text.
  *
- * @since RB Portfolio Two 1.0.0
+ * @since RB Portfolio Two 1.0.2
  */
-if(!function_exists('rb_portfolio_two_read_more_text')) {
-	function rb_portfolio_two_read_more_text() {
+if(!function_exists('custom_read_more')) {
+	function custom_read_more() {
 	
 		if (!empty(get_the_content()) ){
 			$read_more = printf(
@@ -23,7 +23,7 @@ if(!function_exists('rb_portfolio_two_read_more_text')) {
 				%2$s: Read More Text.
 				%3$s: Name of current post.
 				*/
-				'<a class="rb-portfolio-two-btn" href="%1$s">%2$s %3$s</a>',
+				'<a class="btn" href="%1$s">%2$s %3$s</a>',
 				esc_url(get_permalink()),
 				esc_html__('Read More', 'rb-portfolio-two'),
 				the_title('<span class="screen-reader-text">', '</span>', false)
@@ -32,6 +32,7 @@ if(!function_exists('rb_portfolio_two_read_more_text')) {
 	
 	}
 }
+add_action( 'rb_portfolio_two_read_more', 'custom_read_more');
 
 /**
  * Filter the excerpt more text [...].

@@ -232,7 +232,7 @@ ol.alignright {
 /********************************************
 ***** 03. Common Classes CSS Start Here *****
 ********************************************/
-.rb-portfolio-two-btn {
+.btn {
 	position: relative;
 	display: inline-block;
 	margin: 10px 0;
@@ -245,12 +245,12 @@ ol.alignright {
 	z-index: 1;
 }
 
-.rb-portfolio-two-btn:hover,
-.rb-portfolio-two-btn:focus {
+.btn:hover,
+.btn:focus {
 	color: #fff;
 }
 
-.rb-portfolio-two-btn::before {
+.btn::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -261,8 +261,8 @@ ol.alignright {
 	z-index: -1;
 }
 
-.rb-portfolio-two-btn:hover::before,
-.rb-portfolio-two-btn:focus::before {
+.btn:hover::before,
+.btn:focus::before {
 	width: 100%;
 }
 
@@ -274,7 +274,7 @@ ol.alignright {
 /*****************************************************
 ***** 04. Header Breadcrumbs Area CSS Start Here *****
 *****************************************************/
-.rb-portfolio-two-header-breadcrumbs-area {
+.header-breadcrumbs-area {
 	padding: 15px;
 	color: #fff;
 	text-align: center;
@@ -286,7 +286,7 @@ ol.alignright {
 	z-index: 1;
 }
 
-.rb-portfolio-two-header-breadcrumbs-area::before {
+.header-breadcrumbs-area::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -297,7 +297,7 @@ ol.alignright {
 	background-color: rgba(0, 0, 0, .5);
 }
 
-.rb-portfolio-two-header-breadcrumbs-title {
+.header-breadcrumbs-title {
 	position: relative;
 	display: inline-block;
 	color: #0d65ed;
@@ -305,7 +305,7 @@ ol.alignright {
 	padding-bottom: 10px;
 }
 
-.rb-portfolio-two-header-breadcrumbs-title::before {
+.header-breadcrumbs-title::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -316,7 +316,7 @@ ol.alignright {
 	background-color: #0d65ed;
 }
 
-.rb-portfolio-two-header-breadcrumbs-title::after {
+.header-breadcrumbs-title::after {
 	content: '';
 	position: absolute;
 	bottom: -12px;
@@ -327,31 +327,31 @@ ol.alignright {
 	background-color: #fff;
 }
 
-.rb-portfolio-two-header-breadcrumbs-description {
+.header-breadcrumbs-description {
 	margin-top: 20px;
 }
 
-.rb-portfolio-two-header-breadcrumbs-nav {
+.header-breadcrumbs-nav {
 	margin-top: 10px;
 }
 
-.rb-portfolio-two-header-breadcrumbs-nav ul li {
+.header-breadcrumbs-nav ul li {
 	display: inline-block;
 	list-style: none;
 	margin: 5px;
 }
 
-.rb-portfolio-two-header-breadcrumbs-nav ul li a {
+.header-breadcrumbs-nav ul li a {
 	text-decoration: none;
 	color: #0d65ed;
 }
 
-.rb-portfolio-two-header-breadcrumbs-nav ul li a:hover,
-.rb-portfolio-two-header-breadcrumbs-nav ul li a:focus {
+.header-breadcrumbs-nav ul li a:hover,
+.header-breadcrumbs-nav ul li a:focus {
 	text-decoration: underline;
 }
 
-.rb-portfolio-two-header-breadcrumbs-text strong {
+.header-breadcrumbs-text strong {
 	color: #0d65ed;
 }
 
@@ -364,60 +364,60 @@ ol.alignright {
 ***********************************************/
 
 /* 5.1. Post Item CSS Start Here */
-.rb-portfolio-two-post-item {
+.post-item {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0 0 5px 5px #ccc;
 }
 
-.rb-portfolio-two-post-thumbnail img {
+.post-thumbnail img {
 	width: 100%;
 	height: auto;
 }
 
-.rb-portfolio-two-content-header-entry-title a,
-.rb-portfolio-two-content-single-entry-header-title a {
+.content-header-entry-title a,
+.content-single-entry-header-title a {
 	text-decoration: none;
 	color: #0d65ed;
 }
 
-.rb-portfolio-two-content-header-entry-title a:hover,
-.rb-portfolio-two-content-header-entry-title a:focus,
-.rb-portfolio-two-content-entry-meta a:hover,
-.rb-portfolio-two-content-entry-meta a:focus,
-.rb-portfolio-two-content-single-entry-meta a:hover,
-.rb-portfolio-two-content-single-entry-meta a:focus {
+.content-header-entry-title a:hover,
+.content-header-entry-title a:focus,
+.content-entry-meta a:hover,
+.content-entry-meta a:focus,
+.content-single-entry-meta a:hover,
+.content-single-entry-meta a:focus {
 	text-decoration: underline;
 	color: #0d65ed;
 }
 
-.rb-portfolio-two-content-entry-meta,
-.rb-portfolio-two-content-single-entry-meta {
+.content-entry-meta,
+.content-single-entry-meta {
 	margin: 10px 0;
 	padding: 10px 0;
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
 
-.rb-portfolio-two-content-entry-meta a,
-.rb-portfolio-two-content-single-entry-meta a {
+.content-entry-meta a,
+.content-single-entry-meta a {
 	text-decoration: none;
 	color: #000;
 }
 
-.rb-portfolio-two-posted-by,
-.rb-portfolio-two-posted-on,
-.rb-portfolio-two-posted-categories,
-.rb-portfolio-two-posted-comments {
+.posted-by,
+.posted-on,
+.posted-categories,
+.posted-comments {
 	margin-right: 20px;
 }
 
-.rb-portfolio-two-posted-by i,
-.rb-portfolio-two-posted-on i,
-.rb-portfolio-two-posted-categories i,
-.rb-portfolio-two-posted-comments i,
-.rb-portfolio-two-posted-edit .fa-edit {
+.posted-by i,
+.posted-on i,
+.posted-categories i,
+.posted-comments i,
+.posted-edit .fa-edit {
 	color: #0d65ed;
 	margin-right: 5px;
 }
@@ -425,7 +425,7 @@ ol.alignright {
 /* 5.1. Post Item CSS Start Here */
 
 /* 5.2. Post Format CSS Start Here */
-.rb-portfolio-two-posted-format-meta {
+.posted-format-meta {
 	display: inline-block;
 	background-color: #ccc;
 	color: #000;
@@ -434,83 +434,83 @@ ol.alignright {
 	border-radius: 25px;
 }
 
-.rb-portfolio-two-posted-format-meta i,
-.rb-portfolio-two-posted-format-meta .rb-portfolio-two-posted-format-meta-text {
+.posted-format-meta i,
+.posted-format-meta .posted-format-meta-text {
 	color: #0d65ed;
 }
 
-.rb-portfolio-two-content-entry-body .wp-block-image {
+.content-entry-body .wp-block-image {
 	display: none;
 }
 
-.rb-portfolio-two-content-entry-body .wp-block-image:first-child {
+.content-entry-body .wp-block-image:first-child {
 	display: block;
 }
 
-.rb-portfolio-two-content-entry-body .wp-block-video {
+.content-entry-body .wp-block-video {
 	display: none;
 }
 
-.rb-portfolio-two-content-entry-body .wp-block-video:first-child {
+.content-entry-body .wp-block-video:first-child {
 	display: block;
 }
 
-.rb-portfolio-two-content-entry-body .wp-block-audio {
+.content-entry-body .wp-block-audio {
 	display: none;
 }
 
-.rb-portfolio-two-content-entry-body .wp-block-audio:first-child {
+.content-entry-body .wp-block-audio:first-child {
 	display: block;
 }
 
-.rb-portfolio-two-content-entry-body .wp-block-gallery {
+.content-entry-body .wp-block-gallery {
 	display: none;
 }
 
-.rb-portfolio-two-content-entry-body .wp-block-gallery:first-child {
+.content-entry-body .wp-block-gallery:first-child {
 	display: flex;
 }
 
-.rb-portfolio-two-content-entry-body .wp-block-file {
+.content-entry-body .wp-block-file {
 	display: none;
 }
 
-.rb-portfolio-two-content-entry-body .wp-block-file:first-child {
+.content-entry-body .wp-block-file:first-child {
 	display: block;
 }
 
-.rb-portfolio-two-content-entry-body .wp-block-quote {
+.content-entry-body .wp-block-quote {
 	display: none;
 }
 
-.rb-portfolio-two-content-entry-body .wp-block-quote:first-child {
+.content-entry-body .wp-block-quote:first-child {
 	display: block;
 }
 
 /* 5.2. Post Format CSS Start Here */
 
 /* 3.2. Pagination Area CSS Start Here */
-.rb-portfolio-two-page-content .pagination {
+.page-content .pagination {
 	margin: 20px 0;
 	background-color: #fff;
 	box-shadow: 0 0 5px 5px #ccc;
 	padding: 15px 10px;
 }
 
-.rb-portfolio-two-page-content .page-numbers {
+.page-content .page-numbers {
 	border: 1px solid #0d65ed;
 	padding: 5px 10px;
 	text-decoration: none;
 }
 
-.rb-portfolio-two-page-content .page-numbers.current,
-.rb-portfolio-two-page-content .page-numbers:hover,
-.rb-portfolio-two-page-content .page-numbers:focus {
+.page-content .page-numbers.current,
+.page-content .page-numbers:hover,
+.page-content .page-numbers:focus {
 	background-color: #0d65ed;
 	color: #fff;
 }
 
-.rb-portfolio-two-page-content .page-numbers:focus {
+.page-content .page-numbers:focus {
 	text-decoration: underline;
 }
 
@@ -523,55 +523,55 @@ ol.alignright {
 /******************************************************
 ***** 04. WP Single Post Page Area CSS Start Here *****
 ******************************************************/
-.rb-portfolio-two-post-single-item {
+.post-single-item {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
-.rb-portfolio-two-content-single-entry-footer {
+.content-single-entry-footer {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
-.rb-portfolio-two-posted-tags i {
+.posted-tags i {
 	color: #0d65ed;
 }
 
-.rb-portfolio-two-posted-tags a {
+.posted-tags a {
 	color: #0d6efd;
 	text-decoration: none;
 }
 
-.rb-portfolio-two-posted-tags a:hover,
-.rb-portfolio-two-posted-tags a:focus {
+.posted-tags a:hover,
+.posted-tags a:focus {
 	color: #0d6efd;
 	text-decoration: underline;
 }
 
-.rb-portfolio-two-content-single-entry-header-title {
+.content-single-entry-header-title {
 	color: #0d65ed;
 }
 
 /* 4.1. WP Pages Link Area Start Here */
-.rb-portfolio-two-wp-pages-link-area {
+.wp-pages-link-area {
 	margin: 10px 0;
 	padding: 10px 0;
 }
 
-.rb-portfolio-two-wp-pages-link-area .post-page-numbers {
+.wp-pages-link-area .post-page-numbers {
 	display: inline-block;
 	border: 1px solid #0d65ed;
 	padding: 5px 10px;
 	margin-right: 2px;
 }
 
-.rb-portfolio-two-wp-pages-link-area .post-page-numbers:hover,
-.rb-portfolio-two-wp-pages-link-area .post-page-numbers:focus,
-.rb-portfolio-two-wp-pages-link-area .post-page-numbers.current {
+.wp-pages-link-area .post-page-numbers:hover,
+.wp-pages-link-area .post-page-numbers:focus,
+.wp-pages-link-area .post-page-numbers.current {
 	color: #fff;
 	background-color: #0d65ed;
 }
@@ -579,7 +579,7 @@ ol.alignright {
 /* 4.1. WP Pages Link Area End Here */
 
 /* 4.2. Comments Area Start Here */
-.rb-portfolio-two-comments-area {
+.comments-area {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
@@ -587,63 +587,63 @@ ol.alignright {
 }
 
 /* 4.2.1. Comments Count CSS Start Here */
-.rb-portfolio-two-comments-count {
+.comments-count {
 	padding: 10px;
 	box-shadow: 0 0 5px 5px #ccc;
 }
 
-.rb-portfolio-two-comment-title {
+.comment-title {
 	color: #0d65ed;
 }
 
 /* 4.2.1. Comments Count CSS End Here */
 
 /* 4.2.2. Comments List CSS Start Here */
-.rb-portfolio-two-comments-list {
+.comments-list {
 	padding: 10px 0;
 }
 
-.rb-portfolio-two-comments-list .comment {
+.comments-list .comment {
 	list-style: none;
 	margin: 20px 0;
 }
 
-.rb-portfolio-two-comments-list .comment-body {
+.comments-list .comment-body {
 	background-color: #ccc;
 	padding: 15px;
 	margin-left: 30px;
 }
 
-.rb-portfolio-two-comments-list .parent .comment-body {
+.comments-list .parent .comment-body {
 	margin-left: 0;
 }
 
-.rb-portfolio-two-comments-list .comment-author {
+.comments-list .comment-author {
 	padding: 10px 0;
 }
 
-.rb-portfolio-two-comments-list .comment-author .url {
+.comments-list .comment-author .url {
 	text-decoration: none;
 	color: #0d65ed;
 }
 
-.rb-portfolio-two-comments-list .comment-author .url:hover,
-.rb-portfolio-two-comments-list .comment-author .url:focus {
+.comments-list .comment-author .url:hover,
+.comments-list .comment-author .url:focus {
 	text-decoration: underline;
 }
 
-.rb-portfolio-two-comments-list .comment-metadata {
+.comments-list .comment-metadata {
 	border-bottom: 1px solid #0d65ed;
 	border-top: 1px solid #0d65ed;
 	padding: 10px 0;
 }
 
-.rb-portfolio-two-comments-list .comment-metadata a {
+.comments-list .comment-metadata a {
 	color: #000;
 	text-decoration: none;
 }
 
-.rb-portfolio-two-comments-list .comment-reply-link {
+.comments-list .comment-reply-link {
 	position: relative;
 	display: inline-block;
 	margin: 10px 0;
@@ -656,12 +656,12 @@ ol.alignright {
 	z-index: 1;
 }
 
-.rb-portfolio-two-comments-list .comment-reply-link:hover,
-.rb-portfolio-two-comments-list .comment-reply-link:focus {
+.comments-list .comment-reply-link:hover,
+.comments-list .comment-reply-link:focus {
 	color: #fff;
 }
 
-.rb-portfolio-two-comments-list .comment-reply-link::before {
+.comments-list .comment-reply-link::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -672,23 +672,23 @@ ol.alignright {
 	z-index: -1;
 }
 
-.rb-portfolio-two-comments-list .comment-reply-link:hover::before,
-.rb-portfolio-two-comments-list .comment-reply-link:focus::before {
+.comments-list .comment-reply-link:hover::before,
+.comments-list .comment-reply-link:focus::before {
 	width: 100%;
 }
 
 /* 4.2.2. Comments List CSS End Here */
 
 /* 4.2.3. Comments Form CSS Start Here */
-.rb-portfolio-two-comments-form {
+.comments-form {
 	padding: 10px 0;
 }
 
-.rb-portfolio-two-comments-form .comment-reply-title {
+.comments-form .comment-reply-title {
 	color: #0d65ed;
 }
 
-.rb-portfolio-two-comments-form .logged-in-as a {
+.comments-form .logged-in-as a {
 	position: relative;
 	display: inline-block;
 	margin: 10px 0;
@@ -701,12 +701,12 @@ ol.alignright {
 	z-index: 1;
 }
 
-.rb-portfolio-two-comments-form .logged-in-as a:hover,
-.rb-portfolio-two-comments-form .logged-in-as a:focus {
+.comments-form .logged-in-as a:hover,
+.comments-form .logged-in-as a:focus {
 	color: #fff;
 }
 
-.rb-portfolio-two-comments-form .logged-in-as a::before {
+.comments-form .logged-in-as a::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -717,46 +717,46 @@ ol.alignright {
 	z-index: -1;
 }
 
-.rb-portfolio-two-comments-form .logged-in-as a:hover::before,
-.rb-portfolio-two-comments-form .logged-in-as a:focus::before {
+.comments-form .logged-in-as a:hover::before,
+.comments-form .logged-in-as a:focus::before {
 	width: 100%;
 }
 
-.rb-portfolio-two-comments-form .required-field-message {
+.comments-form .required-field-message {
 	display: block;
 }
 
-.rb-portfolio-two-comments-form .rb-portfolio-two-comments-form label {
+.comments-form .comments-form label {
 	display: block;
 	margin: 10px 0;
 }
 
-.rb-portfolio-two-comments-form input[type='text'],
-.rb-portfolio-two-comments-form input[type='email'],
-.rb-portfolio-two-comments-form input[type='url'] {
+.comments-form input[type='text'],
+.comments-form input[type='email'],
+.comments-form input[type='url'] {
 	width: 100%;
 	padding: 10px;
 	border: 2px solid #0d65ed;
 }
 
-.rb-portfolio-two-comments-form input[type='text']:focus,
-.rb-portfolio-two-comments-form input[type='email']:focus,
-.rb-portfolio-two-comments-form input[type='url']:focus {
+.comments-form input[type='text']:focus,
+.comments-form input[type='email']:focus,
+.comments-form input[type='url']:focus {
 	border: 2px solid #0d65ed;
 }
 
-.rb-portfolio-two-comments-form textarea {
+.comments-form textarea {
 	width: 100%;
 	margin: 10px 0;
 	padding: 20px;
 	border: 2px solid #0d65ed;
 }
 
-.rb-portfolio-two-comments-form textarea:focus-visible {
+.comments-form textarea:focus-visible {
 	border: 2px solid #0d65ed;
 }
 
-.rb-portfolio-two-comments-form .comment-form .submit {
+.comments-form .comment-form .submit {
 	display: inline-block;
 	margin: 10px 0;
 	padding: 10px;
@@ -767,8 +767,8 @@ ol.alignright {
 	transition: .3s all ease-in-out;
 }
 
-.rb-portfolio-two-comments-form .comment-form .submit:hover,
-.rb-portfolio-two-comments-form .comment-form .submit:focus {
+.comments-form .comment-form .submit:hover,
+.comments-form .comment-form .submit:focus {
 	background-color: #0d65ed;
 	border-color: #0d65ed;
 	color: #fff;
@@ -777,13 +777,13 @@ ol.alignright {
 /* 4.2.3. Comments Form CSS End Here */
 
 /* 4.2.4. Comments Reply Form CSS Start Here */
-.rb-portfolio-two-comments-list .comment-respond {
+.comments-list .comment-respond {
 	box-shadow: 0 0 5px 5px #ccc;
 	margin: 20px 0;
 	padding: 20px;
 }
 
-.rb-portfolio-two-comments-list #cancel-comment-reply-link {
+.comments-list #cancel-comment-reply-link {
 	position: relative;
 	display: inline-block;
 	text-transform: capitalize;
@@ -797,12 +797,12 @@ ol.alignright {
 	z-index: 1;
 }
 
-.rb-portfolio-two-comments-list #cancel-comment-reply-link:hover,
-.rb-portfolio-two-comments-list #cancel-comment-reply-link:focus {
+.comments-list #cancel-comment-reply-link:hover,
+.comments-list #cancel-comment-reply-link:focus {
 	color: #fff;
 }
 
-.rb-portfolio-two-comments-list #cancel-comment-reply-link::before {
+.comments-list #cancel-comment-reply-link::before {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -813,8 +813,8 @@ ol.alignright {
 	z-index: -1;
 }
 
-.rb-portfolio-two-comments-list #cancel-comment-reply-link:hover::before,
-.rb-portfolio-two-comments-list #cancel-comment-reply-link:focus::before {
+.comments-list #cancel-comment-reply-link:hover::before,
+.comments-list #cancel-comment-reply-link:focus::before {
 	width: 100%;
 }
 
@@ -822,62 +822,62 @@ ol.alignright {
 
 /* 4.2. Comments Area End Here */
 
-.rb-portfolio-two-post-navigation {
+.post-navigation {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
-.rb-portfolio-two-post-navigation .nav-links {
+.post-navigation .nav-links {
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.rb-portfolio-two-post-navigation .nav-previous,
-.rb-portfolio-two-post-navigation .nav-next {
+.post-navigation .nav-previous,
+.post-navigation .nav-next {
 	width: 50%;
 }
 
-.rb-portfolio-two-post-navigation .nav-next {
+.post-navigation .nav-next {
 	text-align: right;
 }
 
 @media all and (max-width: 991px) {
 
-	.rb-portfolio-two-post-navigation .nav-previous,
-	.rb-portfolio-two-post-navigation .nav-next {
+	.post-navigation .nav-previous,
+	.post-navigation .nav-next {
 		width: 100%;
 		margin: 10px 0;
 	}
 
-	.rb-portfolio-two-post-navigation .nav-next {
+	.post-navigation .nav-next {
 		text-align: left;
 	}
 }
 
-.rb-portfolio-two-post-navigation a {
+.post-navigation a {
 	text-decoration: none;
 	color: #0d6efd;
 }
 
-.rb-portfolio-two-post-navigation a:hover,
-.rb-portfolio-two-post-navigation a:focus {
+.post-navigation a:hover,
+.post-navigation a:focus {
 	text-decoration: underline;
 }
 
-.rb-portfolio-two-post-navigation a i {
+.post-navigation a i {
 	padding: 5px 10px;
 	border: 1px solid #0d65ed;
 }
 
-.rb-portfolio-two-post-navigation a i:hover,
-.rb-portfolio-two-post-navigation a i:focus {
+.post-navigation a i:hover,
+.post-navigation a i:focus {
 	background-color: #0d65ed;
 	color: #fff;
 }
 
-.rb-portfolio-two-author-bio {
+.author-bio {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
@@ -885,7 +885,7 @@ ol.alignright {
 	display: flex;
 }
 
-.rb-portfolio-two-author-bio .avatar {
+.author-bio .avatar {
 	border: 2px solid #0d65ed;
 	padding: 5px;
 	margin: 0 20px 20px 0;
@@ -893,7 +893,7 @@ ol.alignright {
 	width: auto;
 }
 
-.rb-portfolio-two-author-title {
+.author-title {
 	color: #0d65ed;
 	text-transform: capitalize;
 }
@@ -906,21 +906,21 @@ ol.alignright {
 ***** 05. WP Search Page Area CSS End Here *****
 ***********************************************/
 
-.rb-portfolio-two-no-result {
+.no-result {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0 0 5px 5px #ccc;
 }
 
-.rb-portfolio-two-search-page-header {
+.search-page-header {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
-.rb-portfolio-two-search-page-header-title span {
+.search-page-header-title span {
 	color: #0d65ed;
 }
 
@@ -932,22 +932,22 @@ ol.alignright {
 ***** 06. WP 404 Error Page Area CSS End Here *****
 **************************************************/
 
-.rb-portfolio-two-error-404-page-content {
+.error-404-page-content {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px 5px #ccc;
 }
 
-.rb-portfolio-two-error-page-header-title {
+.error-page-header-title {
 	text-align: center;
 	font-size: 120px;
 	margin: 0;
 	color: #0d65ed;
 }
 
-.rb-portfolio-two-error-page-header-subtitle,
-.rb-portfolio-two-error-page-body {
+.error-page-header-subtitle,
+.error-page-body {
 	text-align: center;
 }
 
@@ -959,14 +959,14 @@ ol.alignright {
 ***** 07. Widget Area CSS Start Here *****
 *****************************************/
 
-.rb-portfolio-two-widget-item {
+.widget-item {
 	margin: 20px 0;
 	padding: 15px;
 	background-color: #fff;
 	box-shadow: 0 0 5px 5px #ccc;
 }
 
-.rb-portfolio-two-widget-item-title {
+.widget-item-title {
 	padding: 10px 0;
 	background: #0d65ed;
 	color: #fff;
@@ -974,13 +974,13 @@ ol.alignright {
 	text-transform: uppercase;
 }
 
-.rb-portfolio-two-widget-item a {
+.widget-item a {
 	text-decoration: none;
 	color: #0d65ed;
 }
 
-.rb-portfolio-two-widget-item a:hover,
-.rb-portfolio-two-widget-item a:focus {
+.widget-item a:hover,
+.widget-item a:focus {
 	text-decoration: underline;
 }
 
@@ -1466,11 +1466,11 @@ nav[aria-label="Meta"] ul li:last-child {
 	border-bottom: none;
 }
 
-.rb-portfolio-two-widget-item .menu i {
+.widget-item .menu i {
 	display: none;
 }
 
-.rb-portfolio-two-widget-item .menu .rb-portfolio-two-dropdown-menu {
+.widget-item .menu .dropdown-menu {
 	position: relative;
 	right: 0;
 	background-color: transparent;
@@ -1478,12 +1478,12 @@ nav[aria-label="Meta"] ul li:last-child {
 	padding-left: 10px;
 }
 
-.rb-portfolio-two-widget-item .menu .rb-portfolio-two-dropdown-menu li {
+.widget-item .menu .dropdown-menu li {
 	text-align: left;
 	border-bottom: none;
 }
 
-.rb-portfolio-two-widget-item .menu .rb-portfolio-two-multi-dropdown-menu {
+.widget-item .menu .multi-dropdown-menu {
 	position: relative;
 	background-color: transparent;
 	box-shadow: none;
@@ -1492,11 +1492,11 @@ nav[aria-label="Meta"] ul li:last-child {
 	padding-left: 10px;
 }
 
-.rb-portfolio-two-widget-item .menu li {
+.widget-item .menu li {
 	list-style: none;
 }
 
-.rb-portfolio-two-widget-item .menu li a {
+.widget-item .menu li a {
 	border-bottom: 1px solid #ccc;
 	padding: 10px;
 	position: relative;
@@ -1504,7 +1504,7 @@ nav[aria-label="Meta"] ul li:last-child {
 	display: block;
 }
 
-.rb-portfolio-two-widget-item .menu li a::before {
+.widget-item .menu li a::before {
 	content: "";
 	position: absolute;
 	width: 10px;
@@ -1635,22 +1635,22 @@ nav[aria-label="Meta"] ul li:last-child {
 /*****************************************
 ***** 09. Search Form CSS Start Here *****
 *****************************************/
-.rb-portfolio-two-search-form {
+.search-form {
 	position: relative;
 	margin: 10px 0;
 }
 
-.rb-portfolio-two-content-none-search-keyword {
+.content-none-search-keyword {
 	color: #0d65ed;
 }
 
-.rb-portfolio-two-search-box {
+.search-box {
 	width: 100%;
 	padding: 10px;
 	border: 1px solid #0d65ed;
 }
 
-.rb-portfolio-two-search-btn {
+.search-btn {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1661,7 +1661,7 @@ nav[aria-label="Meta"] ul li:last-child {
 	color: #fff;
 }
 
-.rb-portfolio-two-search-btn i {
+.search-btn i {
 	display: block;
 	text-align: center;
 	line-height: 50px;

@@ -1,7 +1,7 @@
 <!--=================================== 
 ===== My Services Area Strat Here =====
 ====================================-->
-<section class="rb-portfolio-two-services rb-portfolio-two-scroll-menu" id="rb-portfolio-two-services">
+<section class="services rb-portfolio-two-scroll-menu" id="services">
 
     <!--================================ 
     ===== Section Title Strat Here =====
@@ -9,9 +9,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <div class="rb-portfolio-two-section-title">
+                <div class="section-title">
                     <h2>
-                        <span class="rb-portfolio-two-theme-color">
+                        <span class="theme-color">
                         <?php
                         $rb_portfolio_two_my_services_title_theme_color = get_post_meta(get_the_ID(), 'rb_portfolio_two_my_services_title_theme_color', true);
                         if( isset ($rb_portfolio_two_my_services_title_theme_color)  && !empty ($rb_portfolio_two_my_services_title_theme_color) ){
@@ -64,9 +64,9 @@
             ?>
             <!--===== 01. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="rb-portfolio-two-section-content">
-                    <div class="rb-portfolio-two-single-service">
-                        <div class="rb-portfolio-two-services-icon">
+                <div class="section-content">
+                    <div class="single-service">
+                        <div class="services-icon">
                             <i class="<?php
                                 $rb_portfolio_two_my_service_item_icon = $rb_portfolio_two_my_service_items_single['rb_portfolio_two_my_service_item_icon'];
                                 if( isset ($rb_portfolio_two_my_service_item_icon)  && !empty ($rb_portfolio_two_my_service_item_icon) ){
@@ -77,7 +77,7 @@
                                 }
                                 ?>"></i>
                         </div>
-                        <div class="rb-portfolio-two-services-title">
+                        <div class="services-title">
                             <h4>
                             <?php
                             $rb_portfolio_two_my_service_item_title = $rb_portfolio_two_my_service_items_single['rb_portfolio_two_my_service_item_title'];
@@ -94,7 +94,7 @@
                             ?>
                             </h4>
                         </div>
-                        <div class="rb-portfolio-two-services-description">
+                        <div class="services-description">
                             <p>
                             <?php
                             $rb_portfolio_two_my_service_item_description = $rb_portfolio_two_my_service_items_single['rb_portfolio_two_my_service_item_description'];
@@ -119,15 +119,15 @@
             <?php endforeach; else: ?>
             <!--===== 01. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="rb-portfolio-two-section-content">
-                    <div class="rb-portfolio-two-single-service">
-                        <div class="rb-portfolio-two-services-icon">
+                <div class="section-content">
+                    <div class="single-service">
+                        <div class="services-icon">
                             <i class="fas fa-palette"></i>
                         </div>
-                        <div class="rb-portfolio-two-services-title">
+                        <div class="services-title">
                             <h4><?php esc_html_e('Graphic Design', 'rb-portfolio-two'); ?></h4>
                         </div>
-                        <div class="rb-portfolio-two-services-description">
+                        <div class="services-description">
                             <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'rb-portfolio-two'); ?></p>
                         </div>
                     </div>
@@ -137,15 +137,15 @@
             
             <!--===== 02. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="rb-portfolio-two-section-content">
-                    <div class="rb-portfolio-two-single-service">
-                        <div class="rb-portfolio-two-services-icon">
+                <div class="section-content">
+                    <div class="single-service">
+                        <div class="services-icon">
                             <i class="fas fa-laptop-code"></i>
                         </div>
-                        <div class="rb-portfolio-two-services-title">
+                        <div class="services-title">
                             <h4><?php esc_html_e('Web Design', 'rb-portfolio-two'); ?></h4>
                         </div>
-                        <div class="rb-portfolio-two-services-description">
+                        <div class="services-description">
                             <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'rb-portfolio-two'); ?></p>
                         </div>
                     </div>
@@ -155,15 +155,15 @@
             
             <!--===== 03. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="rb-portfolio-two-section-content">
-                    <div class="rb-portfolio-two-single-service">
-                        <div class="rb-portfolio-two-services-icon">
+                <div class="section-content">
+                    <div class="single-service">
+                        <div class="services-icon">
                             <i class="fab fa-wordpress"></i>
                         </div>
-                        <div class="rb-portfolio-two-services-title">
+                        <div class="services-title">
                             <h4><?php esc_html_e('WordPress', 'rb-portfolio-two'); ?></h4>
                         </div>
-                        <div class="rb-portfolio-two-services-description">
+                        <div class="services-description">
                             <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'rb-portfolio-two'); ?></p>
                         </div>
                     </div>
@@ -173,15 +173,15 @@
             
             <!--===== 04. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="rb-portfolio-two-section-content">
-                    <div class="rb-portfolio-two-single-service">
-                        <div class="rb-portfolio-two-services-icon">
+                <div class="section-content">
+                    <div class="single-service">
+                        <div class="services-icon">
                             <i class="fab fa-laravel"></i>
                         </div>
-                        <div class="rb-portfolio-two-services-title">
+                        <div class="services-title">
                             <h4><?php esc_html_e('Laravel', 'rb-portfolio-two'); ?></h4>
                         </div>
-                        <div class="rb-portfolio-two-services-description">
+                        <div class="services-description">
                             <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'rb-portfolio-two'); ?></p>
                         </div>
                     </div>
@@ -191,15 +191,15 @@
             
             <!--===== 05. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="rb-portfolio-two-section-content">
-                    <div class="rb-portfolio-two-single-service">
-                        <div class="rb-portfolio-two-services-icon">
+                <div class="section-content">
+                    <div class="single-service">
+                        <div class="services-icon">
                             <i class="fab fa-google-play"></i>
                         </div>
-                        <div class="rb-portfolio-two-services-title">
+                        <div class="services-title">
                             <h4><?php esc_html_e('Apps Development', 'rb-portfolio-two'); ?></h4>
                         </div>
-                        <div class="rb-portfolio-two-services-description">
+                        <div class="services-description">
                             <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'rb-portfolio-two'); ?></p>
                         </div>
                     </div>
@@ -209,15 +209,15 @@
             
             <!--===== 06. Single Service Strat Here =====-->
             <div class="col-lg-4">
-                <div class="rb-portfolio-two-section-content">
-                    <div class="rb-portfolio-two-single-service">
-                        <div class="rb-portfolio-two-services-icon">
+                <div class="section-content">
+                    <div class="single-service">
+                        <div class="services-icon">
                             <i class="fas fa-cogs"></i>
                         </div>
-                        <div class="rb-portfolio-two-services-title">
+                        <div class="services-title">
                             <h4><?php esc_html_e('24/7 Support', 'rb-portfolio-two'); ?></h4>
                         </div>
-                        <div class="rb-portfolio-two-services-description">
+                        <div class="services-description">
                             <p><?php esc_html_e('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, facere voluptate. Quidem, facere voluptate.', 'rb-portfolio-two'); ?></p>
                         </div>
                     </div>

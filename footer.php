@@ -9,7 +9,7 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.1
+ * @since RB Portfolio Two 1.0.2
  */
 
 ?>
@@ -17,7 +17,7 @@
     <!--============================== 
 	===== Footer Area Strat Here =====
 	===============================-->
-	<footer class="rb-portfolio-two-footer-area">
+	<footer class="footer-area">
 		<div class="container">
 			<div class="row">
 			
@@ -31,7 +31,7 @@
 						$copyrightYear = $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');
 
 						printf(
-							'<p class="rb-portfolio-two-copyright-text">%1$s <a href="%2$s" target="_blank">%3$s</a> %4$s <a href="%5$s" target="_blank"> %6$s </a> %7$s %8$s</p>',
+							'<p class="copyright-text">%1$s <a href="%2$s" target="_blank">%3$s</a> %4$s <a href="%5$s" target="_blank"> %6$s </a> %7$s %8$s</p>',
 							
                             /* translators:
 							%1$s: Copyright Symbol.
@@ -84,7 +84,7 @@
 				===== Social Icons Area Strat Here =====
 				=====================================-->
 				<div class="col-lg-6">					
-					<div class="rb-portfolio-two-footer-social-icons float-end">
+					<div class="footer-social-icons float-end">
 						<ul>
                             
                             <!-- Facebook URL -->
@@ -145,14 +145,14 @@
 	<!--===================================== 
 	===== Scroll to Top Area Strat Here =====
 	======================================-->
-	<button class="rb-portfolio-two-scroll-to-top">
+	<button class="scroll-to-top">
         <i class="fa-solid fa-angles-up"></i>
 	</button>
 	<!--=================================== 
 	===== Scroll to Top Area End Here =====
 	====================================-->
 	
-	</div><!-- #rb-portfolio-two-page -->
+	</div><!-- #page -->
     <?php wp_footer(); ?>
     </body>
 </html>

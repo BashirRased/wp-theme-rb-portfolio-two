@@ -7,7 +7,7 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.0
+ * @since RB Portfolio Two 1.0.2
  */
 
 // after theme setup

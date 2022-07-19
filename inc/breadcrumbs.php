@@ -5,30 +5,30 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.0
+ * @since RB Portfolio Two 1.0.2
  */
 
 /* Post Author Meta */
-if (!function_exists('rb_portfolio_two_breadcrumbs')) {
+if ( !function_exists( 'custom_breadcrumbs' ) ) {
 
-	function rb_portfolio_two_breadcrumbs() {
+	function custom_breadcrumbs() {
         
         // Front Page
         if(is_front_page() && is_home()): ?>
 
-            <h2 class="rb-portfolio-two-header-breadcrumbs-title">
+            <h2 class="header-breadcrumbs-title">
                 <?php echo esc_html('Home Page','rb-portfolio-two'); ?>
             </h2>
 
-            <nav class="rb-portfolio-two-header-breadcrumbs-nav">
+            <nav class="header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-icon">
+                    <li class="header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <?php echo esc_html('Home','rb-portfolio-two'); ?>
                     </li>
                     
@@ -39,41 +39,27 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
         <!-- Single Post -->
         <?php elseif(is_singular('post')): ?>
 
-            <h2 class="rb-portfolio-two-header-breadcrumbs-title">
+            <h2 class="header-breadcrumbs-title">
                 <?php echo esc_html('signle blog post','rb-portfolio-two'); ?>
             </h2>
 
-            <nav class="rb-portfolio-two-header-breadcrumbs-nav">
+            <nav class="header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-icon">
+                    <li class="header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rb-portfolio-two'); ?></a>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <?php
-                    if(!empty(get_permalink(get_option('page_for_posts')))) :
-                    ?>
-
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
-                        <a href="<?php echo esc_url(get_permalink(get_option('page_for_posts'))); ?>"><?php echo esc_html('Blog','rb-portfolio-two'); ?></a>
-                    </li>
-
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
-                        <i class="fa-solid fa-right-long"></i>
-                    </li>
-
-                    <?php endif; ?>
-
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <?php echo esc_html(get_the_title(),'rb-portfolio-two'); ?>
                     </li>
                     
@@ -84,7 +70,7 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
         <!-- Single Page -->
         <?php elseif(is_singular('page')): ?>
 
-            <h2 class="rb-portfolio-two-header-breadcrumbs-title">
+            <h2 class="header-breadcrumbs-title">
                 <?php
                 if(get_option( 'page_on_front')){
                     echo esc_html('Home page','rb-portfolio-two');
@@ -95,25 +81,25 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
                 ?>
             </h2>
 
-            <nav class="rb-portfolio-two-header-breadcrumbs-nav">
+            <nav class="header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-icon">
+                    <li class="header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(home_url('/')); ?>">
                         <?php echo esc_html('Home','rb-portfolio-two'); ?>
                         </a>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <?php echo esc_html(get_the_title(),'rb-portfolio-two'); ?>
                     </li>
                     
@@ -124,27 +110,27 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
         <!-- Attachment Page -->
         <?php elseif(is_singular('attachment')): ?>
 
-            <h2 class="rb-portfolio-two-header-breadcrumbs-title">
+            <h2 class="header-breadcrumbs-title">
                 <?php echo esc_html('attachment page','rb-portfolio-two'); ?>
             </h2>
 
-            <nav class="rb-portfolio-two-header-breadcrumbs-nav">
+            <nav class="header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-icon">
+                    <li class="header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rb-portfolio-two'); ?></a>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <?php echo esc_html(get_the_title(),'rb-portfolio-two'); ?>
                     </li>
                     
@@ -155,27 +141,27 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
         <!-- Search Page -->
         <?php elseif(is_search()): ?>
 
-            <h2 class="rb-portfolio-two-header-breadcrumbs-title">
+            <h2 class="header-breadcrumbs-title">
                 <?php echo esc_html('search page','rb-portfolio-two'); ?>
             </h2>
 
-            <nav class="rb-portfolio-two-header-breadcrumbs-nav">
+            <nav class="header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-icon">
+                    <li class="header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rb-portfolio-two'); ?></a>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <?php
                         printf(
                             '%1$s<strong>%2$s</strong>',
@@ -196,19 +182,19 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
         <!-- 404 Error Page -->
         <?php elseif(is_404()): ?>
 
-            <h2 class="rb-portfolio-two-header-breadcrumbs-title">
+            <h2 class="header-breadcrumbs-title">
                 <?php echo esc_html('404 page','rb-portfolio-two'); ?>
             </h2>
 
-            <nav class="rb-portfolio-two-header-breadcrumbs-nav">
+            <nav class="header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-icon">
+                    <li class="header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rb-portfolio-two'); ?></a>
                     </li>
                     
@@ -219,27 +205,27 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
         <!-- Author Page -->
         <?php elseif(is_author()): ?>
 
-            <h2 class="rb-portfolio-two-header-breadcrumbs-title">
+            <h2 class="header-breadcrumbs-title">
                 <?php echo esc_html('Author page','rb-portfolio-two'); ?>
             </h2>
 
-            <nav class="rb-portfolio-two-header-breadcrumbs-nav">
+            <nav class="header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-icon">
+                    <li class="header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rb-portfolio-two'); ?></a>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <?php echo esc_html(get_the_author(),'rb-portfolio-two'); ?>
                     </li>
                     
@@ -250,27 +236,27 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
         <!-- Year Archive -->
         <?php elseif(is_year()): ?>
 
-        <h2 class="rb-portfolio-two-header-breadcrumbs-title">
+        <h2 class="header-breadcrumbs-title">
             <?php echo esc_html('Year Archive','rb-portfolio-two'); ?>
         </h2>
 
-        <nav class="rb-portfolio-two-header-breadcrumbs-nav">
+        <nav class="header-breadcrumbs-nav">
 
             <ul>
 
-                <li class="rb-portfolio-two-header-breadcrumbs-icon">
+                <li class="header-breadcrumbs-icon">
                     <i class="fa-solid fa-house"></i>
                 </li>
 
-                <li class="rb-portfolio-two-header-breadcrumbs-text">
+                <li class="header-breadcrumbs-text">
                     <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rb-portfolio-two'); ?></a>
                 </li>
 
-                <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                <li class="header-breadcrumbs-separator">
                     <i class="fa-solid fa-right-long"></i>
                 </li>
 
-                <li class="rb-portfolio-two-header-breadcrumbs-text">
+                <li class="header-breadcrumbs-text">
                     <?php echo esc_html(get_the_date("Y"),'rb-portfolio-two'); ?>
                 </li>
                 
@@ -286,37 +272,37 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
         $archive_day   = get_the_time('d');
         ?>
 
-            <h2 class="rb-portfolio-two-header-breadcrumbs-title">
+            <h2 class="header-breadcrumbs-title">
                 <?php echo esc_html('Month Archive','rb-portfolio-two'); ?>
             </h2>
 
-            <nav class="rb-portfolio-two-header-breadcrumbs-nav">
+            <nav class="header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-icon">
+                    <li class="header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rb-portfolio-two'); ?></a>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(get_year_link($archive_year)); ?>">
                             <?php echo esc_html(get_the_date("Y"),'rb-portfolio-two'); ?>
                         </a>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <?php echo esc_html(get_the_date("F, Y"),'rb-portfolio-two'); ?>
                     </li>
                     
@@ -332,47 +318,47 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
         $archive_day   = get_the_time('d');
         ?>
 
-            <h2 class="rb-portfolio-two-header-breadcrumbs-title">
+            <h2 class="header-breadcrumbs-title">
                 <?php echo esc_html('Day Archive','rb-portfolio-two'); ?>
             </h2>
 
-            <nav class="rb-portfolio-two-header-breadcrumbs-nav">
+            <nav class="header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-icon">
+                    <li class="header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rb-portfolio-two'); ?></a>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(get_year_link($archive_year)); ?>">
                             <?php echo esc_html(get_the_date("Y"),'rb-portfolio-two'); ?>
                         </a>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(get_month_link($archive_year, $archive_month)); ?>">
                             <?php echo esc_html(get_the_date("F"),'rb-portfolio-two'); ?>
                         </a>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <?php echo esc_html(get_the_date("l, jS F, Y"),'rb-portfolio-two'); ?>
                     </li>
                     
@@ -383,11 +369,11 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
         <!-- Tag Page -->
         <?php elseif(is_tag()): ?>
 
-            <h2 class="rb-portfolio-two-header-breadcrumbs-title">
+            <h2 class="header-breadcrumbs-title">
                 <?php echo esc_html('Tag page','rb-portfolio-two'); ?>
             </h2>
 
-            <p class="rb-portfolio-two-header-breadcrumbs-description">
+            <p class="header-breadcrumbs-description">
                 <?php
                 printf(
                     /* translators: %s: Archive Description. */
@@ -397,23 +383,23 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
                 ?>
             </p>
 
-            <nav class="rb-portfolio-two-header-breadcrumbs-nav">
+            <nav class="header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-icon">
+                    <li class="header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rb-portfolio-two'); ?></a>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <?php single_tag_title(); ?>
                     </li>
                     
@@ -440,11 +426,11 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
             $parents_id = array_reverse($parents_id);
         ?>
 
-            <h2 class="rb-portfolio-two-header-breadcrumbs-title">
+            <h2 class="header-breadcrumbs-title">
                 <?php echo esc_html('Category page','rb-portfolio-two'); ?>
             </h2>
 
-            <p class="rb-portfolio-two-header-breadcrumbs-description">
+            <p class="header-breadcrumbs-description">
                 <?php
                 printf(
                     /* translators: %s: Archive Description. */
@@ -454,15 +440,15 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
                 ?>
             </p>
 
-            <nav class="rb-portfolio-two-header-breadcrumbs-nav">
+            <nav class="header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-icon">
+                    <li class="header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(home_url('/')); ?>"><?php echo esc_html('Home','rb-portfolio-two'); ?></a>
                     </li>
 
@@ -477,11 +463,11 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
                     $parent_term_name = $parent_term_name->name;
                     ?>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(wp_kses_post($parent_term_link)); ?>">
                         <?php echo esc_html($parent_term_name,'rb-portfolio-two'); ?>
                         </a>
@@ -489,11 +475,11 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
 
                     <?php endforeach; ?>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <?php echo esc_html($term_name,'rb-portfolio-two'); ?>
                     </li>
                     
@@ -519,11 +505,11 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
             $parents_id = array_reverse($parents_id);
         ?>
 
-            <h2 class="rb-portfolio-two-header-breadcrumbs-title">
+            <h2 class="header-breadcrumbs-title">
                 <?php echo esc_html('Custom Taxonomy page','rb-portfolio-two'); ?>
             </h2>
 
-            <p class="rb-portfolio-two-header-breadcrumbs-description">
+            <p class="header-breadcrumbs-description">
                 <?php
                 printf(
                     /* translators: %s: Archive Description. */
@@ -533,15 +519,15 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
                 ?>
             </p>
 
-            <nav class="rb-portfolio-two-header-breadcrumbs-nav">
+            <nav class="header-breadcrumbs-nav">
 
                 <ul>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-icon">
+                    <li class="header-breadcrumbs-icon">
                         <i class="fa-solid fa-house"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(home_url('/')); ?>">
                         <?php echo esc_html('Home','rb-portfolio-two'); ?>
                     </a>
@@ -558,11 +544,11 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
                         $parent_term_name = $parent_term_name->name;
                     ?>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <a href="<?php echo esc_url(wp_kses_post($parent_term_link)); ?>">
                         <?php
                         printf(
@@ -576,11 +562,11 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
 
                     <?php endforeach; ?>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-separator">
+                    <li class="header-breadcrumbs-separator">
                         <i class="fa-solid fa-right-long"></i>
                     </li>
 
-                    <li class="rb-portfolio-two-header-breadcrumbs-text">
+                    <li class="header-breadcrumbs-text">
                         <?php
                         printf(
                             /* translators: Term Name. */
@@ -599,3 +585,4 @@ if (!function_exists('rb_portfolio_two_breadcrumbs')) {
 	}
 
 }
+add_action ( 'rb_portfolio_two_breadcrumbs', 'custom_breadcrumbs');

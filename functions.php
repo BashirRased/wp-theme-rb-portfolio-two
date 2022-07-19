@@ -7,57 +7,57 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.0
+ * @since RB Portfolio Two 1.0.2
  */
 
 // Theme Setup
-if(file_exists(dirname(__FILE__).'/inc/rb-portfolio-two-theme-setup.php')) {
-	require_once(dirname(__FILE__).'/inc/rb-portfolio-two-theme-setup.php');
+if(file_exists(dirname(__FILE__).'/inc/theme-setup.php')) {
+	require_once(dirname(__FILE__).'/inc/theme-setup.php');
 }
 
 // Theme Menus
-if(file_exists(dirname(__FILE__).'/inc/rb-portfolio-two-menu-register.php')) {
-	require_once(dirname(__FILE__).'/inc/rb-portfolio-two-menu-register.php');
+if(file_exists(dirname(__FILE__).'/inc/menu-register.php')) {
+	require_once(dirname(__FILE__).'/inc/menu-register.php');
 }
 
 // Theme Assets
-if(file_exists(dirname(__FILE__).'/inc/rb-portfolio-two-assets.php')) {
-	require_once(dirname(__FILE__).'/inc/rb-portfolio-two-assets.php');
+if(file_exists(dirname(__FILE__).'/inc/assets.php')) {
+	require_once(dirname(__FILE__).'/inc/assets.php');
 }
 
 // Theme Widgets
-if(file_exists(dirname(__FILE__).'/inc/rb-portfolio-two-widget-register.php')) {
-	require_once(dirname(__FILE__).'/inc/rb-portfolio-two-widget-register.php');
+if(file_exists(dirname(__FILE__).'/inc/widget-register.php')) {
+	require_once(dirname(__FILE__).'/inc/widget-register.php');
 }
 
 // Theme Thumbnail
-if(file_exists(dirname(__FILE__).'/inc/rb-portfolio-two-thumbnail.php')) {
-	require_once(dirname(__FILE__).'/inc/rb-portfolio-two-thumbnail.php');
+if(file_exists(dirname(__FILE__).'/inc/thumbnail.php')) {
+	require_once(dirname(__FILE__).'/inc/thumbnail.php');
 }
 
 // Theme Post Meta
-if(file_exists(dirname(__FILE__).'/inc/rb-portfolio-two-post-meta.php')) {
-	require_once(dirname(__FILE__).'/inc/rb-portfolio-two-post-meta.php');
+if(file_exists(dirname(__FILE__).'/inc/post-meta.php')) {
+	require_once(dirname(__FILE__).'/inc/post-meta.php');
 }
 
 // Theme Excerpt
-if(file_exists(dirname(__FILE__).'/inc/rb-portfolio-two-excerpt.php')) {
-	require_once(dirname(__FILE__).'/inc/rb-portfolio-two-excerpt.php');
+if(file_exists(dirname(__FILE__).'/inc/excerpt.php')) {
+	require_once(dirname(__FILE__).'/inc/excerpt.php');
 }
 
 // Theme Breadcrumbs
-if(file_exists(dirname(__FILE__).'/inc/rb-portfolio-two-breadcrumbs.php')) {
-	require_once(dirname(__FILE__).'/inc/rb-portfolio-two-breadcrumbs.php');
+if(file_exists(dirname(__FILE__).'/inc/breadcrumbs.php')) {
+	require_once(dirname(__FILE__).'/inc/breadcrumbs.php');
 }
 
 // Theme Post Format Meta
-if(file_exists(dirname(__FILE__).'/inc/rb-portfolio-two-post-format.php')) {
-	require_once(dirname(__FILE__).'/inc/rb-portfolio-two-post-format.php');
+if(file_exists(dirname(__FILE__).'/inc/post-format.php')) {
+	require_once(dirname(__FILE__).'/inc/post-format.php');
 }
 
 // Skip Focus Link
-if(file_exists(dirname(__FILE__).'/inc/rb-portfolio-two-skip-focus-links.php')) {
-	require_once(dirname(__FILE__).'/inc/rb-portfolio-two-skip-focus-links.php');
+if(file_exists(dirname(__FILE__).'/inc/skip-focus-links.php')) {
+	require_once(dirname(__FILE__).'/inc/skip-focus-links.php');
 }
 
 // TGM Plugin Activation

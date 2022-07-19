@@ -21,13 +21,13 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 
 @media all and (max-width: 991px) {
 
-	.rb-portfolio-two-header-desktop-menu {
+	.header-desktop-menu {
 		width: 100%;
 		background-color: #0d65ed;
 	}
 
-	.rb-portfolio-two-dropdown-menu,
-	.rb-portfolio-two-multi-dropdown-menu {
+	.dropdown-menu,
+	.multi-dropdown-menu {
 		display: none;
 		box-shadow: none;
 		position: relative;
@@ -38,24 +38,24 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 		transition: all 0.3s ease-in-out;
 	}
 
-	.rb-portfolio-two-dropdown-menu-open {
+	.dropdown-menu-open {
 		display: block;
 	}
 
-	.rb-portfolio-two-header-desktop-menu i {
+	.header-desktop-menu i {
 		display: none;
 	}
 
-	.rb-portfolio-two-dropdown-menu li:hover>ul,
-	.rb-portfolio-two-dropdown-menu li:focus-within>ul {
+	.dropdown-menu li:hover>ul,
+	.dropdown-menu li:focus-within>ul {
 		top: 100%;
 	}
 
-	.rb-portfolio-two-dropdown-menu li {
+	.dropdown-menu li {
 		border-bottom: none;
 	}
 
-	.rb-portfolio-two-dropdown-menu li a {
+	.dropdown-menu li a {
 		text-align: center;
 	}
 
@@ -73,47 +73,47 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 		text-align: center;
 	}
 
-	.rb-portfolio-two-header-desktop-menu ul li a {
+	.header-desktop-menu ul li a {
 		padding: 30px 15px;
 		color: #fff;
 		border-bottom: 1px solid #fff;
 	}
 
-	.rb-portfolio-two-header-desktop-menu ul li a:hover,
-	.rb-portfolio-two-header-desktop-menu ul li a:focus,
-	.rb-portfolio-two-header-fixed .rb-portfolio-two-header-desktop-menu ul li a,
-	.rb-portfolio-two-header-fixed .rb-portfolio-two-header-desktop-menu ul li a:hover,
-	.rb-portfolio-two-header-fixed .rb-portfolio-two-header-desktop-menu ul li a:focus {
+	.header-desktop-menu ul li a:hover,
+	.header-desktop-menu ul li a:focus,
+	.header-fixed .header-desktop-menu ul li a,
+	.header-fixed .header-desktop-menu ul li a:hover,
+	.header-fixed .header-desktop-menu ul li a:focus {
 		color: #fff;
 		box-shadow: 0 0 5px 5px #0d65ed;
 		border: 2px solid #fff;
 	}
 
-	.rb-portfolio-two-content-title {
+	.content-title {
 		margin-top: 50px;
 	}
 
-	.rb-portfolio-two-header-site-branding-area {
+	.header-site-branding-area {
 		float: left;
 	}
 
-	.rb-portfolio-two-header-mobile-menu-area {
+	.header-mobile-menu-area {
 		display: block;
 		float: right;
 	}
 
-	.rb-portfolio-two-header-desktop-menu {
+	.header-desktop-menu {
 		display: none;
 	}
 
-	.rb-portfolio-two-header-desktop-menu li {
+	.header-desktop-menu li {
 		float: none;
 		display: block;
 		width: 100%;
 		text-align: center;
 	}
 
-	.rb-portfolio-two-header-desktop-menu a {
+	.header-desktop-menu a {
 		color: #fff;
 	}
 
@@ -121,21 +121,21 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 
 	/**/
 
-	.rb-portfolio-two-about-me-left {
+	.about-me-left {
 		margin-bottom: 30px;
 	}
 
-	.rb-portfolio-two-footer-area .float-left,
-	.rb-portfolio-two-footer-area .float-right {
+	.footer-area .float-left,
+	.footer-area .float-right {
 		float: none !important;
 	}
 
-	.rb-portfolio-two-copyright-text {
+	.copyright-text {
 		text-align: center;
 		margin-bottom: 40px;
 	}
 
-	.rb-portfolio-two-footer-social-icons {
+	.footer-social-icons {
 		text-align: center;
 	}
 }

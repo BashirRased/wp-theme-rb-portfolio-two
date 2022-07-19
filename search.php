@@ -7,14 +7,14 @@
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
  * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.1
+ * @since RB Portfolio Two 1.0.2
  */
 
 get_header();
 
 ?>
 
-<div id="rb-portfolio-two-page-content" class="rb-portfolio-two-search-page">
+<div id="page-content" class="search-page">
     <div class="container">
         <div class="row">
 
@@ -27,13 +27,13 @@ get_header();
 				}
 			?>
 
-			<main id="rb-portfolio-two-primary" class="<?php echo esc_attr($rb_portfolio_two_page_content_class); ?>">
+			<main id="primary" class="<?php echo esc_attr($rb_portfolio_two_page_content_class); ?>">
 				<?php
 				if ( have_posts() ) {
 					?>
-					<header class="rb-portfolio-two-search-page-header alignwide">
+					<header class="search-page-header alignwide">
 
-						<h2 class="rb-portfolio-two-search-page-header-title">
+						<h2 class="search-page-header-title">
 							<?php
 							printf(
 								/* translators: %s: Search term. */
@@ -41,9 +41,9 @@ get_header();
 								'<span>'.esc_html(get_search_query()).'</span>'
 							);
 							?>
-						</h2><!-- .rb-portfolio-two-search-page-title -->
+						</h2><!-- .search-page-title -->
 
-						<p class="rb-portfolio-two-search-result-count">
+						<p class="search-result-count">
 						<?php
 						printf(
 							esc_html(
@@ -58,9 +58,9 @@ get_header();
 							(int) $wp_query->found_posts
 						);
 						?>
-						</p><!-- .rb-portfolio-two-search-result-count -->
+						</p><!-- .search-result-count -->
 
-					</header><!-- .rb-portfolio-two-search-page-header -->
+					</header><!-- .search-page-header -->
 					
 					<?php
 					// Start the Loop.
@@ -86,7 +86,7 @@ get_header();
 				}
 				?>
 					
-			</main><!-- #rb-portfolio-two-primary -->
+			</main><!-- #primary -->
 
 			<?php
 			if(is_active_sidebar('rb-portfolio-two-sidebar-right')){
@@ -96,7 +96,7 @@ get_header();
 
         </div><!-- row end -->        
     </div><!-- container end -->
-</div><!-- #rb-portfolio-two-page-content -->
+</div><!-- #page-content -->
 
 <?php
 get_footer();
