@@ -6,7 +6,7 @@ $rb_portfolio_two_countup_image = get_post_meta(get_the_ID(), 'rb_portfolio_two_
 <!--============================== 
 ===== Countup Area Strat Here =====
 ===============================-->
-<section class="rb-portfolio-two-countup" <?php if ( isset ($rb_portfolio_two_countup_image) && !empty ($rb_portfolio_two_countup_image)) : ?> style="background-image: url(<?php echo esc_url($rb_portfolio_two_countup_image); ?>);" <?php endif; ?> >
+<section class="countup" <?php if ( isset ($rb_portfolio_two_countup_image) && !empty ($rb_portfolio_two_countup_image)) : ?> style="background-image: url(<?php echo esc_url($rb_portfolio_two_countup_image); ?>);" <?php endif; ?> >
 
     <!--================================== 
     ===== Section Content Strat Here =====
@@ -23,8 +23,8 @@ $rb_portfolio_two_countup_image = get_post_meta(get_the_ID(), 'rb_portfolio_two_
 
             <!--===== 01. Single Countup Item Strat Here =====-->
             <div class="col-lg-3">
-                <div class="rb-portfolio-two-single-countup-item">
-                    <div class="rb-portfolio-two-countup-icon">
+                <div class="single-countup-item">
+                    <div class="countup-icon">
                         <i class="<?php
                                 $rb_portfolio_two_countup_item_icon = $rb_portfolio_two_countup_items_single['rb_portfolio_two_countup_item_icon'];
                                 if( isset ($rb_portfolio_two_countup_item_icon) && !empty ($rb_portfolio_two_countup_item_icon) ){
@@ -36,7 +36,7 @@ $rb_portfolio_two_countup_image = get_post_meta(get_the_ID(), 'rb_portfolio_two_
                                 ?>">
                         </i>
                     </div>
-                    <div class="rb-portfolio-two-countup-number" data-from="0" data-to="781" data-speed="3000" data-refresh-interval="50">
+                    <div class="countup-number" data-from="0" data-to="781" data-speed="3000" data-refresh-interval="50">
                         <h2>
                         <?php
                         $rb_portfolio_two_countup_item_number = $rb_portfolio_two_countup_items_single['rb_portfolio_two_countup_item_number'];
@@ -53,8 +53,8 @@ $rb_portfolio_two_countup_image = get_post_meta(get_the_ID(), 'rb_portfolio_two_
                         ?>
                         </h2>
                     </div>
-                    <div class="rb-portfolio-two-separator-countup"></div>
-                    <div class="rb-portfolio-two-countup-text">
+                    <div class="separator-countup"></div>
+                    <div class="countup-text">
                         <p>
                         <?php
                         $rb_portfolio_two_countup_item_title = $rb_portfolio_two_countup_items_single['rb_portfolio_two_countup_item_title'];
@@ -78,15 +78,15 @@ $rb_portfolio_two_countup_image = get_post_meta(get_the_ID(), 'rb_portfolio_two_
             <?php endforeach; else: ?>
             <!--===== 01. Single Countup Item Strat Here =====-->
             <div class="col-lg-3">
-                <div class="rb-portfolio-two-single-countup-item">
-                    <div class="rb-portfolio-two-countup-icon">
+                <div class="single-countup-item">
+                    <div class="countup-icon">
                         <i class="fas fa-tasks"></i>
                     </div>
-                    <div class="rb-portfolio-two-countup-number" data-from="0" data-to="215" data-speed="3000" data-refresh-interval="50">
+                    <div class="countup-number" data-from="0" data-to="215" data-speed="3000" data-refresh-interval="50">
                         <h2><?php esc_html_e('215', 'rb-portfolio-two'); ?></h2>
                     </div>
-                    <div class="rb-portfolio-two-separator-countup"></div>
-                    <div class="rb-portfolio-two-countup-text">
+                    <div class="separator-countup"></div>
+                    <div class="countup-text">
                         <p><?php esc_html_e('projects done', 'rb-portfolio-two'); ?></p>
                     </div>
                 </div>
@@ -95,15 +95,15 @@ $rb_portfolio_two_countup_image = get_post_meta(get_the_ID(), 'rb_portfolio_two_
             
             <!--===== 02. Single Countup Item Strat Here =====-->
             <div class="col-lg-3">
-                <div class="rb-portfolio-two-single-countup-item">
-                    <div class="rb-portfolio-two-countup-icon">
+                <div class="single-countup-item">
+                    <div class="countup-icon">
                         <i class="fas fa-users"></i>
                     </div>
-                    <div class="rb-portfolio-two-countup-number" data-from="0" data-to="650" data-speed="3000" data-refresh-interval="50">
+                    <div class="countup-number" data-from="0" data-to="650" data-speed="3000" data-refresh-interval="50">
                         <h2><?php esc_html_e('650', 'rb-portfolio-two'); ?></h2>
                     </div>
-                    <div class="rb-portfolio-two-separator-countup"></div>
-                    <div class="rb-portfolio-two-countup-text">
+                    <div class="separator-countup"></div>
+                    <div class="countup-text">
                         <p><?php esc_html_e('happy clients', 'rb-portfolio-two'); ?></p>
                     </div>
                 </div>
@@ -112,15 +112,15 @@ $rb_portfolio_two_countup_image = get_post_meta(get_the_ID(), 'rb_portfolio_two_
             
             <!--===== 03. Single Countup Item Strat Here =====-->
             <div class="col-lg-3">
-                <div class="rb-portfolio-two-single-countup-item">
-                    <div class="rb-portfolio-two-countup-icon">
+                <div class="single-countup-item">
+                    <div class="countup-icon">
                         <i class="far fa-clock"></i>
                     </div>
-                    <div class="rb-portfolio-two-countup-number" data-from="0" data-to="3475" data-speed="3000" data-refresh-interval="50">
+                    <div class="countup-number" data-from="0" data-to="3475" data-speed="3000" data-refresh-interval="50">
                         <h2><?php esc_html_e('3475', 'rb-portfolio-two'); ?></h2>
                     </div>
-                    <div class="rb-portfolio-two-separator-countup"></div>
-                    <div class="rb-portfolio-two-countup-text">
+                    <div class="separator-countup"></div>
+                    <div class="countup-text">
                         <p><?php esc_html_e('hours worked', 'rb-portfolio-two'); ?></p>
                     </div>
                 </div>
@@ -129,15 +129,15 @@ $rb_portfolio_two_countup_image = get_post_meta(get_the_ID(), 'rb_portfolio_two_
             
             <!--===== 04. Single Countup Item Strat Here =====-->
             <div class="col-lg-3">
-                <div class="rb-portfolio-two-single-countup-item">
-                    <div class="rb-portfolio-two-countup-icon">
+                <div class="single-countup-item">
+                    <div class="countup-icon">
                         <i class="fas fa-coffee"></i>
                     </div>
-                    <div class="rb-portfolio-two-countup-number" data-from="0" data-to="781" data-speed="3000" data-refresh-interval="50">
+                    <div class="countup-number" data-from="0" data-to="781" data-speed="3000" data-refresh-interval="50">
                         <h2><?php esc_html_e('781', 'rb-portfolio-two'); ?></h2>
                     </div>
-                    <div class="rb-portfolio-two-separator-countup"></div>
-                    <div class="rb-portfolio-two-countup-text">
+                    <div class="separator-countup"></div>
+                    <div class="countup-text">
                         <p><?php esc_html_e('cups of coffee', 'rb-portfolio-two'); ?></p>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ Description: RB Portfolio Two is a portfolio website.
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: rb-portfolio-two
@@ -22,27 +22,27 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 body {
 	color: #222222;	
 }
-.rb-portfolio-two-theme-colors {
+.theme-colors {
 	background-color: #ffffff;
 }
-.rb-portfolio-two-about-me {
+.about-me {
 	background-color: #ccc;
 }
-.rb-portfolio-two-services {
+.services {
 	background-color: #ccc;
 }
-.rb-portfolio-two-portfolio-menu ul li {
+.portfolio-menu ul li {
 	border: 1px solid #222222;
 }
-.rb-portfolio-two-section-title h2:before {
+.section-title h2:before {
 	background-color: #222222;
 }
-.rb-portfolio-two-my-resume {
+.my-resume {
 	background-color: #ccc;
 }
-.rb-portfolio-two-contact-info-box {
+.contact-info-box {
 	background-color: #ccc;
 }
-.rb-portfolio-two-footer-area {
+.footer-area {
 	background-color: #ccc;
 }

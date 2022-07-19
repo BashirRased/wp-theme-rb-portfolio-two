@@ -7,7 +7,7 @@
  *
  * Learn more: https://git.io/vWdr2
  *
- * @since RB Portfolio Two 1.0.0
+ * @since RB Portfolio Two 1.0.3
  */
 ( function() {
 	var isIe = /(trident|msie)/i.test( navigator.userAgent );

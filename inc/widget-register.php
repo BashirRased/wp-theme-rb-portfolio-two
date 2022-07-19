@@ -6,8 +6,8 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.0
+ * @version RB Portfolio Two 1.0.3
+ * @since RB Portfolio Two 1.0.3
  */
 
 // widget register
@@ -16,11 +16,11 @@ function rb_portfolio_two_widget_area(){
 		'name' 			=> __('Add Widget Area Name', 'rb-portfolio-two'),
 		'description' 	=> __('Add Widget Area Description', 'rb-portfolio-two'),
 		'id' 			=> 'rb-portfolio-two-sidebar-right',
-        'before_sidebar'=> '<aside id="rb-portfolio-two-secondary" class="rb-portfolio-two-widget-area col-lg-4">',
+        'before_sidebar'=> '<aside id="secondary" class="widget-area col-lg-4">',
 		'after_sidebar' => '</aside>',
-		'before_widget' => '<div id="rb-portfolio-two-widget-%1$s" class="rb-portfolio-two-widget-item">',
+		'before_widget' => '<div id="widget-%1$s" class="widget-item">',
 		'after_widget' 	=> '</div>',
-		'before_title' 	=> '<h2 class="rb-portfolio-two-widget-item-title">',
+		'before_title' 	=> '<h2 class="widget-item-title">',
 		'after_title' 	=> '</h2>',
         'class'  => ''
 	)); 

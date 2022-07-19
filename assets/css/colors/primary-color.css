@@ -9,7 +9,7 @@ Description: RB Portfolio Two is a portfolio website.
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Version: 1.0.0
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: rb-portfolio-two
@@ -60,16 +60,16 @@ Table of CSS Content End Here
 /*===============================
 02. Common Classes CSS Start Here
 ===============================*/
-.rb-portfolio-two-theme-color {
+.theme-color {
 	color: #0d65ed;
 }
-.rb-portfolio-two-btn:before {
+.btn:before {
 	background-color: #0d65ed;
 }
 /*=============================
 02. Common Classes CSS End Here
 =============================*/
-.rb-portfolio-two-content-title h3:after {
+.content-title h3:after {
 	background-color: #0d65ed;
 }
 /*====================================
@@ -83,7 +83,7 @@ Table of CSS Content End Here
 /*==============================
 04. Section Title CSS Start Here
 ==============================*/
-.rb-portfolio-two-section-title h2:after {
+.section-title h2:after {
 	background-color: #0d65ed;	
 }
 /*============================
@@ -97,23 +97,23 @@ Table of CSS Content End Here
 /*===== 5.1. Header Top CSS Start Here =====*/
 
 /* 5.1.1. Header Logo CSS Start Here */
-.rb-portfolio-two-header-logo h1 a {
+.header-logo h1 a {
 	color: #0d65ed;
 }
 /* 5.1.1. Header Logo CSS End Here */
 
 /* 5.1.2. Header Mobile Menu CSS Start Here */
-.rb-portfolio-two-mobile-menu-icon {
+.mobile-menu-icon {
 	background-color: #0d65ed;
 }
 /* 5.1.2. Header Mobile Menu CSS End Here */
 
 /* 5.1.3. Header Desktop Menu CSS Start Here */
-.rb-portfolio-two-header-active-menu {
+.header-active-menu {
 	color: #0d65ed !important;
 }
 @media all and (max-width: 991px) {
-	.rb-portfolio-two-desktop-menu li {
+	.desktop-menu li {
 		background-color: #0d65ed;
 	}
 }
@@ -122,7 +122,7 @@ Table of CSS Content End Here
 /*===== 5.1. Header Top CSS End Here =====*/
 
 /*===== 5.2. Header Content CSS Start Here =====*/
-.rb-portfolio-two-type-effect {
+.type-effect {
 	border-right: 6px solid #0d65ed;
 }
 /*===== 5.2. Header Content CSS End Here =====*/
@@ -142,7 +142,7 @@ Table of CSS Content End Here
 .btn-contact-me a {
 	color: #0d65ed;
 }
-.rb-portfolio-two-user-icon {
+.user-icon {
 	background-color: #0d65ed;
 }
 /*===============================
@@ -152,13 +152,13 @@ Table of CSS Content End Here
 /*==================================
 07. My Skills Section CSS Start Here
 ==================================*/
-.rb-portfolio-two-skill-animation {
+.skill-animation {
 	background-color: #0d65ed;
 }
-.rb-portfolio-two-skill-percentage {
+.skill-percentage {
 	background-color: #0d65ed;
 }
-.rb-portfolio-two-skill-percentage:before {
+.skill-percentage:before {
 	border-color: #0d65ed transparent transparent transparent;
 }
 /*================================
@@ -176,10 +176,10 @@ Table of CSS Content End Here
 /*=================================
 09. Services Section CSS Start Here
 =================================*/
-.rb-portfolio-two-single-service:after {
+.single-service:after {
 	background-color: #0d65ed;
 }
-.rb-portfolio-two-services-icon {
+.services-icon {
 	color: #0d65ed;
 }
 /*===============================
@@ -189,7 +189,7 @@ Table of CSS Content End Here
 /*================================
 10. CountTo Section CSS Start Here
 ================================*/
-.rb-portfolio-two-separator-countup {
+.separator-countup {
 	background-color: #0d65ed;
 }
 /*==============================
@@ -199,12 +199,12 @@ Table of CSS Content End Here
 /*==================================
 11. Portfolio Section CSS Start Here
 ==================================*/
-.rb-portfolio-two-portfolio-menu ul li:hover,
-.rb-portfolio-two-active-portfolio {
+.portfolio-menu ul li:hover,
+.active-portfolio {
 	background-color: #0d65ed;
 	border: 1px solid #0d65ed !important;
 }
-.rb-portfolio-two-portfolio-icon {
+.portfolio-icon {
 	background-color: #0d65ed;
 }
 /*================================
@@ -214,7 +214,7 @@ Table of CSS Content End Here
 /*===============================
 12. Resume Section CSS Start Here
 ===============================*/
-.rb-portfolio-two-resume-single-item-subtitle {
+.resume-single-item-subtitle {
 	background-color: #0d65ed;
 }
 /*=============================
@@ -224,10 +224,10 @@ Table of CSS Content End Here
 /*====================================
 13. Testimonial Section CSS Start Here
 ====================================*/
-.rb-portfolio-two-client-img {
+.client-img {
 	border: 5px solid #0d65ed;
 }
-.rb-portfolio-two-client-name {
+.client-name {
 	color: #0d65ed;
 }
 .owl-dots .owl-dot.active {
@@ -240,26 +240,26 @@ Table of CSS Content End Here
 /*===================================
 14. Contact Me Section CSS Start Here
 ===================================*/
-.rb-portfolio-two-contact-info-box:before,
-.rb-portfolio-two-contact-info-box:after {
+.contact-info-box:before,
+.contact-info-box:after {
 	border: 2px solid #0d65ed;
 }
-.rb-portfolio-two-contact-info-icon {
+.contact-info-icon {
 	color: #0d65ed;
 	border: 1px solid #0d65ed;
 }
-.rb-portfolio-two-contact-info-icon:hover {
+.contact-info-icon:hover {
 	background-color: #0d65ed;
 }
-.rb-portfolio-two-contact-field input:focus,
-.rb-portfolio-two-contact-field textarea:focus {
+.contact-field input:focus,
+.contact-field textarea:focus {
 	border-bottom: 1px solid #0d65ed;
 }
-.rb-portfolio-two-massage-send {
+.massage-send {
 	color: #0d65ed;
 	border: 1px solid #0d65ed;
 }
-.rb-portfolio-two-massage-send:hover {
+.massage-send:hover {
 	background-color: #0d65ed;
 }
 /*=================================
@@ -269,18 +269,18 @@ Table of CSS Content End Here
 /*============================
 15. Footer Area CSS Start Here
 ============================*/
-.rb-portfolio-two-copyright-text a {
+.copyright-text a {
 	color: #0d65ed;
 }
-.rb-portfolio-two-footer-social-icons a {
+.footer-social-icons a {
 	color: #0d65ed;
 	border: 1px solid #0d65ed;
 }
-.rb-portfolio-two-footer-social-icons a:hover {
+.footer-social-icons a:hover {
 	background-color: #0d65ed;
 	border: 1px solid #0d65ed;
 }
-.rb-portfolio-two-footer-social-icons a:before {
+.footer-social-icons a:before {
 	content: "";
 	position: absolute;
 	left: calc(50% - 7px);
@@ -288,7 +288,7 @@ Table of CSS Content End Here
 	transform: translateY(-8px);
 	border-top-color: #0d65ed;
 }
-.rb-portfolio-two-footer-social-icons a:after {
+.footer-social-icons a:after {
 	background-color: #0d65ed;
 }
 /*==========================
@@ -298,7 +298,7 @@ Table of CSS Content End Here
 /*=====================================
 16. Scroll To Top Button CSS Start Here
 =====================================*/
-.rb-portfolio-two-scroll-to-top {
+.scroll-to-top {
 	background-color: #0d65ed;
 }
 /*===================================
@@ -308,7 +308,7 @@ Table of CSS Content End Here
 /*=================================
 17. Main Page Design CSS Start Here
 =================================*/
-.rb-portfolio-two-feature-icon i {
+.feature-icon i {
 	background-color: #0d65ed;
 }
 /*===============================

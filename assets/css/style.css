@@ -9,7 +9,7 @@ Description: RB Portfolio Two is a portfolio website.
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Version: 1.0.2
+Version: 1.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: rb-portfolio-two
@@ -52,14 +52,14 @@ Table of CSS Content End Here
 04. Header Menu with Site Branding Area CSS Start Here
 ******************************************************/
 
-.rb-portfolio-two-header-menu-area {
+.header-menu-area {
 	background-color: transparent;
 	z-index: 99;
 	position: relative;
 	box-shadow: 0 0 1px 1px #ccc;
 }
 
-.rb-portfolio-two-header-fixed {
+.header-fixed {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -69,58 +69,58 @@ Table of CSS Content End Here
 	box-shadow: 0 3px 2px rgba(0, 0, 0, .1);
 }
 
-.admin-bar .rb-portfolio-two-header-fixed {
+.admin-bar .header-fixed {
 	top: 32px;
 }
 
 /* 4.1. Header Logo CSS Start Here */
-.rb-portfolio-two-header-site-branding-area {
+.header-site-branding-area {
 	padding: 5px 15px;
 	display: flex;
 }
 
-.rb-portfolio-two-header-logo {
+.header-logo {
 	margin-right: 20px;
 }
 
-.rb-portfolio-two-header-logo img {
+.header-logo img {
 	height: 70px;
 	width: auto;
 }
 
-.rb-portfolio-two-header-site-title {
+.header-site-title {
 	margin: 0;
 	font-size: 30px;
 }
 
-.rb-portfolio-two-header-site-tagline {
+.header-site-tagline {
 	margin: 0;
 	font-size: 14px;
 }
 
-.rb-portfolio-two-header-site-title a {
+.header-site-title a {
 	text-decoration: none;
 	color: #0d65ed;
 }
 
-.rb-portfolio-two-header-site-title a:hover {
+.header-site-title a:hover {
 	text-decoration: underline;
 }
 
-.rb-portfolio-two-header-site-title a:focus {
+.header-site-title a:focus {
 	text-decoration: underline overline;
 }
 
 /* 4.1. Header Logo CSS End Here */
 
 /* 4.2. Header Mobile Menu CSS Start Here */
-.rb-portfolio-two-header-mobile-menu-area {
+.header-mobile-menu-area {
 	display: none;
 	overflow: hidden;
 	padding: 14px;
 }
 
-.rb-portfolio-two-header-mobile-menu-btn {
+.header-mobile-menu-btn {
 	font-size: 20px;
 	width: 50px;
 	height: 50px;
@@ -130,7 +130,7 @@ Table of CSS Content End Here
 	background-color: #0d65ed;
 }
 
-.rb-portfolio-two-header-mobile-menu-btn:focus {
+.header-mobile-menu-btn:focus {
 	border: 2px solid #fff;
 	box-shadow: 0 0 5px 5px #0d65ed;
 }
@@ -138,7 +138,7 @@ Table of CSS Content End Here
 /* 4.2. Header Mobile Menu CSS End Here */
 
 /* 4.3. Header Desktop Menu CSS Start Here */
-.rb-portfolio-two-header-desktop-menu ul {
+.header-desktop-menu ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
@@ -146,14 +146,14 @@ Table of CSS Content End Here
 	z-index: 99;
 }
 
-.rb-portfolio-two-header-desktop-menu ul li {
+.header-desktop-menu ul li {
 	float: left;
 	height: 100%;
 	position: relative;
 }
 
-.rb-portfolio-two-header-desktop-menu ul li:hover>.rb-portfolio-two-dropdown-menu,
-.rb-portfolio-two-header-desktop-menu ul li:focus-within>.rb-portfolio-two-dropdown-menu {
+.header-desktop-menu ul li:hover>.dropdown-menu,
+.header-desktop-menu ul li:focus-within>.dropdown-menu {
 	right: 0;
 }
 
@@ -166,41 +166,41 @@ Table of CSS Content End Here
 	border: 3px solid #0d65ed;
 }
 
-.rb-portfolio-two-header-desktop-menu ul li a {
+.header-desktop-menu ul li a {
 	text-decoration: none;
 	display: block;
 	padding: 28px 10px;
 	color: #000;
 }
 
-.rb-portfolio-two-header-desktop-menu ul li a:hover,
-.rb-portfolio-two-header-desktop-menu ul li a:focus,
-.rb-portfolio-two-header-fixed .rb-portfolio-two-header-desktop-menu ul li a:hover,
-.rb-portfolio-two-header-fixed .rb-portfolio-two-header-desktop-menu ul li a:focus {
+.header-desktop-menu ul li a:hover,
+.header-desktop-menu ul li a:focus,
+.header-fixed .header-desktop-menu ul li a:hover,
+.header-fixed .header-desktop-menu ul li a:focus {
 	color: #0d65ed;
 }
 
-.rb-portfolio-two-header-fixed .rb-portfolio-two-header-desktop-menu ul li a {
+.header-fixed .header-desktop-menu ul li a {
 	color: #000;
 }
 
-.rb-portfolio-two-header-desktop-menu ul li i {
+.header-desktop-menu ul li i {
 	margin-left: 10px;
 	color: #000;
 }
 
-.rb-portfolio-two-header-desktop-menu ul li a:hover i,
-.rb-portfolio-two-header-desktop-menu ul li a:focus i {
+.header-desktop-menu ul li a:hover i,
+.header-desktop-menu ul li a:focus i {
 	color: #0d65ed;
 }
 
-.rb-portfolio-two-header-desktop-menu ul li .rb-portfolio-two-dropdown-menu i,
-.rb-portfolio-two-header-desktop-menu ul li .rb-portfolio-two-multi-dropdown-menu i {
+.header-desktop-menu ul li .dropdown-menu i,
+.header-desktop-menu ul li .multi-dropdown-menu i {
 	margin-left: 0;
 	margin-right: 10px;
 }
 
-.rb-portfolio-two-dropdown-menu {
+.dropdown-menu {
 	position: absolute;
 	background-color: #fff;
 	right: -9999px;
@@ -211,22 +211,22 @@ Table of CSS Content End Here
 	z-index: 999999;
 }
 
-.rb-portfolio-two-dropdown-menu li {
+.dropdown-menu li {
 	text-align: center;
 	width: 100%;
 }
 
-.rb-portfolio-two-dropdown-menu li a {
+.dropdown-menu li a {
 	border-top: 2px solid #0d65ed;
 	text-align: left;
 }
 
-.rb-portfolio-two-dropdown-menu li:hover>ul,
-.rb-portfolio-two-dropdown-menu li:focus-within>ul {
+.dropdown-menu li:hover>ul,
+.dropdown-menu li:focus-within>ul {
 	top: 0;
 }
 
-.rb-portfolio-two-multi-dropdown-menu {
+.multi-dropdown-menu {
 	position: absolute;
 	background-color: #fff;
 	top: -9999px;
@@ -235,7 +235,7 @@ Table of CSS Content End Here
 	box-shadow: 0 0 5px 5px #0d65ed;
 }
 
-.rb-portfolio-two-multi-dropdown-menu li a {
+.multi-dropdown-menu li a {
 	border-right: 2px solid #0d65ed;
 }
 
@@ -279,7 +279,7 @@ img {
 /*===============================
 02. Common Classes CSS Start Here
 ===============================*/
-.rb-portfolio-two-btn {
+.btn {
 	position: relative;
 	display: inline-block;
 	text-decoration: none;
@@ -291,7 +291,7 @@ img {
 	z-index: 0;
 }
 
-.rb-portfolio-two-btn:before {
+.btn:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -302,29 +302,29 @@ img {
 	z-index: -1;
 }
 
-.rb-portfolio-two-btn:hover:before,
-.rb-portfolio-two-btn:focus:before {
+.btn:hover:before,
+.btn:focus:before {
 	width: 100%;
 }
 
-.rb-portfolio-two-btn a {
+.btn a {
 	text-decoration: none;
 	display: block;
 	color: #fff;
 }
 
-.rb-portfolio-two-strong-text {
+.strong-text {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 }
 
-.rb-portfolio-two-content-title h3 {
+.content-title h3 {
 	position: relative;
 	display: inline-block;
 	margin-bottom: 30px;
 }
 
-.rb-portfolio-two-content-title h3:after {
+.content-title h3:after {
 	content: "";
 	position: absolute;
 	left: 0;
@@ -340,33 +340,33 @@ img {
 /*==============================
 04. Section Title CSS Start Here
 ==============================*/
-.rb-portfolio-two-section-title {
+.section-title {
 	text-align: center;
 	margin: 20px 0 70px;
 }
 
-.rb-portfolio-two-section-title h2 {
+.section-title h2 {
 	position: relative;
 	display: inline-block;
 	font-size: 40px;
 	margin-bottom: 10px;
 }
 
-.rb-portfolio-two-section-title h2:before,
-.rb-portfolio-two-section-title h2:after {
+.section-title h2:before,
+.section-title h2:after {
 	content: "";
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);
 }
 
-.rb-portfolio-two-section-title h2:before {
+.section-title h2:before {
 	bottom: -20px;
 	width: 100%;
 	height: 2px;
 }
 
-.rb-portfolio-two-section-title h2:after {
+.section-title h2:after {
 	bottom: -29px;
 	width: 20px;
 	height: 20px;
@@ -381,7 +381,7 @@ img {
 /*============================
 05. Header Area CSS Start Here
 ============================*/
-.rb-portfolio-two-header-area {
+.header-area {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -394,7 +394,7 @@ img {
 	z-index: 9;
 }
 
-.rb-portfolio-two-header-area:before {
+.header-area:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -406,7 +406,7 @@ img {
 }
 
 /*===== 5.2. Header Content CSS Start Here =====*/
-.rb-portfolio-two-header-content {
+.header-content {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -416,19 +416,19 @@ img {
 	color: #ffffff;
 }
 
-.rb-portfolio-two-header-content-title h1 {
+.header-content-title h1 {
 	font-size: 70px;
 	margin-bottom: 30px;
 }
 
-.rb-portfolio-two-header-content-subtitle h3 {
+.header-content-subtitle h3 {
 	font-size: 40px;
 }
 
 /*===== 5.2. Header Content CSS End Here =====*/
 
 /*===== 5.3. Header Scrolldown Button CSS Start Here =====*/
-.rb-portfolio-two-header-scroll-down {
+.header-scroll-down {
 	position: absolute;
 	bottom: 35px;
 	left: 50%;
@@ -440,7 +440,7 @@ img {
 	cursor: pointer;
 }
 
-.rb-portfolio-two-header-scroll-down:after {
+.header-scroll-down:after {
 	content: "";
 	position: absolute;
 	top: 10px;
@@ -478,11 +478,11 @@ img {
 	}
 }
 
-.rb-portfolio-two-header-scroll-down:focus {
+.header-scroll-down:focus {
 	border: 2px solid #0d65ed;
 }
 
-.rb-portfolio-two-header-scroll-down:focus:after {
+.header-scroll-down:focus:after {
 	background-color: #0d65ed;
 }
 
@@ -495,38 +495,38 @@ img {
 /*=================================
 06. About Me Section CSS Start Here
 =================================*/
-.rb-portfolio-two-about-me-title h6 {
+.about-me-title h6 {
 	margin-bottom: 20px;
 }
 
-.rb-portfolio-two-about-me-description p {
+.about-me-description p {
 	margin-bottom: 20px;
 }
 
-.rb-portfolio-two-about-me-separator {
+.about-me-separator {
 	width: 100%;
 	height: 1px;
 	background-color: #cccccc;
 	margin: 20px 0;
 }
 
-.rb-portfolio-two-about-me-details ul {
+.about-me-details ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-.rb-portfolio-two-about-me-details ul li {
+.about-me-details ul li {
 	display: block;
 	margin-bottom: 20px;
 	font-size: 20px;
 }
 
-.rb-portfolio-two-about-me-details ul li span {
+.about-me-details ul li span {
 	display: inline-block;
 }
 
-.rb-portfolio-two-user-icon {
+.user-icon {
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
@@ -554,7 +554,7 @@ img {
 /*==================================
 07. My Skills Section CSS Start Here
 ==================================*/
-.rb-portfolio-two-skill-bar {
+.skill-bar {
 	position: relative;
 	width: 100%;
 	height: 12px;
@@ -565,12 +565,12 @@ img {
 	margin-bottom: 25px;
 }
 
-.rb-portfolio-two-skill-name {
+.skill-name {
 	font-size: 18px;
 	margin-bottom: 5px;
 }
 
-.rb-portfolio-two-skill-animation {
+.skill-animation {
 	position: absolute;
 	top: 50%;
 	left: 0;
@@ -579,7 +579,7 @@ img {
 	border-radius: 6px;
 }
 
-.rb-portfolio-two-skill-percentage {
+.skill-percentage {
 	position: absolute;
 	top: -37px;
 	right: -20px;
@@ -587,7 +587,7 @@ img {
 	padding: 2px 7px;
 }
 
-.rb-portfolio-two-skill-percentage:before {
+.skill-percentage:before {
 	content: "";
 	position: absolute;
 	bottom: -6px;
@@ -604,7 +604,7 @@ img {
 /*================================
 08. Hire Me Section CSS Start Here
 ================================*/
-.rb-portfolio-two-hire-me {
+.hire-me {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -616,7 +616,7 @@ img {
 	z-index: 1;
 }
 
-.rb-portfolio-two-hire-me:before {
+.hire-me:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -627,16 +627,16 @@ img {
 	z-index: -1;
 }
 
-.rb-portfolio-two-hire-me-content {
+.hire-me-content {
 	text-align: center;
 }
 
-.rb-portfolio-two-hire-me-content h2 {
+.hire-me-content h2 {
 	font-size: 48px;
 	margin-bottom: 10px;
 }
 
-.rb-portfolio-two-hire-me-content p {
+.hire-me-content p {
 	margin-bottom: 30px;
 }
 
@@ -655,7 +655,7 @@ img {
 /*=================================
 09. Services Section CSS Start Here
 =================================*/
-.rb-portfolio-two-single-service {
+.single-service {
 	position: relative;
 	padding: 32px 38px;
 	text-align: center;
@@ -664,8 +664,8 @@ img {
 	z-index: 0;
 }
 
-.rb-portfolio-two-single-service:before,
-.rb-portfolio-two-single-service:after {
+.single-service:before,
+.single-service:after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -673,37 +673,37 @@ img {
 	height: 100%;
 }
 
-.rb-portfolio-two-single-service:before {
+.single-service:before {
 	width: 100%;
 	background-color: #ffffff;
 	z-index: -2;
 }
 
-.rb-portfolio-two-single-service:after {
+.single-service:after {
 	width: 2px;
 	z-index: -1;
 	transition: all 0.4s ease-in-out;
 }
 
-.rb-portfolio-two-single-service:hover:after,
-.rb-portfolio-two-single-service:focus:after {
+.single-service:hover:after,
+.single-service:focus:after {
 	width: 100%;
 }
 
-.rb-portfolio-two-single-service:hover .rb-portfolio-two-services-icon,
-.rb-portfolio-two-single-service:hover .rb-portfolio-two-services-title,
-.rb-portfolio-two-single-service:hover .rb-portfolio-two-services-description,
-.rb-portfolio-two-single-service:focus .rb-portfolio-two-services-icon,
-.rb-portfolio-two-single-service:focus .rb-portfolio-two-services-title,
-.rb-portfolio-two-single-service:focus .rb-portfolio-two-services-description {
+.single-service:hover .services-icon,
+.single-service:hover .services-title,
+.single-service:hover .services-description,
+.single-service:focus .services-icon,
+.single-service:focus .services-title,
+.single-service:focus .services-description {
 	color: #ffffff;
 }
 
-.rb-portfolio-two-services-icon {
+.services-icon {
 	font-size: 50px;
 }
 
-.rb-portfolio-two-services-description {
+.services-description {
 	font-size: 13px;
 	color: #777777;
 }
@@ -715,7 +715,7 @@ img {
 /*================================
 10. CountTo Section CSS Start Here
 ================================*/
-.rb-portfolio-two-countup {
+.countup {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -727,7 +727,7 @@ img {
 	z-index: 1;
 }
 
-.rb-portfolio-two-countup:before {
+.countup:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -738,25 +738,25 @@ img {
 	z-index: -1;
 }
 
-.rb-portfolio-two-single-countup-item {
+.single-countup-item {
 	text-align: center;
 }
 
-.rb-portfolio-two-countup-icon {
+.countup-icon {
 	font-size: 50px;
 }
 
-.rb-portfolio-two-countup-number {
+.countup-number {
 	font-size: 60px;
 }
 
-.rb-portfolio-two-separator-countup {
+.separator-countup {
 	width: 100px;
 	height: 3px;
 	margin: 20px auto;
 }
 
-.rb-portfolio-two-countup-text {
+.countup-text {
 	text-transform: capitalize;
 	font-size: 20px;
 }
@@ -768,14 +768,14 @@ img {
 /*==================================
 11. Portfolio Section CSS Start Here
 ==================================*/
-.rb-portfolio-two-portfolio-menu ul {
+.portfolio-menu ul {
 	list-style: none;
 	padding: 0;
 	margin: 20px 0;
 	text-align: center;
 }
 
-.rb-portfolio-two-portfolio-menu ul li {
+.portfolio-menu ul li {
 	display: inline-block;
 	margin: 0 10px 20px 0;
 	padding: 15px 20px;
@@ -783,18 +783,18 @@ img {
 	transition: all 0.4s ease-in-out;
 }
 
-.rb-portfolio-two-portfolio-menu ul li:hover,
-.rb-portfolio-two-portfolio-menu ul li:focus,
-.rb-portfolio-two-active-portfolio {
+.portfolio-menu ul li:hover,
+.portfolio-menu ul li:focus,
+.active-portfolio {
 	color: #ffffff;
 }
 
-.rb-portfolio-two-portfolio-signle {
+.portfolio-signle {
 	position: relative;
 	margin-bottom: 20px;
 }
 
-.rb-portfolio-two-portfolio-signle:before {
+.portfolio-signle:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -804,12 +804,12 @@ img {
 	transition: all 0.4s ease-in-out;
 }
 
-.rb-portfolio-two-portfolio-signle:hover:before,
-.rb-portfolio-two-portfolio-signle:focus:before {
+.portfolio-signle:hover:before,
+.portfolio-signle:focus:before {
 	background-color: rgba(0, 0, 0, 0.7);
 }
 
-.rb-portfolio-two-portfolio-text {
+.portfolio-text {
 	display: none;
 	position: absolute;
 	bottom: 0;
@@ -820,14 +820,14 @@ img {
 	transition: all 0.3s ease-in-out;
 }
 
-.rb-portfolio-two-portfolio-signle:hover .rb-portfolio-two-portfolio-icons,
-.rb-portfolio-two-portfolio-signle:hover .rb-portfolio-two-portfolio-text,
-.rb-portfolio-two-portfolio-signle:focus .rb-portfolio-two-portfolio-icons,
-.rb-portfolio-two-portfolio-signle:focus .rb-portfolio-two-portfolio-text {
+.portfolio-signle:hover .portfolio-icons,
+.portfolio-signle:hover .portfolio-text,
+.portfolio-signle:focus .portfolio-icons,
+.portfolio-signle:focus .portfolio-text {
 	display: block;
 }
 
-.rb-portfolio-two-portfolio-icons {
+.portfolio-icons {
 	display: none;
 	position: absolute;
 	top: 50%;
@@ -836,7 +836,7 @@ img {
 	transition: all 0.4s ease-in-out;
 }
 
-.rb-portfolio-two-portfolio-icon {
+.portfolio-icon {
 	display: inline-block;
 	width: 50px;
 	height: 50px;
@@ -846,7 +846,7 @@ img {
 	margin: 0 10px 10px 0;
 }
 
-.rb-portfolio-two-portfolio-icon i {
+.portfolio-icon i {
 	color: #ffffff;
 }
 
@@ -857,25 +857,25 @@ img {
 /*===============================
 12. Resume Section CSS Start Here
 ===============================*/
-.rb-portfolio-two-resume-single-item {
+.resume-single-item {
 	background-color: #ffffff;
 	padding: 30px 20px;
 	margin-bottom: 20px;
 	box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.08);
 }
 
-.rb-portfolio-two-resume-single-item-subtitle {
+.resume-single-item-subtitle {
 	display: inline-block;
 	color: #ffffff;
 	padding: 5px 10px;
 	margin-bottom: 10px;
 }
 
-.rb-portfolio-two-resume-single-item-title {
+.resume-single-item-title {
 	margin-bottom: 20px;
 }
 
-.rb-portfolio-two-resume-single-item-title p {
+.resume-single-item-title p {
 	color: #777777;
 }
 
@@ -890,7 +890,7 @@ img {
 	z-index: 0;
 }
 
-.rb-portfolio-two-testimonials {
+.testimonials {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -902,7 +902,7 @@ img {
 	text-align: center;
 }
 
-.rb-portfolio-two-testimonials:before {
+.testimonials:before {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -912,7 +912,7 @@ img {
 	background-color: rgba(0, 0, 0, .68);
 }
 
-.rb-portfolio-two-client-img {
+.client-img {
 	margin: 20px auto;
 	overflow: hidden;
 	width: 170px;
@@ -920,11 +920,11 @@ img {
 	border-radius: 50%;
 }
 
-.rb-portfolio-two-client-name {
+.client-name {
 	font-size: 22px;
 }
 
-.rb-portfolio-two-client-designation {
+.client-designation {
 	margin-bottom: 30px;
 }
 
@@ -943,15 +943,15 @@ img {
 /*===================================
 14. Contact Me Section CSS Start Here
 ===================================*/
-.rb-portfolio-two-contact-info-box {
+.contact-info-box {
 	padding: 40px 50px;
 	margin-bottom: 60px;
 	text-align: center;
 	position: relative;
 }
 
-.rb-portfolio-two-contact-info-box:before,
-.rb-portfolio-two-contact-info-box:after {
+.contact-info-box:before,
+.contact-info-box:after {
 	content: "";
 	position: absolute;
 	width: 60px;
@@ -959,29 +959,29 @@ img {
 	transition: all 0.4s ease-in-out;
 }
 
-.rb-portfolio-two-contact-info-box:before {
+.contact-info-box:before {
 	top: 0;
 	left: 0;
 	border-bottom: none !important;
 	border-right: none !important;
 }
 
-.rb-portfolio-two-contact-info-box:after {
+.contact-info-box:after {
 	bottom: 0;
 	right: 0;
 	border-top: none !important;
 	border-left: none !important;
 }
 
-.rb-portfolio-two-contact-info-box:hover:before,
-.rb-portfolio-two-contact-info-box:hover:after,
-.rb-portfolio-two-contact-info-box:focus:before,
-.rb-portfolio-two-contact-info-box:focus:after {
+.contact-info-box:hover:before,
+.contact-info-box:hover:after,
+.contact-info-box:focus:before,
+.contact-info-box:focus:after {
 	width: 100px;
 	height: 100px;
 }
 
-.rb-portfolio-two-contact-info-icon {
+.contact-info-icon {
 	display: block;
 	margin: 0 auto;
 	margin-bottom: 20px;
@@ -995,13 +995,13 @@ img {
 	cursor: pointer;
 }
 
-.rb-portfolio-two-contact-info-icon:hover,
-.rb-portfolio-two-contact-info-icon:focus {
+.contact-info-icon:hover,
+.contact-info-icon:focus {
 	color: #ffffff;
 }
 
-.rb-portfolio-two-contact-field input,
-.rb-portfolio-two-contact-field textarea {
+.contact-field input,
+.contact-field textarea {
 	padding: 10px 10px 0;
 	border-top: none;
 	border-right: none;
@@ -1011,7 +1011,7 @@ img {
 	background-color: transparent;
 }
 
-.rb-portfolio-two-massage-send {
+.massage-send {
 	padding: 10px 30px;
 	text-transform: uppercase;
 	cursor: pointer;
@@ -1020,8 +1020,8 @@ img {
 	background-color: transparent;
 }
 
-.rb-portfolio-two-massage-send:hover,
-.rb-portfolio-two-massage-send:focus {
+.massage-send:hover,
+.massage-send:focus {
 	color: #ffffff;
 }
 
@@ -1032,30 +1032,30 @@ img {
 /*============================
 15. Footer Area CSS Start Here
 ============================*/
-.rb-portfolio-two-footer-area {
+.footer-area {
 	padding: 50px 0;
 }
 
-.rb-portfolio-two-copyright-text {
+.copyright-text {
 	margin-top: 20px;
 }
 
-.rb-portfolio-two-copyright-text a {
+.copyright-text a {
 	text-decoration: none;
 }
 
-.rb-portfolio-two-footer-social-icons ul {
+.footer-social-icons ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
-.rb-portfolio-two-footer-social-icons li {
+.footer-social-icons li {
 	display: inline-block;
 	margin: 8px;
 }
 
-.rb-portfolio-two-footer-social-icons a {
+.footer-social-icons a {
 	text-decoration: none;
 	display: block;
 	width: 48px;
@@ -1068,25 +1068,25 @@ img {
 	position: relative;
 }
 
-.rb-portfolio-two-footer-social-icons a:hover,
-.rb-portfolio-two-footer-social-icons a:focus {
+.footer-social-icons a:hover,
+.footer-social-icons a:focus {
 	color: #ffffff;
 }
 
-.rb-portfolio-two-footer-social-icons a:before {
+.footer-social-icons a:before {
 	transition-delay: 100ms;
 	visibility: hidden;
 	z-index: 999;
 }
 
-.rb-portfolio-two-footer-social-icons a:hover:before,
-.rb-portfolio-two-footer-social-icons a:hover:after,
-.rb-portfolio-two-footer-social-icons a:focus:before,
-.rb-portfolio-two-footer-social-icons a:focus:after {
+.footer-social-icons a:hover:before,
+.footer-social-icons a:hover:after,
+.footer-social-icons a:focus:before,
+.footer-social-icons a:focus:after {
 	visibility: visible;
 }
 
-.rb-portfolio-two-footer-social-icons a:after {
+.footer-social-icons a:after {
 	content: attr(aria-label);
 	position: absolute;
 	top: -53%;
@@ -1109,7 +1109,7 @@ img {
 /*=====================================
 16. Scroll To Top Button CSS Start Here
 =====================================*/
-.rb-portfolio-two-scroll-to-top {
+.scroll-to-top {
 	display: none;
 	position: fixed;
 	font-size: 22px;
@@ -1128,7 +1128,7 @@ img {
 	background-color: #0d65ed;
 }
 
-.rb-portfolio-two-scroll-to-top:focus {
+.scroll-to-top:focus {
 	box-shadow: 0 0 5px 5px #0d65ed;
 	border: 2px solid #fff;
 }

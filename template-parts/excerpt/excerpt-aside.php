@@ -6,8 +6,8 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.0
+ * @version RB Portfolio Two 1.0.3
+ * @since RB Portfolio Two 1.0.3
  */
 
 $widget_blocks = (
@@ -46,5 +46,7 @@ if ($widget_blocks) {
     		echo render_block($aside_post);
     	}
     }
-	rb_portfolio_two_read_more_text();
+
+	do_action ( 'rb_portfolio_two_read_more' );
+
 }

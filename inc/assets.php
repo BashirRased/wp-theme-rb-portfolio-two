@@ -6,8 +6,8 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.2
+ * @version RB Portfolio Two 1.0.3
+ * @since RB Portfolio Two 1.0.3
  */
 
 // Prefix With File Directory
@@ -17,7 +17,7 @@ define('rb_portfolio_two_JS',rb_portfolio_two_URL.'/assets/js/');
 
 function rb_portfolio_two_google_font_css(){
     // Google Font
-	wp_enqueue_style('google-font','https://fonts.googleapis.com/css?family=Poppins|Roboto:700&display=swap','','1.0.2','all');
+	wp_enqueue_style('google-font','https://fonts.googleapis.com/css?family=Poppins|Roboto:700&display=swap','','1.0.3','all');
 }
 add_action('wp_enqueue_scripts','rb_portfolio_two_google_font_css');
 
@@ -79,26 +79,26 @@ function rb_portfolio_two_browser_config_assets(){
 add_action('wp_enqueue_scripts','rb_portfolio_two_browser_config_assets');
 
 function rb_portfolio_two_theme_custom_assets(){
-    // Theme Perloader CSS v1.0.2
-    wp_enqueue_style('rb-portfolio-two-preloader',rb_portfolio_two_CSS.'preloader.css','','1.0.2','all');
+    // Theme Perloader CSS v1.0.3
+    wp_enqueue_style('rb-portfolio-two-preloader',rb_portfolio_two_CSS.'preloader.css','','1.0.3','all');
 
-    // Theme light-bg CSS v1.0.2
-    wp_enqueue_style('rb-portfolio-two-light-bg',rb_portfolio_two_CSS.'light-bg.css','','1.0.2','all');
+    // Theme light-bg CSS v1.0.3
+    wp_enqueue_style('rb-portfolio-two-light-bg',rb_portfolio_two_CSS.'light-bg.css','','1.0.3','all');
 
-    // Theme Style CSS v1.0.2
-    wp_enqueue_style('rb-portfolio-two-style',rb_portfolio_two_CSS.'style.css','','1.0.2','all');
+    // Theme Style CSS v1.0.3
+    wp_enqueue_style('rb-portfolio-two-style',rb_portfolio_two_CSS.'style.css','','1.0.3','all');
 
-    // Theme Responsive CSS v1.0.2
-    wp_enqueue_style('rb-portfolio-two-responsive',rb_portfolio_two_CSS.'responsive.css','','1.0.2','all');
+    // Theme Responsive CSS v1.0.3
+    wp_enqueue_style('rb-portfolio-two-responsive',rb_portfolio_two_CSS.'responsive.css','','1.0.3','all');
 
-    // Theme Color CSS v1.0.2
-    wp_enqueue_style('rb-portfolio-two-theme-color',rb_portfolio_two_CSS.'colors/primary-color.css','','1.0.2','all');
+    // Theme Color CSS v1.0.3
+    wp_enqueue_style('rb-portfolio-two-theme-color',rb_portfolio_two_CSS.'colors/primary-color.css','','1.0.3','all');
 
-    // Theme Type JS v1.0.2
-    wp_enqueue_script('rb-portfolio-two-type',rb_portfolio_two_JS.'type.js',array('jquery'),'1.0.2',true);
+    // Theme Type JS v1.0.3
+    wp_enqueue_script('rb-portfolio-two-type',rb_portfolio_two_JS.'type.js',array('jquery'),'1.0.3',true);
 
-    // Theme Custom JS v1.0.2
-    wp_enqueue_script('rb-portfolio-two-custom',rb_portfolio_two_JS.'custom.js',array('jquery'),'1.0.2',true);
+    // Theme Custom JS v1.0.3
+    wp_enqueue_script('rb-portfolio-two-custom',rb_portfolio_two_JS.'custom.js',array('jquery'),'1.0.3',true);
 }
 add_action('wp_enqueue_scripts','rb_portfolio_two_theme_custom_assets');
 

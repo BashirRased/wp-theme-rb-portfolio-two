@@ -7,12 +7,12 @@ $rb_portfolio_two_header_img = get_post_meta(get_the_ID(), 'rb_portfolio_two_hea
 
 ?>
 
-<header class="rb-portfolio-two-header-area rb-portfolio-two-scroll-menu" id="rb-portfolio-two-header-area" <?php if ( isset ($rb_portfolio_two_header_img) && !empty ($rb_portfolio_two_header_img)) : ?>style="background-image: url(<?php echo esc_url($rb_portfolio_two_header_img); ?>);" <?php endif; ?> >
+<header class="header-area rb-portfolio-two-scroll-menu" id="header-area" <?php if ( isset ($rb_portfolio_two_header_img) && !empty ($rb_portfolio_two_header_img)) : ?>style="background-image: url(<?php echo esc_url($rb_portfolio_two_header_img); ?>);" <?php endif; ?> >
     
     <!--====================================== 
     ===== Header Content Area Strat Here =====
     =======================================-->
-    <div class="rb-portfolio-two-header-content">
+    <div class="header-content">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -23,7 +23,7 @@ $rb_portfolio_two_header_img = get_post_meta(get_the_ID(), 'rb_portfolio_two_hea
 
                     if( isset ($rb_portfolio_two_header_title) && !empty ($rb_portfolio_two_header_title) ) : ?>
 
-                    <div class="rb-portfolio-two-header-content-title">
+                    <div class="header-content-title">
                         <h1>
                             <?php 
                             printf(
@@ -46,7 +46,7 @@ $rb_portfolio_two_header_img = get_post_meta(get_the_ID(), 'rb_portfolio_two_hea
 
                     // Header Section Sub-Title 02
                     if( isset ($rb_portfolio_two_header_subtitle_2)  && !empty ($rb_portfolio_two_header_subtitle_2) ) : ?>
-                    <div class="rb-portfolio-two-header-content-subtitle">
+                    <div class="header-content-subtitle">
                         <h3>
 
                         <?php 
@@ -57,7 +57,7 @@ $rb_portfolio_two_header_img = get_post_meta(get_the_ID(), 'rb_portfolio_two_hea
                             );
                         ?>
                         
-                        <span class="rb-portfolio-two-type-effect rb-portfolio-two-theme-color" data-period="2000" data-type='[
+                        <span class="type-effect rb-portfolio-two-theme-color" data-period="2000" data-type='[
                             <?php
                             $i = 0;
                             foreach($rb_portfolio_two_header_subtitle_2 as $rb_portfolio_two_header_subtitle_2_single):
@@ -99,7 +99,7 @@ $rb_portfolio_two_header_img = get_post_meta(get_the_ID(), 'rb_portfolio_two_hea
     <!--===================================== 
     ===== Header Scroll Down Strat Here =====
     ======================================-->
-    <a href="#rb-portfolio-two-about-me" class="rb-portfolio-two-header-scroll-down"></a>
+    <a href="#about-me" class="header-scroll-down"></a>
     <!--=================================== 
     ===== Header Scroll Down End Here =====
     ====================================-->

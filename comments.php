@@ -9,8 +9,8 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.2
- * @since RB Portfolio Two 1.0.1
+ * @version RB Portfolio Two 1.0.3
+ * @since RB Portfolio Two 1.0.3
  */
 
 /*
@@ -28,12 +28,12 @@ $rb_portfolio_two_comment_count = get_comments_number();
 <!--================================
 ----- Comments Area Start Here -----
 =================================-->
-<div class="rb-portfolio-two-comments-area">
+<div class="comments-area">
     
     <?php if (have_comments()) : ?>
 
     <!-- Total Number of Comments -->
-    <div class="rb-portfolio-two-comments-count">
+    <div class="comments-count">
         <?php
         if ($rb_portfolio_two_comment_count) {
             printf(
@@ -42,8 +42,8 @@ $rb_portfolio_two_comment_count = get_comments_number();
                 2: Post title.
                 */
                 _nx(
-                    '%1$s comment on <span class="rb-portfolio-two-comment-title">&ldquo;%2$s&rdquo;</span>',
-                    '%1$s comments on <span class="rb-portfolio-two-comment-title">&ldquo;%2$s&rdquo;</span>', $rb_portfolio_two_comment_count,
+                    '%1$s comment on <span class="comment-title">&ldquo;%2$s&rdquo;</span>',
+                    '%1$s comments on <span class="comment-title">&ldquo;%2$s&rdquo;</span>', $rb_portfolio_two_comment_count,
                     'Comments title',
                     'rb-portfolio-two'
                 ),
@@ -53,37 +53,37 @@ $rb_portfolio_two_comment_count = get_comments_number();
         }
         ?>
 
-    </div><!-- .rb-portfolio-two-comments-count -->
+    </div><!-- .comments-count -->
 
     <!-- Comments List Show -->
-    <div class="rb-portfolio-two-comments-list">
+    <div class="comments-list">
         <?php
         wp_list_comments();
         ?>
-    </div><!-- .rb-portfolio-two-comments-list -->
+    </div><!-- .comments-list -->
 
     <!-- Comments Pagination -->
-    <div class="rb-portfolio-two-comments-pagination">
+    <div class="comments-pagination">
         <?php
         the_comments_pagination();
         ?>
-    </div><!-- .rb-portfolio-two-comments-pagination -->
+    </div><!-- .comments-pagination -->
 
     <!-- Comments Close -->
-    <div class="rb-portfolio-two-comments-close">
+    <div class="comments-close">
         <?php if (!comments_open()) : ?>
-			<p class="rb-portfolio-two-comments-close-text">
+			<p class="comments-close-text">
                 <?php esc_html_e('Comments are closed.', 'rb-portfolio-two'); ?>
             </p>
 		<?php endif; ?>
-    </div><!-- .rb-portfolio-two-comments-close -->
+    </div><!-- .comments-close -->
 
     <?php endif; ?>
 
     <!-- Comments Form -->
-    <div class="rb-portfolio-two-comments-form">
+    <div class="comments-form">
         <?php comment_form(); ?>
-    </div><!-- .rb-portfolio-two-comments-form -->
+    </div><!-- .comments-form -->
 
 </div>
 <!--==============================
