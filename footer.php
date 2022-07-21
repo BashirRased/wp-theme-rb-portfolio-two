@@ -8,8 +8,8 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.3
- * @since RB Portfolio Two 1.0.3
+ * @version RB Portfolio Two 1.0.4
+ * @since RB Portfolio Two 1.0.4
  */
 
 ?>
@@ -24,7 +24,7 @@
 				<!--=================================
 				===== Copyright Text Strat Here =====
 				==================================-->
-				<div class="col-lg-6">
+				<div class="col-lg-12">
 					<?php
 						$fromYear = (int)esc_html('2022','rb-portfolio-two');
 						$thisYear = (int)esc_html(date('Y'),'rb-portfolio-two');
@@ -79,61 +79,6 @@
 				<!--===============================
 				===== Copyright Text End Here =====
 				================================-->
-				
-				<!--====================================
-				===== Social Icons Area Strat Here =====
-				=====================================-->
-				<div class="col-lg-6">					
-					<div class="footer-social-icons float-end">
-						<ul>
-                            
-                            <!-- Facebook URL -->
-                            <?php
-                            if(get_option('rb_link')): ?>
-                            <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Facebook', 'rb-portfolio-two'); ?>"><i class="fa-brands fa-facebook-f"></i></a>
-							</li>
-                            <?php endif; ?>
-
-                            <!-- Twitter URL -->
-                            <?php
-                            if(get_option('rb_link')): ?>
-                            <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Twitter', 'rb-portfolio-two'); ?>"><i class="fa-brands fa-twitter"></i></a>
-							</li>
-                            <?php endif; ?>
-
-							<!-- Instagram URL -->
-                            <?php
-                            if(get_option('rb_link')): ?>
-                            <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Facebook', 'rb-portfolio-two'); ?>"><i class="fa-brands fa-instagram"></i></a>
-							</li>
-                            <?php endif; ?>
-							
-							<!-- Linkedin URL -->
-                            <?php
-                            if(get_option('rb_link')): ?>
-                            <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Linkedin', 'rb-portfolio-two'); ?>"><i class="fa-brands fa-linkedin-in"></i></a>
-							</li>
-                            <?php endif; ?>
-
-							<!-- Pinterest URL -->
-                            <?php
-                            if(get_option('rb_link')): ?>
-                            <li>
-								<a href="<?php echo esc_url(get_option('rb_link')); ?>" target="_blank" aria-label="<?php echo esc_attr('Pinterest', 'rb-portfolio-two'); ?>"><i class="fa-brands fa-pinterest-p"></i></a>
-							</li>
-                            <?php endif; ?>
-
-							
-						</ul>
-					</div>
-				</div>
-				<!--==================================
-				===== Social Icons Area End Here =====
-				===================================-->
 				
 			</div><!-- row end -->
 		</div><!-- container end -->

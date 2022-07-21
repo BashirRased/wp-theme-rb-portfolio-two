@@ -7,7 +7,7 @@ Description: RB Portfolio Two is a portfolio website.
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: rb-portfolio-two
@@ -67,10 +67,10 @@ Table of JS Content End Here
 		/*===== 3.1. Header Fixed Menu Start Here =====*/
 		$(window).scroll(function(){
 			if ($(window).scrollTop() >= 50) {
-				$('.header-menu-area').addClass('rb-portfolio-two-header-fixed');
+				$('.header-menu-area').addClass('header-fixed');
 			}
 			else {
-				$('.header-menu-area').removeClass('rb-portfolio-two-header-fixed');
+				$('.header-menu-area').removeClass('header-fixed');
 			}
 		});
 		/*===== 3.1. Header Fixed Menu End Here =====*/
@@ -78,7 +78,7 @@ Table of JS Content End Here
 		/*===== 3.2. Active Menu Click Highlight jQuery Start Here =====*/
 		var sidenav = $('.header-desktop-menu a');
 		$(sidenav).on('click', '.header-desktop-menu a', function() {
-			$(this).addClass('rb-portfolio-two-header-active-menu').siblings().removeClass('rb-portfolio-two-header-active-menu');		
+			$(this).addClass('header-active-menu').siblings().removeClass('header-active-menu');		
 		});
 		/*===== 3.2. Active Menu Click Highlight jQuery End Here =====*/
 		
@@ -87,8 +87,8 @@ Table of JS Content End Here
 			$('.scroll-menu').each(function() {
 				if ($(window).scrollTop() >= $(this).position().top - 50) {
 					var id = $(this).attr('id');
-					$('.header-desktop-menu a').removeClass('rb-portfolio-two-header-active-menu');
-					$('.header-desktop-menu a[href*=\\#' + id + ']').addClass('rb-portfolio-two-header-active-menu');
+					$('.header-desktop-menu a').removeClass('header-active-menu');
+					$('.header-desktop-menu a[href*=\\#' + id + ']').addClass('header-active-menu');
 				}
 			});
 		});
@@ -112,10 +112,10 @@ Table of JS Content End Here
 		});
 		/*===== 3.5. Menu Resize Open/Close $ End Here =====*/
 
-		$(".sub-menu .sub-menu").addClass("rb-portfolio-two-multi-dropdown-menu");
+		$(".sub-menu .sub-menu").addClass("multi-dropdown-menu");
         $(".multi-dropdown-menu").removeClass("sub-menu");
 
-        $(".sub-menu").addClass("rb-portfolio-two-dropdown-menu");
+        $(".sub-menu").addClass("dropdown-menu");
         $(".dropdown-menu").removeClass("sub-menu");
 
 		$(".multi-dropdown-menu").siblings("a").prepend
@@ -127,7 +127,7 @@ Table of JS Content End Here
 
         $('.menu-item-has-children button').on("click", function (event) {
             event.preventDefault();
-            $(this).parent("a").siblings("ul").toggleClass('rb-portfolio-two-dropdown-menu-open');
+            $(this).parent("a").siblings("ul").toggleClass('dropdown-menu-open');
         });
 		/*=====================================
 		03. Header Menu Section $ End Here
@@ -179,8 +179,8 @@ Table of JS Content End Here
 		
 			/*===== 6.3. Active Filter Menu Highlight Start Here =====*/
 			$('.portfolio-menu li').on('click', function(event){
-				$(this).siblings('.active-portfolio').removeClass('rb-portfolio-two-active-portfolio');
-				$(this).addClass('rb-portfolio-two-active-portfolio');
+				$(this).siblings('.active-portfolio').removeClass('active-portfolio');
+				$(this).addClass('active-portfolio');
 				event.preventDefault();
 			});		
 			/*===== 6.3. Active Filter Menu Highlight End Here =====*/
@@ -231,7 +231,7 @@ Table of JS Content End Here
 		
 		/*===== 8.2. Scroll To Top Button Click Effect Start Here =====*/
 		$(".scroll-to-top").on('click', function(){
-			$("html, body").animate({'scrollTop' : 0}, 3000);
+			$("html, body").animate({'scrollTop' : 0}, 300);
 			return false;
 		});
 		/*===== 8.2. Scroll To Top Button Click Effect End Here =====*/

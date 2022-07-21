@@ -9,7 +9,7 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.3
+ * @version RB Portfolio Two 1.0.4
  * @since RB Portfolio Two 1.0.3
  */
 

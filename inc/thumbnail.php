@@ -4,8 +4,8 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.3
- * @since RB Portfolio Two 1.0.3
+ * @version RB Portfolio Two 1.0.4
+ * @since RB Portfolio Two 1.0.4
  */
 
  /**
@@ -36,7 +36,7 @@ if (!function_exists('custom_post_thumbnail')) {
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 *
-	 * @since RB Portfolio Two 1.0.3
+	 * @since RB Portfolio Two 1.0.4
 	 *
 	 * @return void
 	 */
@@ -46,39 +46,20 @@ if (!function_exists('custom_post_thumbnail')) {
 		}
 		?>
 
-		<?php if (is_singular()) : ?>
+		<figure class="post-thumbnail">
+			<?php
+			// Lazy-loading attributes should be skipped for thumbnails since they are immediately in the viewport.
+			the_post_thumbnail('post-thumbnail', array( 'loading' => false));
+			?>
 
-			<figure class="post-thumbnail">
-				<?php
-				// Lazy-loading attributes should be skipped for thumbnails since they are immediately in the viewport.
-				the_post_thumbnail('post-thumbnail', array( 'loading' => false));
-				?>
+			<?php if (wp_get_attachment_caption(get_post_thumbnail_id())) : ?>
+				<figcaption class="wp-caption-text">
+					<?php echo wp_kses_post(wp_get_attachment_caption(get_post_thumbnail_id())); ?>
+				</figcaption>
+			<?php endif; ?>
 
-				<?php if (wp_get_attachment_caption(get_post_thumbnail_id())) : ?>
-					<figcaption class="wp-caption-text">
-                        <?php echo wp_kses_post(wp_get_attachment_caption(get_post_thumbnail_id())); ?>
-                    </figcaption>
-				<?php endif; ?>
+		</figure><!-- .post-thumbnail -->
 
-			</figure><!-- .post-thumbnail -->
-
-		<?php elseif(! get_post_format() && !is_singular() ) : ?>
-
-			<figure class="post-thumbnail">
-
-				<a class="post-thumbnail-inner alignwide" href="<?php the_permalink(); ?>">
-					<?php the_post_thumbnail('post-thumbnail'); ?>
-				</a>
-				
-                <?php if (wp_get_attachment_caption(get_post_thumbnail_id())) : ?>
-					<figcaption class="wp-caption-text">
-                        <?php echo wp_kses_post(wp_get_attachment_caption(get_post_thumbnail_id())); ?>
-                    </figcaption>
-				<?php endif; ?>
-
-			</figure>
-
-		<?php endif; ?>
 		<?php
 	}
 }

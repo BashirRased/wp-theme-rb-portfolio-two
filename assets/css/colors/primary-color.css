@@ -9,7 +9,7 @@ Description: RB Portfolio Two is a portfolio website.
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: rb-portfolio-two
@@ -25,37 +25,32 @@ Table of CSS Content Start Here
 	01. Default Tag
 	02. Common Classes
 	03. Theme Color Options
-	04. Section Title
-	05. Header Area
-		5.1. Header Top
-			5.1.1. Header Logo
-			5.1.2. Header Mobile Menu
-			5.1.3. Header Desktop Menu
-		5.2. Header Content
-		5.3. Header Scrolldown Button
-	06. About Me Section
-	07. My Skills Section
-	08. Hire Me Section
-	09. Services Section
-	10. CountTo Section
-	11. Portfolio Section
-	12. Resume Section
-	13. Testimonial Section
-	14. Contact Me Section
 	15. Footer Area
 	16. Scroll To Top Button
-	17. Main Page Design
 =============================
 Table of CSS Content End Here
 ===========================*/
 
-/*============================
-01. Default Tag CSS Start Here
-============================*/
 
-/*==========================
-01. Default Tag CSS End Here
-==========================*/
+
+@media all and (max-width: 991px) {
+
+	.header-desktop-menu {
+		background-color: #0d65ed;
+	}
+
+	.menu-item-has-children button {
+		color: #0d65ed;
+	}
+
+	.header-desktop-menu ul li a:hover,
+	.header-desktop-menu ul li a:focus,
+	.header-fixed .header-desktop-menu ul li a,
+	.header-fixed .header-desktop-menu ul li a:hover,
+	.header-fixed .header-desktop-menu ul li a:focus {
+		box-shadow: 0 0 5px 5px #0d65ed;
+	}	
+}
 
 /*===============================
 02. Common Classes CSS Start Here
@@ -72,199 +67,7 @@ Table of CSS Content End Here
 .content-title h3:after {
 	background-color: #0d65ed;
 }
-/*====================================
-03. Theme Color Options CSS Start Here
-====================================*/
 
-/*==================================
-03. Theme Color Options CSS End Here
-==================================*/
-
-/*==============================
-04. Section Title CSS Start Here
-==============================*/
-.section-title h2:after {
-	background-color: #0d65ed;	
-}
-/*============================
-04. Section Title CSS End Here
-============================*/
-
-/*============================
-05. Header Area CSS Start Here
-============================*/
-
-/*===== 5.1. Header Top CSS Start Here =====*/
-
-/* 5.1.1. Header Logo CSS Start Here */
-.header-logo h1 a {
-	color: #0d65ed;
-}
-/* 5.1.1. Header Logo CSS End Here */
-
-/* 5.1.2. Header Mobile Menu CSS Start Here */
-.mobile-menu-icon {
-	background-color: #0d65ed;
-}
-/* 5.1.2. Header Mobile Menu CSS End Here */
-
-/* 5.1.3. Header Desktop Menu CSS Start Here */
-.header-active-menu {
-	color: #0d65ed !important;
-}
-@media all and (max-width: 991px) {
-	.desktop-menu li {
-		background-color: #0d65ed;
-	}
-}
-/* 5.1.3. Header Desktop Menu CSS End Here */
-
-/*===== 5.1. Header Top CSS End Here =====*/
-
-/*===== 5.2. Header Content CSS Start Here =====*/
-.type-effect {
-	border-right: 6px solid #0d65ed;
-}
-/*===== 5.2. Header Content CSS End Here =====*/
-
-/*==========================
-05. Header Area CSS End Here
-==========================*/
-
-/*=================================
-06. About Me Section CSS Start Here
-=================================*/
-.btn-download-cv,
-.btn-contact-me {
-	border: 1px solid #0d65ed;
-}
-.btn-download-cv a,
-.btn-contact-me a {
-	color: #0d65ed;
-}
-.user-icon {
-	background-color: #0d65ed;
-}
-/*===============================
-06. About Me Section CSS End Here
-===============================*/
-
-/*==================================
-07. My Skills Section CSS Start Here
-==================================*/
-.skill-animation {
-	background-color: #0d65ed;
-}
-.skill-percentage {
-	background-color: #0d65ed;
-}
-.skill-percentage:before {
-	border-color: #0d65ed transparent transparent transparent;
-}
-/*================================
-07. My Skills Section CSS End Here
-================================*/
-
-/*================================
-08. Hire Me Section CSS Start Here
-================================*/
-
-/*==============================
-08. Hire Me Section CSS End Here
-==============================*/
-
-/*=================================
-09. Services Section CSS Start Here
-=================================*/
-.single-service:after {
-	background-color: #0d65ed;
-}
-.services-icon {
-	color: #0d65ed;
-}
-/*===============================
-09. Services Section CSS End Here
-===============================*/
-
-/*================================
-10. CountTo Section CSS Start Here
-================================*/
-.separator-countup {
-	background-color: #0d65ed;
-}
-/*==============================
-10. CountTo Section CSS End Here
-==============================*/
-
-/*==================================
-11. Portfolio Section CSS Start Here
-==================================*/
-.portfolio-menu ul li:hover,
-.active-portfolio {
-	background-color: #0d65ed;
-	border: 1px solid #0d65ed !important;
-}
-.portfolio-icon {
-	background-color: #0d65ed;
-}
-/*================================
-11. Portfolio Section CSS End Here
-================================*/
-
-/*===============================
-12. Resume Section CSS Start Here
-===============================*/
-.resume-single-item-subtitle {
-	background-color: #0d65ed;
-}
-/*=============================
-12. Resume Section CSS End Here
-=============================*/
-
-/*====================================
-13. Testimonial Section CSS Start Here
-====================================*/
-.client-img {
-	border: 5px solid #0d65ed;
-}
-.client-name {
-	color: #0d65ed;
-}
-.owl-dots .owl-dot.active {
-	background-color: #0d65ed !important;
-}
-/*==================================
-13. Testimonial Section CSS End Here
-==================================*/
-
-/*===================================
-14. Contact Me Section CSS Start Here
-===================================*/
-.contact-info-box:before,
-.contact-info-box:after {
-	border: 2px solid #0d65ed;
-}
-.contact-info-icon {
-	color: #0d65ed;
-	border: 1px solid #0d65ed;
-}
-.contact-info-icon:hover {
-	background-color: #0d65ed;
-}
-.contact-field input:focus,
-.contact-field textarea:focus {
-	border-bottom: 1px solid #0d65ed;
-}
-.massage-send {
-	color: #0d65ed;
-	border: 1px solid #0d65ed;
-}
-.massage-send:hover {
-	background-color: #0d65ed;
-}
-/*=================================
-14. Contact Me Section CSS End Here
-=================================*/
 
 /*============================
 15. Footer Area CSS Start Here
@@ -301,16 +104,474 @@ Table of CSS Content End Here
 .scroll-to-top {
 	background-color: #0d65ed;
 }
+
+.scroll-to-top:focus {
+	box-shadow: 0 0 5px 5px #0d65ed;
+}
 /*===================================
 16. Scroll To Top Button CSS End Here
 ===================================*/
 
-/*=================================
-17. Main Page Design CSS Start Here
-=================================*/
-.feature-icon i {
+.header-site-title a {
+	color: #0d65ed;
+}
+
+.header-mobile-menu-btn {
 	background-color: #0d65ed;
 }
-/*===============================
-17. Main Page Design CSS End Here
-===============================*/
+
+.header-mobile-menu-btn:focus {
+	box-shadow: 0 0 5px 5px #0d65ed;
+}
+
+.menu-item-has-children button:focus {
+	border: 3px solid #0d65ed;
+}
+
+.header-desktop-menu ul li a:hover,
+.header-desktop-menu ul li a:focus,
+.header-fixed .header-desktop-menu ul li a:hover,
+.header-fixed .header-desktop-menu ul li a:focus {
+	color: #0d65ed;
+}
+
+.header-desktop-menu ul li a:hover i,
+.header-desktop-menu ul li a:focus i {
+	color: #0d65ed;
+}
+
+.dropdown-menu {
+	box-shadow: 0 0 5px 5px #0d65ed;
+}
+
+.dropdown-menu li a {
+	border-top: 2px solid #0d65ed;
+}
+
+.multi-dropdown-menu {
+	box-shadow: 0 0 5px 5px #0d65ed;
+}
+
+.multi-dropdown-menu li a {
+	border-right: 2px solid #0d65ed;
+}
+
+.posted-format-meta i,
+.posted-format-meta .posted-format-meta-text {
+	color: #0d65ed;
+}
+
+.posted-by i,
+.posted-on i,
+.posted-categories i,
+.posted-comments i,
+.posted-edit .fa-edit {
+	color: #0d65ed;
+	margin-right: 5px;
+}
+
+.btn {
+	color: #0d65ed;
+	border: 1px solid #0d65ed;
+}
+
+.btn::before {
+	background-color: #0d65ed;
+}
+
+.header-breadcrumbs-title {
+	color: #0d65ed;
+}
+
+.header-breadcrumbs-title::before {
+	background-color: #0d65ed;
+}
+
+.header-breadcrumbs-nav ul li a {
+	color: #0d65ed;
+}
+
+.header-breadcrumbs-text strong {
+	color: #0d65ed;
+}
+
+.content-header-entry-title a,
+.content-single-entry-header-title a {
+	color: #0d65ed;
+}
+
+.content-header-entry-title a:hover,
+.content-header-entry-title a:focus,
+.content-entry-meta a:hover,
+.content-entry-meta a:focus,
+.content-single-entry-meta a:hover,
+.content-single-entry-meta a:focus {
+	color: #0d65ed;
+}
+
+.page-numbers,
+.nav-previous a,
+.nav-next a {
+	border: 1px solid #0d65ed;
+}
+
+.page-numbers.current,
+.page-numbers:hover,
+.page-numbers:focus,
+.nav-previous a:hover,
+.nav-next a:hover,
+.nav-previous a:focus,
+.nav-next a:focus {
+	background-color: #0d65ed;
+}
+
+.posted-tags i {
+	color: #0d65ed;
+}
+
+.posted-tags a {
+	color: #0d6efd;
+}
+
+.posted-tags a:hover,
+.posted-tags a:focus {
+	color: #0d6efd;
+}
+
+.content-single-entry-header-title {
+	color: #0d65ed;
+}
+
+.wp-pages-link-area .post-page-numbers {
+	border: 1px solid #0d65ed;
+}
+
+.wp-pages-link-area .post-page-numbers:hover,
+.wp-pages-link-area .post-page-numbers:focus,
+.wp-pages-link-area .post-page-numbers.current {
+	background-color: #0d65ed;
+}
+
+.comment-title {
+	color: #0d65ed;
+}
+
+.comments-list .comment-author .url {
+	color: #0d65ed;
+}
+
+.comments-list .comment-metadata {
+	border-bottom: 1px solid #0d65ed;
+	border-top: 1px solid #0d65ed;
+}
+
+.comments-list .comment-reply-link {
+	color: #0d65ed;
+	border: 1px solid #0d65ed;
+}
+
+.comments-list .comment-reply-link::before {
+	background-color: #0d65ed;
+}
+
+.comments-form .comment-reply-title {
+	color: #0d65ed;
+}
+
+.comments-form .logged-in-as a {
+	color: #0d65ed;
+	border: 1px solid #0d65ed;
+}
+
+.comments-form .logged-in-as a::before {
+	background-color: #0d65ed;
+}
+
+.comments-form input[type='text'],
+.comments-form input[type='email'],
+.comments-form input[type='url'] {
+	border: 2px solid #0d65ed;
+}
+
+.comments-form input[type='text']:focus,
+.comments-form input[type='email']:focus,
+.comments-form input[type='url']:focus {
+	border: 2px solid #0d65ed;
+}
+
+.comments-form textarea {
+	border: 2px solid #0d65ed;
+}
+
+.comments-form textarea:focus-visible {
+	border: 2px solid #0d65ed;
+}
+
+.comments-form .comment-form .submit {
+	color: #0d65ed;
+	border: 1px solid #0d65ed;
+}
+
+.comments-form .comment-form .submit:hover,
+.comments-form .comment-form .submit:focus {
+	background-color: #0d65ed;
+	border-color: #0d65ed;
+}
+
+.comments-list #cancel-comment-reply-link {
+	color: #0d65ed;
+	border: 1px solid #0d65ed;
+}
+
+.comments-list #cancel-comment-reply-link::before {
+	background-color: #0d65ed;
+}
+
+.post-navigation a i {
+	border: 1px solid #0d65ed;
+}
+
+.post-navigation a i:hover,
+.post-navigation a i:focus {
+	background-color: #0d65ed;
+}
+
+.author-bio .avatar {
+	border: 2px solid #0d65ed;
+}
+
+.author-title {
+	color: #0d65ed;
+}
+
+.search-page-header-title span {
+	color: #0d65ed;
+}
+
+.error-page-header-title {
+	color: #0d65ed;
+}
+
+.widget-item-title {
+	background: #0d65ed;
+}
+
+.widget-item a {
+	color: #0d65ed;
+}
+
+/* 7.1. Quotation Widget CSS Start Here */
+.wp-block-quote {
+	border-color: #0d65ed;
+}
+
+.wp-block-quote cite {
+	color: #0d65ed;
+}
+
+/* 7.1. Quotation Widget CSS End Here */
+
+
+
+/* 7.2. Code Widget CSS Start Here */
+.wp-block-code>code {
+	color: #0d65ed;
+	border-color: #0d65ed;
+}
+/* 7.2. Code Widget CSS End Here */
+
+/* 7.3. Preformatted Text Widget CSS Start Here */
+.wp-block-preformatted {
+	color: #0d65ed;
+}
+/* 7.3. Preformatted Text Widget CSS End Here */
+
+/* 7.4. Pull Quotation Widget CSS Start Here */
+.wp-block-pullquote {
+	border-color: #0d65ed;
+}
+
+.wp-block-pullquote cite {
+	color: #0d65ed;
+}
+/* 7.4. Pull Quotation Widget CSS End Here */
+
+/* 7.5. Table Widget CSS Start Here */
+.wp-block-table figcaption {
+	background-color: #0d65ed;
+}
+/* 7.5. Table Widget CSS End Here */
+
+/* 7.6. Images Widget CSS Start Here */
+.wp-block-image figcaption {
+	background-color: #0d65ed;
+}
+/* 7.6. Images Widget CSS End Here */
+
+/* 7.8. Audio Widget CSS Start Here */
+.wp-block-audio figcaption {
+	background-color: #0d65ed;
+}
+/* 7.8. Audio Widget CSS End Here */
+
+.wp-block-file a.wp-block-file__button {
+	color: #0d65ed;
+	border: 1px solid #0d65ed;
+}
+
+.wp-block-file a.wp-block-file__button:hover,
+.wp-block-file a.wp-block-file__button:focus {
+	background-color: #0d65ed;
+}
+
+.wp-block-video figcaption {
+	background-color: #0d65ed;
+}
+
+.is-style-outline>.wp-block-button__link:not(.has-text-color) {
+	color: #0d65ed;
+	border: 1px solid #0d65ed;
+}
+
+.is-style-outline .wp-block-button__link:hover,
+.is-style-outline .wp-block-button__link:focus {
+	background-color: #0d65ed;
+}
+
+.wp-block-button__link {
+	background-color: #0d65ed;
+	border: 1px solid #0d65ed;
+}
+
+.wp-block-button__link:hover,
+.wp-block-button__link:focus {
+	color: #0d65ed;
+}
+
+/* 7.13. Separator Widget CSS Start Here */
+.wp-block-separator {
+	background-color: #0d65ed;
+	color: #0d65ed;
+}
+
+/* 7.13. Separator Widget CSS End Here */
+
+.wp-block-archives-list li::before {
+	background-color: #0d65ed;
+}
+
+.wp-block-archives-list li a {
+	color: #0d65ed;
+}
+
+.wp-block-calendar table caption {
+	background-color: #0d65ed;
+}
+
+.wp-calendar-table #today {
+	background-color: #0d65ed;
+}
+
+.wp-block-categories-list a::before {
+	background-color: #0d65ed;
+}
+
+.wp-block-categories-list a:hover,
+.wp-block-categories-list a:focus {
+	color: #0d65ed;
+}
+
+.wp-block-search__label {
+	background-color: #0d65ed;
+}
+
+.wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+	border: 1px solid #0d65ed;
+}
+
+.wp-block-search__input {
+	border: 1px solid #0d65ed;
+}
+
+.wp-block-search__button {
+	border: 1px solid #0d65ed;
+	background-color: #0d65ed;
+}
+
+.wp-block-latest-posts li a::before {
+	background-color: #0d65ed;
+}
+
+.wp-block-latest-posts li a:hover,
+.wp-block-categories-list a:focus {
+	color: #0d65ed;
+}
+
+.wp-block-latest-comments__comment::before {
+	background-color: #0d65ed;
+}
+
+.wp-block-page-list li a::before {
+	background-color: #0d65ed;
+}
+
+nav[aria-label="Meta"] ul li::before {
+	background-color: #0d65ed;
+}
+
+.wp-block-rss li::before {
+	background-color: #0d65ed;
+}
+
+.widget-item .menu li a::before {
+	background-color: #0d65ed;
+}
+
+.tag-cloud-link {
+	border: 1px solid #0d65ed;
+}
+
+.tag-cloud-link:hover,
+.tag-cloud-link:focus {
+	background-color: #0d65ed;
+}
+
+.widget_meta ul li::before {
+	background-color: #0d65ed;
+}
+
+.widget_block ul li::before {
+	background-color: #0d65ed;
+}
+
+/* 7.14. Image Gallery Widget CSS Start Here */
+.blocks-gallery-caption {
+	background-color: #0d65ed;
+}
+
+/* 7.14. Image Gallery Widget CSS End Here */
+
+/* 7.17. Headline Widget CSS Start Here */
+.wp-block-group__inner-container h1,
+.wp-block-group__inner-container h2,
+.wp-block-group__inner-container h3,
+.wp-block-group__inner-container h5,
+.wp-block-group__inner-container h5,
+.wp-block-group__inner-container h6 {
+	color: #0d65ed;
+}
+
+/* 7.17. Headline Widget CSS End Here */
+
+
+.content-none-search-keyword {
+	color: #0d65ed;
+}
+
+.search-box {
+	border: 1px solid #0d65ed;
+}
+
+.search-btn {
+	background-color: #0d65ed;
+}

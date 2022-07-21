@@ -6,8 +6,8 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.3
- * @since RB Portfolio Two 1.0.3
+ * @version RB Portfolio Two 1.0.4
+ * @since RB Portfolio Two 1.0.4
  */
 
 get_header();
@@ -63,7 +63,7 @@ get_header();
 
                     <?php if (wp_get_attachment_caption()) : ?>
                         <figcaption class="attachment-image-caption-text">
-                            <?php esc_html_e(wp_get_attachment_caption()); ?>
+                            <?php wp_get_attachment_caption(); ?>
                         </figcaption>
                     <?php endif; ?>
 

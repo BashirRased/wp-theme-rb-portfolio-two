@@ -3,7 +3,7 @@ Contributors: bashirrased
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Stable tag: 1.0.3
+Stable tag: 1.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -21,51 +21,6 @@ Tags: one-column, blog, custom-logo, custom-menu, featured-images, right-sidebar
 == Upgrade Notice ==
 
 == Resources ==
-
-= Images =
-Image used in Screenshot
-License URL : https://www.pexels.com/license/
-Sources: https://www.pexels.com/photo/photo-of-man-holding-a-book-927022/
-
-header.jpg
-License:  Creative Commons Zero (CC0) license.
-License URL: https://www.pexels.com/license/
-Source:  https://www.pexels.com/photo/photo-of-man-holding-a-book-927022/
-
-user.jpg
-License:  Creative Commons Zero (CC0) license.
-License URL: https://www.pexels.com/license/
-Source:  https://www.pexels.com/photo/man-crossed-arms-1516680/
-
-hire-me-bg.jpg
-License:  Creative Commons Zero (CC0) license.
-License URL: https://www.pexels.com/license/
-Source:  https://www.pexels.com/photo/people-working-in-front-of-the-computer-3184357/
-
-countup-bg.jpg
-License:  Creative Commons Zero (CC0) license.
-License URL: https://www.pexels.com/license/
-Source:  https://www.pexels.com/photo/white-apple-keyboard-near-white-cup-917463/
-
-testimonial-bg.jpg
-License:  Creative Commons Zero (CC0) license.
-License URL: https://www.pexels.com/license/
-Source:  https://www.pexels.com/photo/simple-workspace-at-home-6476588/
-
-client-1.jpg
-License:  Creative Commons Zero (CC0) license.
-License URL: https://www.pexels.com/license/
-Source:  https://www.pexels.com/photo/man-smiling-behind-wall-220453/
-
-client-2.jpg
-License:  Creative Commons Zero (CC0) license.
-License URL: https://www.pexels.com/license/
-Source:  https://www.pexels.com/photo/portrait-photo-of-smiling-man-with-his-arms-crossed-standing-in-front-of-white-wall-2379004/
-
-client-3.jpg
-License:  Creative Commons Zero (CC0) license.
-License URL: https://www.pexels.com/license/
-Source:  https://www.pexels.com/photo/man-about-to-touch-his-face-wearing-blue-suit-718261/
 
 = Font Awesome Free 6.1.1 =
   - Author: @fontawesome
@@ -126,7 +81,7 @@ Source:  https://www.pexels.com/photo/man-about-to-touch-his-face-wearing-blue-s
   - Copyright 2010-2018 Metafizzy
 
 == Copyright ==
-RB Portfolio Two WordPress Theme, 2020-2021 WordPress.org
+RB Portfolio Two Theme, 2022 Bashir Rased.
 RB Portfolio Two is distributed under the terms of the GNU GPL.
 
 == Changelog ==

@@ -9,13 +9,13 @@ Description:
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: rb-portfolio-two
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks
 
-RB Portfolio Two WordPress Theme, (C) 2022 WordPress.org
+RB Portfolio Two Theme, 2022 Bashir Rased.
 RB Portfolio Two is distributed under the terms of the GNU GPL.
 */
 
@@ -23,7 +23,6 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 
 	.header-desktop-menu {
 		width: 100%;
-		background-color: #0d65ed;
 	}
 
 	.dropdown-menu,
@@ -63,7 +62,6 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 		display: block;
 		border: none;
 		background-color: #fff;
-		color: #0d65ed;
 		position: absolute;
 		font-size: 30px;
 		top: 5px;
@@ -85,7 +83,6 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 	.header-fixed .header-desktop-menu ul li a:hover,
 	.header-fixed .header-desktop-menu ul li a:focus {
 		color: #fff;
-		box-shadow: 0 0 5px 5px #0d65ed;
 		border: 2px solid #fff;
 	}
 
@@ -115,19 +112,6 @@ RB Portfolio Two is distributed under the terms of the GNU GPL.
 
 	.header-desktop-menu a {
 		color: #fff;
-	}
-
-	/**/
-
-	/**/
-
-	.about-me-left {
-		margin-bottom: 30px;
-	}
-
-	.footer-area .float-left,
-	.footer-area .float-right {
-		float: none !important;
 	}
 
 	.copyright-text {
