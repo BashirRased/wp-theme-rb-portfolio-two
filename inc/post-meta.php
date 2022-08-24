@@ -4,12 +4,12 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.4
- * @since RB Portfolio Two 1.0.3
+ * @version RB Portfolio Two 1.0.5
+ * @since RB Portfolio Two 1.0.5
  */
 
 /* Post Author Meta */
-if (!function_exists('custom_post_by')) {
+if (!function_exists('rb_portfolio_two_custom_post_by')) {
 	/**
 	 * Prints HTML with meta information about theme author.
 	 *
@@ -17,7 +17,7 @@ if (!function_exists('custom_post_by')) {
 	 *
 	 * @return void
 	 */
-	function custom_post_by() {
+	function rb_portfolio_two_custom_post_by() {
 		if (! get_the_author_meta('description') && post_type_supports(get_post_type(), 'author')) {
 			echo '<span class="posted-by"><i class="fas fa-user"></i>';
 			printf(
@@ -29,10 +29,10 @@ if (!function_exists('custom_post_by')) {
 		}
 	}
 }
-add_action( 'rb_portfolio_two_post_by', 'custom_post_by' );
+add_action( 'rb_portfolio_two_post_by', 'rb_portfolio_two_custom_post_by' );
 
 /* Post Date Meta */
-if (!function_exists('custom_post_on')) {
+if (!function_exists('rb_portfolio_two_custom_post_on')) {
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
 	 *
@@ -40,7 +40,7 @@ if (!function_exists('custom_post_on')) {
 	 *
 	 * @return void
 	 */
-	function custom_post_on() {
+	function rb_portfolio_two_custom_post_on() {
 		$archive_year  = get_the_time('Y');
 		$archive_month = get_the_time('m'); 
         $archive_day   = get_the_time('d');
@@ -67,11 +67,11 @@ if (!function_exists('custom_post_on')) {
 		echo '</span>';
 	}
 }
-add_action( 'rb_portfolio_two_post_on', 'custom_post_on' );
+add_action( 'rb_portfolio_two_post_on', 'rb_portfolio_two_custom_post_on' );
 
 /* Post Categories Meta */
-if(!function_exists('custom_post_category')){
-	function custom_post_category(){
+if(!function_exists('rb_portfolio_two_custom_post_category')){
+	function rb_portfolio_two_custom_post_category(){
 		/* translators: Used between list items, there is a space after the comma. */
 		$categories_list = get_the_category_list(__(', ', 'rb-portfolio-two') );
 		if ($categories_list) {
@@ -85,12 +85,12 @@ if(!function_exists('custom_post_category')){
 		}
 	}
 }
-add_action( 'rb_portfolio_two_post_category', 'custom_post_category' );
+add_action( 'rb_portfolio_two_post_category', 'rb_portfolio_two_custom_post_category' );
 
 /* Post Comments Meta */
-if (!function_exists('custom_post_comments')) {
+if (!function_exists('rb_portfolio_two_custom_post_comments')) {
 
-	function custom_post_comments() {
+	function rb_portfolio_two_custom_post_comments() {
 		echo '<span class="posted-comments"><i class="fas fa-comments"></i>';
 		comments_popup_link(
 			__('No Comments','rb-portfolio-two'),
@@ -103,12 +103,12 @@ if (!function_exists('custom_post_comments')) {
 	}
 
 }
-add_action( 'rb_portfolio_two_post_comments', 'custom_post_comments' );
+add_action( 'rb_portfolio_two_post_comments', 'rb_portfolio_two_custom_post_comments' );
 
 /* Post Edit Meta */
-if(!function_exists('custom_post_edit')) {
+if(!function_exists('rb_portfolio_two_custom_post_edit')) {
     
-    function custom_post_edit() {
+    function rb_portfolio_two_custom_post_edit() {
         // Edit post link.
         edit_post_link(
             // $text Parameter
@@ -130,12 +130,12 @@ if(!function_exists('custom_post_edit')) {
     }
 
 }
-add_action( 'rb_portfolio_two_post_edit', 'custom_post_edit');
+add_action( 'rb_portfolio_two_post_edit', 'rb_portfolio_two_custom_post_edit');
 
 /* Post Tag Meta */
-if(!function_exists('custom_tag')) {
+if(!function_exists('rb_portfolio_two_custom_tag')) {
     
-    function custom_tag (){
+    function rb_portfolio_two_custom_tag (){
         
         if (has_tag()) {
 			echo '<footer class="content-single-entry-footer">';
@@ -157,4 +157,4 @@ if(!function_exists('custom_tag')) {
 
     }
 }
-add_action( 'rb_portfolio_two_tag', 'custom_tag' );
+add_action( 'rb_portfolio_two_tag', 'rb_portfolio_two_custom_tag' );

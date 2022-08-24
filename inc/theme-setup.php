@@ -6,8 +6,8 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.4
- * @since RB Portfolio Two 1.0.3
+ * @version RB Portfolio Two 1.0.5
+ * @since RB Portfolio Two 1.0.5
  */
 
 if (!function_exists('rb_portfolio_two_theme_setup')) {
@@ -18,7 +18,7 @@ if (!function_exists('rb_portfolio_two_theme_setup')) {
 	 * runs before the init hook. The init hook is too late for some features, such
 	 * as indicating support for post thumbnails.
 	 *
-	 * @since RB Portfolio Two 1.0
+	 * @since RB Portfolio Two 1.0.5
 	 *
 	 * @return void
 	 */
@@ -89,13 +89,13 @@ if (!function_exists('rb_portfolio_two_theme_setup')) {
 		 *
 		 * @link https://codex.wordpress.org/Theme_Logo
 		 */
-		// $logo_width  = 300;
+		$logo_width  = 300;
 		$logo_height = 100;
 
 		$args = array(
 			'height'              => absint($logo_height),
-			// 'width'               => absint($logo_width),
-			// 'flex-width'          => false,
+			'width'               => absint($logo_width),
+			'flex-width'          => true,
 			'flex-height'         => true,
 			'unlink-homepage-logo'=> true,
 		);
@@ -109,18 +109,6 @@ if (!function_exists('rb_portfolio_two_theme_setup')) {
 		// Add support for full and wide align images.
 		add_theme_support('align-wide');
 
-		// Note, the is_IE global variable is defined by WordPress and is used
-		// to detect if the current browser is internet explorer.
-		global $is_IE;
-		if ($is_IE) {
-			$editor_stylesheet_path = './assets/css/ie-editor.css';
-		} else {
-			$editor_stylesheet_path = './assets/css/style-editor.css';
-		}
-
-		// Enqueue editor styles.
-		add_editor_style($editor_stylesheet_path);
-
 		// Custom background color.
 		$args = array(
 			'default-color' => 'd1e4dd',
@@ -129,9 +117,9 @@ if (!function_exists('rb_portfolio_two_theme_setup')) {
 
 		// Custom header.
         $args = array(
-            // 'width'              => 1000,
+            'width'              => 1000,
             'height'             => 350,
-            // 'flex-width'         => true,
+            'flex-width'         => true,
             'flex-height'        => true,
         );
         add_theme_support('custom-header', $args);		

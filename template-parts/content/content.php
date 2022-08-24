@@ -6,7 +6,7 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.4
+ * @version RB Portfolio Two 1.0.5
  * @since RB Portfolio Two 1.0.3
  */
 
@@ -39,7 +39,7 @@
 			do_action ( 'rb_portfolio_two_post_edit' );
 		?>
 	</div>
-
+	
 	<div class="content-entry-body">
 		<?php
 		get_template_part('template-parts/excerpt/excerpt', get_post_format());

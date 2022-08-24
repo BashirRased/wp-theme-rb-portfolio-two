@@ -4,12 +4,12 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.4
- * @since RB Portfolio Two 1.0.3
+ * @version RB Portfolio Two 1.0.5
+ * @since RB Portfolio Two 1.0.5
  */
 
-if(!function_exists( 'custom_post_format' )) {
-    function custom_post_format() { ?>        
+if(!function_exists( 'rb_portfolio_two_custom_post_format' )) {
+    function rb_portfolio_two_custom_post_format() { ?>        
         
         <!-- Sticky Post Format -->
         <?php if(is_sticky()): ?>
@@ -31,24 +31,6 @@ if(!function_exists( 'custom_post_format' )) {
 
         <!-- Password Post Format -->
         <?php if(post_password_required()): ?>
-        <div class="posted-format-meta">
-            <i class="fa-solid fa-lock"></i>
-            <?php
-            printf(
-                /* translators:
-                %1$s: Post Type: Common Text.
-                %2$s: Post Type: Change Text.
-                */
-                '%1$s <strong class="posted-format-meta-text">%2$s</strong>',
-                esc_html__('Post Type:', 'rb-portfolio-two'),
-                esc_html__('Password', 'rb-portfolio-two')
-            );
-            ?>
-        </div>
-        <?php endif; ?>
-
-         <!-- Password Post Format -->
-         <?php if(post_password_required()): ?>
         <div class="posted-format-meta">
             <i class="fa-solid fa-lock"></i>
             <?php
@@ -259,4 +241,4 @@ if(!function_exists( 'custom_post_format' )) {
         <?php endif;
     }
 }
-add_action( 'rb_portfolio_two_post_format', 'custom_post_format');
+add_action( 'rb_portfolio_two_post_format', 'rb_portfolio_two_custom_post_format');

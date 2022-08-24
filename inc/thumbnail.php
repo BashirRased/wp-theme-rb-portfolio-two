@@ -4,8 +4,8 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.4
- * @since RB Portfolio Two 1.0.4
+ * @version RB Portfolio Two 1.0.5
+ * @since RB Portfolio Two 1.0.5
  */
 
  /**
@@ -36,7 +36,7 @@ if (!function_exists('custom_post_thumbnail')) {
 	 * Wraps the post thumbnail in an anchor element on index views, or a div
 	 * element when on single views.
 	 *
-	 * @since RB Portfolio Two 1.0.4
+	 * @since RB Portfolio Two 1.0.5
 	 *
 	 * @return void
 	 */

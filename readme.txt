@@ -3,7 +3,7 @@ Contributors: bashirrased
 Requires at least: 5.9
 Tested up to: 5.9
 Requires PHP: 5.6
-Stable tag: 1.0.4
+Stable tag: 1.0.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -81,7 +81,7 @@ Tags: one-column, blog, custom-logo, custom-menu, featured-images, right-sidebar
   - Copyright 2010-2018 Metafizzy
 
 == Copyright ==
-RB Portfolio Two Theme, 2022 Bashir Rased.
+RB Portfolio Two WordPress Theme, (C) 2022 Bashir Rased.
 RB Portfolio Two is distributed under the terms of the GNU GPL.
 
 == Changelog ==

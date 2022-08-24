@@ -4,16 +4,16 @@ Theme URI: https://github.com/BashirRased/wp-theme-rb-portfolio-two
 Author: Bashir Rased
 Author URI: https://profiles.wordpress.org/bashirrased2017/ 
 Description: RB Portfolio Two is a portfolio website.
-Requires at least: 5.9
-Tested up to: 5.9
+Requires at least: 5.3
+Tested up to: 6.0
 Requires PHP: 5.6
-Version: 1.0.4
+Version: 1.0.5
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: rb-portfolio-two
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, theme-options, threaded-comments, translation-ready, block-patterns, block-styles, wide-blocks
 
-RB Portfolio Two WordPress Theme, (C) 2022 WordPress.org
+RB Portfolio Two WordPress Theme, (C) 2022 Bashir Rased
 RB Portfolio Two is distributed under the terms of the GNU GPL.
 */
 
