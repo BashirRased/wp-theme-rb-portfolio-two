@@ -4,8 +4,8 @@
  *
  * @package RB Free Theme
  * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.5
- * @since RB Portfolio Two 1.0.5
+ * @version RB Portfolio Two 1.0.6
+ * @since RB Portfolio Two 1.0.6
  */
 
 if(!function_exists( 'rb_portfolio_two_custom_post_format' )) {

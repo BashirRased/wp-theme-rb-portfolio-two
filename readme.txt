@@ -1,9 +1,9 @@
 === RB Portfolio Two ===
 Contributors: bashirrased
-Requires at least: 5.9
-Tested up to: 5.9
+Requires at least: 5.3
+Tested up to: 6.0
 Requires PHP: 5.6
-Stable tag: 1.0.5
+Stable tag: 1.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,7 +22,7 @@ Tags: one-column, blog, custom-logo, custom-menu, featured-images, right-sidebar
 
 == Resources ==
 
-= Font Awesome Free 6.1.1 =
+= Font Awesome Free 6.1.2 =
   - Author: @fontawesome
   - License: (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
   - License URL: https://fontawesome.com/license/free
