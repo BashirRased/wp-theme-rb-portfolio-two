@@ -4,30 +4,31 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  *
- * @package RB Free Theme
- * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.7
- * @since RB Portfolio Two 1.0.3
+ * @package RB_Themes
+ * @subpackage RB_Portfolio_Two
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 get_header();
 
 ?>
 
 <div id="page-content" class="search-page">
-    <div class="container">
-        <div class="row">
+	<div class="container">
+		<div class="row">
 
 			<?php
-				if(is_active_sidebar('rb-portfolio-two-sidebar-right')){
-					$rb_portfolio_two_page_content_class = 'col-lg-8';
-				}
-				else {
-					$rb_portfolio_two_page_content_class = 'col-lg-12';
-				}
+			if ( is_active_sidebar( 'rb-portfolio-two-sidebar-right' ) ) {
+				$rb_portfolio_two_page_content_class = 'col-lg-8';
+			} else {
+				$rb_portfolio_two_page_content_class = 'col-lg-12';
+			}
 			?>
 
-			<main id="primary" class="<?php echo esc_attr($rb_portfolio_two_page_content_class); ?>">
+			<main id="primary" class="<?php echo esc_attr( $rb_portfolio_two_page_content_class ); ?>">
 				<?php
 				if ( have_posts() ) {
 					?>
@@ -37,8 +38,8 @@ get_header();
 							<?php
 							printf(
 								/* translators: %s: Search term. */
-								esc_html__('Results for "%s"','rb-portfolio-two'),
-								'<span>'.esc_html(get_search_query()).'</span>'
+								esc_html__( 'Results for "%s"', 'rb-portfolio-two' ),
+								'<span>' . esc_html( get_search_query() ) . '</span>'
 							);
 							?>
 						</h2><!-- .search-page-title -->
@@ -64,7 +65,7 @@ get_header();
 					
 					<?php
 					// Start the Loop.
-					while (have_posts()) {
+					while ( have_posts() ) {
 						the_post();
 
 						/*
@@ -72,30 +73,32 @@ get_header();
 						* If you want to override this in a child theme, then include a file
 						* called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						*/
-						get_template_part('template-parts/content/content');
+						get_template_part( 'template-parts/content/content' );
 					} // End the loop.
-					
+
 					// Post Pagination.
-					the_posts_pagination(array(
-						'mid_size'  => 2
-					));	
+					the_posts_pagination(
+						array(
+							'mid_size' => 2,
+						)
+					);
 
 					// If no content, include the "No posts found" template.
 				} else {
-					get_template_part('template-parts/content/content-none');
+					get_template_part( 'template-parts/content/content-none' );
 				}
 				?>
 					
 			</main><!-- #primary -->
 
 			<?php
-			if(is_active_sidebar('rb-portfolio-two-sidebar-right')){
+			if ( is_active_sidebar( 'rb-portfolio-two-sidebar-right' ) ) {
 				get_sidebar();
 			}
 			?>
 
-        </div><!-- row end -->        
-    </div><!-- container end -->
+		</div><!-- row end -->        
+	</div><!-- container end -->
 </div><!-- #page-content -->
 
 <?php

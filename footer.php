@@ -6,15 +6,16 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package RB Free Theme
- * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.7
- * @since RB Portfolio Two 1.0.7
+ * @package RB_Themes
+ * @subpackage RB_Portfolio_Two
  */
 
-?>
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
-    <!--============================== 
+?>
+	<!--============================== 
 	===== Footer Area Strat Here =====
 	===============================-->
 	<footer class="footer-area">
@@ -26,55 +27,32 @@
 				==================================-->
 				<div class="col-lg-12">
 					<?php
-						$fromYear = (int)esc_html('2022','rb-portfolio-two');
-						$thisYear = (int)esc_html(date('Y'),'rb-portfolio-two');
-						$copyrightYear = $fromYear . (($fromYear != $thisYear) ? '-' . $thisYear : '');
+					$from_year = 2022;
+					$this_year = (int) gmdate( 'Y' );
 
-						printf(
-							'<p class="copyright-text">%1$s <a href="%2$s" target="_blank">%3$s</a> %4$s <a href="%5$s" target="_blank"> %6$s </a> %7$s %8$s</p>',
-							
-                            /* translators:
-							%1$s: Copyright Symbol.
-							*/
-							esc_html('Copyright &copy; By ','rb-portfolio-two'),
+					$copyright_year = ( $from_year !== $this_year )
+						? $from_year . '-' . $this_year
+						: (string) $from_year;
 
-                            /* translators:
-							%2$s: Home URL.
-							*/
-							esc_url(home_url('/')),
-
-                            /* translators:
-							%3$s: Site Name.
-							*/
-							esc_html(get_bloginfo('name'),'rb-portfolio-two'),
-
-                            /* translators:
-							%4$s: Powered By.
-							*/
-							esc_html('Powered By ','rb-portfolio-two'),
-
-                            /* translators:
-                            %5$s: Powered By URL.
-							*/
-                            esc_url('https://profiles.wordpress.org/bashirrased2017/'),
-
-                            /* translators:
-							%6$s: Powered By Name.
-							*/
-							esc_html('Bashir Rased','rb-portfolio-two'),
-
-                            /* translators:
-                            %7$s: Copyright Year.
-							*/
-							esc_html($copyrightYear,'rb-portfolio-two'),
-
-                            /* translators:
-							%8$s: Copyright Condition.
-							*/
-							esc_html('| All Rights Reserved.','rb-portfolio-two')
-						);
+					printf(
+						wp_kses_post(
+							/* translators: 1: Home URL, 2: Site name, 3: Profile URL, 4: Author name, 5: Copyright years */
+							esc_html__(
+								'<p class="copyright-text">
+									Copyright &copy; <a href="%1$s">%2$s</a> |
+									Powered by <a href="%3$s" target="_blank" rel="noopener noreferrer">%4$s</a>
+									%5$s | All Rights Reserved.
+								</p>',
+								'rb-portfolio-two'
+							)
+						),
+						esc_url( home_url( '/' ) ),
+						esc_html( get_bloginfo( 'name' ) ),
+						esc_url( 'https://bashir-rased.com/ ' ),
+						esc_html__( 'Bashir Rased', 'rb-portfolio-two' ),
+						esc_html( $copyright_year )
+					);
 					?>
-					
 				</div>
 				<!--===============================
 				===== Copyright Text End Here =====
@@ -91,13 +69,13 @@
 	===== Scroll to Top Area Strat Here =====
 	======================================-->
 	<button class="scroll-to-top">
-        <i class="fa-solid fa-angles-up"></i>
+		<i class="fa-solid fa-angles-up"></i>
 	</button>
 	<!--=================================== 
 	===== Scroll to Top Area End Here =====
 	====================================-->
 	
 	</div><!-- #page -->
-    <?php wp_footer(); ?>
-    </body>
+	<?php wp_footer(); ?>
+	</body>
 </html>

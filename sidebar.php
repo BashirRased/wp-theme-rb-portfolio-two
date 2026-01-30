@@ -2,13 +2,15 @@
 /**
  * The sidebar containing the main widget area.
  *
- * @package RB Free Theme
- * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.7
- * @since RB Portfolio Two 1.0.3
+ * @package RB_Themes
+ * @subpackage RB_Portfolio_Two
  */
 
-if (!is_active_sidebar('rb-portfolio-two-sidebar-right')) {
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+if ( ! is_active_sidebar( 'rb-portfolio-two-sidebar-right' ) ) {
 	return;
 }
-dynamic_sidebar('rb-portfolio-two-sidebar-right');
+dynamic_sidebar( 'rb-portfolio-two-sidebar-right' );

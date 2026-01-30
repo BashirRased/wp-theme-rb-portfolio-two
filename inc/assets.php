@@ -130,15 +130,6 @@ function rb_portfolio_two_jquery_plugin_assets() {
 }
 add_action( 'wp_enqueue_scripts', 'rb_portfolio_two_jquery_plugin_assets' );
 
-function rb_portfolio_two_browser_config_assets() {
-	// Normalize v8.0.1
-	wp_enqueue_style( 'normalize', RB_PORTFOLIO_TWO_CSS . 'normalize.min.css', '', '8.0.1', 'all' );
-
-	// Modernizr v2.8.3
-	wp_enqueue_script( 'modernizr', RB_PORTFOLIO_TWO_JS . 'modernizr.min.js', array( 'jquery' ), '2.8.3', true );
-}
-add_action( 'wp_enqueue_scripts', 'rb_portfolio_two_browser_config_assets' );
-
 function rb_portfolio_two_theme_custom_assets() {
 	// Theme Perloader CSS v1.0.7
 	wp_enqueue_style( 'rb-portfolio-two-preloader', RB_PORTFOLIO_TWO_CSS . 'preloader.css', '', '1.0.7', 'all' );
@@ -173,14 +164,3 @@ function rb_portfolio_two_wp_assets() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'rb_portfolio_two_wp_assets' );
-
-function rb_portfolio_two_conditional_assets() {
-	// html5shim Conditional JS v3.7.3
-	wp_enqueue_script( 'html5shim-printshiv', RB_PORTFOLIO_TWO_JS . 'html5shiv-printshiv.min.js', array(), '3.7.3', false );
-	wp_script_add_data( 'html5shim-printshiv', 'conditional', 'lt IE 11' );
-
-	// respond Conditional JS v1.4.2
-	wp_enqueue_script( 'respond', RB_PORTFOLIO_TWO_JS . 'respond.min.js', array(), '1.4.2', false );
-	wp_script_add_data( 'respond', 'conditional', 'lt IE 11' );
-}
-add_action( 'wp_enqueue_scripts', 'rb_portfolio_two_conditional_assets' );

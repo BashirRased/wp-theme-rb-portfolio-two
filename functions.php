@@ -4,11 +4,13 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package RB Free Theme
- * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.7
- * @since RB Portfolio Two 1.0.7
+ * @package RB_Themes
+ * @subpackage RB_Portfolio_Two
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 // Theme Setup
 if(file_exists(dirname(__FILE__).'/inc/theme-setup.php')) {

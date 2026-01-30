@@ -4,22 +4,24 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package RB Free Theme
- * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.7
- * @since RB Portfolio Two 1.0.3
+ * @package RB_Themes
+ * @subpackage RB_Portfolio_Two
  */
 
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
 if (
-	has_block('core/image', get_the_content())
+	has_block( 'core/image', get_the_content() )
 ) {
 	$image_posts = parse_blocks( get_the_content() );
-	foreach ($image_posts as $image_post) {
-    	if ($image_post['blockName'] == 'core/image') {
-    		echo render_block($image_post);
-    	}
-    }
-	
-	do_action ( 'rb_portfolio_two_read_more' );
-	
+	foreach ( $image_posts as $image_post ) {
+		if ( $image_post['blockName'] == 'core/image' ) {
+			echo render_block( $image_post );
+		}
+	}
+
+	do_action( 'rb_portfolio_two_read_more' );
+
 }

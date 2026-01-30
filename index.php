@@ -9,11 +9,13 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package RB Free Theme
- * @subpackage RB Portfolio Two
- * @version RB Portfolio Two 1.0.7
- * @since RB Portfolio Two 1.0.3
+ * @package RB_Themes
+ * @subpackage RB_Portfolio_Two
  */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
 
 get_header(); ?>
 
@@ -22,36 +24,37 @@ get_header(); ?>
 		<div class="row">
 
 			<?php
-				if(is_active_sidebar('rb-portfolio-two-sidebar-right')){
-					$rb_portfolio_two_page_content_class = 'col-lg-8';
-				}
-				else {
-					$rb_portfolio_two_page_content_class = 'col-lg-12';
-				}
+			if ( is_active_sidebar( 'rb-portfolio-two-sidebar-right' ) ) {
+				$rb_portfolio_two_page_content_class = 'col-lg-8';
+			} else {
+				$rb_portfolio_two_page_content_class = 'col-lg-12';
+			}
 			?>
-			<main id="primary" class="<?php echo esc_attr($rb_portfolio_two_page_content_class); ?>" role="main">
+			<main id="primary" class="<?php echo esc_attr( $rb_portfolio_two_page_content_class ); ?>" role="main">
 
 				<?php
-				if (have_posts()) {
+				if ( have_posts() ) {
 
 					// Load posts loop.
-					while (have_posts()) {
+					while ( have_posts() ) {
 						the_post();
 
-						get_template_part('template-parts/content/content');
+						get_template_part( 'template-parts/content/content' );
 					}
 
 					// Post Pagination.
-					the_posts_pagination(array(
-						// Previous & Next Button Set
-						'prev_text' => '<i class="fas fa-chevron-left"></i>',
-						'next_text' => '<i class="fas fa-chevron-right"></i>'
-					));	
+					the_posts_pagination(
+						array(
+							// Previous & Next Button Set.
+							'prev_text' => '<i class="fas fa-chevron-left"></i>',
+							'next_text' => '<i class="fas fa-chevron-right"></i>',
+						)
+					);
 
 				} else {
 
 					// If no content, include the "No posts found" template.
-					get_template_part('template-parts/content/content-none');
+					get_template_part( 'template-parts/content/content-none' );
 
 				}
 				?>
@@ -59,7 +62,7 @@ get_header(); ?>
 			</main><!-- #primary -->
 		
 			<?php
-			if(is_active_sidebar('rb-portfolio-two-sidebar-right')){
+			if ( is_active_sidebar( 'rb-portfolio-two-sidebar-right' ) ) {
 				get_sidebar();
 			}
 			?>

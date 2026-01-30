@@ -1,8 +1,8 @@
 === RB Portfolio Two ===
 Contributors: bashirrased
-Requires at least: 5.3
-Tested up to: 6.0
-Requires PHP: 5.6
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 7.0
 Stable tag: 1.0.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -80,8 +80,29 @@ Tags: one-column, blog, custom-logo, custom-menu, featured-images, right-sidebar
   - Source: https://isotope.metafizzy.co
   - Copyright 2010-2018 Metafizzy
 
+== Credits ==
+
+Screenshot images are used for demo purposes only and are not included in the theme package.
+
+Images used in the theme screenshot:
+
+1. Photo by Unsplash contributor  
+   Source: https://unsplash.com/photos/mans-grey-and-black-shirt-ILip77SbmOE  
+   License: Unsplash License (https://unsplash.com/license)
+
+2. Photo by Pexels contributor  
+   Source: https://www.pexels.com/photo/photo-of-man-holding-a-book-927022/  
+   License: Pexels License (https://www.pexels.com/license)
+
 == Copyright ==
-RB Portfolio Two WordPress Theme, (C) 2022 Bashir Rased.
+RB Portfolio Two WordPress Theme, (C) 2022 - 2026 Bashir Rased.
 RB Portfolio Two is distributed under the terms of the GNU GPL.
 
 == Changelog ==
+= 1.1.7 =
+* Change version
+* Change screenshot
+* Change contributors name
+
+= 1.1.6 =
+* First Init

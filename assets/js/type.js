@@ -1,8 +1,8 @@
 /*
 Theme Name: RB Portfolio Two
-Theme URI: https://github.com/BashirRased/wp-theme-rb-portfolio-two
+Theme URI: https://bashir-rased.com/rb-portfolio-two
 Author: Bashir Rased
-Author URI: https://profiles.wordpress.org/bashirrased2017/ 
+Author URI: https://bashir-rased.com/ 
 Description: RB Portfolio Two is a portfolio website.
 Requires at least: 5.3
 Tested up to: 6.0

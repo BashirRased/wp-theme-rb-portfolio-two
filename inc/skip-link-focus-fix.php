@@ -1,20 +1,29 @@
 <?php
 /**
+ * Skip link focus fix functions.
+ *
+ * @package RB_Themes
+ * @subpackage RB_Portfolio_Two
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}
+
+/**
  * Fix skip link focus in IE11.
  *
  * This does not enqueue the script because it is tiny and because it is only for IE11,
  * thus it does not warrant having an entire dedicated blocking script being loaded.
- *
- * @since RB Portfolio Two 1.0.3
  *
  * @link https://git.io/vWdr2
  */
 function rb_portfolio_two_skip_link_focus_fix() {
 
 	// If SCRIPT_DEBUG is defined and true, print the unminified file.
-	if ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG) {
+	if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
 		echo '<script>';
-		include get_template_directory().'/assets/js/skip-link-focus-fix.js';
+		include get_template_directory() . '/assets/js/skip-link-focus-fix.js';
 		echo '</script>';
 	}
 
@@ -25,4 +34,4 @@ function rb_portfolio_two_skip_link_focus_fix() {
 	</script>
 	<?php
 }
-add_action('wp_print_footer_scripts', 'rb_portfolio_two_skip_link_focus_fix');
+add_action( 'wp_print_footer_scripts', 'rb_portfolio_two_skip_link_focus_fix' );
